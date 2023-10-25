@@ -1,0 +1,74 @@
+Parameter Name, Regional Values
+wind_a, 1.000, 1.000, 1.000, 1.000                                                                                                                                                                                                                                                                                                                                                                              
+wind_b, 1.000, 2.500, 2.500, 2.500                                                                                                                                                                                                                                                                                                                                                                              
+wind_c, 1.000, 1.000, 1.000, 1.000                                                                                                                                                                                                                                                                                                                                                                              
+wind_kh_kw, 1.000, 1.000, 1.000, 1.000                                                                                                                                                                                                                                                                                                                                                                          
+h2, .100, .100, .100, .100                                                                                                                                                                                                                                                                                                                                                                                      
+pb, 1600.000, 1600.000, 1600.000, 1600.000                                                                                                                                                                                                                                                                                                                                                                      
+Cps, 1674.720, 1674.720, 1674.720, 1674.720                                                                                                                                                                                                                                                                                                                                                                     
+alphas, .043, .043, .043, .043                                                                                                                                                                                                                                                                                                                                                                                  
+tsedf, .100, .100, .100, .100                                                                                                                                                                                                                                                                                                                                                                                   
+lambda0, .020, .450, .450, .200                                                                                                                                                                                                                                                                                                                                                                                 
+lambdas, .052, .052, .052, .052                                                                                                                                                                                                                                                                                                                                                                                 
+Slope, -1.000, -1.000, -1.000, -1.000                                                                                                                                                                                                                                                                                                                                                                           
+Half angle, 85.000, 85.000, 85.000, 85.000                                                                                                                                                                                                                                                                                                                                                                      
+Initial Mixing Ratio, .150, .150, .150, .150                                                                                                                                                                                                                                                                                                                                                                    
+Entrainment coefficient, -1.000, -1.000, -1.000, -1.000                                                                                                                                                                                                                                                                                                                                                         
+drho Tolerance, .010, .010, .010, .010                                                                                                                                                                                                                                                                                                                                                                          
+Richardson Number Function Option, 3, 3, 3, 3                                                                                                                                                                                                                                                                                                                                                                   
+Use Entrainment, 2, 1, 2, 2                                                                                                                                                                                                                                                                                                                                                                                     
+  
+Reservoir: Folsom Lake is using the Wind method for vertical diffusion
+  Wind parameter Dz_min: 0.0000400000
+  Wind parameter A1: 0.0000500000
+  Wind parameter Az: 1.000
+  Wind parameter Dz_max: 1000000.000
+  
+Reservoir: Lake Natoma is using the Wind method for vertical diffusion
+  Wind parameter Dz_min: 0.0000400000
+  Wind parameter A1: 0.0000500000
+  Wind parameter Az: 1.000
+  Wind parameter Dz_max: 1000000.000
+Reservoir Entrainment Parameters
+Folsom Lake                                                                     
+  Boundary idx: 1
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .004479
+    Entrainment coefficient: .001186
+  Boundary idx: 2
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .003522
+    Entrainment coefficient: .000932
+  Boundary idx: 3
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .004139
+    Entrainment coefficient: .001096
+  Boundary idx: 12
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .004479
+    Entrainment coefficient: .001186
+  Boundary idx: 13
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .003522
+    Entrainment coefficient: .000932
+  Boundary idx: 14
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .003522
+    Entrainment coefficient: .000932
+  Boundary idx: 15
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .003522
+    Entrainment coefficient: .000932
+  Boundary idx: 16
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .004139
+    Entrainment coefficient: .001096
+  

@@ -1,0 +1,27 @@
+WorkspaceName=Net6_flow_only
+WorkspaceDescription=
+Version=1001
+AppVersion=4.0.0.dev
+ModifiedTime=1654542679864
+UnitSystemID=1
+GmtOffset=-8
+Extents=-1000.0,1000.0,-1000.0,1000.0
+
+CoordinateInfoBegin
+type=X-Y
+units=null
+unitMult=1.0
+spheroid=null
+CoordinateInfoEnd
+
+Grow Extents=true
+ManagerIndex=9
+
+ManagerProxyBegin
+Name=Untitled
+Description=
+Path=stream.align
+Class=hec.model.StreamAlignment
+Index=7
+ModifiedTime=9223372036854775807
+ManagerProxyEnd

@@ -1,0 +1,98 @@
+{
+  "index" : 13,
+  "name" : "Temp4-----0:default",
+  "description" : "",
+  "ressimVersion" : "6.0.0.161R",
+  "version" : 1,
+  "set" : {
+    "@type" : "WQDispersionCoefSettings",
+    "id" : 0,
+    "name" : "Temp4-----0:default",
+    "description" : "",
+    "reachSettings" : {
+      "@type" : "WQReachDispersionSettings",
+      "reachValues" : [ {
+        "constant" : "-Infinity",
+        "lowerEnd" : "-Infinity",
+        "reachId" : 6,
+        "upperEnd" : "-Infinity"
+      }, {
+        "constant" : "-Infinity",
+        "lowerEnd" : "-Infinity",
+        "reachId" : 8,
+        "upperEnd" : "-Infinity"
+      }, {
+        "constant" : "-Infinity",
+        "lowerEnd" : "-Infinity",
+        "reachId" : 10,
+        "upperEnd" : "-Infinity"
+      }, {
+        "constant" : "-Infinity",
+        "lowerEnd" : "-Infinity",
+        "reachId" : 12,
+        "upperEnd" : "-Infinity"
+      } ],
+      "globalValue" : 10.0,
+      "dispersionType" : "GLOBAL",
+      "valueByReachType" : "CONSTANT"
+    },
+    "reservoirSettingsSet" : {
+      "@type" : "WQReservoirDispersionSettingsSet",
+      "entries" : [ {
+        "key" : {
+          "@type" : "WQSubDomainRef",
+          "id" : 2,
+          "geometryId" : 41,
+          "name" : "Folsom Lake",
+          "type" : "RESERVOIR_1DV"
+        },
+        "value" : {
+          "@type" : "WQReservoirDispersionSettings",
+          "windData" : {
+            "@type" : "WindDispersionData",
+            "a1" : 3.280839895013123E-5,
+            "a2" : 4.6,
+            "dzmin" : 1.076391041670972E-5,
+            "dzmax" : "-Infinity"
+          },
+          "stabilityData" : {
+            "@type" : "StabilityDispersionData",
+            "ecrit" : 6.096E-8,
+            "a1" : 3.229173125012916E-5,
+            "a3" : 0.7
+          },
+          "alternateMixingMethod" : "STABILITY",
+          "verticalMixingType" : "ALTERNATE_METHOD"
+        }
+      }, {
+        "key" : {
+          "@type" : "WQSubDomainRef",
+          "id" : 4,
+          "geometryId" : 41,
+          "name" : "Lake Natoma",
+          "type" : "RESERVOIR_1DV"
+        },
+        "value" : {
+          "@type" : "WQReservoirDispersionSettings",
+          "windData" : {
+            "@type" : "WindDispersionData",
+            "a1" : 3.280839895013123E-5,
+            "a2" : 4.6,
+            "dzmin" : 1.076391041670972E-5,
+            "dzmax" : "-Infinity"
+          },
+          "stabilityData" : {
+            "@type" : "StabilityDispersionData",
+            "ecrit" : 6.096E-8,
+            "a1" : 3.229173125012916E-5,
+            "a3" : 0.7
+          },
+          "alternateMixingMethod" : "STABILITY",
+          "verticalMixingType" : "FROM_DENSITY_PROFILE"
+        }
+      } ]
+    }
+  },
+  "geometryId" : 34,
+  "lastModifiedTime" : 1646870906526
+}

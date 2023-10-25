@@ -1,0 +1,75 @@
+ModifiedTime=1647366036271
+GVDataSet Name=Temp7-----0:Temp7
+Description=(Global Variable Data Set)
+
+GVRecord=TIME_SERIES
+GVRecord Name=P1_active_port_calib
+GVRecord ID=9
+GVRecord DssFilename=shared/Folsom_shutter_op.dss
+GVRecord DssPathname=/FOLSOM/GATE1/ELEV//1Day/CARDNO/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=P2_active_port_calib
+GVRecord ID=10
+GVRecord DssFilename=shared/Folsom_shutter_op.dss
+GVRecord DssPathname=/FOLSOM/GATE2/ELEV//1Day/CARDNO/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=P3_active_port_calib
+GVRecord ID=11
+GVRecord DssFilename=shared/Folsom_shutter_op.dss
+GVRecord DssPathname=/FOLSOM/GATE3/ELEV//1Day/CARDNO/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=P1_flow_calib
+GVRecord ID=12
+GVRecord DssFilename=shared/FolsomFake.dss
+GVRecord DssPathname=/AMERICAN RIVER/FOLSOM LAKE/DISCHARGE-P1//1DAY/FAKE/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=P2_flow_calib
+GVRecord ID=13
+GVRecord DssFilename=shared/FolsomFake.dss
+GVRecord DssPathname=/AMERICAN RIVER/FOLSOM LAKE/DISCHARGE-P2//1DAY/FAKE/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=P3_flow_calib
+GVRecord ID=14
+GVRecord DssFilename=shared/FolsomFake.dss
+GVRecord DssPathname=/AMERICAN RIVER/FOLSOM LAKE/DISCHARGE-P3//1DAY/FAKE/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Muni_flow_calib
+GVRecord ID=16
+GVRecord DssFilename=shared/CDEC_downloads.dss
+GVRecord DssPathname=/AMERICAN RIVER/FOLSOM LAKE/DISCHARGE-PUMPING//1DAY/CDEC/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+

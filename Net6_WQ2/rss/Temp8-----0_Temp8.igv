@@ -1,0 +1,205 @@
+ModifiedTime=1654696744863
+GVDataSet Name=Temp8-----0:Temp8
+Description=Adds Mormon Ravine Flow (Global Variable Data Set)
+
+GVRecord=TIME_SERIES
+GVRecord Name=P1_active_port_calib
+GVRecord ID=9
+GVRecord DssFilename=
+GVRecord DssPathname=///////
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=P2_active_port_calib
+GVRecord ID=10
+GVRecord DssFilename=
+GVRecord DssPathname=///////
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=P3_active_port_calib
+GVRecord ID=11
+GVRecord DssFilename=
+GVRecord DssPathname=///////
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=P1_flow_calib
+GVRecord ID=12
+GVRecord DssFilename=
+GVRecord DssPathname=///////
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=P2_flow_calib
+GVRecord ID=13
+GVRecord DssFilename=
+GVRecord DssPathname=///////
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=P3_flow_calib
+GVRecord ID=14
+GVRecord DssFilename=
+GVRecord DssPathname=///////
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Muni_specified_flow
+GVRecord ID=16
+GVRecord DssFilename=shared/Folsom_releases.dss
+GVRecord DssPathname=/FOLSOM/Flow 3 Pumping Plant Release/FLOW//1Hour/CDEC-CARDNO/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=P1_specified_flow
+GVRecord ID=4
+GVRecord DssFilename=shared/Folsom_releases.dss
+GVRecord DssPathname=/FOLSOM/Flow 4 Gen Release U1/FLOW//1Hour/CDEC-CARDNO/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=P2_specified_flow
+GVRecord ID=5
+GVRecord DssFilename=shared/Folsom_releases.dss
+GVRecord DssPathname=/FOLSOM/Flow 5 Gen Release U2/FLOW//1Hour/CDEC-CARDNO/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=P3_specified_flow
+GVRecord ID=6
+GVRecord DssFilename=shared/Folsom_releases.dss
+GVRecord DssPathname=/FOLSOM/Flow 6 Gen Release U3/FLOW//1Hour/CDEC-CARDNO/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Upper_Riv_out_specified_flow
+GVRecord ID=7
+GVRecord DssFilename=shared/Folsom_releases.dss
+GVRecord DssPathname=/FOLSOM/Sum Upper River Outlets/FLOW//1Hour/CDEC-CARDNO/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Lower_Riv_out_specified_flow
+GVRecord ID=8
+GVRecord DssFilename=shared/Folsom_releases.dss
+GVRecord DssPathname=/FOLSOM/Sum Lower River Outlets/FLOW//1Hour/CDEC-CARDNO/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=EID_specified_flow
+GVRecord ID=17
+GVRecord DssFilename=shared/American_inflows_6.dss
+GVRecord DssPathname=//EID/FLOW//1HOUR/USGS-CARDNO-MERGED/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Aux_spill_specified_flow
+GVRecord ID=18
+GVRecord DssFilename=shared/Folsom_releases.dss
+GVRecord DssPathname=/FOLSOM/Sum Auxiliary Spillway/FLOW//1Hour/CDEC-CARDNO/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Service_spill_specified_flow
+GVRecord ID=19
+GVRecord DssFilename=shared/Folsom_releases.dss
+GVRecord DssPathname=/FOLSOM/Sum Service Spillway/FLOW//1Hour/CDEC-CARDNO/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=P1_shutter_elev
+GVRecord ID=20
+GVRecord DssFilename=shared/Folsom_shutter_op.dss
+GVRecord DssPathname=/FOLSOM/GATE1/ELEV//1Day/USBR-CARDNO/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=P2_shutter_elev
+GVRecord ID=21
+GVRecord DssFilename=shared/Folsom_shutter_op.dss
+GVRecord DssPathname=/FOLSOM/GATE2/ELEV//1Day/USBR-CARDNO/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=P3_shutter_elev
+GVRecord ID=22
+GVRecord DssFilename=shared/Folsom_shutter_op.dss
+GVRecord DssPathname=/FOLSOM/GATE3/ELEV//1Day/USBR-CARDNO/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Muni_intake_elev
+GVRecord ID=23
+GVRecord DssFilename=shared/Folsom_shutter_op.dss
+GVRecord DssPathname=/FOLSOM/MUNI_INTAKE/ELEV//1Hour/CARDNO/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Emergency_spill_specified_flow
+GVRecord ID=24
+GVRecord DssFilename=shared/Folsom_releases.dss
+GVRecord DssPathname=/FOLSOM/Sum Emergency Spillway/FLOW//1Hour/CDEC-CARDNO/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+

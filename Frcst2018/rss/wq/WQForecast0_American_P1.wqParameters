@@ -1,0 +1,213 @@
+{
+  "index" : 22,
+  "name" : "WQForecast0:American_P1",
+  "description" : "",
+  "geometryId" : 15,
+  "lastModifiedTime" : 1690379770715,
+  "setMap" : {
+    "18" : {
+      "@type" : "WQParameterSet",
+      "name" : "ParameterSet for Water_and_Sed_Temp",
+      "description" : "",
+      "parameterIds" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 1002, 1003, 1004, 1005, 1007, 1008, 1009, 1010 ],
+      "parameterOptionIds" : [ 51, 1006 ],
+      "parameterOptionSettings" : [ {
+        "@type" : "WQParameterOptionSetting",
+        "parameterOptionId" : 51,
+        "option" : 3
+      }, {
+        "@type" : "WQParameterOptionSetting",
+        "parameterOptionId" : 1006,
+        "option" : 2
+      } ],
+      "parameterSettings" : [ {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 1,
+        "value" : 1.0
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 2,
+        "value" : 2.5
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 3,
+        "value" : 1.0
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 4,
+        "value" : 1.0
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 5,
+        "value" : 0.1
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 6,
+        "value" : 1600.0
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 7,
+        "value" : 1674.72
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 8,
+        "value" : 0.0432
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 9,
+        "value" : 0.1
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 10,
+        "value" : 0.45
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 11,
+        "value" : 0.052
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 1002,
+        "value" : -1.0
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 1003,
+        "value" : 85.0
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 1004,
+        "value" : 0.15
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 1005,
+        "value" : -1.0
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 1007,
+        "value" : 0.01
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 1008,
+        "value" : -1.0
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 1009,
+        "value" : -1.0
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 1010,
+        "value" : -1.0
+      } ],
+      "regionParameterOptionSettings" : [ {
+        "parameterOptionSettings" : [ {
+          "@type" : "WQParameterOptionSetting",
+          "parameterOptionId" : 51,
+          "option" : 3
+        }, {
+          "@type" : "WQParameterOptionSetting",
+          "parameterOptionId" : 1006,
+          "option" : 2
+        } ],
+        "regionRef" : {
+          "@type" : "WQRegionRef",
+          "geometryId" : 3161,
+          "id" : 0,
+          "name" : "Default Region"
+        }
+      }, {
+        "parameterOptionSettings" : [ {
+          "@type" : "WQParameterOptionSetting",
+          "parameterOptionId" : 51,
+          "option" : 3
+        }, {
+          "@type" : "WQParameterOptionSetting",
+          "parameterOptionId" : 1006,
+          "option" : 1
+        } ],
+        "regionRef" : {
+          "@type" : "WQRegionRef",
+          "geometryId" : 3161,
+          "id" : 1,
+          "name" : "Folsom"
+        }
+      }, {
+        "parameterOptionSettings" : [ {
+          "@type" : "WQParameterOptionSetting",
+          "parameterOptionId" : 51,
+          "option" : 3
+        }, {
+          "@type" : "WQParameterOptionSetting",
+          "parameterOptionId" : 1006,
+          "option" : 1
+        } ],
+        "regionRef" : {
+          "@type" : "WQRegionRef",
+          "geometryId" : 3161,
+          "id" : 2,
+          "name" : "Natoma"
+        }
+      }, {
+        "parameterOptionSettings" : [ {
+          "@type" : "WQParameterOptionSetting",
+          "parameterOptionId" : 51,
+          "option" : 3
+        }, {
+          "@type" : "WQParameterOptionSetting",
+          "parameterOptionId" : 1006,
+          "option" : 2
+        } ],
+        "regionRef" : {
+          "@type" : "WQRegionRef",
+          "geometryId" : 3161,
+          "id" : 3,
+          "name" : "American River"
+        }
+      } ],
+      "regionParameterSettings" : [ {
+        "parameterSettings" : [ ],
+        "regionRef" : {
+          "@type" : "WQRegionRef",
+          "geometryId" : 3161,
+          "id" : 0,
+          "name" : "Default Region"
+        }
+      }, {
+        "parameterSettings" : [ {
+          "@type" : "WQParameterSetting",
+          "parameterId" : 1005,
+          "value" : 1.0E-4
+        }, {
+          "@type" : "WQParameterSetting",
+          "parameterId" : 1007,
+          "value" : 0.035
+        } ],
+        "regionRef" : {
+          "@type" : "WQRegionRef",
+          "geometryId" : 3161,
+          "id" : 1,
+          "name" : "Folsom"
+        }
+      }, {
+        "parameterSettings" : [ {
+          "@type" : "WQParameterSetting",
+          "parameterId" : 10,
+          "value" : 0.1
+        } ],
+        "regionRef" : {
+          "@type" : "WQRegionRef",
+          "geometryId" : 3161,
+          "id" : 2,
+          "name" : "Natoma"
+        }
+      }, {
+        "parameterSettings" : [ ],
+        "regionRef" : {
+          "@type" : "WQRegionRef",
+          "geometryId" : 3161,
+          "id" : 3,
+          "name" : "American River"
+        }
+      } ]
+    }
+  },
+  "version" : 1
+}

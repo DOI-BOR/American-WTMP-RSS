@@ -1,0 +1,1235 @@
+{
+  "index" : 20,
+  "name" : "WQForecast0:American_IC-Constant",
+  "description" : "",
+  "constituentId" : 18,
+  "geometryId" : 15,
+  "lastModifiedTime" : 1691007711825,
+  "set" : {
+    "boundaryEntries" : [ {
+      "constituentId" : 2,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 3161,
+        "id" : 4,
+        "jnctId" : 11,
+        "name" : "Nimbus Dam",
+        "type" : "RESERVOIR_2_RIVER"
+      }
+    }, {
+      "constituentId" : 2,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 3161,
+        "id" : 8,
+        "jnctId" : 50,
+        "name" : "Watt Ave Bridge",
+        "type" : "RIVER_2_RIVER"
+      }
+    }, {
+      "constituentId" : 2,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 3161,
+        "id" : 7,
+        "jnctId" : 60,
+        "name" : "William Pond Park",
+        "type" : "RIVER_2_RIVER"
+      }
+    }, {
+      "constituentId" : 2,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 3161,
+        "id" : 6,
+        "jnctId" : 56,
+        "name" : "Rossmoor Bar",
+        "type" : "RIVER_2_RIVER"
+      }
+    }, {
+      "constituentId" : 2,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 3161,
+        "id" : 9,
+        "jnctId" : 52,
+        "name" : "H St Bridge",
+        "type" : "RIVER_2_RIVER"
+      }
+    }, {
+      "constituentId" : 2,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 3161,
+        "id" : 10,
+        "jnctId" : 46,
+        "name" : "Sacramento Confluence",
+        "type" : "RIVER_OUTFLOW"
+      }
+    }, {
+      "constituentId" : 2,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 3161,
+        "id" : 5,
+        "jnctId" : 48,
+        "name" : "AFO",
+        "type" : "RIVER_2_RIVER"
+      }
+    }, {
+      "constituentId" : 1,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 3161,
+        "id" : 4,
+        "jnctId" : 11,
+        "name" : "Nimbus Dam",
+        "type" : "RESERVOIR_2_RIVER"
+      }
+    }, {
+      "constituentId" : 1,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 3161,
+        "id" : 8,
+        "jnctId" : 50,
+        "name" : "Watt Ave Bridge",
+        "type" : "RIVER_2_RIVER"
+      }
+    }, {
+      "constituentId" : 1,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 3161,
+        "id" : 7,
+        "jnctId" : 60,
+        "name" : "William Pond Park",
+        "type" : "RIVER_2_RIVER"
+      }
+    }, {
+      "constituentId" : 1,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 3161,
+        "id" : 6,
+        "jnctId" : 56,
+        "name" : "Rossmoor Bar",
+        "type" : "RIVER_2_RIVER"
+      }
+    }, {
+      "constituentId" : 1,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 3161,
+        "id" : 9,
+        "jnctId" : 52,
+        "name" : "H St Bridge",
+        "type" : "RIVER_2_RIVER"
+      }
+    }, {
+      "constituentId" : 1,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 3161,
+        "id" : 10,
+        "jnctId" : 46,
+        "name" : "Sacramento Confluence",
+        "type" : "RIVER_OUTFLOW"
+      }
+    }, {
+      "constituentId" : 1,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 3161,
+        "id" : 5,
+        "jnctId" : 48,
+        "name" : "AFO",
+        "type" : "RIVER_2_RIVER"
+      }
+    } ],
+    "description" : "",
+    "name" : "WQForecast0:American_IC-Constant",
+    "reachInterpolationType" : "ONEWAYFORWARD",
+    "reservoirInterpolationType" : "LINEAR",
+    "subDomainEntries" : [ {
+      "depth" : 0.0,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 5,
+        "name" : "Lake Natoma",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 250.732,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 7.733333333
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 286.007,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 8.016666667
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 335.962,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 8.844444444
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 305.433,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 8.677777778
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 355.943,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 8.922222222
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 290.994,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 8.155555556
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 215.901,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 7.733333333
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 212.238,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 7.877777778
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 1000.0,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 5,
+        "name" : "Lake Natoma",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 360.835,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 8.972222222
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 345.927,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 8.855555556
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 370.386,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 9.494444444
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 325.787,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 8.827777778
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 315.53,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 8.794444444
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 265.884,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 7.838888889
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 236.051,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 7.677777778
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 320.866,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 8.816666667
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 280.543,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 7.966666667
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 275.793,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 7.905555556
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 225.574,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 7.7
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 270.502,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 7.872222222
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 295.6,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 8.272222222
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 255.802,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 7.766666667
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 260.88,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 7.816666667
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 240.848,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 7.688888889
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 341.066,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 8.85
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 350.951,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 8.883333333
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 301.006,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 8.527777778
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 231.129,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 7.694444444
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 245.773,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 7.711111111
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 330.767,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 8.833333333
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 221.155,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 7.716666667
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 371.24,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 9.494444444
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 310.82,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 8.794444444
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 366.05,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 9.027777778
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 0.0,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 5,
+        "name" : "Lake Natoma",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 250.732,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 7.733333333
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 286.007,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 8.016666667
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 335.962,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 8.844444444
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 305.433,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 8.677777778
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 355.943,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 8.922222222
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 290.994,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 8.155555556
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 215.901,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 7.733333333
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 212.238,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 7.877777778
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 1000.0,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 5,
+        "name" : "Lake Natoma",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 360.835,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 8.972222222
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 345.927,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 8.855555556
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 370.386,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 9.494444444
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 325.787,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 8.827777778
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 315.53,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 8.794444444
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 265.884,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 7.838888889
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 236.051,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 7.677777778
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 320.866,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 8.816666667
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 280.543,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 7.966666667
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 275.793,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 7.905555556
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 225.574,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 7.7
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 270.502,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 7.872222222
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 295.6,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 8.272222222
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 255.802,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 7.766666667
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 260.88,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 7.816666667
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 240.848,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 7.688888889
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 341.066,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 8.85
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 350.951,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 8.883333333
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 301.006,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 8.527777778
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 231.129,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 7.694444444
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 245.773,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 7.711111111
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 330.767,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 8.833333333
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 221.155,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 7.716666667
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 371.24,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 9.494444444
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 310.82,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 8.794444444
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 366.05,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 9.027777778
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 3161,
+        "id" : 3,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    } ]
+  },
+  "version" : 1
+}

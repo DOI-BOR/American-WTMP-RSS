@@ -1,0 +1,210 @@
+{
+  "index" : 70,
+  "name" : "BCS6",
+  "description" : "",
+  "constituentSetId" : 42,
+  "geometryId" : 68,
+  "lastModifiedTime" : 1647358339862,
+  "ressimVersion" : "6.0.0.166R",
+  "set" : {
+    "boundaryConditions" : [ {
+      "@type" : "WQBoundaryCondition",
+      "boundaryRef" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 68,
+        "id" : 10,
+        "jnctId" : 3,
+        "name" : "SF AMR NR Pilot Hill - CBR Flow",
+        "type" : "LOCAL_INFLOW"
+      },
+      "constituentId" : 1,
+      "dataSources" : [ {
+        "@type" : "TableData",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "dates" : [ ],
+        "description" : "",
+        "name" : "Table Data",
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "DSS File Path" : "shared\\USGS_downloads.dss",
+        "DSS Path" : "/AMERICAN RIVER/SF AMERICAN NR PILOT HILL/WATER TEMPERATURE//15MIN/USGS/",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "DSS",
+        "units" : "degC"
+      }, {
+        "@type" : "ExcelData",
+        "availableUnits" : [ ],
+        "bottomRow" : 0,
+        "compType" : 2,
+        "description" : "",
+        "name" : "Excel Worksheet",
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      }, {
+        "@type" : "ConstantData",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "Constant Value",
+        "value" : "-Infinity"
+      }, {
+        "@type" : "AmbientData",
+        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "Ambient Value"
+      } ],
+      "selectedDataSource" : {
+        "@type" : "DssData",
+        "DSS File Path" : "shared\\USGS_downloads.dss",
+        "DSS Path" : "/AMERICAN RIVER/SF AMERICAN NR PILOT HILL/WATER TEMPERATURE//15MIN/USGS/",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "DSS",
+        "units" : "degC"
+      },
+      "units" : [ "\u00B0C" ]
+    }, {
+      "@type" : "WQBoundaryCondition",
+      "boundaryRef" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 68,
+        "id" : 8,
+        "jnctId" : 2,
+        "name" : "NFA - NFD Flow",
+        "type" : "LOCAL_INFLOW"
+      },
+      "constituentId" : 1,
+      "dataSources" : [ {
+        "@type" : "TableData",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "dates" : [ ],
+        "description" : "",
+        "name" : "Table Data",
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "DSS File Path" : "shared\\CDEC_downloads.dss",
+        "DSS Path" : "/AMERICAN RIVER/NORTH FORK AT AUBURN DAM/TEMPERATURE-WATER//15MIN/CDEC_REV/",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "DSS",
+        "units" : "DEG F"
+      }, {
+        "@type" : "ExcelData",
+        "availableUnits" : [ ],
+        "bottomRow" : 0,
+        "compType" : 2,
+        "description" : "",
+        "name" : "Excel Worksheet",
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      }, {
+        "@type" : "ConstantData",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "Constant Value",
+        "value" : "-Infinity"
+      }, {
+        "@type" : "AmbientData",
+        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "Ambient Value"
+      } ],
+      "selectedDataSource" : {
+        "@type" : "DssData",
+        "DSS File Path" : "shared\\CDEC_downloads.dss",
+        "DSS Path" : "/AMERICAN RIVER/NORTH FORK AT AUBURN DAM/TEMPERATURE-WATER//15MIN/CDEC_REV/",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "DSS",
+        "units" : "DEG F"
+      },
+      "units" : [ "\u00B0C" ]
+    }, {
+      "@type" : "WQBoundaryCondition",
+      "boundaryRef" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 68,
+        "id" : 9,
+        "jnctId" : 2,
+        "name" : "NFA - OXB Flow",
+        "type" : "LOCAL_INFLOW"
+      },
+      "constituentId" : 1,
+      "dataSources" : [ {
+        "@type" : "TableData",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "dates" : [ ],
+        "description" : "",
+        "name" : "Table Data",
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "DSS File Path" : "shared\\CDEC_downloads.dss",
+        "DSS Path" : "/AMERICAN RIVER/NORTH FORK AT AUBURN DAM/TEMPERATURE-WATER//15MIN/CDEC_REV/",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "DSS",
+        "units" : "DEG F"
+      }, {
+        "@type" : "ExcelData",
+        "availableUnits" : [ ],
+        "bottomRow" : 0,
+        "compType" : 2,
+        "description" : "",
+        "name" : "Excel Worksheet",
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      }, {
+        "@type" : "ConstantData",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "Constant Value",
+        "value" : "-Infinity"
+      }, {
+        "@type" : "AmbientData",
+        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "Ambient Value"
+      } ],
+      "selectedDataSource" : {
+        "@type" : "DssData",
+        "DSS File Path" : "shared\\CDEC_downloads.dss",
+        "DSS Path" : "/AMERICAN RIVER/NORTH FORK AT AUBURN DAM/TEMPERATURE-WATER//15MIN/CDEC_REV/",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "DSS",
+        "units" : "DEG F"
+      },
+      "units" : [ "\u00B0C" ]
+    } ],
+    "description" : "",
+    "name" : "BCS6"
+  },
+  "version" : 1
+}

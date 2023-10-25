@@ -1,0 +1,235 @@
+ModifiedTime=1691781979451
+GVDataSet Name=WQForecast0:WQForecast-WAT-ResSim only-Deterministic
+Description=Copy of Copy of Flow-only alt on AMR_Net_7 (GV Data Set for WAT-ResSim only-Deterministic)
+
+GVRecord=TIME_SERIES
+GVRecord Name=P1_specified_flow
+GVRecord ID=1
+GVRecord DssFilename=rss/WQForecast0_WQForecastWAT-ResSim_only-Deterministic_igv.dss
+GVRecord DssPathname=/FOLSOM/Flow 4 Gen Release U1/FLOW//1Hour/CDEC-CARDNO/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=P2_specified_flow
+GVRecord ID=2
+GVRecord DssFilename=rss/WQForecast0_WQForecastWAT-ResSim_only-Deterministic_igv.dss
+GVRecord DssPathname=/FOLSOM/Flow 5 Gen Release U2/FLOW//1Hour/CDEC-CARDNO/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=P3_specified_flow
+GVRecord ID=3
+GVRecord DssFilename=rss/WQForecast0_WQForecastWAT-ResSim_only-Deterministic_igv.dss
+GVRecord DssPathname=/FOLSOM/Flow 6 Gen Release U3/FLOW//1Hour/CDEC-CARDNO/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Upper_Riv_out_specified_flow
+GVRecord ID=4
+GVRecord DssFilename=rss/WQForecast0_WQForecastWAT-ResSim_only-Deterministic_igv.dss
+GVRecord DssPathname=/FOLSOM/SUM UPPER RIVER OUTLETS/FLOW//1HOUR/CDEC-CARDNO-MIN4/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Lower_Riv_out_specified_flow
+GVRecord ID=5
+GVRecord DssFilename=rss/WQForecast0_WQForecastWAT-ResSim_only-Deterministic_igv.dss
+GVRecord DssPathname=/FOLSOM/SUM LOWER RIVER OUTLETS/FLOW//1HOUR/CDEC-CARDNO-MIN8/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Muni_specified_flow
+GVRecord ID=6
+GVRecord DssFilename=rss/WQForecast0_WQForecastWAT-ResSim_only-Deterministic_igv.dss
+GVRecord DssPathname=/FOLSOM/Flow 3 Pumping Plant Release/FLOW//1Hour/CDEC-CARDNO/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=EID_specified_flow
+GVRecord ID=7
+GVRecord DssFilename=rss/WQForecast0_WQForecastWAT-ResSim_only-Deterministic_igv.dss
+GVRecord DssPathname=//EID/FLOW//1HOUR/USGS-CARDNO-MERGED/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Aux_spill_specified_flow
+GVRecord ID=8
+GVRecord DssFilename=rss/WQForecast0_WQForecastWAT-ResSim_only-Deterministic_igv.dss
+GVRecord DssPathname=/FOLSOM/Sum Auxiliary Spillway/FLOW//1Hour/CDEC-CARDNO/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Service_spill_specified_flow
+GVRecord ID=9
+GVRecord DssFilename=rss/WQForecast0_WQForecastWAT-ResSim_only-Deterministic_igv.dss
+GVRecord DssPathname=/FOLSOM/Sum Service Spillway/FLOW//1Hour/CDEC-CARDNO/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=P1_shutter_elev
+GVRecord ID=10
+GVRecord DssFilename=rss/WQForecast0_WQForecastWAT-ResSim_only-Deterministic_igv.dss
+GVRecord DssPathname=/FOLSOM/GATE1/ELEV//1Day/USBR-CARDNO/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=P2_shutter_elev
+GVRecord ID=11
+GVRecord DssFilename=rss/WQForecast0_WQForecastWAT-ResSim_only-Deterministic_igv.dss
+GVRecord DssPathname=/FOLSOM/GATE2/ELEV//1Day/USBR-CARDNO/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=P3_shutter_elev
+GVRecord ID=12
+GVRecord DssFilename=rss/WQForecast0_WQForecastWAT-ResSim_only-Deterministic_igv.dss
+GVRecord DssPathname=/FOLSOM/GATE3/ELEV//1Day/USBR-CARDNO/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Muni_intake_elev
+GVRecord ID=13
+GVRecord DssFilename=rss/WQForecast0_WQForecastWAT-ResSim_only-Deterministic_igv.dss
+GVRecord DssPathname=/FOLSOM/MUNI_INTAKE/ELEV//1Hour/CARDNO/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Emergency_spill_specified_flow
+GVRecord ID=14
+GVRecord DssFilename=rss/WQForecast0_WQForecastWAT-ResSim_only-Deterministic_igv.dss
+GVRecord DssPathname=/FOLSOM/Sum Emergency Spillway/FLOW//1Hour/CDEC-CARDNO/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Natoma_spill_spec_flow
+GVRecord ID=15
+GVRecord DssFilename=rss/WQForecast0_WQForecastWAT-ResSim_only-Deterministic_igv.dss
+GVRecord DssPathname=/NATOMA/SPILL RELEASE/FLOW//1HOUR/CDEC-CARDNO/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Natoma_penstock_spec_flow
+GVRecord ID=16
+GVRecord DssFilename=rss/WQForecast0_WQForecastWAT-ResSim_only-Deterministic_igv.dss
+GVRecord DssPathname=/NATOMA/GEN RELEASE TOTAL/FLOW//1DAY/CDEC-CARDNO/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Natoma_hatchery_spec_flow
+GVRecord ID=17
+GVRecord DssFilename=rss/WQForecast0_WQForecastWAT-ResSim_only-Deterministic_igv.dss
+GVRecord DssPathname=/NATOMA/FISH HATCHERY FLOW/FLOW//1HOUR/CDEC-CARDNO/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Folsom_S_Canal_spec_flow
+GVRecord ID=18
+GVRecord DssFilename=rss/WQForecast0_WQForecastWAT-ResSim_only-Deterministic_igv.dss
+GVRecord DssPathname=/NATOMA/FLOW 1 SOUTH CANAL DIVERSION FLW/FLOW//1HOUR/CDEC-CARDNO/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Temperature_Target
+GVRecord ID=29
+GVRecord DssFilename=rss/WQForecast0_WQForecastWAT-ResSim_only-Deterministic_igv.dss
+GVRecord DssPathname=/USBR/WATT_AVE_BRIDGE_NEAR_CARMICHAEL_AMERICAN 11446700/TEMP-WATER//1DAY/CARDNO-FILLED MISSING/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Total_Penstock_specified_flow
+GVRecord ID=30
+GVRecord DssFilename=rss/WQForecast0_WQForecastWAT-ResSim_only-Deterministic_igv.dss
+GVRecord DssPathname=/FOLSOM-TEST_DAILY-AVE/FLOW 2 GENERATION RELEASE/FLOW//1DAY/CDEC-CARDNO/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=SCALAR
+GVRecord Name=Downstream_Control_Loc
+GVRecord ID=37
+GVRecord DssFilename=rss/WQForecast0_WQForecastWAT-ResSim_only-Deterministic_igv.dss
+GVRecord DssPathname=//Downstream_Control_Loc///Integer/WQForecast0:WQForecast-WAT-ResSim only-Deterministic/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=FairOaks_Equilibrium_Temp
+GVRecord ID=36
+GVRecord DssFilename=rss/WQForecast0_WQForecastWAT-ResSim_only-Deterministic_igv.dss
+GVRecord DssPathname=//FAIR OAKS/TEMP-EQUILIBRIUM//1Day/DERIVED/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Lower_Riv_out_flow
+GVRecord ID=39
+GVRecord DssFilename=rss/WQForecast0_WQForecastWAT-ResSim_only-Deterministic_igv.dss
+GVRecord DssPathname=/FOLSOM/SUM LOWER RIVER OUTLETS/FLOW//1HOUR/CDEC-CARDNO-MIN8/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+

@@ -1,0 +1,203 @@
+{
+  "index" : 97,
+  "name" : "BCS7",
+  "description" : "",
+  "ressimVersion" : "6.0.0.161R",
+  "version" : 1,
+  "set" : {
+    "name" : "BCS7",
+    "description" : "",
+    "boundaryConditions" : [ {
+      "@type" : "WQBoundaryCondition",
+      "units" : [ "\u00B0C" ],
+      "dataSources" : [ {
+        "@type" : "TableData",
+        "values" : [ ],
+        "dates" : [ ],
+        "name" : "Table Data",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2
+      }, {
+        "@type" : "DssData",
+        "compType" : 2,
+        "name" : "DSS",
+        "description" : "",
+        "units" : "DEG F",
+        "availableUnits" : [ "\u00B0C" ],
+        "DSS Path" : "/AMERICAN RIVER/NORTH FORK AT AUBURN DAM/TEMPERATURE-WATER//15MIN/CDEC_REV/",
+        "DSS File Path" : "shared\\CDEC_downloads.dss"
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "worksheetName" : "",
+        "timeColumn" : "",
+        "valueColumn" : "",
+        "topRow" : 0,
+        "bottomRow" : 0
+      }, {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "value" : "-Infinity"
+      } ],
+      "boundaryRef" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "id" : 8,
+        "geometryId" : 95,
+        "name" : "NFA - NFD Flow",
+        "type" : "LOCAL_INFLOW",
+        "jnctId" : 2
+      },
+      "selectedDataSource" : {
+        "@type" : "DssData",
+        "compType" : 2,
+        "name" : "DSS",
+        "description" : "",
+        "units" : "DEG F",
+        "availableUnits" : [ "\u00B0C" ],
+        "DSS Path" : "/AMERICAN RIVER/NORTH FORK AT AUBURN DAM/TEMPERATURE-WATER//15MIN/CDEC_REV/",
+        "DSS File Path" : "shared\\CDEC_downloads.dss"
+      },
+      "constituentId" : 1
+    }, {
+      "@type" : "WQBoundaryCondition",
+      "units" : [ "\u00B0C" ],
+      "dataSources" : [ {
+        "@type" : "TableData",
+        "values" : [ ],
+        "dates" : [ ],
+        "name" : "Table Data",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2
+      }, {
+        "@type" : "DssData",
+        "compType" : 2,
+        "name" : "DSS",
+        "description" : "",
+        "units" : "DEG F",
+        "availableUnits" : [ "\u00B0C" ],
+        "DSS Path" : "/AMERICAN RIVER/NORTH FORK AT AUBURN DAM/TEMPERATURE-WATER//15MIN/CDEC_REV/",
+        "DSS File Path" : "shared\\CDEC_downloads.dss"
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "worksheetName" : "",
+        "timeColumn" : "",
+        "valueColumn" : "",
+        "topRow" : 0,
+        "bottomRow" : 0
+      }, {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "value" : "-Infinity"
+      }, {
+        "@type" : "AmbientData",
+        "name" : "Ambient Value",
+        "description" : "",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "OptionType" : "AVERAGE_AT_JUNCTION"
+      } ],
+      "boundaryRef" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "id" : 9,
+        "geometryId" : 95,
+        "name" : "NFA - OXB Flow",
+        "type" : "LOCAL_INFLOW",
+        "jnctId" : 2
+      },
+      "selectedDataSource" : {
+        "@type" : "DssData",
+        "compType" : 2,
+        "name" : "DSS",
+        "description" : "",
+        "units" : "DEG F",
+        "availableUnits" : [ "\u00B0C" ],
+        "DSS Path" : "/AMERICAN RIVER/NORTH FORK AT AUBURN DAM/TEMPERATURE-WATER//15MIN/CDEC_REV/",
+        "DSS File Path" : "shared\\CDEC_downloads.dss"
+      },
+      "constituentId" : 1
+    }, {
+      "@type" : "WQBoundaryCondition",
+      "units" : [ "\u00B0C" ],
+      "dataSources" : [ {
+        "@type" : "TableData",
+        "values" : [ ],
+        "dates" : [ ],
+        "name" : "Table Data",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2
+      }, {
+        "@type" : "DssData",
+        "compType" : 2,
+        "name" : "DSS",
+        "description" : "",
+        "units" : "degC",
+        "availableUnits" : [ "\u00B0C" ],
+        "DSS Path" : "/AMERICAN RIVER/SF AMERICAN NR PILOT HILL/WATER TEMPERATURE//15MIN/USGS COPY/",
+        "DSS File Path" : "shared\\USGS_downloads.dss"
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "worksheetName" : "",
+        "timeColumn" : "",
+        "valueColumn" : "",
+        "topRow" : 0,
+        "bottomRow" : 0
+      }, {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "value" : "-Infinity"
+      }, {
+        "@type" : "AmbientData",
+        "name" : "Ambient Value",
+        "description" : "",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "OptionType" : "AVERAGE_AT_JUNCTION"
+      } ],
+      "boundaryRef" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "id" : 10,
+        "geometryId" : 95,
+        "name" : "SF AMR NR Pilot Hill - CBR Flow",
+        "type" : "LOCAL_INFLOW",
+        "jnctId" : 3
+      },
+      "selectedDataSource" : {
+        "@type" : "DssData",
+        "compType" : 2,
+        "name" : "DSS",
+        "description" : "",
+        "units" : "degC",
+        "availableUnits" : [ "\u00B0C" ],
+        "DSS Path" : "/AMERICAN RIVER/SF AMERICAN NR PILOT HILL/WATER TEMPERATURE//15MIN/USGS COPY/",
+        "DSS File Path" : "shared\\USGS_downloads.dss"
+      },
+      "constituentId" : 1
+    } ]
+  },
+  "geometryId" : 95,
+  "constituentSetId" : 42,
+  "lastModifiedTime" : 1647365164255
+}

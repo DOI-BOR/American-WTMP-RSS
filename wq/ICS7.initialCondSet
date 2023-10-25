@@ -1,0 +1,149 @@
+{
+  "index" : 98,
+  "name" : "ICS7",
+  "description" : "",
+  "constituentId" : 42,
+  "geometryId" : 95,
+  "lastModifiedTime" : 1647365222547,
+  "ressimVersion" : "6.0.0.166R",
+  "set" : {
+    "boundaryEntries" : [ {
+      "constituentId" : 1,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 9.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 95,
+        "id" : 3,
+        "jnctId" : 11,
+        "name" : "Nimbus Dam",
+        "type" : "RESERVOIR_2_RIVER"
+      }
+    }, {
+      "constituentId" : 1,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 9.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 95,
+        "id" : 6,
+        "jnctId" : 45,
+        "name" : "H St Bridge",
+        "type" : "RIVER_2_RIVER"
+      }
+    }, {
+      "constituentId" : 1,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 9.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 95,
+        "id" : 5,
+        "jnctId" : 44,
+        "name" : "Watt Ave Bridge",
+        "type" : "RIVER_2_RIVER"
+      }
+    }, {
+      "constituentId" : 1,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 9.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 95,
+        "id" : 4,
+        "jnctId" : 25,
+        "name" : "AFO",
+        "type" : "RIVER_2_RIVER"
+      }
+    }, {
+      "constituentId" : 1,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 9.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 95,
+        "id" : 7,
+        "jnctId" : 42,
+        "name" : "Sacramento Confluence",
+        "type" : "RIVER_OUTFLOW"
+      }
+    } ],
+    "description" : "",
+    "name" : "ICS7",
+    "reachInterpolationType" : "ONEWAYFORWARD",
+    "reservoirInterpolationType" : "LINEAR",
+    "subDomainEntries" : [ {
+      "depth" : 0.0,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 9.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 95,
+        "id" : 2,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 0.0,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 9.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 95,
+        "id" : 4,
+        "name" : "Lake Natoma",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 1000.0,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 9.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 95,
+        "id" : 2,
+        "name" : "Folsom Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 1000.0,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 9.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 95,
+        "id" : 4,
+        "name" : "Lake Natoma",
+        "type" : "RESERVOIR_1DV"
+      }
+    } ]
+  },
+  "version" : 1
+}

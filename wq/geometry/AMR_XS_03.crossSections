@@ -1,0 +1,6 @@
+Name=AMR_XS_03
+Description=Cross Sections for RAS Cross Section file AMR_XS_03.shp
+RasFile=rss/ras-exports/AMR_XS_08a.shp
+RiverColumn=River
+ReachColumn=Reach
+StationColumn=River Stat

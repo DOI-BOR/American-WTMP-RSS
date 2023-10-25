@@ -1,0 +1,27 @@
+WorkspaceName=Frcst2018
+WorkspaceDescription=
+Version=1001
+AppVersion=staging-00e3a9a
+ModifiedTime=1690379762291
+UnitSystemID=1
+GmtOffset=-8
+Extents=-1000.0,1000.0,-1000.0,1000.0
+
+CoordinateInfoBegin
+type=X-Y
+units=null
+unitMult=1.0
+spheroid=null
+CoordinateInfoEnd
+
+Grow Extents=true
+ManagerIndex=25
+
+ManagerProxyBegin
+Name=Untitled
+Description=
+Path=stream.align
+Class=hec.clientapp.model.StreamAlignment
+Index=23
+ModifiedTime=9223372036854775807
+ManagerProxyEnd

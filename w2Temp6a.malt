@@ -1,0 +1,47 @@
+AsciiSerializer=5
+{=hec.model.ModelAlt
+  ID=0
+  FLD=_index
+  I=87
+  FLD=_name
+  STR=w2Temp6a
+  FLD=_description
+  STR=
+  FLD=_path
+  STR=
+  FLD=_nextTSRecordProxyIndex
+  I=0
+  FLD=_lastModifiedTime
+  J=1647020913271
+  FLD=_configurationIds
+  {=rma.util.LongVector
+    ID=1
+    FLD=elementData
+    {=[J
+      ID=2
+      {[=0
+      J=
+      }]
+    }
+    FLD=elementCount
+    I=0
+    FLD=capacityIncrement
+    I=0
+  }
+  FLD=_programIndex
+  I=2
+  FLD=_altId
+  STR=w2Temp6a
+  FLD=_modelRef
+  {=hec.lang.ModelReference
+    ID=3
+    FLD=id
+    I=86
+    FLD=className
+    STR=hec.rss.plugins.w2.model.W2Alt
+    FLD=wkspName
+    STR=w2
+    FLD=newId
+    I=86
+  }
+}

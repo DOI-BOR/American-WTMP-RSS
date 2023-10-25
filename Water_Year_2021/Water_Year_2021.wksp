@@ -1,0 +1,27 @@
+WorkspaceName=Water_Year_2021
+WorkspaceDescription=
+Version=1001
+AppVersion=3.6.0.QA-602
+ModifiedTime=1646864452429
+UnitSystemID=1
+GmtOffset=-8
+Extents=-1000.0,1000.0,-1000.0,1000.0
+
+CoordinateInfoBegin
+type=X-Y
+units=null
+unitMult=1.0
+spheroid=null
+CoordinateInfoEnd
+
+Grow Extents=true
+ManagerIndex=48
+
+ManagerProxyBegin
+Name=Untitled
+Description=
+Path=stream.align
+Class=hec.model.StreamAlignment
+Index=7
+ModifiedTime=9223372036854775807
+ManagerProxyEnd

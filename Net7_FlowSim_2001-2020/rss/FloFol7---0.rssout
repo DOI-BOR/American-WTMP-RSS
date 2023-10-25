@@ -1,0 +1,20 @@
+AsciiSerializer=5
+{=hec.rss.model.RssOutput
+  ID=0
+  FLD=_index
+  I=-2147483648
+  FLD=_name
+  STR=Untitled
+  FLD=_description
+  STR=
+  FLD=_collectionRunMap
+  {=java.util.Hashtable
+    ID=1
+  }
+  FLD=_tsSummaryTable
+  {=java.util.Hashtable
+    ID=2
+  }
+  FLD=m_unitSystem
+  I=1
+}

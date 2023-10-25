@@ -1,0 +1,338 @@
+{
+  "index" : 11,
+  "name" : "Temp8-----0:BCS_Net6",
+  "description" : "",
+  "constituentSetId" : 10,
+  "geometryId" : 7,
+  "lastModifiedTime" : 1654696743420,
+  "ressimVersion" : "6.0.0.166R",
+  "set" : {
+    "boundaryConditions" : [ {
+      "@type" : "WQBoundaryCondition",
+      "boundaryRef" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 133,
+        "id" : 8,
+        "jnctId" : 2,
+        "name" : "NFA - NFD Flow",
+        "type" : "LOCAL_INFLOW"
+      },
+      "constituentId" : 1,
+      "dataSources" : [ {
+        "@type" : "TableData",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "dates" : [ ],
+        "description" : "",
+        "name" : "Table Data",
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "DSS File Path" : "shared\\American_inflow_temps.dss",
+        "DSS Path" : "/11433790/NF American temp/TEMP-WATER//1Hour/USGS-CARDNO/",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
+        "description" : "",
+        "name" : "DSS",
+        "units" : "DEG C"
+      }, {
+        "@type" : "ExcelData",
+        "availableUnits" : [ ],
+        "bottomRow" : 0,
+        "compType" : 2,
+        "description" : "",
+        "name" : "Excel Worksheet",
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      }, {
+        "@type" : "ConstantData",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "Constant Value",
+        "value" : "-Infinity"
+      }, {
+        "@type" : "AmbientData",
+        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "Ambient Value"
+      } ],
+      "selectedDataSource" : {
+        "@type" : "DssData",
+        "DSS File Path" : "shared\\American_inflow_temps.dss",
+        "DSS Path" : "/11433790/NF American temp/TEMP-WATER//1Hour/USGS-CARDNO/",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
+        "description" : "",
+        "name" : "DSS",
+        "units" : "DEG C"
+      },
+      "units" : [ "\u00B0C" ]
+    }, {
+      "@type" : "WQBoundaryCondition",
+      "boundaryRef" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 133,
+        "id" : 9,
+        "jnctId" : 2,
+        "name" : "NFA - OXB Flow",
+        "type" : "LOCAL_INFLOW"
+      },
+      "constituentId" : 1,
+      "dataSources" : [ {
+        "@type" : "TableData",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "dates" : [ ],
+        "description" : "",
+        "name" : "Table Data",
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "DSS File Path" : "shared\\American_inflow_temps.dss",
+        "DSS Path" : "/11433790/NF American temp/TEMP-WATER//1Hour/USGS-CARDNO/",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
+        "description" : "",
+        "name" : "DSS",
+        "units" : "DEG C"
+      }, {
+        "@type" : "ExcelData",
+        "availableUnits" : [ ],
+        "bottomRow" : 0,
+        "compType" : 2,
+        "description" : "",
+        "name" : "Excel Worksheet",
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      }, {
+        "@type" : "ConstantData",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "Constant Value",
+        "value" : "-Infinity"
+      }, {
+        "@type" : "AmbientData",
+        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "Ambient Value"
+      } ],
+      "selectedDataSource" : {
+        "@type" : "DssData",
+        "DSS File Path" : "shared\\American_inflow_temps.dss",
+        "DSS Path" : "/11433790/NF American temp/TEMP-WATER//1Hour/USGS-CARDNO/",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
+        "description" : "",
+        "name" : "DSS",
+        "units" : "DEG C"
+      },
+      "units" : [ "\u00B0C" ]
+    }, {
+      "@type" : "WQBoundaryCondition",
+      "boundaryRef" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 133,
+        "id" : 10,
+        "jnctId" : 2,
+        "name" : "NFA - Folsom Balance Flows",
+        "type" : "LOCAL_INFLOW"
+      },
+      "constituentId" : 1,
+      "dataSources" : [ {
+        "@type" : "TableData",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "dates" : [ ],
+        "description" : "",
+        "name" : "Table Data",
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "DSS File Path" : "shared\\American_inflow_temps.dss",
+        "DSS Path" : "/11433790/NF American temp/TEMP-WATER//1Hour/USGS-CARDNO/",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
+        "description" : "",
+        "name" : "DSS",
+        "units" : "DEG C"
+      }, {
+        "@type" : "ExcelData",
+        "availableUnits" : [ ],
+        "bottomRow" : 0,
+        "compType" : 2,
+        "description" : "",
+        "name" : "Excel Worksheet",
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      }, {
+        "@type" : "ConstantData",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "Constant Value",
+        "value" : "-Infinity"
+      }, {
+        "@type" : "AmbientData",
+        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "Ambient Value"
+      } ],
+      "selectedDataSource" : {
+        "@type" : "AmbientData",
+        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "Ambient Value"
+      },
+      "units" : [ "\u00B0C" ]
+    }, {
+      "@type" : "WQBoundaryCondition",
+      "boundaryRef" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 133,
+        "id" : 11,
+        "jnctId" : 2,
+        "name" : "NFA - Mormon Ravine and Newcastle PH",
+        "type" : "LOCAL_INFLOW"
+      },
+      "constituentId" : 1,
+      "dataSources" : [ {
+        "@type" : "TableData",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "dates" : [ ],
+        "description" : "",
+        "name" : "Table Data",
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "DSS File Path" : "shared\\American_inflow_temps.dss",
+        "DSS Path" : "/11433790/NF American temp/TEMP-WATER//1Hour/USGS-CARDNO/",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
+        "description" : "",
+        "name" : "DSS",
+        "units" : "DEG C"
+      }, {
+        "@type" : "ExcelData",
+        "availableUnits" : [ ],
+        "bottomRow" : 0,
+        "compType" : 2,
+        "description" : "",
+        "name" : "Excel Worksheet",
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      }, {
+        "@type" : "ConstantData",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "Constant Value",
+        "value" : "-Infinity"
+      }, {
+        "@type" : "AmbientData",
+        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "Ambient Value"
+      } ],
+      "selectedDataSource" : {
+        "@type" : "DssData",
+        "DSS File Path" : "shared\\American_inflow_temps.dss",
+        "DSS Path" : "/11433790/NF American temp/TEMP-WATER//1Hour/USGS-CARDNO/",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
+        "description" : "",
+        "name" : "DSS",
+        "units" : "DEG C"
+      },
+      "units" : [ "\u00B0C" ]
+    }, {
+      "@type" : "WQBoundaryCondition",
+      "boundaryRef" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 133,
+        "id" : 12,
+        "jnctId" : 3,
+        "name" : "SF AMR NR Pilot Hill - CBR Flow",
+        "type" : "LOCAL_INFLOW"
+      },
+      "constituentId" : 1,
+      "dataSources" : [ {
+        "@type" : "TableData",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "dates" : [ ],
+        "description" : "",
+        "name" : "Table Data",
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "DSS File Path" : "shared\\American_inflow_temps.dss",
+        "DSS Path" : "/11446030/SF American temp/TEMP-WATER//1Hour/USGS-CARDNO/",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
+        "description" : "",
+        "name" : "DSS",
+        "units" : "DEG C"
+      }, {
+        "@type" : "ExcelData",
+        "availableUnits" : [ ],
+        "bottomRow" : 0,
+        "compType" : 2,
+        "description" : "",
+        "name" : "Excel Worksheet",
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      }, {
+        "@type" : "ConstantData",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "Constant Value",
+        "value" : "-Infinity"
+      }, {
+        "@type" : "AmbientData",
+        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "Ambient Value"
+      } ],
+      "selectedDataSource" : {
+        "@type" : "DssData",
+        "DSS File Path" : "shared\\American_inflow_temps.dss",
+        "DSS Path" : "/11446030/SF American temp/TEMP-WATER//1Hour/USGS-CARDNO/",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
+        "description" : "",
+        "name" : "DSS",
+        "units" : "DEG C"
+      },
+      "units" : [ "\u00B0C" ]
+    } ],
+    "description" : "",
+    "name" : "Temp8-----0:BCS_Net6"
+  },
+  "version" : 1
+}

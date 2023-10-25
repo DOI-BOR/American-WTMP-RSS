@@ -1,0 +1,289 @@
+{
+  "id" : 9,
+  "name" : "Temp4-----0:AMR_Mather",
+  "description" : "",
+  "metdatablending" : false,
+  "stations" : [ {
+    "name" : "Mather",
+    "active" : true,
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [ 6774708.455378069, 1980234.0060254696 ]
+    },
+    "variables" : [ {
+      "@type" : "AtmosphericPressure",
+      "selectedDataSourceName" : "Constant Value",
+      "dataSources" : [ {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "units" : "atm",
+        "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
+        "compType" : 2,
+        "value" : 1.0
+      }, {
+        "@type" : "TableData",
+        "values" : [ ],
+        "dates" : [ ],
+        "name" : "Table Data",
+        "description" : "",
+        "units" : null,
+        "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
+        "compType" : 2
+      }, {
+        "@type" : "DssData",
+        "compType" : 0,
+        "name" : "DSS",
+        "description" : "",
+        "units" : null,
+        "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
+        "DSS Path" : "",
+        "DSS File Path" : null
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
+        "compType" : 2,
+        "worksheetName" : "",
+        "timeColumn" : "",
+        "valueColumn" : "",
+        "topRow" : 0,
+        "bottomRow" : 0
+      }, {
+        "@type" : "ElevationData",
+        "name" : "Elevation",
+        "description" : "",
+        "availableUnits" : [ "ft", "m" ],
+        "compType" : 2,
+        "elevation" : 0.0
+      } ]
+    }, {
+      "@type" : "AirTemperature",
+      "selectedDataSourceName" : "DSS",
+      "dataSources" : [ {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "availableUnits" : [ "deg C", "deg F" ],
+        "compType" : 2,
+        "value" : "-Infinity"
+      }, {
+        "@type" : "TableData",
+        "values" : [ ],
+        "dates" : [ ],
+        "name" : "Table Data",
+        "description" : "",
+        "units" : null,
+        "availableUnits" : [ "deg C", "deg F" ],
+        "compType" : 2
+      }, {
+        "@type" : "DssData",
+        "compType" : 2,
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
+        "availableUnits" : [ "deg C", "deg F" ],
+        "DSS Path" : "/W2:MET.NPT/WB 1 MET/TAIR//1HOUR/FROM_NPT_SHASTA/",
+        "DSS File Path" : "shared\\MetFake.dss"
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ "deg C", "deg F" ],
+        "compType" : 2,
+        "worksheetName" : "",
+        "timeColumn" : "",
+        "valueColumn" : "",
+        "topRow" : 0,
+        "bottomRow" : 0
+      } ]
+    }, {
+      "@type" : "Humidity",
+      "selectedDataSourceName" : "DSS",
+      "dataSources" : [ {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
+        "compType" : 2,
+        "value" : "-Infinity"
+      }, {
+        "@type" : "TableData",
+        "values" : [ ],
+        "dates" : [ ],
+        "name" : "Table Data",
+        "description" : "",
+        "units" : null,
+        "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
+        "compType" : 2
+      }, {
+        "@type" : "DssData",
+        "compType" : 2,
+        "name" : "DSS",
+        "description" : "",
+        "units" : "%",
+        "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
+        "DSS Path" : "/W2:MET.NPT/SHASTA/HUMIDITY//1HOUR/DERIVED/",
+        "DSS File Path" : "shared\\MetFake.dss"
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
+        "compType" : 2,
+        "worksheetName" : "",
+        "timeColumn" : "",
+        "valueColumn" : "",
+        "topRow" : 0,
+        "bottomRow" : 0
+      } ]
+    }, {
+      "@type" : "ShortWaveRadiation",
+      "selectedDataSourceName" : "DSS",
+      "dataSources" : [ {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
+        "compType" : 2,
+        "value" : "-Infinity"
+      }, {
+        "@type" : "TableData",
+        "values" : [ ],
+        "dates" : [ ],
+        "name" : "Table Data",
+        "description" : "",
+        "units" : null,
+        "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
+        "compType" : 2
+      }, {
+        "@type" : "DssData",
+        "compType" : 2,
+        "name" : "DSS",
+        "description" : "",
+        "units" : "W/m2",
+        "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
+        "DSS Path" : "/W2:MET.NPT/WB 1 MET/SRO//1HOUR/FROM_NPT_SHASTA/",
+        "DSS File Path" : "shared\\MetFake.dss"
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
+        "compType" : 2,
+        "worksheetName" : "",
+        "timeColumn" : "",
+        "valueColumn" : "",
+        "topRow" : 0,
+        "bottomRow" : 0
+      }, {
+        "@type" : "LatLongData",
+        "longitude" : -121.33,
+        "latitude" : 38.5,
+        "nearestMeridian" : -120,
+        "name" : "Lat-Long",
+        "description" : "",
+        "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
+        "compType" : 2,
+        "dustCoefficient" : 0.04,
+        "interval" : 60.0
+      } ]
+    }, {
+      "@type" : "Cloudiness",
+      "selectedDataSourceName" : "DSS",
+      "dataSources" : [ {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "availableUnits" : [ "Fraction, 0-1" ],
+        "compType" : 2,
+        "value" : "-Infinity"
+      }, {
+        "@type" : "TableData",
+        "values" : [ ],
+        "dates" : [ ],
+        "name" : "Table Data",
+        "description" : "",
+        "units" : null,
+        "availableUnits" : [ "Fraction, 0-1" ],
+        "compType" : 2
+      }, {
+        "@type" : "DssData",
+        "compType" : 2,
+        "name" : "DSS",
+        "description" : "",
+        "units" : "0-10",
+        "availableUnits" : [ "Fraction, 0-1" ],
+        "DSS Path" : "/W2:MET.NPT/WB 1 MET/CLOUD//1HOUR/FROM_NPT_SHASTA/",
+        "DSS File Path" : "shared\\MetFake.dss"
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ "Fraction, 0-1" ],
+        "compType" : 2,
+        "worksheetName" : "",
+        "timeColumn" : "",
+        "valueColumn" : "",
+        "topRow" : 0,
+        "bottomRow" : 0
+      }, {
+        "@type" : "ObservedData",
+        "name" : "Compute from ObsSW and Lat-Long",
+        "description" : "",
+        "availableUnits" : [ "Fraction, 0-1" ],
+        "compType" : 2
+      } ]
+    }, {
+      "@type" : "WindSpeed",
+      "selectedDataSourceName" : "DSS",
+      "dataSources" : [ {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
+        "compType" : 2,
+        "value" : "-Infinity"
+      }, {
+        "@type" : "TableData",
+        "values" : [ ],
+        "dates" : [ ],
+        "name" : "Table Data",
+        "description" : "",
+        "units" : null,
+        "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
+        "compType" : 2
+      }, {
+        "@type" : "DssData",
+        "compType" : 2,
+        "name" : "DSS",
+        "description" : "",
+        "units" : "m/s",
+        "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
+        "DSS Path" : "/W2:MET.NPT/WB 1 MET/WS//1HOUR/FROM_NPT_SHASTA/",
+        "DSS File Path" : "shared\\MetFake.dss"
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
+        "compType" : 2,
+        "worksheetName" : "",
+        "timeColumn" : "",
+        "valueColumn" : "",
+        "topRow" : 0,
+        "bottomRow" : 0
+      } ]
+    } ],
+    "id" : 24,
+    "description" : "Not the real Mather Field met station",
+    "longitude" : -121.33,
+    "latitude" : 38.5,
+    "nearestMeridian" : -120,
+    "referenceElevation" : 0.0,
+    "observed" : false,
+    "metStation" : true
+  } ],
+  "dataBlending" : false
+}

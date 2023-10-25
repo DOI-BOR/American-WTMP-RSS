@@ -1,0 +1,6 @@
+**/*.bak
+**/*.bak.*
+**/*.log
+**/*.wqEngineLog
+**/*.h5
+**/simulation.dss

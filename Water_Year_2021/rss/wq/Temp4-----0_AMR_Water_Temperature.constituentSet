@@ -1,0 +1,24 @@
+{
+  "index" : 43,
+  "name" : "Temp4-----0:AMR_Water_Temperature",
+  "description" : "",
+  "ressimVersion" : "6.0.0.160R",
+  "version" : 1,
+  "set" : {
+    "name" : "Temp4-----0:AMR_Water_Temperature",
+    "description" : "",
+    "constituentList" : [ {
+      "@type" : "WQConstituent",
+      "name" : "Water_Temperature",
+      "id" : 1,
+      "displayName" : "Water Temperature",
+      "unit" : "\u00B0C",
+      "libraryName" : "Temperature",
+      "referenceValue" : 9.0,
+      "isInjected" : false,
+      "isEvaporated" : true,
+      "isAdvected" : true
+    } ]
+  },
+  "lastModifiedTime" : 1646864451845
+}

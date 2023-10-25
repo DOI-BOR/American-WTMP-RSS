@@ -1,0 +1,52 @@
+TSDataSet Name=WQForecast0:WQForecastObs
+Description=Copy of Copy of Flow-only alt on AMR_Net_7 (Observed TS Data Set)
+
+_type=0
+ParentPath=null
+ParentClass=null
+TSRecord=0
+TSRecord Name=~N21
+TSRecord VariableId=0
+TSRecord ParamName=Flow
+TSRecord DssFilename=
+TSRecord DssPathname=///////
+TSRecord InputPosition=-1
+TSRecord End=
+
+TSRecord=1
+TSRecord Name=~E1:F
+TSRecord VariableId=10
+TSRecord ParamName=Elev
+TSRecord DssFilename=shared/Folsom_data.dss
+TSRecord DssPathname=/FOLSOM RESERVOIR/Level/ELEV//1Hour/CDEC-CARDNO/
+TSRecord InputPosition=-1
+TSRecord End=
+
+TSRecord=2
+TSRecord Name=~E1:F
+TSRecord VariableId=11
+TSRecord ParamName=Stor
+TSRecord DssFilename=shared/Folsom_data.dss
+TSRecord DssPathname=/FOLSOM RESERVOIR/Storage/STORAGE//1Hour/CDEC-CARDNO/
+TSRecord InputPosition=-1
+TSRecord End=
+
+TSRecord=3
+TSRecord Name=~E10:F
+TSRecord VariableId=10
+TSRecord ParamName=Elev
+TSRecord DssFilename=shared/Natoma_data.dss
+TSRecord DssPathname=/NATOMA/NATOMA POOL/ELEV//1Hour/CDEC-CARDNO/
+TSRecord InputPosition=-1
+TSRecord End=
+
+TSRecord=4
+TSRecord Name=~E10:F
+TSRecord VariableId=11
+TSRecord ParamName=Stor
+TSRecord DssFilename=shared/Natoma_data.dss
+TSRecord DssPathname=/NATOMA/NATOMA POOL/STOR//1Hour/CDEC-CARDNO/
+TSRecord InputPosition=-1
+TSRecord End=
+
+
