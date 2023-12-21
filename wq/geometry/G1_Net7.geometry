@@ -8,7 +8,6 @@
   "crossSectionManagerId" : 40,
   "lastModifiedTime" : 1677266985104,
   "networkId" : 144,
-  "ressimVersion" : "6.0.0.171R",
   "rssWqGeometry" : {
     "@type" : "RssWQGeometry",
     "id" : 158,

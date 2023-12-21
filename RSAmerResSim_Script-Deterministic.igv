@@ -1,4 +1,4 @@
-ModifiedTime=1698174526915
+ModifiedTime=1702583377234
 GVDataSet Name=WQForecast-ResSim_Script-Deterministic
 Description=Copy of Copy of Flow-only alt on AMR_Net_7 (GV Data Set for ResSim_Script-Deterministic)
 
@@ -206,7 +206,7 @@ GVRecord=SCALAR
 GVRecord Name=Downstream_Control_Loc
 GVRecord ID=37
 GVRecord DssFilename=rss/RSAmerResSim_Script-Deterministic_igv.dss
-GVRecord DssPathname=//Downstream_Control_Loc///Integer/WQForecast-ResSim_Script-Deterministic/
+GVRecord DssPathname=//Downstream_Control_Loc///Integer/RSAmer-ResSim_Script-Deterministic/
 GVRecord DataLocation=false
 GVRecord LinkedLocation=
 GVRecord LinkedModel=
@@ -217,6 +217,16 @@ GVRecord Name=FairOaks_Equilibrium_Temp
 GVRecord ID=36
 GVRecord DssFilename=shared/FairOaks_equilibrium_temp.dss
 GVRecord DssPathname=//FAIR OAKS/TEMP-EQUILIBRIUM//1Hour/DERIVED/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Lower_Riv_out_flow
+GVRecord ID=39
+GVRecord DssFilename=shared/Folsom_releases_6.dss
+GVRecord DssPathname=/FOLSOM/SUM LOWER RIVER OUTLETS/FLOW//1HOUR/CDEC-CARDNO-MIN8/
 GVRecord DataLocation=false
 GVRecord LinkedLocation=
 GVRecord LinkedModel=

@@ -8,6 +8,7 @@ globalVarNameLowerRivFlowForecast = 'Lower_Riv_out_forecast_flow'
 # Script constants
 lastIterationPassNum = 2
 
+
 #######################################################################################################
 def initRuleScript(currentRule, network):
 
@@ -23,24 +24,16 @@ def initRuleScript(currentRule, network):
 
 
 #######################################################################################################
-# Get the WQSubdomain object from the reservoir using the current rule
-def getReservoirWQSubdomain(currentRule, network):
-    resOp = currentRule.getController().getReservoirOp()
-    res = resOp.getReservoirElement()
-    wqRun = network.getRssRun().getWQRun()
-    rssWQGeometry = wqRun.getRssWQGeometry()
-    resWQGeoSubdom = rssWQGeometry.getSubdomForRSSElemId(res.getIndex())
-    return resWQGeoSubdom
-
-
-#######################################################################################################
 # This checks whether we should be applying this rule in a given simulation
+# Needs to have WQ running and the reservoir in the active WQ geometry
 def checkApplyRule(currentRule, network):
-    wqRun = network.getRssRun().getWQRun()
+    wqRun = network.getWQRun()
     if not wqRun:
         return False
     rssWQGeometry = wqRun.getRssWQGeometry()
-    resWQGeoSubdom = getReservoirWQSubdomain(currentRule, network)
+    resOp = currentRule.getController().getReservoirOp()
+    res = resOp.getReservoirElement()
+    resWQGeoSubdom = rssWQGeometry.getWQSubdomain(res)
     return rssWQGeometry.isInExtent(resWQGeoSubdom)
 
 

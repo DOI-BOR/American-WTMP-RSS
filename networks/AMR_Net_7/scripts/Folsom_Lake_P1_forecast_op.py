@@ -16,7 +16,7 @@ endOpDate = date(3000, 11, 1)  # Nov 1st
 raiseOpDate = date(3000, 3, 1)  # Mar 1st raise shutters to top
 useRiverOutletDate = date(3000, 9, 1)  # Sep 1st can use Lower River Outlets
 temperatureThreshold = 0.75
-maxViolationDays = 6
+maxViolationDays = 5
 checkOpHour = 12  # Hour to do operations check
 debugOutput = False
 # Variable names
@@ -32,10 +32,13 @@ globalVarNameLowerRivFlowHist = 'Lower_Riv_out_flow'
 globalVarNameLowerRivFlowForecast = 'Lower_Riv_out_forecast_flow'
 stateVarNameViolations = 'Temp_Target_Violations'
 # Script constants
-temperatureConstitId = 1
 lastIterationPassNum = 2
 lowFlowThreshold = 0.1
 temperatureDiffThreshold = 0.1    # avoid dividing by zero when reservoir close to isothermal and need to split flows
+# Operation variables
+withdrawalPtOffset = 8.9  # in feet - distance to move withdrawal pt above shutter invert
+resElevBufr = 27.  # head needed above shutter invert (ft)
+maxPenstockFlow = 2889.  # cfs
 
 
 #######################################################################################################
@@ -56,14 +59,15 @@ def getOperableShutterElevIndexes():
 
 
 #######################################################################################################
-# Get the WQSubdomain object from the reservoir using the current rule
-def getReservoirWQSubdomain(currentRule, network):
-    resOp = currentRule.getController().getReservoirOp()
-    res = resOp.getReservoirElement()
-    wqRun = network.getRssRun().getWQRun()
-    rssWQGeometry = wqRun.getRssWQGeometry()
-    resWQGeoSubdom = rssWQGeometry.getSubdomForRSSElemId(res.getIndex())
-    return resWQGeoSubdom
+# Get the distance downstream for a given temperature control point (in feet)
+def getDownstreamDistance(controlPtInt):
+    dsDistDict = {1: 71000.,  # Watt Ave Bridge
+                  2: 50000.}  # William Pond Park
+    try:
+        dist = dsDistDict[controlPtInt]
+    except KeyError:
+        raise NotImplementedError('Downstream location index ' + str(controlPtInt) + ' not recognized.')
+    return dist
 
 
 #######################################################################################################
@@ -80,38 +84,34 @@ def initRuleScript(currentRule, network):
     # WQ is being simulated
     else:
         # Reallocate WQCD geometry in WQ Engine to move withdrawal centerline higher
-        offset = 8.9
         elevs = getShutterElevs()
         nLevels = len(elevs)
-        isRect = []
-        heights = []
-        widths = []
-        diameters = []
         for k in range(nLevels):
             if k > 0:  # don't adjust lowest level because of penstock intakes
-                elevs[k] += offset
-            isRect.append(True)
-            heights.append(0.)
-            widths.append(0.)
-            diameters.append(0.)
-        resOp = currentRule.getController().getReservoirOp()
-        releaseElemId = resOp.getWQCDReleaseElemId(currentRule)
+                elevs[k] += withdrawalPtOffset
         wqRun = network.getRssRun().getWQRun()
-        engineAdapter = wqRun.getWqEngineAdapter()
-        resWQGeoSubdom = getReservoirWQSubdomain(currentRule, network)
-        engineAdapter.reallocateWQControlDeviceData(resWQGeoSubdom, releaseElemId, nLevels, elevs, isRect, heights, widths, diameters)
+        rssWQGeometry = wqRun.getRssWQGeometry()
+        resOp = currentRule.getController().getReservoirOp()
+        res = resOp.getReservoirElement()
+        resWQGeoSubdom = rssWQGeometry.getWQSubdomain(res)
+        wqcd = rssWQGeometry.getWQControlDevice(currentRule.getController().getReleaseElement())
+        engineAdapter = wqRun.getWQEngineAdapter()
+        engineAdapter.reallocateWQControlDeviceElevs(resWQGeoSubdom, wqcd, nLevels, elevs)
 
     return Constants.TRUE
 
 
 #######################################################################################################
 # This checks whether we should be applying this rule in a given simulation
+# Needs to have WQ running and the reservoir in the active WQ geometry
 def checkApplyRule(currentRule, network):
-    wqRun = network.getRssRun().getWQRun()
+    wqRun = network.getWQRun()
     if not wqRun:
         return False
     rssWQGeometry = wqRun.getRssWQGeometry()
-    resWQGeoSubdom = getReservoirWQSubdomain(currentRule, network)
+    resOp = currentRule.getController().getReservoirOp()
+    res = resOp.getReservoirElement()
+    resWQGeoSubdom = rssWQGeometry.getWQSubdomain(res)
     return rssWQGeometry.isInExtent(resWQGeoSubdom)
 
 
@@ -125,7 +125,7 @@ def runRuleScript(currentRule, network, currentRuntimestep):
 
     if evalRule:
         # Get temperature target
-        wqTarget = getTargetWQ(network, currentRuntimestep)
+        wqTarget = getGVTemperature(network, currentRuntimestep, globalVarNameTempTarget)
 
         # Get reservoir elevation
         resOp = currentRule.getController().getReservoirOp()
@@ -152,12 +152,12 @@ def runRuleScript(currentRule, network, currentRuntimestep):
 
 #######################################################################################################
 # Check whether a value is valid
-def isValidValue(value):
+def isValidValue(value, checkZero=True):
     if value is None:
         return False
     elif value == Constants.UNDEFINED_DOUBLE:
         return False
-    elif value < 0.:
+    elif checkZero and value < 0.:
         return False
     else:
         return True
@@ -178,14 +178,16 @@ def getReleaseInfo(currentRule, network, currentRuntimestep, resElev, usePrevSte
     resOp = currentRule.getController().getReservoirOp()
     res = resOp.getReservoirElement()
 
-    wqRun = network.getRssRun().getWQRun()
-    engineAdapter = wqRun.getWqEngineAdapter()
-    resWQGeoSubdom = getReservoirWQSubdomain(currentRule, network)
-    sdId = resWQGeoSubdom.getId()
+    wqRun = network.getWQRun()
+    engineAdapter = wqRun.getWQEngineAdapter()
+    rssWQGeometry = wqRun.getRssWQGeometry()
+    resWQGeoSubdom = rssWQGeometry.getWQSubdomain(res)
+    tempConstit = wqRun.getWQConstituent("Water Temperature")
 
     # Non-powerhouse flows and temperatures
     qNonPH = 0.
     tempNonPH = 0.
+    tempLowRiv = 0.
 
     for outletName, outletElev in outletDict.items():
         if 'Lower River' in outletName:
@@ -207,7 +209,7 @@ def getReleaseInfo(currentRule, network, currentRuntimestep, resElev, usePrevSte
             qNonPH += flow
             
         if flow > lowFlowThreshold:
-            temp = engineAdapter.getConstitResultForFlowElev(sdId, temperatureConstitId, flow, outletElev)
+            temp = engineAdapter.getWQResultForReleaseAtElev(resWQGeoSubdom, tempConstit, flow, outletElev)
             if temp > 100. or temp < 0.:
                 message = "Temperature outside of range (0,100) for flow " + str(flow) + " elevation " + str(outletElev) + " temperature " + str(temp)
                 raise ValueError(message)
@@ -232,7 +234,7 @@ def getReleaseInfo(currentRule, network, currentRuntimestep, resElev, usePrevSte
         qLeakage = qPowerhouse
     qPowerhouse = qPowerhouse - qLeakage
     if qLeakage > lowFlowThreshold:
-        tempLeakage = engineAdapter.getConstitResultForFlowElev(sdId, temperatureConstitId, qLeakage, leakageElev)
+        tempLeakage = engineAdapter.getWQResultForReleaseAtElev(resWQGeoSubdom, tempConstit, qLeakage, leakageElev)
         if tempLeakage > 100. or tempLeakage < 0.:
             message = "Temperature outside of range (0,100) for flow " + str(qLeakage) + " elevation " + str(leakageElev) + " temperature " + str(tempLeakage)
             raise ValueError(message)
@@ -244,16 +246,20 @@ def getReleaseInfo(currentRule, network, currentRuntimestep, resElev, usePrevSte
 
 #######################################################################################################
 # Get the water quality target value by looking for the global variable timeseries
-def getTargetWQ(network, currentRuntimestep):
+def getGVTemperature(network, currentRuntimestep, gvName):
 
-    globVar = network.getGlobalVariable(globalVarNameTempTarget)
+    globVar = network.getGlobalVariable(gvName)
     if not globVar:
-        raise NameError("Global variable: " + globalVarNameTempTarget + " not found.")
+        raise NameError("Global variable: " + gvName + " not found.")
 
-    target = globVar.getCurrentValue(currentRuntimestep)
-    if not isValidValue(target):
-        raise ValueError("Global variable: " + globalVarNameTempTarget + " has invalid value " +
-                         str(target) + " for time step: " + str(currentRuntimestep.step))
+    temp = globVar.getCurrentValue(currentRuntimestep)
+    if gvName == globalVarNameEquilibTemp:
+        validVal = isValidValue(temp, checkZero=False)
+    else:
+        validVal = isValidValue(temp, checkZero=True)
+    if not validVal:
+        raise ValueError("Global variable: " + gvName + " has invalid value " +
+                         str(temp) + " for time step: " + str(currentRuntimestep.step))
 
     # Units conversion
     if type(globVar) is TimeSeriesGlobalVariable:
@@ -264,18 +270,18 @@ def getTargetWQ(network, currentRuntimestep):
         else:
             convert2C = True
     elif type(globVar) is ScalarGlobalVariable:
-        if target > 32.:
+        if temp > 32.:
             convert2C = True
         else:
             convert2C = False
     else:
-        raise NotImplementedError("Only Scalar and Time Series Global Variable types supported for Water Quality Target")
+        raise NotImplementedError("Only Scalar and Time Series Global Variable types supported for Temperature Inputs")
 
     if convert2C:
-        targetDegC = (target - 32.) * 5./9.
+        tempDegC = (temp - 32.) * 5./9.
     else:
-        targetDegC = target
-    return targetDegC
+        tempDegC = temp
+    return tempDegC
 
 
 #######################################################################################################
@@ -493,7 +499,7 @@ def splitFlowEvenly(totalPSFlow):
 
 #######################################################################################################
 # Try to put all penstock flow through lower penstock(s)
-def putFlowLowest(totalPSFlow, maxPenstockFlow, p1Elev, p2Elev, p3Elev):
+def putFlowLowest(totalPSFlow, p1Elev, p2Elev, p3Elev):
     if debugOutput: network.printMessage("Putting flow lowest")
     if p1Elev == p2Elev:
         avgFlow = totalPSFlow / 2.
@@ -515,7 +521,7 @@ def putFlowLowest(totalPSFlow, maxPenstockFlow, p1Elev, p2Elev, p3Elev):
 
 #######################################################################################################
 # Try to put all penstock flow through upper penstock(s)
-def putFlowHighest(totalPSFlow, maxPenstockFlow, p1Elev, p2Elev, p3Elev):
+def putFlowHighest(totalPSFlow, p1Elev, p2Elev, p3Elev):
     if debugOutput: network.printMessage("Putting flow highest")
     if p1Elev == p2Elev:
         p3Flow = min(totalPSFlow, maxPenstockFlow)
@@ -537,7 +543,7 @@ def putFlowHighest(totalPSFlow, maxPenstockFlow, p1Elev, p2Elev, p3Elev):
 
 #######################################################################################################
 # Try to put all penstock flow through upper penstock(s)
-def splitFlow(totalPSFlow, lowerFlow, maxPenstockFlow, p1Elev, p2Elev, p3Elev):
+def splitFlow(totalPSFlow, lowerFlow, p1Elev, p2Elev, p3Elev):
     if debugOutput: network.printMessage("Splitting flow based on temperature")
     upperFlow = totalPSFlow - lowerFlow
     if p1Elev == p2Elev:
@@ -577,7 +583,7 @@ def splitFlow(totalPSFlow, lowerFlow, maxPenstockFlow, p1Elev, p2Elev, p3Elev):
 
 #######################################################################################################
 # Calculate flow through each penstocks with a fixed shutter operation
-def operateForFixedShutters(totalPSFlow, maxPenstockFlow, p1Elev, p2Elev, p3Elev, wqTarget, opElevs, shutterLevelTemps):
+def operateForFixedShutters(totalPSFlow, p1Elev, p2Elev, p3Elev, wqTarget, opElevs, shutterLevelTemps):
     if debugOutput: network.printMessage("Operating For Fixed Shutter Elevations")
     if p1Elev == p2Elev and p2Elev == p3Elev:
         [p1Flow, p2Flow, p3Flow] = splitFlowEvenly(totalPSFlow)
@@ -588,12 +594,12 @@ def operateForFixedShutters(totalPSFlow, maxPenstockFlow, p1Elev, p2Elev, p3Elev
             [p1Flow, p2Flow, p3Flow] = splitFlowEvenly(totalPSFlow)
         else:
             if wqTarget < t1:
-                [p1Flow, p2Flow, p3Flow] = putFlowLowest(totalPSFlow, maxPenstockFlow, p1Elev, p2Elev, p3Elev)
+                [p1Flow, p2Flow, p3Flow] = putFlowLowest(totalPSFlow, p1Elev, p2Elev, p3Elev)
             elif wqTarget > t3:
-                [p1Flow, p2Flow, p3Flow] = putFlowHighest(totalPSFlow, maxPenstockFlow, p1Elev, p2Elev, p3Elev)
+                [p1Flow, p2Flow, p3Flow] = putFlowHighest(totalPSFlow, p1Elev, p2Elev, p3Elev)
             else:
                 lowerFlow = totalPSFlow * (wqTarget - t3) / (t1 - t3)
-                [p1Flow, p2Flow, p3Flow] = splitFlow(totalPSFlow, lowerFlow, maxPenstockFlow, p1Elev, p2Elev, p3Elev)
+                [p1Flow, p2Flow, p3Flow] = splitFlow(totalPSFlow, lowerFlow, p1Elev, p2Elev, p3Elev)
     return [p1Flow, p2Flow, p3Flow]
 
 
@@ -610,7 +616,7 @@ def calcOutletTemp(p1Flow, p2Flow, p3Flow, p1Elev, p2Elev, p3Elev, opElevs, shut
 
 #######################################################################################################
 # Return highest available shutter level for a reservoir elevation
-def getHighestLevel(resElev, opElevs, resElevBufr):
+def getHighestLevel(resElev, opElevs):
     highestLevel = opElevs[0]
     for k in range(len(opElevs)):
         if opElevs[k] < resElev + resElevBufr:
@@ -654,43 +660,32 @@ def getLowFlowSplit(totalPSFlow):
 
 
 #######################################################################################################
+# Calculate lower river - penstock flow split
+def splitFlowLowRiver(qPowerhouse, qLeakage, psTemp, roTemp, backRoutedWqTarget, tempLeakage):
+    if psTemp - roTemp < temperatureDiffThreshold:
+        # Penstocks and lower river are the same temperature
+        # Put all through the penstocks (assume late in season and not limited by ps max capacity)
+        [p1Flow, p2Flow, p3Flow] = splitFlowEvenly(qPowerhouse)
+        qLowRiver = 0.
+    else:
+        qPHAll = qPowerhouse + qLeakage
+        # Modify the temp at the dam to account for ps leakage
+        wqTargetNew = backRoutedWqTarget * qPHAll / qPowerhouse - tempLeakage * qLeakage / qPowerhouse
+        if debugOutput: network.printMessage('Modified temp for lower river outlet calc: ' + str(wqTargetNew))
+        qLowRiver = qPowerhouse * (wqTargetNew - psTemp) / (roTemp - psTemp)
+        qLowRiver = min(qPowerhouse, max(qLowRiver, 0))  # clip
+        qPH = qPowerhouse - qLowRiver
+        [p1Flow, p2Flow, p3Flow] = splitFlowEvenly(qPH)
+        
+    return [p1Flow, p2Flow, p3Flow, qLowRiver]
+
+
+#######################################################################################################
 def getDSControlLoc(network):
     gv = network.getGlobalVariable(globalVarNameDSControlLoc)
     if not gv:
         raise NameError("Global variable: " + globalVarNameDSControlLoc + " not found.")
     return gv.getValue()
-
-
-#######################################################################################################
-def getEquilibriumTemp(network, rts):
-
-    gv = network.getGlobalVariable(globalVarNameEquilibTemp)
-    if not gv:
-        raise NameError("Global variable: " + globalVarNameEquilibTemp + " not found.")
-
-    value = gv.getCurrentValue(rts)
-
-	# Units conversion
-    if type(gv) is TimeSeriesGlobalVariable:
-        tsc = gv.getTimeSeriesContainer()
-        units = tsc.getUnits()
-        if 'c' in units.lower():
-            convert2C = False
-        else:
-            convert2C = True
-    elif type(gv) is ScalarGlobalVariable:
-        if value > 32.:
-            convert2C = True
-        else:
-            convert2C = False
-    else:
-        raise NotImplementedError("Only Scalar and Time Series Global Variable types supported for Water Quality Target")
-
-    if convert2C:
-        valDegC = (value - 32.) * 5./9.
-    else:
-        valDegC = value
-    return valDegC
 
 
 #######################################################################################################
@@ -725,8 +720,8 @@ def getNatomaAvgTemp(network):
 
     wqRun = network.getRssRun().getWQRun()
     rssWQGeometry = wqRun.getRssWQGeometry()
-    resWQGeoSubdom = rssWQGeometry.getSubdomForRSSElemId(natElem.getIndex())
-    engineAdapter = wqRun.getWqEngineAdapter()
+    resWQGeoSubdom = rssWQGeometry.getWQSubdomain(natElem)
+    engineAdapter = wqRun.getWQEngineAdapter()
     layerTemps = engineAdapter.getReservoirLayerTemperatures(resWQGeoSubdom)
     nLayers = len(layerTemps)
     layerVols = engineAdapter.getHydroResult(resWQGeoSubdom.getId(), WqIoHydroType.CELL_VOLUME.id,
@@ -745,20 +740,20 @@ def backRouteWQTarget(network, currentRuntimestep, totalFolsomRelease):
 
     # Get the downstream control location
     loc = getDSControlLoc(network)
-    if loc == 1:  # Watt Ave Bridge
-        downstreamDistance = 71000.  # in feet
-    elif loc == 2:  # William Pond Park
-        downstreamDistance = 50000.  # in feet
-    else:
-        raise NotImplementedError('Downstream location index ' + str(loc) + ' not recognized.')
+    downstreamDistance = getDownstreamDistance(loc)
+
+    # Constants for heat exchange during routing
+    Kcoef = 1.1  # velocity as a function of flow
+    alpha = 0.47  # velocity as a function of flow
+    natConPoolVol = 21000. * 43560.  # cubic feet, assumed this is top of conservation
+    multiplier = 24.  # Inflow more important than CSTR assumption because of where inflow enters vertically
+    exchCoef = 0.0135  # exchange rate between atmosphere and river temp
 
     # Power law approximation for velocity in the Sacramento River
     natomaFlow = getNatomaOutflow(network, currentRuntimestep)
     if debugOutput: network.printMessage('Natoma outflow: ' + str(natomaFlow))
-    Kcoef = 1.1
-    alpha = 0.47
-    #velocity = Kcoef * (natomaFlow / 1000)**alpha  # power law approximation
     velocity = Kcoef * (totalFolsomRelease / 1000)**alpha  # power law approximation
+    
     # Calculate travel time in model steps
     travTime = downstreamDistance / velocity
     deltaT = currentRuntimestep.getTimeStepSeconds()
@@ -767,16 +762,13 @@ def backRouteWQTarget(network, currentRuntimestep, totalFolsomRelease):
 
     futureRts = RunTimeStep()
     futureRts.setStep(min(currentRuntimestep.getStep() + travTimeSteps, currentRuntimestep.getTotalNumSteps()-1))
-    targetTempFuture = getTargetWQ(network, futureRts)
+    targetTempFuture = getGVTemperature(network, futureRts, globalVarNameTempTarget)
 
     # Get Natoma pool information
     flowVol = totalFolsomRelease * deltaT
-    natConPoolVol = 21000. * 43560.  # cubic feet, assumed this is top of conservation
     natFraction = flowVol / natConPoolVol
-    multiplier = 24.  # Inflow more important than CSTR assumption because of where inflow enters vertically
     natFraction = min(natFraction * multiplier, 1.)
     natomaResAvgTemp = getNatomaAvgTemp(network)
-    exchCoef = 0.0135  # exchange rate between atmosphere and river temp
     #tSearchMin = 5.  # min temp (deg C) to search for outflow temp from Shasta to meet DS target
     #tSearchMax = 25.
     tSearchMin = natomaResAvgTemp - 4.
@@ -792,8 +784,8 @@ def backRouteWQTarget(network, currentRuntimestep, totalFolsomRelease):
         # Route downstream
         deltaTempStr = str(t) + ','
         for k in range(travTimeSteps):
-            futureRts.setStep(currentRuntimestep.getStep() + k)
-            eqTemp = getEquilibriumTemp(network, futureRts)
+            futureRts.setStep(min(currentRuntimestep.getStep() + k,currentRuntimestep.getTotalNumSteps()-1))
+            eqTemp = getGVTemperature(network, futureRts, globalVarNameEquilibTemp)
             deltaTemp = (eqTemp - t) * exchCoef
             t += deltaTemp
             deltaTempStr += str(t) + ','
@@ -832,75 +824,6 @@ def backRouteWQTarget(network, currentRuntimestep, totalFolsomRelease):
         else:
             network.printMessage('Target Temperature Downstream' + str(targetTempFuture))
             raise ValueError('Outlet temperature not bracketed')
-
-    return targetTemp
-
-
-#######################################################################################################
-# Simple linear interpolation without numpy
-# xa must be monotonically increasing
-def simpleInterp(xa, ya, x):
-
-    if x < xa[0]:
-        return xa[0]
-    if x > xa[-1]:
-        return xa[-1]
-    for i, xi in enumerate(xa):
-        if xi >= x:
-            break
-    x1 = xa[i-1]
-    y1 = ya[i-1]
-    x2 = xa[i]
-    y2 = ya[i]
-    m = (x - x1) / (x2 - x1)
-    return y1 + m * (y2 - y1)
-
-
-#######################################################################################################
-# Get regression coefficients for Cardno downstream routing method
-def getCoefsForJulianDay(currentRuntimestep):
-
-    curTime = currentRuntimestep.getHecTime()
-    pyTime = date(curTime.year(), curTime.month(), curTime.day())
-    jan1st = date(curTime.year(), 1, 1)
-    julDay = pyTime.toordinal() - jan1st.toordinal()
-
-    # replicated first and last entries to wrap around for middle of month interpolation
-    const = [-1.351, 1.819, 3.539, 4.987, 8.855, 11.864, 12.620, 13.090, 16.901, 15.261, 2.758, -1.820, -1.351, 1.819]
-    A = [0.168, 0.113, 0.205, 0.169, 0.158, 0.139, 0.086, 0.049, 0.073, 0.183, 0.240, 0.231, 0.168, 0.113]
-    B = [0.686, 0.733, 0.775, 0.961, 0.719, 0.742, 0.801, 0.682, 0.623, 0.455, 0.668, 0.829, 0.686, 0.733]
-    C = [1.786, -0.148, -1.499, -2.513, -3.035, -4.372, -4.437, -3.293, -5.222, -4.509, -0.345, 0.704, 1.786, -0.148]
-    x = [-15., 15., 46., 74., 105., 135., 166., 196., 227., 258., 288., 319., 349., 380.]
-
-    const1 = simpleInterp(x, const, float(julDay))
-    A1 = simpleInterp(x, A, julDay)
-    B1 = simpleInterp(x, B, julDay)
-    C1 = simpleInterp(x, C, julDay)
-
-    return [const1, A1, B1, C1]
-
-
-#######################################################################################################
-# Backcalculate the temperature required at Folsom Dam from the downstream temperature target
-# Regressions based on observed data from Cardno spreadsheet analysis
-# Only works for Watt location
-def backRouteWQTargetCardno(network, currentRuntimestep, totalFolsomRelease):
-
-    #natomaFlowCfs = getNatomaOutflow(network, currentRuntimestep)
-    natomaFlowCfs = totalFolsomRelease  # estimate
-    natomaFlowCms = natomaFlowCfs / 35.31
-    travTimeDays = 3966.8 * natomaFlowCfs ** -0.944
-    deltaT = currentRuntimestep.getTimeStepSeconds()
-    travTimeSteps = int(round(travTimeDays * 86400. / deltaT))
-    futureRts = RunTimeStep()
-    futureRts.setStep(min(currentRuntimestep.getStep() + travTimeSteps, currentRuntimestep.getTotalNumSteps()-1))
-    targetTempFuture = getTargetWQ(network, futureRts)
-    airTemp = getEquilibriumTemp(network, futureRts)
-
-    [const, A, B, C] = getCoefsForJulianDay(currentRuntimestep)
-    targetTemp = (targetTempFuture - const - A * airTemp - C * math.log10(natomaFlowCms)) / B
-    if debugOutput: network.printMessage("Backrouting vals: " + str(targetTempFuture) + ", " + str(airTemp) + ", " + str(natomaFlowCfs))
-    if debugOutput: network.printMessage("Target temp in subroutine: " + str(targetTemp))
 
     return targetTemp
 
@@ -956,12 +879,14 @@ def setForecastTCDoperation(currentRule, network, currentRuntimestep, wqTarget, 
     elevs = getShutterElevs()
     opIndexes = getOperableShutterElevIndexes()
     opElevs = [elevs[idx] for idx in opIndexes]
-    withdrawalOffset = 8.9  # withdrawal centerline is above the top of the shutter
-    wqRun = network.getRssRun().getWQRun()
-    engineAdapter = wqRun.getWqEngineAdapter()
-    resWQGeoSubdom = getReservoirWQSubdomain(currentRule, network)
+    wqRun = network.getWQRun()
+    engineAdapter = wqRun.getWQEngineAdapter()
+    rssWQGeometry = wqRun.getRssWQGeometry()
+    resOp = currentRule.getController().getReservoirOp()
+    res = resOp.getReservoirElement()
+    resWQGeoSubdom = rssWQGeometry.getWQSubdomain(res)
 
-    resLayerElevs = resWQGeoSubdom.getResVerticalLayerBoundaries()
+    resLayerElevs = resWQGeoSubdom.getResLayerBoundaryElevs()
     numLayers = len(resLayerElevs)-1
     layerTemps = engineAdapter.getReservoirLayerTemperatures(resWQGeoSubdom)
     shutterLevelTemps = []
@@ -969,7 +894,7 @@ def setForecastTCDoperation(currentRule, network, currentRuntimestep, wqTarget, 
         if idx == 0:
             withdrawalElev = elevs[idx]
         else:
-            withdrawalElev = elevs[idx] + withdrawalOffset
+            withdrawalElev = elevs[idx] + withdrawalPtOffset
         for k in range(numLayers):
             layerBotElev = resLayerElevs[k]
             layerTopElev = resLayerElevs[k+1]
@@ -986,11 +911,8 @@ def setForecastTCDoperation(currentRule, network, currentRuntimestep, wqTarget, 
             break
     if debugOutput: network.printMessage("River outlet temperature: " + str(riverOutletTemp))
 
-    resElevBufr = 27.  # head needed above shutter invert (ft)
-    maxPenstockFlow = 2889.  # cfs
-    highestLevel = getHighestLevel(resElev, opElevs, resElevBufr)
+    highestLevel = getHighestLevel(resElev, opElevs)
     numViolations = getTempTargetViolations(network)
-    usingRiverOutlets = False
     if debugOutput: network.printMessage("Reservoir Elevation: " + str(resElev))
     if debugOutput: network.printMessage("Highest allowable shutter elevation: " + str(highestLevel))
     if debugOutput: network.printMessage("Current number of violations: " + str(numViolations))
@@ -1028,7 +950,7 @@ def setForecastTCDoperation(currentRule, network, currentRuntimestep, wqTarget, 
             setTempTargetViolations(network, -1)  # flag to keep raising if necessary
 
         if qPowerhouse > lowFlowThreshold:
-            [p1Flow, p2Flow, p3Flow] = operateForFixedShutters(qPowerhouse, maxPenstockFlow, p1Elev, p2Elev, p3Elev, wqTarget, opElevs, shutterLevelTemps)
+            [p1Flow, p2Flow, p3Flow] = operateForFixedShutters(qPowerhouse, p1Elev, p2Elev, p3Elev, wqTarget, opElevs, shutterLevelTemps)
             if debugOutput: network.printMessage("Operating for fixed shutter positions")
 
             # Check outlet temperature
@@ -1093,7 +1015,17 @@ def setForecastTCDoperation(currentRule, network, currentRuntimestep, wqTarget, 
                         setTempTargetViolations(network, -1)
 
                 if qPowerhouse > lowFlowThreshold:
-                    [p1Flow, p2Flow, p3Flow] = operateForFixedShutters(qPowerhouse, maxPenstockFlow, p1Elev, p2Elev, p3Elev, wqTarget, opElevs, shutterLevelTemps)
+                    if numViolations > 0 and p1Elev == opElevs[0] and p3Elev == opElevs[0] and curDate > useRiverOutletDate:
+                        if debugOutput: network.printMessage("Using river outlets")
+                        # Need to use river outlets
+                        psTemp = shutterLevelTemps[0]
+                        roTemp = riverOutletTemp
+                        [p1Flow, p2Flow, p3Flow, qLowRiver] = splitFlowLowRiver(qPowerhouse, qLeakage, psTemp, roTemp, backRoutedWqTarget, tempLeakage)
+                        setLowerRiverForecastFlow(network, currentRuntimestep, qLowRiver)
+                        qPowerhouse = p1Flow + p2Flow + p3Flow
+                        if debugOutput: network.printMessage("Penstock flows: " + str(qPowerhouse) + ", River outlet flows: " + str(qLowRiver))
+                    else:
+                        [p1Flow, p2Flow, p3Flow] = operateForFixedShutters(qPowerhouse, p1Elev, p2Elev, p3Elev, wqTarget, opElevs, shutterLevelTemps)
                 else:
                     [p1Flow, p2Flow, p3Flow] = getLowFlowSplit(qPowerhouse)
                 
@@ -1149,7 +1081,7 @@ def setForecastTCDoperation(currentRule, network, currentRuntimestep, wqTarget, 
 
                 if qPowerhouse > lowFlowThreshold:
                     # Check temperatures
-                    [p1Flow, p2Flow, p3Flow] = operateForFixedShutters(qPowerhouse, maxPenstockFlow, p1Elev, p2Elev, p3Elev, wqTarget, opElevs, shutterLevelTemps)
+                    [p1Flow, p2Flow, p3Flow] = operateForFixedShutters(qPowerhouse, p1Elev, p2Elev, p3Elev, wqTarget, opElevs, shutterLevelTemps)
                     outletTemp = calcOutletTemp(p1Flow, p2Flow, p3Flow, p1Elev, p2Elev, p3Elev, opElevs, shutterLevelTemps)
                     if debugOutput: network.printMessage("Avg penstock temp after res elevation rules: " + str(outletTemp))
 
@@ -1166,31 +1098,19 @@ def setForecastTCDoperation(currentRule, network, currentRuntimestep, wqTarget, 
                     if numViolations > maxViolationDays:  # now do something about it
                         if p1Elev == opElevs[0] and p3Elev == opElevs[0] and curDate > useRiverOutletDate:
                             # Need to use river outlets
-                            usingRiverOutlets = True
+                            if debugOutput: network.printMessage("Using river outlets")
                             psTemp = shutterLevelTemps[0]
                             roTemp = riverOutletTemp
-                            qPHAll = qPowerhouse + qLeakage
-                            qLowRiver = qPHAll * (backRoutedWqTarget - psTemp) / (roTemp - psTemp)
-                            qLowRiver = min(qPHAll, max(qLowRiver, 0))  # clip
-                            qPH = qPHAll - qLowRiver
-                            [p1Flow, p2Flow, p3Flow] = splitFlowEvenly(qPH)
+                            [p1Flow, p2Flow, p3Flow, qLowRiver] = splitFlowLowRiver(qPowerhouse, qLeakage, psTemp, roTemp, backRoutedWqTarget, tempLeakage)
                             setLowerRiverForecastFlow(network, currentRuntimestep, qLowRiver)
-                            qPowerhouse = qPH
-                            #outletTemp = (qPH * psTemp + qLowRiver * roTemp) / qPowerhouse
-                            #if debugOutput: network.printMessage("Avg penstock temp after operations change: " + str(outletTemp))
-                            #if outletTemp > wqTarget + temperatureThreshold:
-                            #    if debugOutput: network.printMessage("Temperature exceeds target")
-                            #    if debugOutput: network.printMessage("Setting num violations = 1")
-                            #    setTempTargetViolations(network, 1)
-                            #else:
-                            #    if debugOutput: network.printMessage("Setting num violations = 0")
-                            #    setTempTargetViolations(network, 0)
+                            qPowerhouse = p1Flow + p2Flow + p3Flow
+                            if debugOutput: network.printMessage("Penstock flows: " + str(qPowerhouse) + ", River outlet flows: " + str(qLowRiver))
                         else:
                             [p1Elev, p2Elev, p3Elev] = getLowerShutterSet(p1Elev, p2Elev, p3Elev, opElevs)
                             if debugOutput: network.printMessage("Moving to next lower shutter elevation set")
                             if debugOutput: network.printMessage("New shutter elevations: " + str(p1Elev) + ", " + str(p2Elev) + ", " + str(p3Elev))
                             # Check temperatures
-                            [p1Flow, p2Flow, p3Flow] = operateForFixedShutters(qPowerhouse, maxPenstockFlow, p1Elev, p2Elev, p3Elev, wqTarget, opElevs, shutterLevelTemps)
+                            [p1Flow, p2Flow, p3Flow] = operateForFixedShutters(qPowerhouse, p1Elev, p2Elev, p3Elev, wqTarget, opElevs, shutterLevelTemps)
                             outletTemp = calcOutletTemp(p1Flow, p2Flow, p3Flow, p1Elev, p2Elev, p3Elev, opElevs, shutterLevelTemps)
                             if debugOutput: network.printMessage("Avg penstock temp after operations change: " + str(outletTemp))
                             if outletTemp > wqTarget + temperatureThreshold:
@@ -1208,20 +1128,14 @@ def setForecastTCDoperation(currentRule, network, currentRuntimestep, wqTarget, 
             if p1Elev == opElevs[0] and p3Elev == opElevs[0] and curDate > useRiverOutletDate:
                 if debugOutput: network.printMessage("Using river outlets")
                 # Need to use river outlets
-                usingRiverOutlets = True
                 psTemp = shutterLevelTemps[0]
                 roTemp = riverOutletTemp
-                qPHAll = qPowerhouse + qLeakage
-                qLowRiver = qPHAll * (backRoutedWqTarget - psTemp) / (roTemp - psTemp)
-                if debugOutput: network.printMessage("Using river outlets, " + str(qLowRiver))
-                qLowRiver = min(qPHAll, max(qLowRiver, 0))  # clip
-                qPH = qPHAll - qLowRiver
-                if debugOutput: network.printMessage("Flows, " + str(qPH) + ", " + str(qLowRiver))
-                [p1Flow, p2Flow, p3Flow] = splitFlowEvenly(qPH)
+                [p1Flow, p2Flow, p3Flow, qLowRiver] = splitFlowLowRiver(qPowerhouse, qLeakage, psTemp, roTemp, backRoutedWqTarget, tempLeakage)
                 setLowerRiverForecastFlow(network, currentRuntimestep, qLowRiver)
-                qPowerhouse = qPH
+                qPowerhouse = p1Flow + p2Flow + p3Flow
+                if debugOutput: network.printMessage("Penstock flows: " + str(qPowerhouse) + ", River outlet flows: " + str(qLowRiver))
             else:
-                [p1Flow, p2Flow, p3Flow] = operateForFixedShutters(qPowerhouse, maxPenstockFlow, p1Elev, p2Elev, p3Elev, wqTarget, opElevs, shutterLevelTemps)
+                [p1Flow, p2Flow, p3Flow] = operateForFixedShutters(qPowerhouse, p1Elev, p2Elev, p3Elev, wqTarget, opElevs, shutterLevelTemps)
 
     # Set flows
     setPenstockFlow(network, currentRuntimestep, p1Flow, 1)
@@ -1243,10 +1157,7 @@ def setForecastTCDoperation(currentRule, network, currentRuntimestep, wqTarget, 
     # report back
     tcdFlows = getTCDFlowsForShutterElev(p1Flow, p1Elev)
     # Add leakage through bottom of penstock 1
-    if not usingRiverOutlets:
-        tcdFlows[0] += qLeakage
-        totalP1flow = p1Flow + qLeakage
-    else:
-        totalP1flow = p1Flow
+    tcdFlows[0] += qLeakage
+    totalP1flow = p1Flow + qLeakage
 
     return tcdFlows, totalP1flow

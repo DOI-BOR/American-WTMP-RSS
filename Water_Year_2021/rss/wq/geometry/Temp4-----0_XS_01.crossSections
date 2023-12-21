@@ -1,6 +1,0 @@
-Name=Temp4-----0:XS_01
-Description=Cross Sections for RAS Cross Section file XS_01.shp
-RasFile=rss/ras-exports/XS_01.shp
-RiverColumn=River
-ReachColumn=Reach
-StationColumn=River Stat

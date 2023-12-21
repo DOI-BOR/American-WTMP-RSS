@@ -1,4 +1,4 @@
-ModifiedTime=1698205178923
+ModifiedTime=1702399513363
 GVDataSet Name=WQFol7
 Description=Copy of Flow-only alt on AMR_Net_7 (Global Variable Data Set)
 
@@ -185,7 +185,7 @@ GVRecord End
 GVRecord=SCALAR
 GVRecord Name=Downstream_Control_Loc
 GVRecord ID=37
-GVRecord DssFilename=runs/ResSim_Prescribed/ResSim_Prescribed.dss
+GVRecord DssFilename=rss/RSAmerPO_igv.dss
 GVRecord DssPathname=//Downstream_Control_Loc///Integer/RSAmerPO-ResSim-Default/
 GVRecord DataLocation=false
 GVRecord LinkedLocation=

@@ -1,7 +1,7 @@
 RssAlt Name=WQFol7
 RssAlt Description=Copy of Flow-only alt on AMR_Net_7
 Version=1001
-ModifiedTime=1690379118739
+ModifiedTime=1702357641751
 NetworkID=144
 System Path=rss/networks/AMR_Net_7/AMR_Net_7.rsys
 Operations Path=
@@ -166,6 +166,7 @@ UsingInflowFactors=false
 InflowFactorType=0
 GlobalInflowFactor=1.0
 Hotstart Options
+Enabled:false
 CreateHotStart:false
 SaveAtEnd:false
 SaveAtLookback:false

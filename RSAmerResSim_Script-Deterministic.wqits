@@ -1,0 +1,133 @@
+TSDataSet Name=RSAmer-ResSim_Script-Deterministic
+Description=WTMP American ResSim Alternative including Folsom Lake, Lake Natoma, and the lower American River - Predictive/Forecast Folsom operations (TS Data Set for ResSim_Script-Deterministic)
+
+_type=0
+ParentPath=null
+ParentClass=null
+TSRecord=1
+TSRecord Name=Fair Oaks CIMIS-Air Temperature
+TSRecord VariableId=-2147483648
+TSRecord ParamName=Air Temperature
+TSRecord DssFilename=shared/American_met_6.dss
+TSRecord DssPathname=/AMERICAN/FAIR OAKS/TEMP-AIR//1HOUR/CIMIS-CARDNO/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=2
+TSRecord Name=Fair Oaks CIMIS-Humidity
+TSRecord VariableId=-2147483648
+TSRecord ParamName=Humidity
+TSRecord DssFilename=shared/American_met_6.dss
+TSRecord DssPathname=/AMERICAN/FAIR OAKS/TEMP-DEWPT//1Hour/CIMIS-CARDNO/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=3
+TSRecord Name=Fair Oaks CIMIS-Shortwave Radiation
+TSRecord VariableId=-2147483648
+TSRecord ParamName=Shortwave Radiation
+TSRecord DssFilename=shared/American_met_6.dss
+TSRecord DssPathname=/AMERICAN/MATHER AFB CC THEORETICAL/SOLRAD//1HOUR/NWS-CARDNO/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=4
+TSRecord Name=Fair Oaks CIMIS-Cloudiness
+TSRecord VariableId=-2147483648
+TSRecord ParamName=Cloudiness
+TSRecord DssFilename=shared/American_met_6.dss
+TSRecord DssPathname=/AMERICAN/MATHER AFB/CLOUD//1Hour/NWS-CARDNO/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=5
+TSRecord Name=Fair Oaks CIMIS-Wind Speed
+TSRecord VariableId=-2147483648
+TSRecord ParamName=Wind Speed
+TSRecord DssFilename=shared/American_met_6.dss
+TSRecord DssPathname=/AMERICAN/FAIR OAKS/SPEED-WIND//1Hour/CIMIS-CARDNO/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=6
+TSRecord Name=Folsom Point (Dyke 8)-Air Temperature
+TSRecord VariableId=-2147483648
+TSRecord ParamName=Air Temperature
+TSRecord DssFilename=shared/American_met_6.dss
+TSRecord DssPathname=/AMERICAN/FAIR OAKS/TEMP-AIR//1HOUR/CIMIS-CARDNO/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=7
+TSRecord Name=Folsom Point (Dyke 8)-Humidity
+TSRecord VariableId=-2147483648
+TSRecord ParamName=Humidity
+TSRecord DssFilename=shared/American_met_6.dss
+TSRecord DssPathname=/AMERICAN/FAIR OAKS/TEMP-DEWPT//1Hour/CIMIS-CARDNO/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=8
+TSRecord Name=Folsom Point (Dyke 8)-Shortwave Radiation
+TSRecord VariableId=-2147483648
+TSRecord ParamName=Shortwave Radiation
+TSRecord DssFilename=shared/American_met_6.dss
+TSRecord DssPathname=/AMERICAN/MATHER AFB CC THEORETICAL/SOLRAD//1HOUR/NWS-CARDNO/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=9
+TSRecord Name=Folsom Point (Dyke 8)-Cloudiness
+TSRecord VariableId=-2147483648
+TSRecord ParamName=Cloudiness
+TSRecord DssFilename=shared/American_met_6.dss
+TSRecord DssPathname=/AMERICAN/MATHER AFB/CLOUD//1Hour/NWS-CARDNO/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=10
+TSRecord Name=Folsom Point (Dyke 8)-Wind Speed
+TSRecord VariableId=-2147483648
+TSRecord ParamName=Wind Speed
+TSRecord DssFilename=shared/American_met_6.dss
+TSRecord DssPathname=/AMERICAN/FOLSOM DYKE 8/SPEED-WIND//1Hour/NWS-CDEC-CARDNO/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=11
+TSRecord Name=SF AMR NR Pilot Hill - CBR Flow
+TSRecord VariableId=2001
+TSRecord ParamName=Water Temperature
+TSRecord DssFilename=shared/American_inflow_temps_6.dss
+TSRecord DssPathname=/11446030/SF AMERICAN TEMP/TEMP-WATER//1HOUR/USGS-CARDNO/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=12
+TSRecord Name=Mormon Ravine In - Mormon Ravine and Newcastle PH
+TSRecord VariableId=2001
+TSRecord ParamName=Water Temperature
+TSRecord DssFilename=shared/American_inflow_temps_6.dss
+TSRecord DssPathname=/11433790/NF AMERICAN TEMP/TEMP-WATER//1HOUR/USGS-CARDNO/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=13
+TSRecord Name=NFA - NF+MF-ARPP Flows
+TSRecord VariableId=2001
+TSRecord ParamName=Water Temperature
+TSRecord DssFilename=shared/American_inflow_temps_6.dss
+TSRecord DssPathname=/11433790/NF AMERICAN TEMP/TEMP-WATER//1HOUR/USGS-CARDNO/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=14
+TSRecord Name=NFA - Folsom Ungaged Inflows
+TSRecord VariableId=2001
+TSRecord ParamName=Water Temperature
+TSRecord DssFilename=shared/American_inflow_temps_6.dss
+TSRecord DssPathname=/11433790/NF AMERICAN TEMP/TEMP-WATER//1HOUR/USGS-CARDNO/
+TSRecord InputPosition=0
+TSRecord End=
+
+

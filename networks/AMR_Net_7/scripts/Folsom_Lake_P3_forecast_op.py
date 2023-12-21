@@ -6,8 +6,9 @@ from hec.script import Constants
 globalVarNameShutterElevForecast = 'P3_shutter_elev_forecast'
 globalVarNamePSFlow = 'P3_flow_forecast'
 # Script constants
-temperatureConstitId = 1
 lastIterationPassNum = 2
+# Operation variables
+withdrawalPtOffset = 8.9  # in feet - distance to move withdrawal pt above shutter invert
 
 
 #######################################################################################################
@@ -15,17 +16,6 @@ lastIterationPassNum = 2
 def getShutterElevs():
     elevs = [307., 323., 336., 349., 362., 401.]
     return elevs
-
-
-#######################################################################################################
-# Get the WQSubdomain object from the reservoir using the current rule
-def getReservoirWQSubdomain(currentRule, network):
-    resOp = currentRule.getController().getReservoirOp()
-    res = resOp.getReservoirElement()
-    wqRun = network.getRssRun().getWQRun()
-    rssWQGeometry = wqRun.getRssWQGeometry()
-    resWQGeoSubdom = rssWQGeometry.getSubdomForRSSElemId(res.getIndex())
-    return resWQGeoSubdom
 
 
 #######################################################################################################
@@ -42,38 +32,34 @@ def initRuleScript(currentRule, network):
     # WQ is being simulated
     else:
         # Reallocate WQCD geometry in WQ Engine to move withdrawal centerline higher
-        offset = 8.9
         elevs = getShutterElevs()
         nLevels = len(elevs)
-        isRect = []
-        heights = []
-        widths = []
-        diameters = []
         for k in range(nLevels):
             if k > 0:  # don't adjust lowest level because of penstock intakes
-                elevs[k] += offset
-            isRect.append(True)
-            heights.append(0.)
-            widths.append(0.)
-            diameters.append(0.)
-        resOp = currentRule.getController().getReservoirOp()
-        releaseElemId = resOp.getWQCDReleaseElemId(currentRule)
+                elevs[k] += withdrawalPtOffset
         wqRun = network.getRssRun().getWQRun()
-        engineAdapter = wqRun.getWqEngineAdapter()
-        resWQGeoSubdom = getReservoirWQSubdomain(currentRule, network)
-        engineAdapter.reallocateWQControlDeviceData(resWQGeoSubdom, releaseElemId, nLevels, elevs, isRect, heights, widths, diameters)
+        rssWQGeometry = wqRun.getRssWQGeometry()
+        resOp = currentRule.getController().getReservoirOp()
+        res = resOp.getReservoirElement()
+        resWQGeoSubdom = rssWQGeometry.getWQSubdomain(res)
+        wqcd = rssWQGeometry.getWQControlDevice(currentRule.getController().getReleaseElement())
+        engineAdapter = wqRun.getWQEngineAdapter()
+        engineAdapter.reallocateWQControlDeviceElevs(resWQGeoSubdom, wqcd, nLevels, elevs)
 
     return Constants.TRUE
 
 
 #######################################################################################################
 # This checks whether we should be applying this rule in a given simulation
+# Needs to have WQ running and the reservoir in the active WQ geometry
 def checkApplyRule(currentRule, network):
-    wqRun = network.getRssRun().getWQRun()
+    wqRun = network.getWQRun()
     if not wqRun:
         return False
     rssWQGeometry = wqRun.getRssWQGeometry()
-    resWQGeoSubdom = getReservoirWQSubdomain(currentRule, network)
+    resOp = currentRule.getController().getReservoirOp()
+    res = resOp.getReservoirElement()
+    resWQGeoSubdom = rssWQGeometry.getWQSubdomain(res)
     return rssWQGeometry.isInExtent(resWQGeoSubdom)
 
 

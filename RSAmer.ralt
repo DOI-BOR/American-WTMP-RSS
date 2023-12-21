@@ -1,7 +1,7 @@
 RssAlt Name=RSAmer
 RssAlt Description=WTMP American ResSim Alternative including Folsom Lake, Lake Natoma, and the lower American River - Predictive/Forecast Folsom operations
 Version=1001
-ModifiedTime=1698174527045
+ModifiedTime=1702583377319
 NetworkID=144
 System Path=rss/networks/AMR_Net_7/AMR_Net_7.rsys
 Operations Path=
@@ -165,6 +165,8 @@ InputTsVariant=WAT-ResSim only-Deterministic,false
 InputTsVariant=ResSim only-Deterministic,true
 InputTsVariant=WAT-ResSim_Script-Deterministic,false
 InputTsVariant=ResSim_Script-Deterministic,true
+InputTsVariant=WAT-ResSimForecast-Deterministic,true
+InputTsVariant=ResSimForecast-Deterministic,true
 UsingInflowFactors=false
 InflowFactorType=0
 GlobalInflowFactor=1.0

@@ -2,131 +2,139 @@ from hec.rss.model import OpValue
 from hec.rss.model import OpRule
 from hec.script import Constants
 
+# Script "Global variables"
+# Operations
+targetTemperature = 18.3333  # deg C (65 deg F)
+maxOpElev = 401.  # maximum allowed elevation (ft)
+minOpElev = 331.5  # minimum allowed elevation (ft) (when it is acceptable to go to 317?)
+# Variable names
+globalVarNameMuniFlow = 'Muni_specified_flow'
+# Script constants
+lastIterationPassNum = 2
+
 
 #######################################################################################################
 def initRuleScript(currentRule, network):
 
-	# Handle case where rule is active or disabled but WQ is not being run
-	wqRun = network.getRssRun().getWQRun()
-	if not wqRun:
-		currentRule.setEvalRule(False)
-		network.getRssRun().printWarningMessage("Warning: Scripted rule " + currentRule.getName() + 
-			" references Water Quality which is disabled for this simulation.")
-	return Constants.TRUE
+    applyRule = checkApplyRule(currentRule, network)
+
+    # Handle case where rule is active but disabled or WQ for reservoir is not being run
+    if not applyRule:
+        currentRule.setEvalRule(False)
+        network.getRssRun().printWarningMessage("Warning: Scripted rule " + currentRule.getName() +
+                                                " references Water Quality which is disabled for this simulation. Rule will be ignored.")
+
+    return Constants.TRUE
+
+
+#######################################################################################################
+# This checks whether we should be applying this rule in a given simulation
+# Needs to have WQ running and the reservoir in the active WQ geometry
+def checkApplyRule(currentRule, network):
+    wqRun = network.getWQRun()
+    if not wqRun:
+        return False
+    rssWQGeometry = wqRun.getRssWQGeometry()
+    resOp = currentRule.getController().getReservoirOp()
+    res = resOp.getReservoirElement()
+    resWQGeoSubdom = rssWQGeometry.getWQSubdomain(res)
+    return rssWQGeometry.isInExtent(resWQGeoSubdom)
 
 
 #######################################################################################################
 def runRuleScript(currentRule, network, currentRuntimestep):
 
-	flowGlobalVarName = "Muni_specified_flow"
-	elevGlobalVarName = "Muni_intake_elev"
-	
-	globVar = network.getGlobalVariable(flowGlobalVarName)
-	if not globVar:
-		raise NameError("Global variable: " + flowGlobalVarName + " not found.")
-	flowVal = globVar.getCurrentValue(currentRuntimestep)
-	if not isValidValue(flowVal):
-		raise ValueError("Global variable: " + flowGlobalVarName + " has invalid value " +
-		                 str(flowVal) + " for time step: " + str(currentRuntimestep.step))
+    globVar = network.getGlobalVariable(globalVarNameMuniFlow)
+    if not globVar:
+        raise NameError("Global variable: " + globalVarNameMuniFlow + " not found.")
+    flowVal = globVar.getCurrentValue(currentRuntimestep)
+    if not isValidValue(flowVal):
+        raise ValueError("Global variable: " + globalVarNameMuniFlow + " has invalid value " +
+                         str(flowVal) + " for time step: " + str(currentRuntimestep.step))
 
-	# Only evaluate WQ part of script running WQ and computer iteration > 0
-	#  (On 0th iteration, only local res decisions being evaluated and WQ is not being run yet)
-	computeIter = currentRule.getComputeIteration()
-	evalRule = currentRule.getEvalRule() and (computeIter > 1)
-	if evalRule:
-		#globVar = network.getGlobalVariable(elevGlobalVarName)
-		#if not globVar:
-		#	raise NameError("Global variable: " + elevGlobalVarName + " not found.")
-		#elevVal = globVar.getCurrentValue(currentRuntimestep)
-		#if not isValidValue(flowVal):
-		#	elevVal = -1.  # Need to handle missing data because no elev time series data before 2004
-		elevVal = -1.  # use forecast logic
-		
-		# Get reservoir elevation
-		resOp = currentRule.getController().getReservoirOp()
-		res = resOp.getReservoirElement()
-		resElev = res.getStorageFunction().getElevation(currentRuntimestep)
-		if not isValidValue(resElev):  # try previous time step value
-			prevRuntimestep = RunTimeStep(currentRuntimestep)
-			prevRuntimestep.setStep(currentRuntimestep.getPrevStep())
-			resElev = res.getStorageFunction().getElevation(prevRuntimestep)
-		if not isValidValue(resElev):
-			raise ValueError("Invalid value: " + str(resElev) + 
-			                 " for reservoir elevation for time step: " + str(currentRuntimestep.step))
-		
-		setMuniOperation(currentRule, flowVal, elevVal, resElev)
+    # Only evaluate rule if running WQ (getEvalRule) *and* compute iteration > 0
+    #  (On 0th iteration, only local res decisions being evaluated and WQ is not being run yet)
+    computeIter = currentRule.getComputeIteration()
+    evalRule = currentRule.getEvalRule() and (computeIter >= lastIterationPassNum)
+    if evalRule:
+        # Get reservoir elevation
+        resOp = currentRule.getController().getReservoirOp()
+        res = resOp.getReservoirElement()
+        resElev = res.getStorageFunction().getElevation(currentRuntimestep)
+        if not isValidValue(resElev):  # try previous time step value
+            prevRuntimestep = RunTimeStep(currentRuntimestep)
+            prevRuntimestep.setStep(currentRuntimestep.getPrevStep())
+            resElev = res.getStorageFunction().getElevation(prevRuntimestep)
+        if not isValidValue(resElev):
+            raise ValueError("Invalid value: " + str(resElev) +
+                             " for reservoir elevation for time step: " + str(currentRuntimestep.step))
 
-	opValue = OpValue()
-	opValue.init(OpRule.RULETYPE_SPEC, flowVal)
+        setMuniOperation(network, currentRule, flowVal, resElev)
 
-	return opValue
+    opValue = OpValue()
+    opValue.init(OpRule.RULETYPE_SPEC, flowVal)
+
+    return opValue
 
 
 #######################################################################################################
 # Check whether a value is valid
 def isValidValue(value):
-	if value == Constants.UNDEFINED_DOUBLE:
-		return False
-	elif value < -0.000001:
-		return False
-	else:
-		return True
+    if value is None:
+        return False
+    elif value == Constants.UNDEFINED_DOUBLE:
+        return False
+    elif value < 0.:
+        return False
+    else:
+        return True
+
 
 #######################################################################################################
 # Get the WQSubdomain object from the reservoir using the current rule
 def getReservoirWQSubdomain(currentRule, network):
-	resOp = currentRule.getController().getReservoirOp()
-	res = resOp.getReservoirElement()
-	wqRun = network.getRssRun().getWQRun()
-	rssWQGeometry = wqRun.getRssWQGeometry()
-	resWQGeoSubdom = rssWQGeometry.getSubdomForRSSElemId(res.getIndex())
-	return resWQGeoSubdom
+    resOp = currentRule.getController().getReservoirOp()
+    res = resOp.getReservoirElement()
+    wqRun = network.getRssRun().getWQRun()
+    rssWQGeometry = wqRun.getRssWQGeometry()
+    resWQGeoSubdom = rssWQGeometry.getSubdomForRSSElemId(res.getIndex())
+    return resWQGeoSubdom
 
 
 #######################################################################################################
 # Set the TCD operation
-def setMuniOperation(currentRule, flowVal, elevVal, resElev):
-
-	# Fill TCD inlet flow array - only 1 inlet
-	tcdFlows = []
-	tcdFlows.append(flowVal)
-	resOp = currentRule.getController().getReservoirOp()
-	resOp.setWQControlDeviceFlowRatios(tcdFlows, currentRule, flowVal)
+def setMuniOperation(network, currentRule, flowVal, resElev):
 
 	# Change withdrawal elevation based on elevation time series
-	wqRun = network.getRssRun().getWQRun()
-	engineAdapter = wqRun.getWqEngineAdapter()
-	resWQGeoSubdom = getReservoirWQSubdomain(currentRule, network)
-	if elevVal > 0:
-		targetElev = min([elevVal, resElev])
-		
-	else:
-		# Need to choose elevation based on state of reservoir stratification
-		resLayerElevs = resWQGeoSubdom.getResVerticalLayerBoundaries()
-		numLayers = len(resLayerElevs)-1
-		layerTemps = engineAdapter.getReservoirLayerTemperatures(resWQGeoSubdom)
+    wqRun = network.getRssRun().getWQRun()
+    engineAdapter = wqRun.getWQEngineAdapter()
+    resOp = currentRule.getController().getReservoirOp()
+    res = resOp.getReservoirElement()
+    rssWQGeometry = wqRun.getRssWQGeometry()
+    resWQGeoSubdom = rssWQGeometry.getWQSubdomain(res)
+    wqcd = rssWQGeometry.getWQControlDevice(currentRule.getController().getReleaseElement())
+    resLayerElevs = resWQGeoSubdom.getResLayerBoundaryElevs()
+    layerTemps = engineAdapter.getReservoirLayerTemperatures(resWQGeoSubdom)
+    numLayers = len(resLayerElevs)-1
 
-		# Find correct elevation - use highest possible
-		targetTemp = 18.3333  # deg C (65 deg F)
-		maxElev = 401.
-		minElev = 331.5  # how to know when allowed to go to 317?
-		targetLayer = 0
-		for k in reversed(range(numLayers)):
-			layerBotElev = resLayerElevs[k]
-			layerTemp = layerTemps[k]
-			if ((layerBotElev < maxElev and layerBotElev < resElev and layerTemp < targetTemp)
-				or layerBotElev < minElev):
-				targetLayer = k
-				break
-		targetElev = resLayerElevs[targetLayer]
+    # Find correct elevation - use highest possible
+    targetLayer = 0
+    for k in reversed(range(numLayers)):
+        layerBotElev = resLayerElevs[k]
+        layerTemp = layerTemps[k]
+        if ((layerBotElev < maxOpElev and layerBotElev < resElev and layerTemp < targetTemperature)
+            or layerBotElev < minOpElev):
+            targetLayer = k
+            break
+    targetElev = resLayerElevs[targetLayer]
 
-	# Reallocate WQCD geometry in WQ Engine
-	elevs = [targetElev]
-	isRect = [True]
-	heights = [0.]
-	widths = [0.]
-	diameters = [0.]
-	releaseElemId = resOp.getWQCDReleaseElemId(currentRule)
-	engineAdapter.reallocateWQControlDeviceData(resWQGeoSubdom, releaseElemId, len(elevs), elevs, isRect, heights, widths, diameters)
+    # Fill TCD inlet flow array - only 1 inlet
+    tcdFlows = []
+    tcdFlows.append(flowVal)
+    resOp.setWQControlDeviceFlowRatios(tcdFlows, currentRule, flowVal)
 
-	return
+    # Reallocate WQCD geometry in WQ Engine
+    elevs = [targetElev]
+    engineAdapter.reallocateWQControlDeviceElevs(resWQGeoSubdom, wqcd, len(elevs), elevs)
+
+    return

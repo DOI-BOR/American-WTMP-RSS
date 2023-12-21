@@ -20,7 +20,6 @@ globalVarNameMuniElevForecast = 'Muni_elev_forecast'
 globalVarNameMuniElevHist = 'Muni_intake_elev'
 stateVarNameOpFlag = 'Muni_oper_flag'
 # Script constants
-temperatureConstitId = 1
 lastIterationPassNum = 2
 
 
@@ -40,12 +39,15 @@ def initRuleScript(currentRule, network):
 
 #######################################################################################################
 # This checks whether we should be applying this rule in a given simulation
+# Needs to have WQ running and the reservoir in the active WQ geometry
 def checkApplyRule(currentRule, network):
-    wqRun = network.getRssRun().getWQRun()
+    wqRun = network.getWQRun()
     if not wqRun:
         return False
     rssWQGeometry = wqRun.getRssWQGeometry()
-    resWQGeoSubdom = getReservoirWQSubdomain(currentRule, network)
+    resOp = currentRule.getController().getReservoirOp()
+    res = resOp.getReservoirElement()
+    resWQGeoSubdom = rssWQGeometry.getWQSubdomain(res)
     return rssWQGeometry.isInExtent(resWQGeoSubdom)
 
 
@@ -99,17 +101,6 @@ def isValidValue(value):
 
 
 #######################################################################################################
-# Get the WQSubdomain object from the reservoir using the current rule
-def getReservoirWQSubdomain(currentRule, network):
-    resOp = currentRule.getController().getReservoirOp()
-    res = resOp.getReservoirElement()
-    wqRun = network.getRssRun().getWQRun()
-    rssWQGeometry = wqRun.getRssWQGeometry()
-    resWQGeoSubdom = rssWQGeometry.getSubdomForRSSElemId(res.getIndex())
-    return resWQGeoSubdom
-
-
-#######################################################################################################
 # Set the forecasted gate elevation
 def setMuniElev(network, runtimeStep, elev):
     gv = network.getGlobalVariable(globalVarNameMuniElevForecast)
@@ -120,11 +111,16 @@ def setMuniElev(network, runtimeStep, elev):
 
 #######################################################################################################
 # Get the historical gate elevation
-def getMuniElevHist(network, runtimeStep):
+def getMuniElevHist(network, runtimeStep, curDate, resElev):
     gv = network.getGlobalVariable(globalVarNameMuniElevHist)
     if not gv:
         raise NameError("Global variable: " + globalVarNameMuniElevHist + " not found.")
-    return gv.getCurrentValue(runtimeStep)
+        if curDate >= startOpDate:
+            elev = resElev - minDistBlwResSfc  # operating constraint
+            elev = min(max(minOpElev, elev), maxOpElev)
+        return elev
+    else:
+        return gv.getCurrentValue(runtimeStep)
 
 
 #######################################################################################################
@@ -168,18 +164,16 @@ def setTCDOperation(network, currentRule, currentRuntimestep, flowVal, withdrawa
     resOp = currentRule.getController().getReservoirOp()
     resOp.setWQControlDeviceFlowRatios(tcdFlows, currentRule, flowVal)
 
-    wqRun = network.getRssRun().getWQRun()
-    engineAdapter = wqRun.getWqEngineAdapter()
-    resWQGeoSubdom = getReservoirWQSubdomain(currentRule, network)
+    wqRun = network.getWQRun()
+    engineAdapter = wqRun.getWQEngineAdapter()
+    rssWQGeometry = wqRun.getRssWQGeometry()
+    res = resOp.getReservoirElement()
+    resWQGeoSubdom = rssWQGeometry.getWQSubdomain(res)
+    wqcd = rssWQGeometry.getWQControlDevice(currentRule.getController().getReleaseElement())
 
     # Reallocate WQCD geometry in WQ Engine
     elevs = [withdrawalElev]
-    isRect = [True]
-    heights = [0.]
-    widths = [0.]
-    diameters = [0.]
-    releaseElemId = resOp.getWQCDReleaseElemId(currentRule)
-    engineAdapter.reallocateWQControlDeviceData(resWQGeoSubdom, releaseElemId, len(elevs), elevs, isRect, heights, widths, diameters)
+    engineAdapter.reallocateWQControlDeviceElevs(resWQGeoSubdom, wqcd, len(elevs), elevs)
 
     # Save to global variable
     setMuniElev(network, currentRuntimestep, withdrawalElev)
@@ -211,9 +205,12 @@ def setMuniOperation(network, currentRule, currentRuntimestep, flowVal, resElev)
 
     # Change withdrawal elevation based on rules
     wqRun = network.getRssRun().getWQRun()
-    engineAdapter = wqRun.getWqEngineAdapter()
-    resWQGeoSubdom = getReservoirWQSubdomain(currentRule, network)
-    resLayerElevs = resWQGeoSubdom.getResVerticalLayerBoundaries()
+    engineAdapter = wqRun.getWQEngineAdapter()
+    resOp = currentRule.getController().getReservoirOp()
+    res = resOp.getReservoirElement()
+    rssWQGeometry = wqRun.getRssWQGeometry()
+    resWQGeoSubdom = rssWQGeometry.getWQSubdomain(res)
+    resLayerElevs = resWQGeoSubdom.getResLayerBoundaryElevs()
     layerTemps = engineAdapter.getReservoirLayerTemperatures(resWQGeoSubdom)
 
     curTime = currentRuntimestep.getHecTime()
@@ -227,7 +224,7 @@ def setMuniOperation(network, currentRule, currentRuntimestep, flowVal, resElev)
 
     # First step
     if iCurStep == currentRuntimestep.getRunTimeWindow().getNumLookbackSteps() + 1:
-        elev = getMuniElevHist(network, currentRuntimestep)
+        elev = getMuniElevHist(network, currentRuntimestep, curDate, resElev)
         if curDate == startOpDate:  # Move up
             elev = resElev - minDistBlwResSfc  # operating constraint
             elev = min(max(minOpElev, elev), maxOpElev)

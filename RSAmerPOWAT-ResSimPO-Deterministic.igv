@@ -1,4 +1,4 @@
-ModifiedTime=1698205178985
+ModifiedTime=1702399513416
 GVDataSet Name=RSAmerPO-WAT-ResSimPO-Deterministic
 Description=WTMP American ResSim Alternative including Folsom Lake, Lake Natoma, and the lower American River - Prescribed Folsom Dam operations (GV Data Set for WAT-ResSimPO-Deterministic)
 
@@ -185,8 +185,8 @@ GVRecord End
 GVRecord=SCALAR
 GVRecord Name=Downstream_Control_Loc
 GVRecord ID=37
-GVRecord DssFilename=runs/ResSim_Prescribed/ResSim_Prescribed.dss
-GVRecord DssPathname=//Downstream_Control_Loc///Integer/RSAmerPO-ResSim-Default/
+GVRecord DssFilename=rss/RSAmerPOWAT-ResSimPO-Deterministic_igv.dss
+GVRecord DssPathname=//Downstream_Control_Loc///Integer/RSAmerPO-WAT-ResSimPO-Deterministic/
 GVRecord DataLocation=false
 GVRecord LinkedLocation=
 GVRecord LinkedModel=
