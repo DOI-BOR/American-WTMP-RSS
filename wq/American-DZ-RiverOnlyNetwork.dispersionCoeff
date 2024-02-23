@@ -1,0 +1,58 @@
+{
+  "index" : 14587,
+  "name" : "American-DZ-RiverOnlyNetwork",
+  "description" : "",
+  "Description" : "",
+  "Index" : 14587,
+  "Name" : "American-DZ-RiverOnlyNetwork",
+  "geometryId" : 14583,
+  "lastModifiedTime" : 1707351335829,
+  "set" : {
+    "@type" : "WQDispersionCoefSettings",
+    "id" : 0,
+    "name" : "American-DZ-RiverOnlyNetwork",
+    "description" : "",
+    "reachSettings" : {
+      "@type" : "WQReachDispersionSettings",
+      "dispersionType" : "GLOBAL",
+      "globalValue" : 10.0,
+      "reachValues" : [ {
+        "constant" : "-Infinity",
+        "lowerEnd" : "-Infinity",
+        "reachId" : 1,
+        "upperEnd" : "-Infinity"
+      }, {
+        "constant" : "-Infinity",
+        "lowerEnd" : "-Infinity",
+        "reachId" : 3,
+        "upperEnd" : "-Infinity"
+      }, {
+        "constant" : "-Infinity",
+        "lowerEnd" : "-Infinity",
+        "reachId" : 5,
+        "upperEnd" : "-Infinity"
+      }, {
+        "constant" : "-Infinity",
+        "lowerEnd" : "-Infinity",
+        "reachId" : 7,
+        "upperEnd" : "-Infinity"
+      }, {
+        "constant" : "-Infinity",
+        "lowerEnd" : "-Infinity",
+        "reachId" : 9,
+        "upperEnd" : "-Infinity"
+      }, {
+        "constant" : "-Infinity",
+        "lowerEnd" : "-Infinity",
+        "reachId" : 11,
+        "upperEnd" : "-Infinity"
+      } ],
+      "valueByReachType" : "CONSTANT"
+    },
+    "reservoirSettingsSet" : {
+      "@type" : "WQReservoirDispersionSettingsSet",
+      "entries" : [ ]
+    }
+  },
+  "version" : 1
+}

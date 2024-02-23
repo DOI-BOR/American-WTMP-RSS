@@ -1,0 +1,155 @@
+{
+  "index" : 14585,
+  "name" : "American_BC_RiverOnlyNetwork",
+  "description" : "",
+  "Description" : "",
+  "Index" : 14585,
+  "Name" : "American_BC_RiverOnlyNetwork",
+  "constituentSetId" : 160,
+  "geometryId" : 14583,
+  "lastModifiedTime" : 1707351232366,
+  "set" : {
+    "boundaryConditions" : [ {
+      "@type" : "WQBoundaryCondition",
+      "boundaryRef" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 14583,
+        "id" : 7,
+        "jnctId" : 11,
+        "name" : "Nimbus Dam - Nimbus Dam Outflow",
+        "type" : "LOCAL_INFLOW"
+      },
+      "constituentId" : 1,
+      "dataSources" : [ {
+        "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "DSS File Path" : "shared\\DMS_American_Pre-Process.dss",
+        "DSS Path" : "/MR AM.-NATOMA LAKE/11446500 NIMBUS DAM-WATER TEMP/TEMP-WATER-C//15Minute/251.400.50.1.1/",
+        "Interpreted Units" : "\u00B0C",
+        "interpretedUnits" : "\u00B0C"
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      }, {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "value" : "-Infinity"
+      }, {
+        "@type" : "AmbientData",
+        "name" : "Ambient Value",
+        "description" : "",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "OptionType" : "AVERAGE_AT_JUNCTION"
+      } ],
+      "selectedDataSource" : {
+        "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "DSS File Path" : "shared\\DMS_American_Pre-Process.dss",
+        "DSS Path" : "/MR AM.-NATOMA LAKE/11446500 NIMBUS DAM-WATER TEMP/TEMP-WATER-C//15Minute/251.400.50.1.1/",
+        "Interpreted Units" : "\u00B0C",
+        "interpretedUnits" : "\u00B0C"
+      },
+      "units" : [ "\u00B0C" ]
+    }, {
+      "@type" : "WQBoundaryCondition",
+      "boundaryRef" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 14583,
+        "id" : 8,
+        "jnctId" : 48,
+        "name" : "AFO - AFO Balance",
+        "type" : "LOCAL_INFLOW"
+      },
+      "constituentId" : 1,
+      "dataSources" : [ {
+        "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
+        "DSS File Path" : "shared\\DMS_American_Pre-Process.dss",
+        "DSS Path" : "//ZEROS/temp-water//1Day/ZEROS/",
+        "Interpreted Units" : "\u00B0C",
+        "interpretedUnits" : "\u00B0C"
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      }, {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "value" : "-Infinity"
+      }, {
+        "@type" : "AmbientData",
+        "name" : "Ambient Value",
+        "description" : "",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "OptionType" : "AVERAGE_AT_JUNCTION"
+      } ],
+      "selectedDataSource" : {
+        "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
+        "DSS File Path" : "shared\\DMS_American_Pre-Process.dss",
+        "DSS Path" : "//ZEROS/temp-water//1Day/ZEROS/",
+        "Interpreted Units" : "\u00B0C",
+        "interpretedUnits" : "\u00B0C"
+      },
+      "units" : [ "\u00B0C" ]
+    } ],
+    "description" : "",
+    "name" : "American_BC_RiverOnlyNetwork"
+  },
+  "version" : 1
+}

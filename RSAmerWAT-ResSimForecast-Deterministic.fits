@@ -63,7 +63,7 @@ TSRecord Name=~E1:F
 TSRecord VariableId=14
 TSRecord ParamName=Elev
 TSRecord DssFilename=shared/WTMP_American_Forecast.dss
-TSRecord DssPathname=//Folsom/ELEV-FORECAST//1Hour/AMER_BC_SCRIPT/
+TSRecord DssPathname=//Folsom Lake/ELEV-FORECAST//1Day/AMER_BC_SCRIPT/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -171,7 +171,7 @@ TSRecord Name=~E10:F
 TSRecord VariableId=14
 TSRecord ParamName=Elev
 TSRecord DssFilename=shared/WTMP_American_Forecast.dss
-TSRecord DssPathname=//Natoma/ELEV//1Month/AMER_BC_SCRIPT/
+TSRecord DssPathname=//Natoma/ELEV//1Day/AMER_BC_SCRIPT/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -180,7 +180,7 @@ TSRecord Name=~E15:F
 TSRecord VariableId=41
 TSRecord ParamName=Flow-RELEASE
 TSRecord DssFilename=shared/WTMP_American_Forecast.dss
-TSRecord DssPathname=//FOLSOM/FLOW-RELEASE-TO-NATOMA//1Day/AMER_BC_SCRIPT/
+TSRecord DssPathname=/AMERICAN RIVER/LAKE NATOMA/FLOW-NIMBUS ACTUAL//1Day/AMER_BC_SCRIPT/
 TSRecord InputPosition=0
 TSRecord End=
 

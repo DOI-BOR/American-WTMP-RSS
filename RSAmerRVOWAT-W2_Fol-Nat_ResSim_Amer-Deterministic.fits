@@ -1,0 +1,43 @@
+TSDataSet Name=RSAmerRVO-WAT-W2 Fol-Nat ResSim Amer-Deterministic
+Description=ResSim Alternative including the AmericanRiverOnly network, from Nimbus Dam to the Sac confluence (TS Data Set for WAT-W2 Fol-Nat ResSim Amer-Deterministic)
+
+_type=0
+ParentPath=null
+ParentClass=null
+TSRecord=0
+TSRecord Name=AFO Balance
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_American_Forecast.dss
+TSRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=1
+TSRecord Name=Nimbus Dam Outflow
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/DMS_AmericanHydroTS.dss
+TSRecord DssPathname=/W2:qwo_34.csv/Seg 34 Withdrawal/Flow-QWD//1HOUR/W2 Fol-Nat:F2018-03:CeQualW2-W2 Natoma Prescribed/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=2
+TSRecord Name=Sacramento Water Intake
+TSRecord VariableId=85
+TSRecord ParamName=
+TSRecord DssFilename=shared/American_withdrawals_6.dss
+TSRecord DssPathname=/AMERICAN RIVER/EA FAIRBAIRN WTP (SACRAMENTO)/FLOW-DIVERSION//1DAY/CARDNO/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=3
+TSRecord Name=Carmichael Water Intake
+TSRecord VariableId=85
+TSRecord ParamName=
+TSRecord DssFilename=shared/American_withdrawals_6.dss
+TSRecord DssPathname=/AMERICAN RIVER/BAJAMONT WTP (CARMICHAEL)/FLOW-DIVERSION//1DAY/CARDNO/
+TSRecord InputPosition=0
+TSRecord End=
+
+

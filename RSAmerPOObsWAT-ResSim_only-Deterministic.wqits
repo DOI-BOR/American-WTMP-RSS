@@ -1,0 +1,7 @@
+TSDataSet Name=RSAmerPO-WAT-ResSim only-Deterministic
+Description=WTMP American ResSim Alternative including Folsom Lake, Lake Natoma, and the lower American River - Prescribed Folsom Dam operations (Obs WQ TS Data Set for WAT-ResSim only-Deterministic)
+
+_type=0
+ParentPath=null
+ParentClass=null
+

@@ -7,8 +7,7 @@
   "Name" : "American_BC1",
   "constituentSetId" : 160,
   "geometryId" : 3161,
-  "lastModifiedTime" : 1678435067338,
-  "ressimVersion" : "6.0.0.171R",
+  "lastModifiedTime" : 1706837410487,
   "set" : {
     "boundaryConditions" : [ {
       "@type" : "WQBoundaryCondition",
@@ -23,52 +22,55 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS Path" : "",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 0,
+        "name" : "DSS",
         "description" : "",
-        "name" : "DSS"
+        "units" : "",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
+        "DSS Path" : "///////",
+        "Interpreted Units" : "\u00B0C",
+        "interpretedUnits" : "\u00B0C"
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -84,56 +86,60 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\American_inflow_temps_6.dss",
-        "DSS Path" : "/11446030/SF AMERICAN TEMP/TEMP-WATER//1HOUR/USGS-CARDNO/",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 1,
-        "description" : "",
         "name" : "DSS",
-        "units" : "DEG C"
+        "description" : "",
+        "units" : "C",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "DSS File Path" : "shared\\DMS_American_Pre-Process.dss",
+        "DSS Path" : "/MR AM.-FOLSOM LAKE/11446030 PILOT HILL-WATER TEMP/TEMP-WATER-C//15Minute/250.200.50.1.1/",
+        "Interpreted Units" : "\u00B0C",
+        "interpretedUnits" : "\u00B0C"
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_AT_JUNCTION"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\American_inflow_temps_6.dss",
-        "DSS Path" : "/11446030/SF AMERICAN TEMP/TEMP-WATER//1HOUR/USGS-CARDNO/",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 1,
-        "description" : "",
         "name" : "DSS",
-        "units" : "DEG C"
+        "description" : "",
+        "units" : "C",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "DSS File Path" : "shared\\DMS_American_Pre-Process.dss",
+        "DSS Path" : "/MR AM.-FOLSOM LAKE/11446030 PILOT HILL-WATER TEMP/TEMP-WATER-C//15Minute/250.200.50.1.1/",
+        "Interpreted Units" : "\u00B0C",
+        "interpretedUnits" : "\u00B0C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -149,56 +155,60 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\American_inflow_temps_6.dss",
-        "DSS Path" : "/11433790/NF AMERICAN TEMP/TEMP-WATER//1HOUR/USGS-CARDNO/",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 1,
-        "description" : "",
         "name" : "DSS",
-        "units" : "DEG C"
+        "description" : "",
+        "units" : "C",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "DSS File Path" : "shared\\DMS_American_Pre-Process.dss",
+        "DSS Path" : "/MR AM.-FOLSOM LAKE/11433790 AUBURN DAM-WATER TEMP/TEMP-WATER-C//15Minute/250.111.50.1.1/",
+        "Interpreted Units" : "\u00B0C",
+        "interpretedUnits" : "\u00B0C"
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_AT_JUNCTION"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\American_inflow_temps_6.dss",
-        "DSS Path" : "/11433790/NF AMERICAN TEMP/TEMP-WATER//1HOUR/USGS-CARDNO/",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 1,
-        "description" : "",
         "name" : "DSS",
-        "units" : "DEG C"
+        "description" : "",
+        "units" : "C",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "DSS File Path" : "shared\\DMS_American_Pre-Process.dss",
+        "DSS Path" : "/MR AM.-FOLSOM LAKE/11433790 AUBURN DAM-WATER TEMP/TEMP-WATER-C//15Minute/250.111.50.1.1/",
+        "Interpreted Units" : "\u00B0C",
+        "interpretedUnits" : "\u00B0C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -214,56 +224,60 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\American_inflow_temps_6.dss",
-        "DSS Path" : "/11433790/NF AMERICAN TEMP/TEMP-WATER//1HOUR/USGS-CARDNO/",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 1,
-        "description" : "",
         "name" : "DSS",
-        "units" : "DEG C"
+        "description" : "",
+        "units" : "C",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "DSS File Path" : "shared\\DMS_American_Pre-Process.dss",
+        "DSS Path" : "/MR AM.-FOLSOM LAKE/11433790 AUBURN DAM-WATER TEMP/TEMP-WATER-C//15Minute/250.111.50.1.1/",
+        "Interpreted Units" : "\u00B0C",
+        "interpretedUnits" : "\u00B0C"
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_AT_JUNCTION"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\American_inflow_temps_6.dss",
-        "DSS Path" : "/11433790/NF AMERICAN TEMP/TEMP-WATER//1HOUR/USGS-CARDNO/",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 1,
-        "description" : "",
         "name" : "DSS",
-        "units" : "DEG C"
+        "description" : "",
+        "units" : "C",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "DSS File Path" : "shared\\DMS_American_Pre-Process.dss",
+        "DSS Path" : "/MR AM.-FOLSOM LAKE/11433790 AUBURN DAM-WATER TEMP/TEMP-WATER-C//15Minute/250.111.50.1.1/",
+        "Interpreted Units" : "\u00B0C",
+        "interpretedUnits" : "\u00B0C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -279,52 +293,54 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS Path" : "",
+        "name" : "DSS",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 0,
-        "description" : "",
-        "name" : "DSS"
+        "DSS Path" : "",
+        "Interpreted Units" : "",
+        "interpretedUnits" : ""
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -340,56 +356,60 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\American_inflow_temps_6.dss",
-        "DSS Path" : "/11433790/NF AMERICAN TEMP/TEMP-WATER//1HOUR/USGS-CARDNO/",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "DEG C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
-        "name" : "DSS",
-        "units" : "DEG C"
+        "DSS File Path" : "shared\\American_inflow_temps_6.dss",
+        "DSS Path" : "/11433790/NF AMERICAN TEMP/TEMP-WATER//1HOUR/USGS-CARDNO/",
+        "Interpreted Units" : "",
+        "interpretedUnits" : ""
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_AT_JUNCTION"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\American_inflow_temps_6.dss",
-        "DSS Path" : "/11433790/NF AMERICAN TEMP/TEMP-WATER//1HOUR/USGS-CARDNO/",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "DEG C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
-        "name" : "DSS",
-        "units" : "DEG C"
+        "DSS File Path" : "shared\\American_inflow_temps_6.dss",
+        "DSS Path" : "/11433790/NF AMERICAN TEMP/TEMP-WATER//1HOUR/USGS-CARDNO/",
+        "Interpreted Units" : "",
+        "interpretedUnits" : ""
       },
       "units" : [ "\u00B0C" ]
     } ],

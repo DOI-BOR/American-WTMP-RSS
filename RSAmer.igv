@@ -1,4 +1,4 @@
-ModifiedTime=1702587881380
+ModifiedTime=1707771745457
 GVDataSet Name=WQForecast
 Description=Copy of Flow-only alt on AMR_Net_7 (Global Variable Data Set)
 
@@ -55,41 +55,41 @@ GVRecord End
 GVRecord=TIME_SERIES
 GVRecord Name=Muni_specified_flow
 GVRecord ID=6
-GVRecord DssFilename=shared/Folsom_releases_6.dss
-GVRecord DssPathname=/FOLSOM/Flow 3 Pumping Plant Release/FLOW//1Hour/CDEC-CARDNO/
-GVRecord DataLocation=false
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord DssFilename=shared/WTMP_American_Forecast.dss
+GVRecord DssPathname=//FOLSOM/PUMPING (FP)//1DAY/amer_bc_script/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=FOLSOM
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
 GVRecord Name=EID_specified_flow
 GVRecord ID=7
-GVRecord DssFilename=shared/American_inflows_6.dss
-GVRecord DssPathname=//EID/FLOW//1HOUR/USGS-CARDNO-MERGED/
-GVRecord DataLocation=false
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord DssFilename=shared/WTMP_American_Forecast.dss
+GVRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=ZEROS
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
 GVRecord Name=Aux_spill_specified_flow
 GVRecord ID=8
-GVRecord DssFilename=shared/Folsom_releases_6.dss
-GVRecord DssPathname=/FOLSOM/Sum Auxiliary Spillway/FLOW//1Hour/CDEC-CARDNO/
-GVRecord DataLocation=false
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord DssFilename=shared/WTMP_American_Forecast.dss
+GVRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=ZEROS
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
 GVRecord Name=Service_spill_specified_flow
 GVRecord ID=9
-GVRecord DssFilename=shared/Folsom_releases_6.dss
-GVRecord DssPathname=/FOLSOM/Sum Service Spillway/FLOW//1Hour/CDEC-CARDNO/
-GVRecord DataLocation=false
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord DssFilename=shared/WTMP_American_Forecast.dss
+GVRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=ZEROS
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
@@ -97,9 +97,9 @@ GVRecord Name=P1_shutter_elev
 GVRecord ID=10
 GVRecord DssFilename=shared/Folsom_shutter_op_6.dss
 GVRecord DssPathname=/FOLSOM/GATE1/ELEV//1Day/USBR-CARDNO/
-GVRecord DataLocation=false
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord DataLocation=true
+GVRecord LinkedLocation=GATE1
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
@@ -107,9 +107,9 @@ GVRecord Name=P2_shutter_elev
 GVRecord ID=11
 GVRecord DssFilename=shared/Folsom_shutter_op_6.dss
 GVRecord DssPathname=/FOLSOM/GATE2/ELEV//1Day/USBR-CARDNO/
-GVRecord DataLocation=false
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord DataLocation=true
+GVRecord LinkedLocation=GATE2
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
@@ -117,9 +117,9 @@ GVRecord Name=P3_shutter_elev
 GVRecord ID=12
 GVRecord DssFilename=shared/Folsom_shutter_op_6.dss
 GVRecord DssPathname=/FOLSOM/GATE3/ELEV//1Day/USBR-CARDNO/
-GVRecord DataLocation=false
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord DataLocation=true
+GVRecord LinkedLocation=GATE3
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
@@ -127,79 +127,79 @@ GVRecord Name=Muni_intake_elev
 GVRecord ID=13
 GVRecord DssFilename=shared/Folsom_shutter_op_6.dss
 GVRecord DssPathname=/FOLSOM/MUNI_INTAKE/ELEV//1Hour/CARDNO/
-GVRecord DataLocation=false
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord DataLocation=true
+GVRecord LinkedLocation=MUNI_INTAKE
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
 GVRecord Name=Emergency_spill_specified_flow
 GVRecord ID=14
-GVRecord DssFilename=shared/Folsom_releases_6.dss
-GVRecord DssPathname=/FOLSOM/Sum Emergency Spillway/FLOW//1Hour/CDEC-CARDNO/
-GVRecord DataLocation=false
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord DssFilename=shared/WTMP_American_Forecast.dss
+GVRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=ZEROS
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
 GVRecord Name=Natoma_spill_spec_flow
 GVRecord ID=15
-GVRecord DssFilename=shared/Natoma_releases_clean_6.dss
-GVRecord DssPathname=/NATOMA/SPILL RELEASE/FLOW//1HOUR/CDEC-CARDNO/
-GVRecord DataLocation=false
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord DssFilename=shared/WTMP_American_Forecast.dss
+GVRecord DssPathname=/AMERICAN RIVER/LAKE NATOMA/FLOW-NIMBUS ACTUAL//1Day/AMER_BC_SCRIPT/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=LAKE NATOMA
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
 GVRecord Name=Natoma_penstock_spec_flow
 GVRecord ID=16
-GVRecord DssFilename=shared/Natoma_releases_clean_6.dss
-GVRecord DssPathname=/NATOMA/GEN RELEASE TOTAL/FLOW//1HOUR/CDEC-CARDNO/
-GVRecord DataLocation=false
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord DssFilename=shared/WTMP_American_Forecast.dss
+GVRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=ZEROS
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
 GVRecord Name=Natoma_hatchery_spec_flow
 GVRecord ID=17
-GVRecord DssFilename=shared/Natoma_releases_clean_6.dss
-GVRecord DssPathname=/NATOMA/FISH HATCHERY FLOW/FLOW//1HOUR/CDEC-CARDNO/
-GVRecord DataLocation=false
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord DssFilename=shared/WTMP_American_Forecast.dss
+GVRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=ZEROS
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
 GVRecord Name=Folsom_S_Canal_spec_flow
 GVRecord ID=18
-GVRecord DssFilename=shared/Natoma_releases_clean_6.dss
-GVRecord DssPathname=/NATOMA/FLOW 1 SOUTH CANAL DIVERSION FLW/FLOW//1HOUR/CDEC-CARDNO/
-GVRecord DataLocation=false
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord DssFilename=shared/WTMP_American_Forecast.dss
+GVRecord DssPathname=//FOLSOM/FS CANAL (FSC)//1DAY/amer_bc_script/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=FOLSOM
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
 GVRecord Name=Temperature_Target
 GVRecord ID=29
-GVRecord DssFilename=shared/USBR_American_calibration_6.dss
-GVRecord DssPathname=/USBR/WATT_AVE_BRIDGE_NEAR_CARMICHAEL_AMERICAN 11446700/TEMP-WATER//1WEEK/CARDNO-FILLED MISSING/
-GVRecord DataLocation=false
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord DssFilename=shared/WTMP_American_Forecast.dss
+GVRecord DssPathname=/WTMP_American/Folsom Downstream/TEMP-WATER-TARGET//1Hour/AMER_BC_SCRIPT/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=Folsom Downstream
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
 GVRecord Name=Total_Penstock_specified_flow
 GVRecord ID=30
-GVRecord DssFilename=shared/Folsom_releases_6.dss
-GVRecord DssPathname=/FOLSOM/FLOW 2 GENERATION RELEASE/FLOW//1HOUR/CDEC-CARDNO/
-GVRecord DataLocation=false
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord DssFilename=shared/WTMP_American_Forecast.dss
+GVRecord DssPathname=//FOLSOM/FLOW-RELEASE-TO-NATOMA//1Day/AMER_BC_SCRIPT/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=FOLSOM
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=SCALAR
@@ -207,29 +207,39 @@ GVRecord Name=Downstream_Control_Loc
 GVRecord ID=37
 GVRecord DssFilename=rss/RSAmer_igv.dss
 GVRecord DssPathname=//Downstream_Control_Loc///Integer/RSAmer-ResSim-Default/
-GVRecord DataLocation=false
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord DataLocation=true
+GVRecord LinkedLocation=DOWNSTREAM_CONTROL_LOC
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
 GVRecord Name=FairOaks_Equilibrium_Temp
 GVRecord ID=36
-GVRecord DssFilename=shared/FairOaks_equilibrium_temp.dss
-GVRecord DssPathname=//FAIR OAKS/TEMP-EQUILIBRIUM//1Hour/DERIVED/
-GVRecord DataLocation=false
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord DssFilename=shared/WTMP_American_Forecast.dss
+GVRecord DssPathname=/MR AM.-NATOMA LAKE/FAIR OAKS/Temp-Equil//1Day/amer_bc_script/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=FAIR OAKS
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
 GVRecord Name=Lower_Riv_out_flow
 GVRecord ID=39
-GVRecord DssFilename=shared/Folsom_releases_6.dss
-GVRecord DssPathname=/FOLSOM/SUM LOWER RIVER OUTLETS/FLOW//1HOUR/CDEC-CARDNO-MIN8/
-GVRecord DataLocation=false
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord DssFilename=shared/WTMP_American_Forecast.dss
+GVRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=ZEROS
+GVRecord LinkedModel=DSS File
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Folsom_Lower_River_Use
+GVRecord ID=41
+GVRecord DssFilename=shared/WTMP_American_Forecast.dss
+GVRecord DssPathname=/FOLSOM/LOWER RIVER OUTLET USEAGE/COUNT//1Day/AMER_BC_SCRIPT/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=LOWER RIVER OUTLET USEAGE
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 

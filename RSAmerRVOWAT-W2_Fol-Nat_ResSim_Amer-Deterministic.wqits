@@ -1,0 +1,115 @@
+TSDataSet Name=RSAmerRVO-WAT-W2 Fol-Nat ResSim Amer-Deterministic
+Description=ResSim Alternative including the AmericanRiverOnly network, from Nimbus Dam to the Sac confluence (TS Data Set for WAT-W2 Fol-Nat ResSim Amer-Deterministic)
+
+_type=0
+ParentPath=null
+ParentClass=null
+TSRecord=1
+TSRecord Name=Fair Oaks CIMIS-Air Temperature
+TSRecord VariableId=-2147483648
+TSRecord ParamName=Air Temperature
+TSRecord DssFilename=shared/American_met_6.dss
+TSRecord DssPathname=/AMERICAN/FAIR OAKS/TEMP-AIR//1HOUR/CIMIS-CARDNO/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=2
+TSRecord Name=Fair Oaks CIMIS-Humidity
+TSRecord VariableId=-2147483648
+TSRecord ParamName=Humidity
+TSRecord DssFilename=shared/American_met_6.dss
+TSRecord DssPathname=/AMERICAN/FAIR OAKS/TEMP-DEWPT//1Hour/CIMIS-CARDNO/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=3
+TSRecord Name=Fair Oaks CIMIS-Shortwave Radiation
+TSRecord VariableId=-2147483648
+TSRecord ParamName=Shortwave Radiation
+TSRecord DssFilename=shared/American_met_6.dss
+TSRecord DssPathname=/AMERICAN/MATHER AFB CC THEORETICAL/SOLRAD//1HOUR/NWS-CARDNO/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=4
+TSRecord Name=Fair Oaks CIMIS-Cloudiness
+TSRecord VariableId=-2147483648
+TSRecord ParamName=Cloudiness
+TSRecord DssFilename=shared/American_met_6.dss
+TSRecord DssPathname=/AMERICAN/MATHER AFB/CLOUD//1Hour/NWS-CARDNO/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=5
+TSRecord Name=Fair Oaks CIMIS-Wind Speed
+TSRecord VariableId=-2147483648
+TSRecord ParamName=Wind Speed
+TSRecord DssFilename=shared/American_met_6.dss
+TSRecord DssPathname=/AMERICAN/FAIR OAKS/SPEED-WIND//1Hour/CIMIS-CARDNO/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=6
+TSRecord Name=Folsom Point (Dyke 8)-Air Temperature
+TSRecord VariableId=-2147483648
+TSRecord ParamName=Air Temperature
+TSRecord DssFilename=shared/American_met_6.dss
+TSRecord DssPathname=/AMERICAN/FAIR OAKS/TEMP-AIR//1HOUR/CIMIS-CARDNO/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=7
+TSRecord Name=Folsom Point (Dyke 8)-Humidity
+TSRecord VariableId=-2147483648
+TSRecord ParamName=Humidity
+TSRecord DssFilename=shared/American_met_6.dss
+TSRecord DssPathname=/AMERICAN/FAIR OAKS/TEMP-DEWPT//1Hour/CIMIS-CARDNO/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=8
+TSRecord Name=Folsom Point (Dyke 8)-Shortwave Radiation
+TSRecord VariableId=-2147483648
+TSRecord ParamName=Shortwave Radiation
+TSRecord DssFilename=shared/American_met_6.dss
+TSRecord DssPathname=/AMERICAN/MATHER AFB CC THEORETICAL/SOLRAD//1HOUR/NWS-CARDNO/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=9
+TSRecord Name=Folsom Point (Dyke 8)-Cloudiness
+TSRecord VariableId=-2147483648
+TSRecord ParamName=Cloudiness
+TSRecord DssFilename=shared/American_met_6.dss
+TSRecord DssPathname=/AMERICAN/MATHER AFB/CLOUD//1Hour/NWS-CARDNO/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=10
+TSRecord Name=Folsom Point (Dyke 8)-Wind Speed
+TSRecord VariableId=-2147483648
+TSRecord ParamName=Wind Speed
+TSRecord DssFilename=shared/American_met_6.dss
+TSRecord DssPathname=/AMERICAN/FOLSOM DYKE 8/SPEED-WIND//1Hour/NWS-CDEC-CARDNO/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=11
+TSRecord Name=Nimbus Dam - Nimbus Dam Outflow
+TSRecord VariableId=2001
+TSRecord ParamName=Water Temperature
+TSRecord DssFilename=shared/DMS_American_Pre-Process.dss
+TSRecord DssPathname=/MR AM.-NATOMA LAKE/11446500 NIMBUS DAM-WATER TEMP/TEMP-WATER-C//15Minute/251.400.50.1.1/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=12
+TSRecord Name=AFO - AFO Balance
+TSRecord VariableId=2001
+TSRecord ParamName=Water Temperature
+TSRecord DssFilename=shared/DMS_American_Pre-Process.dss
+TSRecord DssPathname=//ZEROS/temp-water//1Day/ZEROS/
+TSRecord InputPosition=0
+TSRecord End=
+
+

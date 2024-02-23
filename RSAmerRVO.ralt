@@ -1,0 +1,197 @@
+RssAlt Name=RSAmerRVO
+RssAlt Description=ResSim Alternative including the AmericanRiverOnly network, from Nimbus Dam to the Sac confluence
+Version=1001
+ModifiedTime=1707503969187
+NetworkID=14577
+System Path=rss/networks/AMR_Net_7_RiverOnly/AMR_Net_7_RiverOnly.rsys
+Operations Path=
+InputTSData Path=rss/RSAmerRVO.fits
+OutputTSData Path=
+InputGVData Path=rss/RSAmerRVO.igv
+InputWQTSDataPath Path=
+OutputVerticalDatum=AS_DEFINED
+FlowComputeType=1
+ComputeHoldouts=false
+ComputeUnreg=true
+ComputeCumLoc=true
+CopyOverrides=false
+UseObsTSData=false
+LogLevel=3
+UseYieldAnalysis=false
+SelectedYieldAnalysis=Reservoir Yield
+ReservoirYieldAnalysisBegin
+YieldAnalysisBegin
+UseHydropowerRules=false
+MaxIteration=25
+UseBisectionOnly=true
+MaxHeuristicIterations=8
+YieldAnalysisEnd
+ReservoirYieldAnalysisEnd
+ReverseReservoirYieldAnalysisBegin
+YieldAnalysisBegin
+UseHydropowerRules=false
+MaxIteration=25
+UseBisectionOnly=true
+MaxHeuristicIterations=8
+YieldAnalysisEnd
+ReservoirDataBegin
+ReservoirDataEnd
+SatisfyMapBegin
+SatisfyMapEnd
+AdjustmentOptionsBegin
+AdjustTopOfCon=true
+AdjustmentStrategy=Slide Pattern
+HasExcludePeriod=false
+Start=null
+End=null
+MaxLimitType=Zone
+MinLimitType=Zone
+MinElevValue=0.0
+MaxElevValue=0.0
+MinStorageValue=0.0
+MaxStorageValue=0.0
+MinZoneValue=0
+MaxZoneValue=2
+ZoneAdjustmentType=Collapse Zones
+AdjustmentOptionsEnd
+ReverseReservoirYieldAnalysisEnd
+WaterAccountYieldAnalysisBegin
+Tolerence=0.0
+WaterAccountIndex=-2147483648
+YieldAnalysisBegin
+UseHydropowerRules=false
+MaxIteration=25
+UseBisectionOnly=true
+MaxHeuristicIterations=8
+YieldAnalysisEnd
+WaterAccountYieldAnalysisEnd
+ReverseWaterAccountYieldAnalysisBegin
+Tolerance=100.0
+WaterAccountIndex=-2147483648
+YieldAnalysisBegin
+UseHydropowerRules=false
+MaxIteration=25
+UseBisectionOnly=true
+MaxHeuristicIterations=8
+YieldAnalysisEnd
+SatisfyMapBegin
+SatisfyMapEnd
+AdjustmentOptionsBegin
+MaxLimitType=Constant
+MaxConstantValue=0.0
+MaxPercentValue=0.0
+ZoneAdjustmentType=Collapse Zones
+AdjustmentOptionsEnd
+ReverseWaterAccountYieldAnalysisEnd
+ReservoirStorageVsYieldAnalysisBegin
+YieldAnalysisBegin
+UseHydropowerRules=false
+MaxIteration=25
+UseBisectionOnly=true
+MaxHeuristicIterations=8
+YieldAnalysisEnd
+ReservoirDataBegin
+ReservoirDataEnd
+SatisfyMapBegin
+SatisfyMapEnd
+AdjustmentOptionsBegin
+AdjustmentStrategy=Slide Pattern
+HasExcludePeriod=false
+Start=null
+End=null
+ZoneAdjustmentType=Collapse Zones
+AdjustmentOptionsEnd
+Intervals=10
+YieldAnalysesToOutput=1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 
+ReservoirStorageVsYieldAnalysisEnd
+TimeStep=1
+TimeIncrement=2
+ObservedTSData Path=rss/RSAmerRVOObs.fits
+divOpSelection=54,1
+divOpSelection=58,1
+ReplaceAllReleaseOverrides=false
+UseDiffAltResultsTableBegin
+UseDiffAltResultsTableEnd
+DssOutputDataBegin
+WriteAllDssOutput;true
+WriteAllInputDss;true
+DssOutputDataEnd
+Hindcast=~E55:F;43;1;0.0
+Hindcast=~E59:F;43;1;0.0
+Hindcast=~S19;98;1;0.0
+Hindcast=~S20;98;1;0.0
+Hindcast=~S21;98;1;3.0
+Hindcast=~S24;98;1;0.0
+Hindcast=~S35;98;1;0.0
+InputTsVariant=WAT-W2 Fol-Nat-Amer-Deterministic,true
+InputTsVariant=W2 Fol-Nat-Amer-Deterministic,true
+InputTsVariant=WAT-W2 Fol-Nat ResSim Amer-Deterministic,true
+InputTsVariant=W2 Fol-Nat ResSim Amer-Deterministic,true
+UsingInflowFactors=false
+InflowFactorType=0
+GlobalInflowFactor=1.0
+Hotstart Options
+Enabled:false
+CreateHotStart:false
+SaveAtEnd:false
+SaveAtLookback:false
+SaveAtInterval:false
+IntervalDateTime:
+TimeStep:1
+TimeIncrement:2
+SaveAtDateTime:false
+TimeStepsToSave:0.0
+LoadHotstart:false
+Hotstart End
+WaterQualityBegin
+RunWq=true
+TimeStep=1
+TimeStepIncrement=2
+Constituent=Water_and_Sed_Temp
+ConstituentId=160
+InitialConditions=American_IC_RiverOnlyNetwork
+InitialConditionsId=14586
+BoundaryConditions=American_BC_RiverOnlyNetwork
+BoundaryConditionsId=14585
+MetData=MDS1_Net7
+MetDataId=159
+DispersionCoef=American-DZ-RiverOnlyNetwork
+DispersionCoefId=14587
+Parameters=American-RiverOnlyNetwork
+ParametersId=14584
+WqGeometry=AmericanWQ_RiverOnlyNetwork
+WqGeometryId=14583
+NumberThreads=1
+OutputSteps=1
+PreserveConcentration=true
+FirstOrderSolution=true
+OutputVariablesBegin
+CellVolume=false
+CellFlow=true
+CellVelocity=true
+CellMass=false
+HeatBudget=true
+NsmPathways=false
+NsmVariables=false
+GeneralPathways=false
+OutputVariablesEnd
+CoupledFlowWQCompute=true
+WaterQualityEnd
+PlugInDataBegin
+PlugIn:Monte Carlo
+MinIterations:-2147483648
+MaxIterations:-2147483648
+LastIteration:0
+CumulativeTime:0
+SimulationOption:0
+ScriptFilePath:rss/RSAmerRVO.mcscript
+IterationString:
+Compute:false
+StandAloneRandomSeed:0.0
+PlugInEnd
+PlugIn:Ensemble
+EnsembleMembersString:
+Compute:false
+UseMultithreadedCompute:false
+PlugInEnd
+PlugInDataEnd

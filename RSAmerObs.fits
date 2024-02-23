@@ -17,8 +17,8 @@ TSRecord=1
 TSRecord Name=~E1:F
 TSRecord VariableId=10
 TSRecord ParamName=Elev
-TSRecord DssFilename=shared/Folsom_data.dss
-TSRecord DssPathname=/FOLSOM RESERVOIR/Level/ELEV//1Hour/CDEC-CARDNO/
+TSRecord DssFilename=shared/DMS_AmericanHydroTS.dss
+TSRecord DssPathname=/MR Am.-Folsom Lake/FOL-Elevation/Elev//1Hour/250.3.145.1.1/
 TSRecord InputPosition=-1
 TSRecord End=
 
@@ -26,8 +26,8 @@ TSRecord=2
 TSRecord Name=~E10:F
 TSRecord VariableId=10
 TSRecord ParamName=Elev
-TSRecord DssFilename=shared/Natoma_data.dss
-TSRecord DssPathname=/NATOMA/NATOMA POOL/ELEV//1Hour/CDEC-CARDNO/
+TSRecord DssFilename=shared/DMS_AmericanHydroTS.dss
+TSRecord DssPathname=/MR Am.-Natoma Lake/NAT-Elevation/Elev//1Hour/251.4.145.1.1/
 TSRecord InputPosition=-1
 TSRecord End=
 

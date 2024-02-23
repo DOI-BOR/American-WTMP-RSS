@@ -9,7 +9,7 @@ TSRecord Name=Fair Oaks CIMIS-Air Temperature
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Air Temperature
 TSRecord DssFilename=shared/WTMP_American_Forecast.dss
-TSRecord DssPathname=/MR AM.-NATOMA LAKE/FAIR OAKS/TEMP-AIR//1HOUR/251.40.53.1.1/
+TSRecord DssPathname=/MR Am.-Natoma Lake/Fair Oaks/Temp-Air//1Hour/251.40.53.1.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -18,7 +18,7 @@ TSRecord Name=Fair Oaks CIMIS-Humidity
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Humidity
 TSRecord DssFilename=shared/WTMP_American_Forecast.dss
-TSRecord DssPathname=/MR AM.-NATOMA LAKE/FAIR OAKS/TEMP-DEWPOINT//1HOUR/251.40.51.1.1/
+TSRecord DssPathname=/MR Am.-Natoma Lake/Fair Oaks/Temp-DewPoint//1Hour/251.40.51.1.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -27,7 +27,7 @@ TSRecord Name=Fair Oaks CIMIS-Shortwave Radiation
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Shortwave Radiation
 TSRecord DssFilename=shared/WTMP_American_Forecast.dss
-TSRecord DssPathname=/MR AM.-FOLSOM LAKE/THEORETICAL FOLSOM SOLAR/IRRAD-SOLAR//1HOUR/250.15.135.1.1/
+TSRecord DssPathname=/MR Am.-Folsom Lake/Theoretical Folsom Solar/Irrad-Solar//1Hour/250.15.135.1.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -45,7 +45,7 @@ TSRecord Name=Fair Oaks CIMIS-Wind Speed
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Wind Speed
 TSRecord DssFilename=shared/WTMP_American_Forecast.dss
-TSRecord DssPathname=/MR AM.-NATOMA LAKE/FAIR OAKS/SPEED-WIND//1HOUR/251.40.133.1.1/
+TSRecord DssPathname=/MR Am.-Natoma Lake/Fair Oaks/Speed-Wind//1Hour/251.40.133.1.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -54,7 +54,7 @@ TSRecord Name=Folsom Point (Dyke 8)-Air Temperature
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Air Temperature
 TSRecord DssFilename=shared/WTMP_American_Forecast.dss
-TSRecord DssPathname=/MR AM.-NATOMA LAKE/FAIR OAKS/TEMP-AIR//1HOUR/251.40.53.1.1/
+TSRecord DssPathname=/MR Am.-Natoma Lake/Fair Oaks/Temp-Air//1Hour/251.40.53.1.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -63,7 +63,7 @@ TSRecord Name=Folsom Point (Dyke 8)-Humidity
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Humidity
 TSRecord DssFilename=shared/WTMP_American_Forecast.dss
-TSRecord DssPathname=/MR AM.-NATOMA LAKE/FAIR OAKS/TEMP-DEWPOINT//1HOUR/251.40.51.1.1/
+TSRecord DssPathname=/MR Am.-Natoma Lake/Fair Oaks/Temp-DewPoint//1Hour/251.40.51.1.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -72,7 +72,7 @@ TSRecord Name=Folsom Point (Dyke 8)-Shortwave Radiation
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Shortwave Radiation
 TSRecord DssFilename=shared/WTMP_American_Forecast.dss
-TSRecord DssPathname=/MR AM.-FOLSOM LAKE/THEORETICAL FOLSOM SOLAR/IRRAD-SOLAR//1HOUR/250.15.135.1.1/
+TSRecord DssPathname=/MR Am.-Folsom Lake/Theoretical Folsom Solar/Irrad-Solar//1Hour/250.15.135.1.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -90,7 +90,7 @@ TSRecord Name=Folsom Point (Dyke 8)-Wind Speed
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Wind Speed
 TSRecord DssFilename=shared/WTMP_American_Forecast.dss
-TSRecord DssPathname=/MR AM.-FOLSOM LAKE/DYKE 8 (FLD)/SPEED-WIND//1HOUR/250.14.133.1.1/
+TSRecord DssPathname=/MR Am.-Folsom Lake/Dyke 8 (FLD)/Speed-Wind//1Hour/250.14.133.1.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -99,7 +99,7 @@ TSRecord Name=SF AMR NR Pilot Hill - CBR Flow
 TSRecord VariableId=2001
 TSRecord ParamName=Water Temperature
 TSRecord DssFilename=shared/WTMP_American_Forecast.dss
-TSRecord DssPathname=//FOLSOM-SF-IN/TEMP-WATER//1DAY/amer_bc_script/
+TSRecord DssPathname=//Folsom-SF-in/TEMP-WATER//1Day/AMER_BC_SCRIPT/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -108,7 +108,7 @@ TSRecord Name=Mormon Ravine In - Mormon Ravine and Newcastle PH
 TSRecord VariableId=2001
 TSRecord ParamName=Water Temperature
 TSRecord DssFilename=shared/WTMP_American_Forecast.dss
-TSRecord DssPathname=//TENS/temp-water//1Day/TENS/
+TSRecord DssPathname=//Folsom-NF-in/TEMP-WATER//1Day/AMER_BC_SCRIPT/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -117,7 +117,7 @@ TSRecord Name=NFA - NF+MF-ARPP Flows
 TSRecord VariableId=2001
 TSRecord ParamName=Water Temperature
 TSRecord DssFilename=shared/WTMP_American_Forecast.dss
-TSRecord DssPathname=//FOLSOM-NF-IN/TEMP-WATER//1DAY/amer_bc_script/
+TSRecord DssPathname=//Folsom-NF-in/TEMP-WATER//1Day/AMER_BC_SCRIPT/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -126,7 +126,7 @@ TSRecord Name=NFA - Folsom Ungaged Inflows
 TSRecord VariableId=2001
 TSRecord ParamName=Water Temperature
 TSRecord DssFilename=shared/WTMP_American_Forecast.dss
-TSRecord DssPathname=//TENS/temp-water//1Day/TENS/
+TSRecord DssPathname=//Folsom-NF-in/TEMP-WATER//1Day/AMER_BC_SCRIPT/
 TSRecord InputPosition=0
 TSRecord End=
 

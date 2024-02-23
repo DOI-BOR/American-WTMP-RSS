@@ -1,0 +1,4 @@
+PDCDataSet Name=RsAmerRiv-ResSim_Script-Deterministic
+Description=Simillar to RSAmer (forecast) alternative with full network, but with only the river represented in water quality (no reservoirs) (PDC Data Set for ResSim_Script-Deterministic)
+
+

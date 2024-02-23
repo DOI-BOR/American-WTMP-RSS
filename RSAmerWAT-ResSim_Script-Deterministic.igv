@@ -1,4 +1,4 @@
-ModifiedTime=1702583377221
+ModifiedTime=1707162567520
 GVDataSet Name=WQForecast-WAT-ResSim_Script-Deterministic
 Description=Copy of Copy of Flow-only alt on AMR_Net_7 (GV Data Set for WAT-ResSim_Script-Deterministic)
 
@@ -227,6 +227,16 @@ GVRecord Name=Lower_Riv_out_flow
 GVRecord ID=39
 GVRecord DssFilename=shared/Folsom_releases_6.dss
 GVRecord DssPathname=/FOLSOM/SUM LOWER RIVER OUTLETS/FLOW//1HOUR/CDEC-CARDNO-MIN8/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Folsom_Lower_River_Use
+GVRecord ID=41
+GVRecord DssFilename=
+GVRecord DssPathname=///////
 GVRecord DataLocation=false
 GVRecord LinkedLocation=
 GVRecord LinkedModel=

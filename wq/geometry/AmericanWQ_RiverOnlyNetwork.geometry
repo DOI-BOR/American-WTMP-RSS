@@ -1,0 +1,790 @@
+{
+  "index" : 14583,
+  "name" : "AmericanWQ_RiverOnlyNetwork",
+  "description" : "",
+  "Description" : "",
+  "Index" : 14583,
+  "Name" : "AmericanWQ_RiverOnlyNetwork",
+  "crossSectionManagerId" : 3152,
+  "lastModifiedTime" : 1707351022789,
+  "networkId" : 14577,
+  "rssWqGeometry" : {
+    "@type" : "RssWQGeometry",
+    "id" : 14583,
+    "connectionSet" : {
+      "@type" : "ConnectionSet",
+      "downstreamEntries" : [ {
+        "key" : {
+          "@type" : "WQSubDomainRef",
+          "geometryId" : 14583,
+          "id" : 1,
+          "name" : "Nimbus Dam to AFO",
+          "type" : "REACH_1D"
+        },
+        "value" : {
+          "@type" : "Connection",
+          "reach" : "BlwNimbus",
+          "river" : "American",
+          "station" : "113117"
+        }
+      }, {
+        "key" : {
+          "@type" : "WQSubDomainRef",
+          "geometryId" : 14583,
+          "id" : 3,
+          "name" : "AFO to Rossmoor Bar",
+          "type" : "REACH_1D"
+        },
+        "value" : {
+          "@type" : "Connection",
+          "reach" : "BlwNimbus",
+          "river" : "American",
+          "station" : "87344"
+        }
+      }, {
+        "key" : {
+          "@type" : "WQSubDomainRef",
+          "geometryId" : 14583,
+          "id" : 5,
+          "name" : "Rossmoor Bar to William Pond Park",
+          "type" : "REACH_1D"
+        },
+        "value" : {
+          "@type" : "Connection",
+          "reach" : "BlwNimbus",
+          "river" : "American",
+          "station" : "69024"
+        }
+      }, {
+        "key" : {
+          "@type" : "WQSubDomainRef",
+          "geometryId" : 14583,
+          "id" : 7,
+          "name" : "William Pond Park to Watt Ave Bridge",
+          "type" : "REACH_1D"
+        },
+        "value" : {
+          "@type" : "Connection",
+          "reach" : "BlwNimbus",
+          "river" : "American",
+          "station" : "48968"
+        }
+      }, {
+        "key" : {
+          "@type" : "WQSubDomainRef",
+          "geometryId" : 14583,
+          "id" : 9,
+          "name" : "Watt Ave Bridge to H St Bridge",
+          "type" : "REACH_1D"
+        },
+        "value" : {
+          "@type" : "Connection",
+          "reach" : "BlwNimbus",
+          "river" : "American",
+          "station" : "34910"
+        }
+      }, {
+        "key" : {
+          "@type" : "WQSubDomainRef",
+          "geometryId" : 14583,
+          "id" : 11,
+          "name" : "H St Bridge to Sacramento Confluence",
+          "type" : "REACH_1D"
+        },
+        "value" : {
+          "@type" : "Connection",
+          "reach" : "BlwNimbus",
+          "river" : "American",
+          "station" : "2543"
+        }
+      } ],
+      "upstreamEntries" : [ {
+        "key" : {
+          "@type" : "WQSubDomainRef",
+          "geometryId" : 14583,
+          "id" : 1,
+          "name" : "Nimbus Dam to AFO",
+          "type" : "REACH_1D"
+        },
+        "value" : {
+          "@type" : "Connection",
+          "reach" : "BlwNimbus",
+          "river" : "American",
+          "station" : "118749"
+        }
+      }, {
+        "key" : {
+          "@type" : "WQSubDomainRef",
+          "geometryId" : 14583,
+          "id" : 3,
+          "name" : "AFO to Rossmoor Bar",
+          "type" : "REACH_1D"
+        },
+        "value" : {
+          "@type" : "Connection",
+          "reach" : "BlwNimbus",
+          "river" : "American",
+          "station" : "113117"
+        }
+      }, {
+        "key" : {
+          "@type" : "WQSubDomainRef",
+          "geometryId" : 14583,
+          "id" : 5,
+          "name" : "Rossmoor Bar to William Pond Park",
+          "type" : "REACH_1D"
+        },
+        "value" : {
+          "@type" : "Connection",
+          "reach" : "BlwNimbus",
+          "river" : "American",
+          "station" : "87344"
+        }
+      }, {
+        "key" : {
+          "@type" : "WQSubDomainRef",
+          "geometryId" : 14583,
+          "id" : 7,
+          "name" : "William Pond Park to Watt Ave Bridge",
+          "type" : "REACH_1D"
+        },
+        "value" : {
+          "@type" : "Connection",
+          "reach" : "BlwNimbus",
+          "river" : "American",
+          "station" : "69024"
+        }
+      }, {
+        "key" : {
+          "@type" : "WQSubDomainRef",
+          "geometryId" : 14583,
+          "id" : 9,
+          "name" : "Watt Ave Bridge to H St Bridge",
+          "type" : "REACH_1D"
+        },
+        "value" : {
+          "@type" : "Connection",
+          "reach" : "BlwNimbus",
+          "river" : "American",
+          "station" : "48968"
+        }
+      }, {
+        "key" : {
+          "@type" : "WQSubDomainRef",
+          "geometryId" : 14583,
+          "id" : 11,
+          "name" : "H St Bridge to Sacramento Confluence",
+          "type" : "REACH_1D"
+        },
+        "value" : {
+          "@type" : "Connection",
+          "reach" : "BlwNimbus",
+          "river" : "American",
+          "station" : "34910"
+        }
+      } ]
+    },
+    "metAssignmentSet" : {
+      "@type" : "WQMetAssignmentSet",
+      "entries" : [ {
+        "key" : 159,
+        "value" : {
+          "@type" : "WQStationSetAssignments",
+          "entries" : [ {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 14583,
+              "id" : 1,
+              "name" : "Nimbus Dam to AFO",
+              "type" : "REACH_1D"
+            },
+            "value" : 3
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 14583,
+              "id" : 3,
+              "name" : "AFO to Rossmoor Bar",
+              "type" : "REACH_1D"
+            },
+            "value" : 3
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 14583,
+              "id" : 5,
+              "name" : "Rossmoor Bar to William Pond Park",
+              "type" : "REACH_1D"
+            },
+            "value" : 3
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 14583,
+              "id" : 7,
+              "name" : "William Pond Park to Watt Ave Bridge",
+              "type" : "REACH_1D"
+            },
+            "value" : 3
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 14583,
+              "id" : 9,
+              "name" : "Watt Ave Bridge to H St Bridge",
+              "type" : "REACH_1D"
+            },
+            "value" : 3
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 14583,
+              "id" : 11,
+              "name" : "H St Bridge to Sacramento Confluence",
+              "type" : "REACH_1D"
+            },
+            "value" : 3
+          } ]
+        }
+      } ]
+    },
+    "reachLengthDefinition" : {
+      "@type" : "ReachCellLengthDefinition",
+      "globalMaximum" : 1000.0,
+      "globalMinimum" : 500.0,
+      "maximums" : [ ],
+      "minimums" : [ ],
+      "type" : "Global"
+    },
+    "regionSet" : {
+      "@type" : "WQRegionSet",
+      "geometryId" : 14583,
+      "regions" : [ {
+        "@type" : "WQDefaultRegion",
+        "elements" : [ {
+          "@type" : "WQSubDomainRef",
+          "geometryId" : 14583,
+          "id" : 1,
+          "name" : "Nimbus Dam to AFO",
+          "type" : "REACH_1D"
+        }, {
+          "@type" : "WQSubDomainRef",
+          "geometryId" : 14583,
+          "id" : 3,
+          "name" : "AFO to Rossmoor Bar",
+          "type" : "REACH_1D"
+        }, {
+          "@type" : "WQSubDomainRef",
+          "geometryId" : 14583,
+          "id" : 5,
+          "name" : "Rossmoor Bar to William Pond Park",
+          "type" : "REACH_1D"
+        }, {
+          "@type" : "WQSubDomainRef",
+          "geometryId" : 14583,
+          "id" : 7,
+          "name" : "William Pond Park to Watt Ave Bridge",
+          "type" : "REACH_1D"
+        }, {
+          "@type" : "WQSubDomainRef",
+          "geometryId" : 14583,
+          "id" : 9,
+          "name" : "Watt Ave Bridge to H St Bridge",
+          "type" : "REACH_1D"
+        }, {
+          "@type" : "WQSubDomainRef",
+          "geometryId" : 14583,
+          "id" : 11,
+          "name" : "H St Bridge to Sacramento Confluence",
+          "type" : "REACH_1D"
+        } ]
+      } ]
+    },
+    "reservoirHeightDefinition" : {
+      "@type" : "ReservoirLayerHeightDefinition",
+      "entries" : [ ],
+      "globalHeight" : 3.0,
+      "type" : "Global"
+    },
+    "subDomainBoundaryList" : [ {
+      "@type" : "WQGeoSubDomainBoundary",
+      "distToResDam" : 0.0,
+      "downstreamSubDomainId" : 1,
+      "dsDiversionJnctId" : -1,
+      "id" : 0,
+      "inExtent" : true,
+      "jnctId" : 11,
+      "name" : "Nimbus Dam",
+      "savedFlow" : 0.0,
+      "type" : "RIVER_INFLOW",
+      "upstreamSubDomainId" : -2
+    }, {
+      "@type" : "WQGeoSubDomainBoundary",
+      "distToResDam" : 0.0,
+      "downstreamSubDomainId" : 3,
+      "dsDiversionJnctId" : -1,
+      "id" : 1,
+      "inExtent" : true,
+      "jnctId" : 48,
+      "name" : "AFO",
+      "savedFlow" : 0.0,
+      "type" : "RIVER_2_RIVER",
+      "upstreamSubDomainId" : 1
+    }, {
+      "@type" : "WQGeoSubDomainBoundary",
+      "distToResDam" : 0.0,
+      "downstreamSubDomainId" : 5,
+      "dsDiversionJnctId" : -1,
+      "id" : 2,
+      "inExtent" : true,
+      "jnctId" : 56,
+      "name" : "Rossmoor Bar",
+      "savedFlow" : 0.0,
+      "type" : "RIVER_2_RIVER",
+      "upstreamSubDomainId" : 3
+    }, {
+      "@type" : "WQGeoSubDomainBoundary",
+      "distToResDam" : 0.0,
+      "downstreamSubDomainId" : 7,
+      "dsDiversionJnctId" : -1,
+      "id" : 3,
+      "inExtent" : true,
+      "jnctId" : 60,
+      "name" : "William Pond Park",
+      "savedFlow" : 0.0,
+      "type" : "RIVER_2_RIVER",
+      "upstreamSubDomainId" : 5
+    }, {
+      "@type" : "WQGeoSubDomainBoundary",
+      "distToResDam" : 0.0,
+      "downstreamSubDomainId" : 9,
+      "dsDiversionJnctId" : -1,
+      "id" : 4,
+      "inExtent" : true,
+      "jnctId" : 50,
+      "name" : "Watt Ave Bridge",
+      "savedFlow" : 0.0,
+      "type" : "RIVER_2_RIVER",
+      "upstreamSubDomainId" : 7
+    }, {
+      "@type" : "WQGeoSubDomainBoundary",
+      "distToResDam" : 0.0,
+      "downstreamSubDomainId" : 11,
+      "dsDiversionJnctId" : -1,
+      "id" : 5,
+      "inExtent" : true,
+      "jnctId" : 52,
+      "name" : "H St Bridge",
+      "savedFlow" : 0.0,
+      "type" : "RIVER_2_RIVER",
+      "upstreamSubDomainId" : 9
+    }, {
+      "@type" : "WQGeoSubDomainBoundary",
+      "distToResDam" : 0.0,
+      "downstreamSubDomainId" : -2,
+      "dsDiversionJnctId" : -1,
+      "id" : 6,
+      "inExtent" : true,
+      "jnctId" : 46,
+      "name" : "Sacramento Confluence",
+      "savedFlow" : 0.0,
+      "type" : "RIVER_OUTFLOW",
+      "upstreamSubDomainId" : 11
+    }, {
+      "@type" : "WQGeoSubDomainBoundary",
+      "distToResDam" : 0.0,
+      "downstreamSubDomainId" : 1,
+      "dsDiversionJnctId" : -1,
+      "id" : 7,
+      "inExtent" : true,
+      "jnctId" : 11,
+      "name" : "Nimbus Dam - Nimbus Dam Outflow",
+      "savedFlow" : 0.0,
+      "type" : "LOCAL_INFLOW",
+      "upstreamSubDomainId" : -2
+    }, {
+      "@type" : "WQGeoSubDomainBoundary",
+      "distToResDam" : 0.0,
+      "downstreamSubDomainId" : 3,
+      "dsDiversionJnctId" : -1,
+      "id" : 8,
+      "inExtent" : true,
+      "jnctId" : 48,
+      "name" : "AFO - AFO Balance",
+      "savedFlow" : 0.0,
+      "type" : "LOCAL_INFLOW",
+      "upstreamSubDomainId" : -2
+    }, {
+      "@type" : "WQGeoSubDomainBoundary",
+      "distToResDam" : 0.0,
+      "downstreamSubDomainId" : -2,
+      "dsDiversionJnctId" : -1,
+      "id" : 9,
+      "inExtent" : true,
+      "jnctId" : 56,
+      "name" : "Rossmoor Bar - Carmichael Water Intake",
+      "savedFlow" : 0.0,
+      "type" : "LOCAL_DIVERSION",
+      "upstreamSubDomainId" : 5
+    }, {
+      "@type" : "WQGeoSubDomainBoundary",
+      "distToResDam" : 0.0,
+      "downstreamSubDomainId" : -2,
+      "dsDiversionJnctId" : -1,
+      "id" : 10,
+      "inExtent" : true,
+      "jnctId" : 52,
+      "name" : "H St Bridge - Sacramento Water Intake",
+      "savedFlow" : 0.0,
+      "type" : "LOCAL_DIVERSION",
+      "upstreamSubDomainId" : 11
+    } ],
+    "subDomainJnctList" : [ {
+      "@type" : "WQGeoSubDomainJunction",
+      "boundaryList" : [ {
+        "@type" : "WQGeoSubDomainBoundary",
+        "distToResDam" : 0.0,
+        "downstreamSubDomainId" : 1,
+        "dsDiversionJnctId" : -1,
+        "id" : 0,
+        "inExtent" : true,
+        "jnctId" : 11,
+        "name" : "Nimbus Dam",
+        "savedFlow" : 0.0,
+        "type" : "RIVER_INFLOW",
+        "upstreamSubDomainId" : -2
+      }, {
+        "@type" : "WQGeoSubDomainBoundary",
+        "distToResDam" : 0.0,
+        "downstreamSubDomainId" : 1,
+        "dsDiversionJnctId" : -1,
+        "id" : 7,
+        "inExtent" : true,
+        "jnctId" : 11,
+        "name" : "Nimbus Dam - Nimbus Dam Outflow",
+        "savedFlow" : 0.0,
+        "type" : "LOCAL_INFLOW",
+        "upstreamSubDomainId" : -2
+      } ],
+      "id" : 0,
+      "inExtent" : true,
+      "jnctId" : 11,
+      "name" : "Nimbus Dam"
+    }, {
+      "@type" : "WQGeoSubDomainJunction",
+      "boundaryList" : [ {
+        "@type" : "WQGeoSubDomainBoundary",
+        "distToResDam" : 0.0,
+        "downstreamSubDomainId" : 3,
+        "dsDiversionJnctId" : -1,
+        "id" : 1,
+        "inExtent" : true,
+        "jnctId" : 48,
+        "name" : "AFO",
+        "savedFlow" : 0.0,
+        "type" : "RIVER_2_RIVER",
+        "upstreamSubDomainId" : 1
+      }, {
+        "@type" : "WQGeoSubDomainBoundary",
+        "distToResDam" : 0.0,
+        "downstreamSubDomainId" : 3,
+        "dsDiversionJnctId" : -1,
+        "id" : 8,
+        "inExtent" : true,
+        "jnctId" : 48,
+        "name" : "AFO - AFO Balance",
+        "savedFlow" : 0.0,
+        "type" : "LOCAL_INFLOW",
+        "upstreamSubDomainId" : -2
+      } ],
+      "id" : 2,
+      "inExtent" : true,
+      "jnctId" : 48,
+      "name" : "AFO"
+    }, {
+      "@type" : "WQGeoSubDomainJunction",
+      "boundaryList" : [ {
+        "@type" : "WQGeoSubDomainBoundary",
+        "distToResDam" : 0.0,
+        "downstreamSubDomainId" : 5,
+        "dsDiversionJnctId" : -1,
+        "id" : 2,
+        "inExtent" : true,
+        "jnctId" : 56,
+        "name" : "Rossmoor Bar",
+        "savedFlow" : 0.0,
+        "type" : "RIVER_2_RIVER",
+        "upstreamSubDomainId" : 3
+      }, {
+        "@type" : "WQGeoSubDomainBoundary",
+        "distToResDam" : 0.0,
+        "downstreamSubDomainId" : -2,
+        "dsDiversionJnctId" : -1,
+        "id" : 9,
+        "inExtent" : true,
+        "jnctId" : 56,
+        "name" : "Rossmoor Bar - Carmichael Water Intake",
+        "savedFlow" : 0.0,
+        "type" : "LOCAL_DIVERSION",
+        "upstreamSubDomainId" : 5
+      } ],
+      "id" : 4,
+      "inExtent" : true,
+      "jnctId" : 56,
+      "name" : "Rossmoor Bar"
+    }, {
+      "@type" : "WQGeoSubDomainJunction",
+      "boundaryList" : [ {
+        "@type" : "WQGeoSubDomainBoundary",
+        "distToResDam" : 0.0,
+        "downstreamSubDomainId" : 7,
+        "dsDiversionJnctId" : -1,
+        "id" : 3,
+        "inExtent" : true,
+        "jnctId" : 60,
+        "name" : "William Pond Park",
+        "savedFlow" : 0.0,
+        "type" : "RIVER_2_RIVER",
+        "upstreamSubDomainId" : 5
+      } ],
+      "id" : 6,
+      "inExtent" : true,
+      "jnctId" : 60,
+      "name" : "William Pond Park"
+    }, {
+      "@type" : "WQGeoSubDomainJunction",
+      "boundaryList" : [ {
+        "@type" : "WQGeoSubDomainBoundary",
+        "distToResDam" : 0.0,
+        "downstreamSubDomainId" : 9,
+        "dsDiversionJnctId" : -1,
+        "id" : 4,
+        "inExtent" : true,
+        "jnctId" : 50,
+        "name" : "Watt Ave Bridge",
+        "savedFlow" : 0.0,
+        "type" : "RIVER_2_RIVER",
+        "upstreamSubDomainId" : 7
+      } ],
+      "id" : 8,
+      "inExtent" : true,
+      "jnctId" : 50,
+      "name" : "Watt Ave Bridge"
+    }, {
+      "@type" : "WQGeoSubDomainJunction",
+      "boundaryList" : [ {
+        "@type" : "WQGeoSubDomainBoundary",
+        "distToResDam" : 0.0,
+        "downstreamSubDomainId" : 11,
+        "dsDiversionJnctId" : -1,
+        "id" : 5,
+        "inExtent" : true,
+        "jnctId" : 52,
+        "name" : "H St Bridge",
+        "savedFlow" : 0.0,
+        "type" : "RIVER_2_RIVER",
+        "upstreamSubDomainId" : 9
+      }, {
+        "@type" : "WQGeoSubDomainBoundary",
+        "distToResDam" : 0.0,
+        "downstreamSubDomainId" : -2,
+        "dsDiversionJnctId" : -1,
+        "id" : 10,
+        "inExtent" : true,
+        "jnctId" : 52,
+        "name" : "H St Bridge - Sacramento Water Intake",
+        "savedFlow" : 0.0,
+        "type" : "LOCAL_DIVERSION",
+        "upstreamSubDomainId" : 11
+      } ],
+      "id" : 10,
+      "inExtent" : true,
+      "jnctId" : 52,
+      "name" : "H St Bridge"
+    }, {
+      "@type" : "WQGeoSubDomainJunction",
+      "boundaryList" : [ {
+        "@type" : "WQGeoSubDomainBoundary",
+        "distToResDam" : 0.0,
+        "downstreamSubDomainId" : -2,
+        "dsDiversionJnctId" : -1,
+        "id" : 6,
+        "inExtent" : true,
+        "jnctId" : 46,
+        "name" : "Sacramento Confluence",
+        "savedFlow" : 0.0,
+        "type" : "RIVER_OUTFLOW",
+        "upstreamSubDomainId" : 11
+      } ],
+      "id" : 12,
+      "inExtent" : true,
+      "jnctId" : 46,
+      "name" : "Sacramento Confluence"
+    } ],
+    "subDomainList" : [ {
+      "@type" : "WQGeoSubDomain",
+      "cellCenterCoordinates" : [ [ 6784413.9158672085, 1994776.27107968, 0.0 ], [ 6783824.778482014, 1994600.4488565046, 0.0 ], [ 6783287.754819657, 1994410.6951192364, 0.0 ], [ 6782665.3892434975, 1994181.2531754253, 0.0 ], [ 6782053.908195786, 1993915.7221611477, 0.0 ], [ 6781322.8214713, 1993680.9791171977, 0.0 ], [ 6780405.754598623, 1993375.4243780395, 0.0 ], [ 6779531.993508965, 1993200.1659365152, 0.0 ] ],
+      "cellFaces" : [ [ 0, 7, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 0, 1, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 1, 2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 2, 3, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 3, 4, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 4, 5, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 5, 6, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 6, 8, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ] ],
+      "cellLength" : [ 655.253018, 576.334822, 562.893594, 763.695718, 570.0995, 999.970482, 999.970482, 932.219083 ],
+      "downstreamElemIds" : [ 48 ],
+      "downstreamStation" : 113188.3196845018,
+      "elementId" : 47,
+      "elevStorInterpType" : 0,
+      "faceCells" : [ [ 0, 1 ], [ 1, 2 ], [ 2, 3 ], [ 3, 4 ], [ 4, 5 ], [ 5, 6 ], [ 6, 7 ], [ -2, 0 ], [ 7, -2 ] ],
+      "flowFacesBoundaryIdx" : [ 0, 1 ],
+      "id" : 1,
+      "name" : "Nimbus Dam to AFO",
+      "numCells" : 8,
+      "numFaces" : 9,
+      "numFacesFlow" : 2,
+      "numFacesInternal" : 7,
+      "numOutlets" : 0,
+      "resElevStorInterpType" : 0,
+      "type" : "REACH_1D",
+      "upstreamElemIds" : [ 11 ],
+      "upstreamStation" : 119248.75638405106,
+      "xFace" : [ 1.0, 0.8918802306592659, 0.7967823275502213, 0.7039022890386599, 0.5778889741687904, 0.48381992794080664, 0.3188201875483363, 0.15382044715586596, 0.0 ],
+      "xRAS" : [ 0.9179546683653795, 0.8918802307193561, 0.8716731707948772, 0.8500005133806624, 0.8315458729004797, 0.8152453312542415, 0.7967823276619747, 0.7696211219843474, 0.7425695653721253, 0.7230999049698693, 0.7039022890069819, 0.6905281990697686, 0.6774014931667168, 0.6574469174596977, 0.6228533112328887, 0.5778889740106884, 0.5252187723452664, 0.4838199278015028, 0.31882018743654844, 0.15382044707059042, -0.011179293293936495 ],
+      "xRASReach" : [ "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus" ],
+      "xRASRiver" : [ "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American" ],
+      "xRASStation" : [ "118749", "118591", "118467", "118335", "118222", "118123", "118010", "117844", "117679", "117560", "117443", "117362", "117281", "117160", "116948", "116674", "116352", "116100", "115106", "114111", "113117" ]
+    }, {
+      "@type" : "WQGeoSubDomain",
+      "cellCenterCoordinates" : [ [ 6778587.210920275, 1993251.5453053673, 0.0 ], [ 6777663.501295141, 1993602.4654074672, 0.0 ], [ 6776799.127688677, 1994090.3020312502, 0.0 ], [ 6776159.43015281, 1994468.802016883, 0.0 ], [ 6775658.624941293, 1994653.6438780928, 0.0 ], [ 6774919.41689526, 1994876.8999900282, 0.0 ], [ 6774303.167813925, 1995257.4851489523, 0.0 ], [ 6773648.469018243, 1995171.8549559, 0.0 ], [ 6772915.932092878, 1995051.1275695385, 0.0 ], [ 6772186.485532744, 1994758.196004353, 0.0 ], [ 6771372.265981781, 1994247.6857751317, 0.0 ], [ 6770762.90786739, 1993671.2945864464, 0.0 ], [ 6770211.079070389, 1993213.3387264286, 0.0 ], [ 6769670.247734175, 1992828.5029104957, 0.0 ], [ 6769070.696992848, 1992280.8325243131, 0.0 ], [ 6768272.290652397, 1991698.2384816152, 0.0 ], [ 6767699.913699719, 1990915.3488900953, 0.0 ], [ 6767232.736318592, 1990231.3904294681, 0.0 ], [ 6766857.535954853, 1989618.962643544, 0.0 ], [ 6766467.838739295, 1989081.7322623283, 0.0 ], [ 6766023.490271165, 1988676.2236500466, 0.0 ], [ 6765427.922230679, 1988664.5151007008, 0.0 ], [ 6764965.585814925, 1989015.8299724052, 0.0 ], [ 6764617.579042232, 1989511.5985768274, 0.0 ], [ 6764523.078929663, 1990329.8676427817, 0.0 ], [ 6764849.135347885, 1991268.957106402, 0.0 ], [ 6764680.570417364, 1992155.2644329278, 0.0 ], [ 6764011.237780628, 1992213.4923091778, 0.0 ], [ 6763295.191683865, 1992113.8740434446, 0.0 ], [ 6762507.061216254, 1991632.4067566316, 0.0 ], [ 6761704.355586459, 1991037.9088128165, 0.0 ], [ 6761099.918068257, 1990541.323610403, 0.0 ] ],
+      "cellFaces" : [ [ 0, 31, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 0, 1, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 1, 2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 2, 3, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 3, 4, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 4, 5, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 5, 6, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 6, 7, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 7, 8, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 8, 9, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 9, 10, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 10, 11, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 11, 12, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 12, 13, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 13, 14, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 14, 15, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 15, 16, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 16, 17, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 17, 18, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 18, 19, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 19, 20, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 20, 21, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 21, 22, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 22, 23, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 23, 24, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 24, 25, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 25, 26, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 26, 27, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 27, 28, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 28, 29, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 29, 30, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 30, 32, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ] ],
+      "cellLength" : [ 1000.0, 1000.0, 1000.0, 513.350773, 554.282554, 1000.0, 512.787947, 826.677194, 660.446305, 921.998593, 1000.0, 741.558318, 711.308523, 625.016494, 999.970482, 999.970482, 999.970482, 667.49746, 769.929025, 562.145719, 700.328044, 619.194138, 566.632822, 673.456441, 1000.0, 1000.0, 943.038336, 567.246958, 883.330919, 1000.0, 1000.0, 565.208272 ],
+      "downstreamElemIds" : [ 56 ],
+      "downstreamStation" : 87602.97340387544,
+      "elementId" : 49,
+      "elevStorInterpType" : 0,
+      "faceCells" : [ [ 0, 1 ], [ 1, 2 ], [ 2, 3 ], [ 3, 4 ], [ 4, 5 ], [ 5, 6 ], [ 6, 7 ], [ 7, 8 ], [ 8, 9 ], [ 9, 10 ], [ 10, 11 ], [ 11, 12 ], [ 12, 13 ], [ 13, 14 ], [ 14, 15 ], [ 15, 16 ], [ 16, 17 ], [ 17, 18 ], [ 18, 19 ], [ 19, 20 ], [ 20, 21 ], [ 21, 22 ], [ 22, 23 ], [ 23, 24 ], [ 24, 25 ], [ 25, 26 ], [ 26, 27 ], [ 27, 28 ], [ 28, 29 ], [ 29, 30 ], [ 30, 31 ], [ -2, 0 ], [ 31, -2 ] ],
+      "flowFacesBoundaryIdx" : [ 1, 2 ],
+      "id" : 3,
+      "name" : "AFO to Rossmoor Bar",
+      "numCells" : 32,
+      "numFaces" : 33,
+      "numFacesFlow" : 2,
+      "numFacesInternal" : 31,
+      "numOutlets" : 0,
+      "resElevStorInterpType" : 0,
+      "type" : "REACH_1D",
+      "upstreamElemIds" : [ 48 ],
+      "upstreamStation" : 113188.3196845018,
+      "xFace" : [ 1.0, 0.9609151273929557, 0.9218302547859114, 0.8827453821788671, 0.8626811326134343, 0.8410170696020371, 0.8019321969949929, 0.78188994541207, 0.7495793725974311, 0.723765912902713, 0.6877297153514339, 0.6486448427443896, 0.6196611303546655, 0.5918597273489057, 0.5674310373036142, 0.5283473184038395, 0.48926359950406484, 0.45017988060429015, 0.42409082741466453, 0.39399824955607365, 0.37202685574236327, 0.3446546233594827, 0.32045349935672407, 0.298306727693884, 0.2719847684910055, 0.2328998958839612, 0.1938150232769169, 0.15695649005079781, 0.1347857149606344, 0.10026083852165601, 0.06117596591461172, 0.022091093307567422, 0.0 ],
+      "xRAS" : [ 0.997351945187277, 0.958268226289852, 0.9191845073925867, 0.8801007884954511, 0.8626811326180761, 0.8410170695980056, 0.822778454641615, 0.7940919320196066, 0.7818899453968365, 0.7628496318033454, 0.7495793726033511, 0.7237659129059995, 0.6877297153486887, 0.6784890246728281, 0.6769421789189405, 0.6455984751114553, 0.6196611303449692, 0.6153661859506774, 0.6065925498836157, 0.5918597273575389, 0.5905816458379689, 0.5786299234490853, 0.5674310373169641, 0.550592630927081, 0.528347318419489, 0.48926359952256443, 0.45017988062505065, 0.4240908274307221, 0.41110127607867897, 0.3939982495634895, 0.38210296236785246, 0.37202685574285926, 0.3654930507177962, 0.3446546233622279, 0.3319845523232677, 0.3204534993657451, 0.29830672770668415, 0.28343757866927194, 0.2719847685204032, 0.25415788468808476, 0.22192107226587598, 0.17659384834339437, 0.15695649008306017, 0.13478571497942254, 0.10026083855645902, 0.06010322267341812, 0.02025897275437721, -0.018824746142759485 ],
+      "xRASReach" : [ "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus" ],
+      "xRASRiver" : [ "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American" ],
+      "xRASStation" : [ "113117", "112122", "111128", "110141", "109703", "109158", "108699", "107977", "107670", "107190", "106857", "106207", "105297", "105062", "105022", "104225", "103565", "103456", "103233", "102858", "102826", "102522", "102237", "101809", "101243", "100249", "99270", "98616", "98291", "97862", "97564", "97312", "97148", "96626", "96309", "96020", "95465", "95093", "94799", "94340", "93510", "92343", "91837", "91266", "90376", "89348", "88336", "87344" ]
+    }, {
+      "@type" : "WQGeoSubDomain",
+      "cellCenterCoordinates" : [ [ 6760537.507011583, 1990009.4315168834, 0.0 ], [ 6760098.828304907, 1989114.9023375292, 0.0 ], [ 6759890.819686814, 1988143.5555896363, 0.0 ], [ 6760113.260956645, 1987428.0063429226, 0.0 ], [ 6760476.2786534745, 1986856.9788760561, 0.0 ], [ 6760674.197325711, 1986029.3767714035, 0.0 ], [ 6760191.179129235, 1985171.2269888483, 0.0 ], [ 6759642.466226976, 1984346.4045512914, 0.0 ], [ 6758887.335887462, 1983698.1357276377, 0.0 ], [ 6758102.857454291, 1983078.3511366255, 0.0 ], [ 6757598.050318425, 1982473.9805369382, 0.0 ], [ 6757252.048162031, 1982037.3590239016, 0.0 ], [ 6756526.623121149, 1981871.5916606993, 0.0 ], [ 6755554.838527711, 1981896.5725190626, 0.0 ], [ 6754719.026963895, 1981830.2676110321, 0.0 ], [ 6753885.53778527, 1981622.5396321958, 0.0 ], [ 6753237.558438852, 1980860.84390226, 0.0 ], [ 6752771.03973491, 1980000.3714532226, 0.0 ], [ 6752591.711060314, 1979055.6712940978, 0.0 ], [ 6752825.011281162, 1978121.9934798172, 0.0 ], [ 6753262.855181915, 1977401.7597637186, 0.0 ] ],
+      "cellFaces" : [ [ 0, 20, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 0, 1, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 1, 2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 2, 3, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 3, 4, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 4, 5, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 5, 6, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 6, 7, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 7, 8, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 8, 9, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 9, 10, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 10, 11, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 11, 12, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 12, 13, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 13, 14, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 14, 15, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 15, 16, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 16, 17, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 17, 18, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 18, 19, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 19, 21, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ] ],
+      "cellLength" : [ 1000.0, 1000.0, 1000.0, 541.686784, 813.731307, 1000.0, 1000.0, 1000.0, 1000.0, 1000.0, 580.722217, 545.20216, 1000.0, 949.30412, 727.93094, 1000.0, 1000.0, 1000.0, 932.084885, 1000.0, 697.150491 ],
+      "downstreamElemIds" : [ 60 ],
+      "downstreamStation" : 68815.16049982444,
+      "elementId" : 57,
+      "elevStorInterpType" : 0,
+      "faceCells" : [ [ 0, 1 ], [ 1, 2 ], [ 2, 3 ], [ 3, 4 ], [ 4, 5 ], [ 5, 6 ], [ 6, 7 ], [ 7, 8 ], [ 8, 9 ], [ 9, 10 ], [ 10, 11 ], [ 11, 12 ], [ 12, 13 ], [ 13, 14 ], [ 14, 15 ], [ 15, 16 ], [ 16, 17 ], [ 17, 18 ], [ 18, 19 ], [ 19, 20 ], [ -2, 0 ], [ 20, -2 ] ],
+      "flowFacesBoundaryIdx" : [ 2, 3 ],
+      "id" : 5,
+      "name" : "Rossmoor Bar to William Pond Park",
+      "numCells" : 21,
+      "numFaces" : 22,
+      "numFacesFlow" : 2,
+      "numFacesInternal" : 20,
+      "numOutlets" : 0,
+      "resElevStorInterpType" : 0,
+      "type" : "REACH_1D",
+      "upstreamElemIds" : [ 56 ],
+      "upstreamStation" : 87602.97340387544,
+      "xFace" : [ 1.0, 0.9467740068995952, 0.8935480137991905, 0.8403220206987856, 0.8114902036710212, 0.7681785467390558, 0.7149525536386511, 0.6617265605382463, 0.6085005674378415, 0.5552745743374368, 0.502048581237032, 0.47113906452173826, 0.4421201381152525, 0.38889414501484776, 0.33836649047354195, 0.2996216432835308, 0.24639565018312604, 0.19316965708272127, 0.1399436639823165, 0.09033252032431494, 0.03710652722391017, 0.0 ],
+      "xRAS" : [ 0.9743643578330751, 0.9211399358618024, 0.8679155138906121, 0.8114902036730429, 0.7681785467617479, 0.7041896893311567, 0.6454031918002139, 0.6017934040341114, 0.5485689820629132, 0.4882842427260953, 0.47113906452807713, 0.4421201381202302, 0.3888117836143033, 0.3383664904724538, 0.29962164328700575, 0.27866349347194913, 0.22922245023536691, 0.1759980282637342, 0.11803742316402445, 0.09033252033719129, 0.06746243611363563, 0.0363059895568878, 0.010291150528922346, -0.020104408942594985 ],
+      "xRASReach" : [ "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus" ],
+      "xRASRiver" : [ "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American" ],
+      "xRASStation" : [ "87344", "86351", "85359", "84307", "83499", "82306", "81210", "80397", "79404", "78313", "78005", "77483", "76525", "75618", "74921", "74544", "73647", "72661", "71586", "71072", "70648", "70070", "69588", "69024" ]
+    }, {
+      "@type" : "WQGeoSubDomain",
+      "cellCenterCoordinates" : [ [ 6753496.184799643, 1976838.2994480936, 0.0 ], [ 6753842.282420583, 1976152.0198600953, 0.0 ], [ 6753908.01427804, 1975466.6539371414, 0.0 ], [ 6753705.9960507415, 1974698.6894183694, 0.0 ], [ 6753830.867119066, 1973944.8000153508, 0.0 ], [ 6753387.759730044, 1973516.1825778575, 0.0 ], [ 6752775.617071254, 1973139.9281777684, 0.0 ], [ 6752256.280465015, 1973246.524195717, 0.0 ], [ 6751618.618815577, 1973344.658607336, 0.0 ], [ 6750961.843731973, 1973406.8538616966, 0.0 ], [ 6750356.020107657, 1973525.8689993452, 0.0 ], [ 6749772.300926234, 1973557.7444399153, 0.0 ], [ 6749238.774316641, 1973251.3870325417, 0.0 ], [ 6748699.989749239, 1972804.8098313569, 0.0 ], [ 6748191.408407813, 1972366.1108722603, 0.0 ], [ 6747630.05790191, 1971881.8935749107, 0.0 ], [ 6747020.388947692, 1971355.9942796975, 0.0 ], [ 6746518.074921679, 1970797.1575196807, 0.0 ], [ 6745946.709049146, 1970482.4390884906, 0.0 ], [ 6745329.565970231, 1970298.9519625509, 0.0 ], [ 6744645.087332293, 1970088.9781492923, 0.0 ], [ 6743981.909271306, 1969952.011766432, 0.0 ], [ 6743381.30826467, 1969866.2436406068, 0.0 ], [ 6742822.644190236, 1969741.8491267557, 0.0 ], [ 6742260.312259917, 1969522.0585413976, 0.0 ], [ 6741693.79239624, 1969340.3408317876, 0.0 ], [ 6741090.003487621, 1969233.8469203366, 0.0 ], [ 6740350.3628303725, 1969104.571345123, 0.0 ], [ 6739488.474446011, 1969032.7356733927, 0.0 ], [ 6738744.408084968, 1968963.3423949818, 0.0 ] ],
+      "cellFaces" : [ [ 0, 29, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 0, 1, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 1, 2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 2, 3, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 3, 4, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 4, 5, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 5, 6, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 6, 7, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 7, 8, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 8, 9, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 9, 10, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 10, 11, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 11, 12, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 12, 13, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 13, 14, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 14, 15, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 15, 16, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 16, 17, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 17, 18, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 18, 19, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 19, 20, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 20, 21, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 21, 22, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 22, 23, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 23, 24, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 24, 25, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 25, 26, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 26, 27, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 27, 28, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 28, 30, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ] ],
+      "cellLength" : [ 693.263901, 887.00029, 593.281061, 1000.0, 528.904605, 1000.0, 527.464188, 533.475348, 756.824104, 562.662806, 675.525938, 537.293831, 700.132281, 701.010832, 642.246591, 840.383959, 769.868235, 745.11437, 567.64674, 731.844423, 712.857275, 642.107799, 571.573301, 575.44986, 632.03278, 562.879253, 663.301497, 838.467474, 891.253502, 603.292862 ],
+      "downstreamElemIds" : [ 50 ],
+      "downstreamStation" : 48128.00139525128,
+      "elementId" : 61,
+      "elevStorInterpType" : 0,
+      "faceCells" : [ [ 0, 1 ], [ 1, 2 ], [ 2, 3 ], [ 3, 4 ], [ 4, 5 ], [ 5, 6 ], [ 6, 7 ], [ 7, 8 ], [ 8, 9 ], [ 9, 10 ], [ 10, 11 ], [ 11, 12 ], [ 12, 13 ], [ 13, 14 ], [ 14, 15 ], [ 15, 16 ], [ 16, 17 ], [ 17, 18 ], [ 18, 19 ], [ 19, 20 ], [ 20, 21 ], [ 21, 22 ], [ 22, 23 ], [ 23, 24 ], [ 24, 25 ], [ 25, 26 ], [ 26, 27 ], [ 27, 28 ], [ 28, 29 ], [ -2, 0 ], [ 29, -2 ] ],
+      "flowFacesBoundaryIdx" : [ 3, 4 ],
+      "id" : 7,
+      "name" : "William Pond Park to Watt Ave Bridge",
+      "numCells" : 30,
+      "numFaces" : 31,
+      "numFacesFlow" : 2,
+      "numFacesInternal" : 29,
+      "numOutlets" : 0,
+      "resElevStorInterpType" : 0,
+      "type" : "REACH_1D",
+      "upstreamElemIds" : [ 60 ],
+      "upstreamStation" : 68815.16049982444,
+      "xFace" : [ 1.0, 0.966488201814094, 0.9236113483295216, 0.8949326371560803, 0.8465934720306975, 0.8210266649940271, 0.7726874998686444, 0.7471903213871864, 0.7214025684498934, 0.6848183231157675, 0.6576196728266224, 0.6249653129631612, 0.5989929777456027, 0.5651491678047329, 0.5312628894420028, 0.5002172254284397, 0.4595937664656158, 0.42237897872916375, 0.3863607721604382, 0.358921202662693, 0.32354445425320555, 0.2890855287261501, 0.25804657380199303, 0.23041719762369395, 0.2026004318197755, 0.1720484949027008, 0.14483938174628164, 0.1127759411548851, 0.07224512347693646, 0.029162673275182738, 0.0 ],
+      "xRAS" : [ 0.9817414333282474, 0.9664882018028786, 0.9447821084141454, 0.9236113483149418, 0.8949326371580711, 0.8744449954091429, 0.8210266649963811, 0.7676647419768748, 0.7471903213879351, 0.7214025684711954, 0.6848183231573363, 0.6719319351550033, 0.6576196728793053, 0.6440645058210906, 0.6249653130165693, 0.6148103136488459, 0.5989929778392238, 0.5813375670457713, 0.5651491679081763, 0.554832826940808, 0.5426497610416252, 0.531262889553529, 0.523042131638486, 0.5157068087535975, 0.5076749459684056, 0.5002172255222949, 0.4894334355377636, 0.4784726577554951, 0.45959376653614836, 0.43561925163336856, 0.42237897876388447, 0.4074118523203231, 0.3863607721911839, 0.35892120267246724, 0.3381783874102222, 0.3235444542731444, 0.30673770291312324, 0.28908552870923787, 0.2739078795388248, 0.2580465737583268, 0.24139883335748247, 0.23041719757460644, 0.21820190935761305, 0.20260043179023066, 0.18728095919993962, 0.1720484948990693, 0.1564902184607737, 0.1448393817445253, 0.1326716932896694, 0.11277594114445164, 0.09628273889363909, 0.07224512344724994, 0.048174507755529984, 0.029162673244717736, 0.013036580140750724, -5.04606506447781E-4 ],
+      "xRASReach" : [ "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus" ],
+      "xRASRiver" : [ "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American" ],
+      "xRASStation" : [ "69024", "68713", "68288", "67876", "67318", "66920", "65881", "64843", "64445", "63943", "63221", "62949", "62647", "62361", "61958", "61744", "61410", "61038", "60696", "60479", "60222", "59982", "59808", "59654", "59484", "59327", "59099", "58868", "58470", "57968", "57696", "57389", "56956", "56393", "55967", "55667", "55322", "54959", "54648", "54322", "53980", "53755", "53504", "53183", "52869", "52553", "52230", "51988", "51735", "51322", "50979", "50479", "49979", "49584", "49249", "48968" ]
+    }, {
+      "@type" : "WQGeoSubDomain",
+      "cellCenterCoordinates" : [ [ 6737946.201810206, 1968888.8999081906, 0.0 ], [ 6737165.719154891, 1968915.3095266416, 0.0 ], [ 6736530.265657064, 1968650.293958572, 0.0 ], [ 6735907.144404831, 1968292.5225115686, 0.0 ], [ 6735352.411255903, 1967993.8684468523, 0.0 ], [ 6734767.082011395, 1967767.0427209667, 0.0 ], [ 6734235.874681064, 1967612.3440585136, 0.0 ], [ 6733688.6404079385, 1967364.7914013122, 0.0 ], [ 6733247.665958873, 1966956.915361553, 0.0 ], [ 6732767.864708367, 1966519.6644569116, 0.0 ], [ 6732129.245811067, 1966360.8047117083, 0.0 ], [ 6731518.763978008, 1966413.910539204, 0.0 ], [ 6730920.5488086445, 1966411.8975072112, 0.0 ], [ 6730151.204273047, 1966301.9108165628, 0.0 ], [ 6729164.108346062, 1966144.0555408888, 0.0 ], [ 6728257.896187311, 1966369.6582284418, 0.0 ], [ 6727487.181363933, 1967002.9402384784, 0.0 ], [ 6726924.995722208, 1968069.9703476403, 0.0 ] ],
+      "cellFaces" : [ [ 0, 17, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 0, 1, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 1, 2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 2, 3, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 3, 4, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 4, 5, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 5, 6, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 6, 7, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 7, 8, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 8, 9, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 9, 10, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 10, 11, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 11, 12, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 12, 13, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 13, 14, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 14, 15, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 15, 16, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 16, 18, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ] ],
+      "cellLength" : [ 1000.0, 564.522662, 835.774887, 601.259983, 659.966612, 602.215918, 506.898911, 694.311097, 554.158705, 756.874902, 595.09132, 635.150773, 561.251023, 1000.0, 1000.0, 1000.0, 1000.0, 1453.117063 ],
+      "downstreamElemIds" : [ 52 ],
+      "downstreamStation" : 34107.407537321225,
+      "elementId" : 51,
+      "elevStorInterpType" : 0,
+      "faceCells" : [ [ 0, 1 ], [ 1, 2 ], [ 2, 3 ], [ 3, 4 ], [ 4, 5 ], [ 5, 6 ], [ 6, 7 ], [ 7, 8 ], [ 8, 9 ], [ 9, 10 ], [ 10, 11 ], [ 11, 12 ], [ 12, 13 ], [ 13, 14 ], [ 14, 15 ], [ 15, 16 ], [ 16, 17 ], [ -2, 0 ], [ 17, -2 ] ],
+      "flowFacesBoundaryIdx" : [ 4, 5 ],
+      "id" : 9,
+      "name" : "Watt Ave Bridge to H St Bridge",
+      "numCells" : 18,
+      "numFaces" : 19,
+      "numFacesFlow" : 2,
+      "numFacesInternal" : 17,
+      "numOutlets" : 0,
+      "resElevStorInterpType" : 0,
+      "type" : "REACH_1D",
+      "upstreamElemIds" : [ 50 ],
+      "upstreamStation" : 48128.00139525128,
+      "xFace" : [ 1.0, 0.9286763449344153, 0.8884125253132217, 0.8288020055603557, 0.7859179459281243, 0.7388467149390338, 0.6958944745285973, 0.6597405914473128, 0.610219786256677, 0.570695161929666, 0.5167120774916197, 0.47426798945141624, 0.4289667148033247, 0.38893624043366615, 0.31761258536808146, 0.24628893030249677, 0.17496527523691208, 0.10364162017132739, 0.0 ],
+      "xRAS" : [ 0.9992554612743323, 0.9808063697188172, 0.9715653997489021, 0.9272057446527033, 0.9111018343337087, 0.888412525353547, 0.8570266678510006, 0.828802005614219, 0.8039395547249508, 0.78591794599936, 0.7663362440473496, 0.7388467149757033, 0.7137706145649046, 0.6958944745774173, 0.6758061949886963, 0.6597405914473967, 0.6430777149988977, 0.6283054984670541, 0.6102197862126663, 0.5909764168056846, 0.5706951618650972, 0.5561964415872166, 0.5366266523184576, 0.5167120774192119, 0.5002904733159275, 0.474267989382694, 0.4461899201435524, 0.4289667147087966, 0.3889362403471465, 0.38006229442489853, 0.35750256513159223, 0.28624552153838895, 0.23453272706834535, 0.2237595358966214, 0.2153355714764289, 0.14337021677106093, 0.07212225027361473, -0.009404280005049698 ],
+      "xRASReach" : [ "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus" ],
+      "xRASRiver" : [ "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American" ],
+      "xRASStation" : [ "48968", "48708", "48578", "47953", "47727", "47409", "46973", "46581", "46236", "45986", "45714", "45332", "44984", "44736", "44457", "44234", "44003", "43798", "43547", "43279", "42998", "42797", "42525", "42248", "42020", "41657", "41265", "41025", "40467", "40344", "40029", "39036", "38315", "38165", "38048", "37045", "36049", "34910" ]
+    }, {
+      "@type" : "WQGeoSubDomain",
+      "cellCenterCoordinates" : [ [ 6726613.659350246, 1968997.742942761, 0.0 ], [ 6726618.329563986, 1969598.4632333692, 0.0 ], [ 6726652.360640215, 1970334.27589173, 0.0 ], [ 6726710.158230001, 1971215.988496967, 0.0 ], [ 6726914.4303800985, 1972181.2096777253, 0.0 ], [ 6727196.86830126, 1972940.8045188214, 0.0 ], [ 6727444.256551014, 1973586.342027187, 0.0 ], [ 6727169.7453547325, 1974518.5094936735, 0.0 ], [ 6726243.063867897, 1974847.3996648202, 0.0 ], [ 6725258.711080053, 1974740.337812854, 0.0 ], [ 6724273.622363869, 1974572.2178552973, 0.0 ], [ 6723506.135126446, 1974012.221667649, 0.0 ], [ 6722545.748351042, 1974214.64090969, 0.0 ], [ 6721596.219197122, 1974489.8858432174, 0.0 ], [ 6720822.02127875, 1975121.8533146975, 0.0 ], [ 6720092.465022006, 1975803.321839699, 0.0 ], [ 6719530.892271614, 1976629.606229073, 0.0 ], [ 6718981.221793952, 1977133.43414968, 0.0 ], [ 6718404.344921168, 1977293.7713883335, 0.0 ], [ 6717559.868634429, 1977351.732453574, 0.0 ], [ 6716624.5219277, 1977074.8672197356, 0.0 ], [ 6715682.447746026, 1976763.768385883, 0.0 ], [ 6714693.637359545, 1976614.3928232845, 0.0 ], [ 6713767.156602211, 1976875.1505428732, 0.0 ], [ 6712938.653752072, 1977417.5479412763, 0.0 ], [ 6712375.802078363, 1977923.758717274, 0.0 ], [ 6712036.034168384, 1978330.1078696975, 0.0 ], [ 6711684.952377777, 1978831.375192782, 0.0 ], [ 6711205.163779822, 1979516.087868186, 0.0 ], [ 6710601.005166118, 1980308.9530112527, 0.0 ], [ 6709819.168478706, 1980924.4185182839, 0.0 ], [ 6708929.061358853, 1981362.885214012, 0.0 ], [ 6707961.937122861, 1981585.4788712934, 0.0 ], [ 6706961.998121738, 1981585.7962117833, 0.0 ], [ 6705962.1119857, 1981568.8623972936, 0.0 ], [ 6704805.745825813, 1981443.3008951163, 0.0 ] ],
+      "cellFaces" : [ [ 0, 35, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 0, 1, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 1, 2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 2, 3, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 3, 4, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 4, 5, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 5, 6, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 6, 7, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 7, 8, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 8, 9, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 9, 10, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 10, 11, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 11, 12, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 12, 13, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 13, 14, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 14, 15, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 15, 16, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 16, 17, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 17, 18, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 18, 19, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 19, 20, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 20, 21, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 21, 22, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 22, 23, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 23, 24, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 24, 25, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 25, 26, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 26, 27, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 27, 28, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 28, 29, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 29, 30, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 30, 31, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 31, 32, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 32, 33, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 33, 34, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ], [ 34, 36, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2 ] ],
+      "cellLength" : [ 506.607121, 701.632446, 771.522469, 1000.0, 1000.0, 793.03816, 1000.0, 1000.0, 1000.0, 1000.0, 1000.0, 1000.0, 1000.0, 1000.0, 1000.0, 1000.0, 1000.0, 511.437891, 702.895195, 990.012715, 995.875475, 1000.0, 1000.0, 1000.0, 1000.0, 513.958422, 551.82737, 672.109299, 1000.0, 1000.0, 1000.0, 1000.0, 1000.0, 1000.0, 1000.0, 1327.697348 ],
+      "downstreamElemIds" : [ 46 ],
+      "downstreamStation" : 1068.7936206034356,
+      "elementId" : 53,
+      "elevStorInterpType" : 0,
+      "faceCells" : [ [ 0, 1 ], [ 1, 2 ], [ 2, 3 ], [ 3, 4 ], [ 4, 5 ], [ 5, 6 ], [ 6, 7 ], [ 7, 8 ], [ 8, 9 ], [ 9, 10 ], [ 10, 11 ], [ 11, 12 ], [ 12, 13 ], [ 13, 14 ], [ 14, 15 ], [ 15, 16 ], [ 16, 17 ], [ 17, 18 ], [ 18, 19 ], [ 19, 20 ], [ 20, 21 ], [ 21, 22 ], [ 22, 23 ], [ 23, 24 ], [ 24, 25 ], [ 25, 26 ], [ 26, 27 ], [ 27, 28 ], [ 28, 29 ], [ 29, 30 ], [ 30, 31 ], [ 31, 32 ], [ 32, 33 ], [ 33, 34 ], [ 34, 35 ], [ -2, 0 ], [ 35, -2 ] ],
+      "flowFacesBoundaryIdx" : [ 5, 6 ],
+      "id" : 11,
+      "name" : "H St Bridge to Sacramento Confluence",
+      "numCells" : 36,
+      "numFaces" : 37,
+      "numFacesFlow" : 2,
+      "numFacesInternal" : 35,
+      "numOutlets" : 0,
+      "resElevStorInterpType" : 0,
+      "type" : "REACH_1D",
+      "upstreamElemIds" : [ 52 ],
+      "upstreamStation" : 34107.407537321225,
+      "xFace" : [ 1.0, 0.984666211410542, 0.9634294716402214, 0.9400773276586869, 0.9098097140507487, 0.8795421004428106, 0.8555387278395803, 0.8252711142316421, 0.795003500623704, 0.7647358870157657, 0.7344682734078275, 0.7042006597998893, 0.673933046191951, 0.6436654325840128, 0.6133978189760746, 0.5831302053681364, 0.5528625917601981, 0.5225949781522599, 0.5071149736830132, 0.48584001351387673, 0.4558746911893109, 0.42573191711038894, 0.39546430350245076, 0.3651966898945126, 0.3349290762865744, 0.30466146267863625, 0.2891051677509946, 0.2724026701375498, 0.2520595255731156, 0.22179191196517745, 0.19152429835723928, 0.1612566847493011, 0.13098907114136293, 0.10072145753342476, 0.07045384392548659, 0.04018623031754842, 0.0 ],
+      "xRAS" : [ 0.9960091064713119, 0.9846662113845128, 0.9777523649412894, 0.9754966163355031, 0.9634294715896032, 0.9400773276266537, 0.9096124867611987, 0.8794109999908927, 0.8555387278171372, 0.8246189237321858, 0.7897772932021825, 0.7582975090629096, 0.7257206173654219, 0.697639126825789, 0.6674551446770913, 0.63713325934139, 0.6070682907267904, 0.5767568480029533, 0.5500295510199477, 0.5458020601865524, 0.5096080179124901, 0.5071149736611072, 0.4858400135017067, 0.4558746911690629, 0.42573191708811936, 0.3950689947958353, 0.36481897908428906, 0.3345542812953993, 0.30423901279485743, 0.28910516775464823, 0.28451444801845993, 0.2724026701421627, 0.26891543466724915, 0.2520595255693846, 0.2437341416486736, 0.24187507448194748, 0.24049632599393028, 0.2381643975050466, 0.21339744464812413, 0.18329086712851927, 0.1529586562276113, 0.12274045403753285, 0.09249961838213941, 0.062096667259818744, 0.031973120325496596, 0.0017160382051530838 ],
+      "xRASReach" : [ "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus", "BlwNimbus" ],
+      "xRASRiver" : [ "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American", "American" ],
+      "xRASStation" : [ "34910", "34537", "34309", "34235", "33838", "33069", "32066", "31105", "30362", "29400", "28316", "27337", "26321", "25420", "24452", "23480", "22516", "21544", "20671", "20531", "19328", "19245", "18538", "17542", "16540", "15526", "14535", "13544", "12551", "12055", "11904", "11508", "11393", "10841", "10569", "10507", "10461", "10384", "9562", "8562", "7555", "6551", "5547", "4540", "3544", "2543" ]
+    } ]
+  },
+  "steadyFlowPath" : "rss\\ras-exports\\SF_cal_08a_Table-no-bridges.txt",
+  "version" : 1
+}

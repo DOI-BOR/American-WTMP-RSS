@@ -71,23 +71,23 @@ def runRuleScript(currentRule, network, currentRuntimestep):
     computeIter = currentRule.getComputeIteration()
     evalRule = currentRule.getEvalRule() and (computeIter >= lastIterationPassNum)
 
-    if evalRule:
-        # Get the penstock shutter elevation (set in P1_forecast_op)
-        shutterElev = getShutterElev(network, currentRuntimestep)
+    #if evalRule:
+    # Get the penstock shutter elevation (set in P1_forecast_op)
+    shutterElev = getShutterElev(network, currentRuntimestep)
 
-        # Get the penstock flow (set in P1_forecast_op)
-        psFlow = getPenstockFlow(network, currentRuntimestep)
+    # Get the penstock flow (set in P1_forecast_op)
+    psFlow = getPenstockFlow(network, currentRuntimestep)
 
-        tcdFlows = getTCDFlowsForShutterElev(psFlow, shutterElev)
-        resOp = currentRule.getController().getReservoirOp()
-        resOp.setWQControlDeviceFlowRatios(tcdFlows, currentRule, psFlow)
+    tcdFlows = getTCDFlowsForShutterElev(psFlow, shutterElev)
+    resOp = currentRule.getController().getReservoirOp()
+    resOp.setWQControlDeviceFlowRatios(tcdFlows, currentRule, psFlow)
 
-        opValue = OpValue()
-        opValue.init(OpRule.RULETYPE_SPEC, psFlow)
-        return opValue
+    opValue = OpValue()
+    opValue.init(OpRule.RULETYPE_SPEC, psFlow)
+    return opValue
 
-    else:
-        return None
+    #else:
+    #    return None
 
 
 #######################################################################################################

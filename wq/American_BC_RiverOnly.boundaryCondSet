@@ -1,0 +1,86 @@
+{
+  "index" : 5308,
+  "name" : "American_BC_RiverOnly",
+  "description" : "",
+  "Description" : "",
+  "Index" : 5308,
+  "Name" : "American_BC_RiverOnly",
+  "constituentSetId" : 160,
+  "geometryId" : 5305,
+  "lastModifiedTime" : 1707347354505,
+  "set" : {
+    "boundaryConditions" : [ {
+      "@type" : "WQBoundaryCondition",
+      "boundaryRef" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 5305,
+        "id" : 4,
+        "jnctId" : 11,
+        "name" : "Nimbus Dam",
+        "type" : "RIVER_INFLOW_IN_NETWORK"
+      },
+      "constituentId" : 1,
+      "dataSources" : [ {
+        "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
+        "DSS File Path" : "shared\\WTMP_American_Forecast.dss",
+        "DSS Path" : "//TENS/temp-water//1Day/TENS/",
+        "Interpreted Units" : "\u00B0C",
+        "interpretedUnits" : "\u00B0C"
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      }, {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "value" : "-Infinity"
+      }, {
+        "@type" : "AmbientData",
+        "name" : "Ambient Value",
+        "description" : "",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "OptionType" : "AVERAGE_AT_JUNCTION"
+      } ],
+      "selectedDataSource" : {
+        "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
+        "DSS File Path" : "shared\\WTMP_American_Forecast.dss",
+        "DSS Path" : "//TENS/temp-water//1Day/TENS/",
+        "Interpreted Units" : "\u00B0C",
+        "interpretedUnits" : "\u00B0C"
+      },
+      "units" : [ "\u00B0C" ]
+    } ],
+    "description" : "",
+    "name" : "American_BC_RiverOnly"
+  },
+  "version" : 1
+}

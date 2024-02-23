@@ -1,0 +1,250 @@
+TSDataSet Name=RsAmerRiv-WAT-ResSimForecast-Deterministic
+Description=Simillar to RSAmer (forecast) alternative with full network, but with only the river represented in water quality (no reservoirs) (TS Data Set for WAT-ResSimForecast-Deterministic)
+
+_type=0
+ParentPath=null
+ParentClass=null
+TSRecord=0
+TSRecord Name=CBR Flow
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_American_Forecast.dss
+TSRecord DssPathname=//FOLSOM-SF-IN/FLOW-IN//1DAY/amer_bc_script/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=1
+TSRecord Name=NF+MF-ARPP Flows
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_American_Forecast.dss
+TSRecord DssPathname=//FOLSOM-NF-IN/FLOW-IN//1DAY/amer_bc_script/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=2
+TSRecord Name=Folsom Balance Flows
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_American_Forecast.dss
+TSRecord DssPathname=/AMERICAN RIVER/FOLSOM LAKE/FLOW-ACC-DEP//1Day/AMER_BC_SCRIPT/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=3
+TSRecord Name=Folsom Ungaged Inflows
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_American_Forecast.dss
+TSRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=4
+TSRecord Name=Mormon Ravine and Newcastle PH
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_American_Forecast.dss
+TSRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=5
+TSRecord Name=Natoma balance flows
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_American_Forecast.dss
+TSRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=6
+TSRecord Name=~E1:F
+TSRecord VariableId=14
+TSRecord ParamName=Elev
+TSRecord DssFilename=shared/WTMP_American_Forecast.dss
+TSRecord DssPathname=//Folsom/ELEV-FORECAST//1Hour/AMER_BC_SCRIPT/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=7
+TSRecord Name=~E1:F
+TSRecord VariableId=18
+TSRecord ParamName=Evap
+TSRecord DssFilename=shared/WTMP_American_Forecast.dss
+TSRecord DssPathname=//ZEROS/evap//1Day/ZEROS/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=8
+TSRecord Name=~E20:F
+TSRecord VariableId=41
+TSRecord ParamName=Flow-RELEASE
+TSRecord DssFilename=shared/WTMP_American_Forecast.dss
+TSRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=9
+TSRecord Name=~E23:F
+TSRecord VariableId=41
+TSRecord ParamName=Flow-RELEASE
+TSRecord DssFilename=shared/WTMP_American_Forecast.dss
+TSRecord DssPathname=//FOLSOM/FLOW-RELEASE-SINGLEPENSTOCK//1Day/AMER_BC_SCRIPT/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=10
+TSRecord Name=~E24:F
+TSRecord VariableId=41
+TSRecord ParamName=Flow-RELEASE
+TSRecord DssFilename=shared/WTMP_American_Forecast.dss
+TSRecord DssPathname=//FOLSOM/FLOW-RELEASE-SINGLEPENSTOCK//1Day/AMER_BC_SCRIPT/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=11
+TSRecord Name=~E25:F
+TSRecord VariableId=41
+TSRecord ParamName=Flow-RELEASE
+TSRecord DssFilename=shared/WTMP_American_Forecast.dss
+TSRecord DssPathname=//FOLSOM/FLOW-RELEASE-SINGLEPENSTOCK//1Day/AMER_BC_SCRIPT/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=12
+TSRecord Name=~E26:F
+TSRecord VariableId=41
+TSRecord ParamName=Flow-RELEASE
+TSRecord DssFilename=shared/WTMP_American_Forecast.dss
+TSRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=13
+TSRecord Name=~E27:F
+TSRecord VariableId=41
+TSRecord ParamName=Flow-RELEASE
+TSRecord DssFilename=shared/WTMP_American_Forecast.dss
+TSRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=14
+TSRecord Name=~E28:F
+TSRecord VariableId=41
+TSRecord ParamName=Flow-RELEASE
+TSRecord DssFilename=shared/WTMP_American_Forecast.dss
+TSRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=15
+TSRecord Name=~E29:F
+TSRecord VariableId=41
+TSRecord ParamName=Flow-RELEASE
+TSRecord DssFilename=shared/WTMP_American_Forecast.dss
+TSRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=16
+TSRecord Name=~E41:F
+TSRecord VariableId=41
+TSRecord ParamName=Flow-RELEASE
+TSRecord DssFilename=shared/WTMP_American_Forecast.dss
+TSRecord DssPathname=//FOLSOM/PUMPING (FP)//1DAY/amer_bc_script/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=17
+TSRecord Name=~E45:F
+TSRecord VariableId=41
+TSRecord ParamName=Flow-RELEASE
+TSRecord DssFilename=shared/WTMP_American_Forecast.dss
+TSRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=18
+TSRecord Name=~E10:F
+TSRecord VariableId=14
+TSRecord ParamName=Elev
+TSRecord DssFilename=shared/WTMP_American_Forecast.dss
+TSRecord DssPathname=//Natoma/ELEV//1Month/AMER_BC_SCRIPT/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=19
+TSRecord Name=~E15:F
+TSRecord VariableId=41
+TSRecord ParamName=Flow-RELEASE
+TSRecord DssFilename=shared/WTMP_American_Forecast.dss
+TSRecord DssPathname=//FOLSOM/FLOW-RELEASE-TO-NATOMA//1Day/AMER_BC_SCRIPT/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=20
+TSRecord Name=~E18:F
+TSRecord VariableId=41
+TSRecord ParamName=Flow-RELEASE
+TSRecord DssFilename=shared/WTMP_American_Forecast.dss
+TSRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=21
+TSRecord Name=~E19:F
+TSRecord VariableId=41
+TSRecord ParamName=Flow-RELEASE
+TSRecord DssFilename=shared/WTMP_American_Forecast.dss
+TSRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=22
+TSRecord Name=~E33:F
+TSRecord VariableId=41
+TSRecord ParamName=Flow-RELEASE
+TSRecord DssFilename=shared/WTMP_American_Forecast.dss
+TSRecord DssPathname=//FOLSOM/FS CANAL (FSC)//1DAY/amer_bc_script/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=23
+TSRecord Name=~E55:F
+TSRecord VariableId=43
+TSRecord ParamName=Flow-DIVERSION
+TSRecord DssFilename=shared/American_withdrawals_6.dss
+TSRecord DssPathname=/AMERICAN RIVER/EA FAIRBAIRN WTP (SACRAMENTO)/FLOW-DIVERSION//1Day/CARDNO/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=24
+TSRecord Name=Sacramento Water Intake
+TSRecord VariableId=85
+TSRecord ParamName=
+TSRecord DssFilename=shared/American_withdrawals_6.dss
+TSRecord DssPathname=/AMERICAN RIVER/EA FAIRBAIRN WTP (SACRAMENTO)/FLOW-DIVERSION//1DAY/CARDNO/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=25
+TSRecord Name=~E59:F
+TSRecord VariableId=43
+TSRecord ParamName=Flow-DIVERSION
+TSRecord DssFilename=shared/American_withdrawals_6.dss
+TSRecord DssPathname=/AMERICAN RIVER/BAJAMONT WTP (CARMICHAEL)/FLOW-DIVERSION//1DAY/CARDNO/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=26
+TSRecord Name=Carmichael Water Intake
+TSRecord VariableId=85
+TSRecord ParamName=
+TSRecord DssFilename=shared/American_withdrawals_6.dss
+TSRecord DssPathname=/AMERICAN RIVER/BAJAMONT WTP (CARMICHAEL)/FLOW-DIVERSION//1DAY/CARDNO/
+TSRecord InputPosition=0
+TSRecord End=
+
+

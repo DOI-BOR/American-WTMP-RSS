@@ -1,0 +1,7 @@
+TSDataSet Name=RSAmerRVO-WAT-W2 Fol-Nat ResSim Amer-Deterministic
+Description=ResSim Alternative including the AmericanRiverOnly network, from Nimbus Dam to the Sac confluence (Obs WQ TS Data Set for WAT-W2 Fol-Nat ResSim Amer-Deterministic)
+
+_type=0
+ParentPath=null
+ParentClass=null
+

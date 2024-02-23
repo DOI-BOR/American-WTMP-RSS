@@ -1,0 +1,235 @@
+{
+  "index" : 5309,
+  "name" : "American_IC-RiverOnly",
+  "description" : "",
+  "Description" : "",
+  "Index" : 5309,
+  "Name" : "American_IC-RiverOnly",
+  "constituentId" : 160,
+  "geometryId" : 5305,
+  "initialConditionSet" : {
+    "@type" : "WQInitialConditionSet2",
+    "description" : "",
+    "junctionConditionMap" : {
+      "@type" : "WQMap",
+      "entries" : [ {
+        "key" : 2,
+        "value" : {
+          "@type" : "WQMap",
+          "entries" : [ {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 5305,
+              "id" : 5,
+              "jnctId" : 48,
+              "name" : "AFO",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 5305,
+              "id" : 9,
+              "jnctId" : 52,
+              "name" : "H St Bridge",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 5305,
+              "id" : 4,
+              "jnctId" : 11,
+              "name" : "Nimbus Dam",
+              "type" : "RIVER_INFLOW_IN_NETWORK"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 5305,
+              "id" : 6,
+              "jnctId" : 56,
+              "name" : "Rossmoor Bar",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 5305,
+              "id" : 10,
+              "jnctId" : 46,
+              "name" : "Sacramento Confluence",
+              "type" : "RIVER_OUTFLOW"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 5305,
+              "id" : 8,
+              "jnctId" : 50,
+              "name" : "Watt Ave Bridge",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 5305,
+              "id" : 7,
+              "jnctId" : 60,
+              "name" : "William Pond Park",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          } ]
+        }
+      }, {
+        "key" : 1,
+        "value" : {
+          "@type" : "WQMap",
+          "entries" : [ {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 5305,
+              "id" : 5,
+              "jnctId" : 48,
+              "name" : "AFO",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 5305,
+              "id" : 9,
+              "jnctId" : 52,
+              "name" : "H St Bridge",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 5305,
+              "id" : 4,
+              "jnctId" : 11,
+              "name" : "Nimbus Dam",
+              "type" : "RIVER_INFLOW_IN_NETWORK"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 5305,
+              "id" : 6,
+              "jnctId" : 56,
+              "name" : "Rossmoor Bar",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 5305,
+              "id" : 10,
+              "jnctId" : 46,
+              "name" : "Sacramento Confluence",
+              "type" : "RIVER_OUTFLOW"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 5305,
+              "id" : 8,
+              "jnctId" : 50,
+              "name" : "Watt Ave Bridge",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 5305,
+              "id" : 7,
+              "jnctId" : 60,
+              "name" : "William Pond Park",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          } ]
+        }
+      } ]
+    },
+    "name" : "American_IC-RiverOnly",
+    "reachInterpolationType" : "ONEWAYFORWARD",
+    "reservoirInterpolationType" : "LINEAR",
+    "reservoirSourcesMap" : {
+      "@type" : "WQMap",
+      "entries" : [ ]
+    }
+  },
+  "lastModifiedTime" : 1705110303236,
+  "version" : 2
+}

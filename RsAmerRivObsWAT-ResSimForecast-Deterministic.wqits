@@ -1,0 +1,7 @@
+TSDataSet Name=RsAmerRiv-WAT-ResSimForecast-Deterministic
+Description=Simillar to RSAmer (forecast) alternative with full network, but with only the river represented in water quality (no reservoirs) (Obs WQ TS Data Set for WAT-ResSimForecast-Deterministic)
+
+_type=0
+ParentPath=null
+ParentClass=null
+
