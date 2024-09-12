@@ -454,6 +454,9 @@ def snapShutterElev(shutterElev):
     elevs = getShutterElevs()
     opIndexes = getOperableShutterElevIndexes()
     allowedElevs = [elevs[idx] for idx in opIndexes]
+
+    snappedElev = -99
+    
     if shutterElev in allowedElevs:
         return shutterElev
     else:
@@ -463,6 +466,10 @@ def snapShutterElev(shutterElev):
             if dist < minDist:
                 snappedElev = elev
                 minDist = dist
+
+        if snappedElev == -99:
+        	raise ValueError("snapShutterElev: shutterElev not initialized or not allowed. Check initial shutter elevations. ")
+        
         return snappedElev
 
 

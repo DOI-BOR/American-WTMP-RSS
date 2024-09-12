@@ -1,4 +1,4 @@
-ModifiedTime=1711556032224
+ModifiedTime=1726101956305
 GVDataSet Name=WQForecast
 Description=Copy of Flow-only alt on AMR_Net_7 (Global Variable Data Set)
 
@@ -95,40 +95,40 @@ GVRecord End
 GVRecord=TIME_SERIES
 GVRecord Name=P1_shutter_elev
 GVRecord ID=10
-GVRecord DssFilename=shared/Folsom_shutter_op_6.dss
-GVRecord DssPathname=/FOLSOM/GATE1/ELEV//1Day/USBR-CARDNO/
+GVRecord DssFilename=shared/WTMP_American_Forecast.dss
+GVRecord DssPathname=//ELEV-INITIAL-GATE/elev//1Day/FULL-HEIGHT/
 GVRecord DataLocation=true
-GVRecord LinkedLocation=GATE1
+GVRecord LinkedLocation=ELEV-INITIAL-GATE
 GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
 GVRecord Name=P2_shutter_elev
 GVRecord ID=11
-GVRecord DssFilename=shared/Folsom_shutter_op_6.dss
-GVRecord DssPathname=/FOLSOM/GATE2/ELEV//1Day/USBR-CARDNO/
+GVRecord DssFilename=shared/WTMP_American_Forecast.dss
+GVRecord DssPathname=//ELEV-INITIAL-GATE/elev//1Day/FULL-HEIGHT/
 GVRecord DataLocation=true
-GVRecord LinkedLocation=GATE2
+GVRecord LinkedLocation=ELEV-INITIAL-GATE
 GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
 GVRecord Name=P3_shutter_elev
 GVRecord ID=12
-GVRecord DssFilename=shared/Folsom_shutter_op_6.dss
-GVRecord DssPathname=/FOLSOM/GATE3/ELEV//1Day/USBR-CARDNO/
+GVRecord DssFilename=shared/WTMP_American_Forecast.dss
+GVRecord DssPathname=//ELEV-INITIAL-GATE/elev//1Day/FULL-HEIGHT/
 GVRecord DataLocation=true
-GVRecord LinkedLocation=GATE3
+GVRecord LinkedLocation=ELEV-INITIAL-GATE
 GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
 GVRecord Name=Muni_intake_elev
 GVRecord ID=13
-GVRecord DssFilename=shared/Folsom_shutter_op_6.dss
-GVRecord DssPathname=/FOLSOM/MUNI_INTAKE/ELEV//1Hour/CARDNO/
+GVRecord DssFilename=shared/WTMP_American_Forecast.dss
+GVRecord DssPathname=//ELEV-INITIAL-GATE/elev//1Day/FULL-HEIGHT/
 GVRecord DataLocation=true
-GVRecord LinkedLocation=MUNI_INTAKE
+GVRecord LinkedLocation=ELEV-INITIAL-GATE
 GVRecord LinkedModel=DSS File
 GVRecord End
 

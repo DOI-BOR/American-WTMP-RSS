@@ -63,7 +63,7 @@ TSRecord Name=~E1:F
 TSRecord VariableId=14
 TSRecord ParamName=Elev
 TSRecord DssFilename=shared/WTMP_American_Forecast.dss
-TSRecord DssPathname=//Folsom Lake/ELEV-FORECAST//1Day/AMER_BC_SCRIPT/
+TSRecord DssPathname=/AMERICAN RIVER/Folsom/ELEV//1Day/AMER_BC_SCRIPT/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -215,8 +215,8 @@ TSRecord=23
 TSRecord Name=~E55:F
 TSRecord VariableId=43
 TSRecord ParamName=Flow-DIVERSION
-TSRecord DssFilename=shared/American_withdrawals_6.dss
-TSRecord DssPathname=/AMERICAN RIVER/EA FAIRBAIRN WTP (SACRAMENTO)/FLOW-DIVERSION//1Day/CARDNO/
+TSRecord DssFilename=shared/WTMP_American_Forecast.dss
+TSRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -224,8 +224,8 @@ TSRecord=24
 TSRecord Name=Sacramento Water Intake
 TSRecord VariableId=85
 TSRecord ParamName=
-TSRecord DssFilename=shared/American_withdrawals_6.dss
-TSRecord DssPathname=/AMERICAN RIVER/EA FAIRBAIRN WTP (SACRAMENTO)/FLOW-DIVERSION//1DAY/CARDNO/
+TSRecord DssFilename=shared/WTMP_American_Forecast.dss
+TSRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -233,8 +233,8 @@ TSRecord=25
 TSRecord Name=~E59:F
 TSRecord VariableId=43
 TSRecord ParamName=Flow-DIVERSION
-TSRecord DssFilename=shared/American_withdrawals_6.dss
-TSRecord DssPathname=/AMERICAN RIVER/BAJAMONT WTP (CARMICHAEL)/FLOW-DIVERSION//1DAY/CARDNO/
+TSRecord DssFilename=shared/WTMP_American_Forecast.dss
+TSRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -242,8 +242,8 @@ TSRecord=26
 TSRecord Name=Carmichael Water Intake
 TSRecord VariableId=85
 TSRecord ParamName=
-TSRecord DssFilename=shared/American_withdrawals_6.dss
-TSRecord DssPathname=/AMERICAN RIVER/BAJAMONT WTP (CARMICHAEL)/FLOW-DIVERSION//1DAY/CARDNO/
+TSRecord DssFilename=shared/WTMP_American_Forecast.dss
+TSRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
 TSRecord InputPosition=0
 TSRecord End=
 

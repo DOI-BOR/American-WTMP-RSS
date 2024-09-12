@@ -8,8 +8,8 @@ PDCRecordImpl Units=°C
 PDCRecordImpl Input=true
 PDCRecordImpl VariableId=2002
 PDCRecordImpl ParamName=Sediment Temperature
-PDCRecordImpl DssFilename=J:\Ben\WTMP_American\shared\American_profiles_Site Dam.dss
-PDCRecordImpl DssPathname=//Folsom/DEPTH-TEMP//2021-01-11//
+PDCRecordImpl DssFilename=shared/WTMP_American_Forecast.dss
+PDCRecordImpl DssPathname=/Folsom/IC/depth-temp///icPathsMap/
 PDCRecordImpl End=
 
 PDCRecord=3
@@ -19,8 +19,8 @@ PDCRecordImpl Units=°C
 PDCRecordImpl Input=true
 PDCRecordImpl VariableId=2001
 PDCRecordImpl ParamName=Water Temperature
-PDCRecordImpl DssFilename=J:\Ben\WTMP_American\shared\American_profiles_Site Dam.dss
-PDCRecordImpl DssPathname=//Folsom/DEPTH-TEMP//2021-01-11//
+PDCRecordImpl DssFilename=shared/WTMP_American_Forecast.dss
+PDCRecordImpl DssPathname=/Folsom/IC/depth-temp///icPathsMap/
 PDCRecordImpl End=
 
 
