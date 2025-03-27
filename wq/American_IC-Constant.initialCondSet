@@ -2,9 +2,6 @@
   "index" : 3164,
   "name" : "American_IC-Constant",
   "description" : "",
-  "Description" : "",
-  "Index" : 3164,
-  "Name" : "American_IC-Constant",
   "constituentId" : 160,
   "geometryId" : 3161,
   "initialConditionSet" : {
@@ -261,6 +258,21 @@
                     "yprecision" : -1
                   }
                 }
+              }, {
+                "key" : "DSS",
+                "value" : {
+                  "@type" : "PairedCurveData",
+                  "name" : "DSS",
+                  "description" : "",
+                  "availableUnits" : [ ],
+                  "compType" : 0,
+                  "DSS Path" : "",
+                  "HasInterpretedUnits" : true,
+                  "Interpreted Units" : "",
+                  "curve" : 0,
+                  "interpretedUnits" : "",
+                  "profileData" : false
+                }
               } ]
             }
           }, {
@@ -273,7 +285,7 @@
             },
             "value" : {
               "@type" : "InitialConditionsSourceSelection",
-              "selectedKey" : "DSS",
+              "selectedKey" : "Paired Data",
               "entries" : [ {
                 "key" : "Paired Data",
                 "value" : {
@@ -303,10 +315,12 @@
                   "availableUnits" : [ ],
                   "compType" : 1,
                   "DSS File Path" : "shared\\American_profiles_Site Dam.dss",
-                  "DSS Path" : "//Folsom/DEPTH-TEMP//2021-01-11//",
+                  "DSS Path" : "//Folsom/DEPTH-TEMP//2002-01-15//",
+                  "HasInterpretedUnits" : true,
                   "Interpreted Units" : "",
                   "curve" : 0,
                   "interpretedUnits" : "",
+                  "profileData" : false,
                   "selectionType" : "UseSelectedRecord"
                 }
               } ]
@@ -347,6 +361,21 @@
                     "yprecision" : -1
                   }
                 }
+              }, {
+                "key" : "DSS",
+                "value" : {
+                  "@type" : "PairedCurveData",
+                  "name" : "DSS",
+                  "description" : "",
+                  "availableUnits" : [ ],
+                  "compType" : 0,
+                  "DSS Path" : "",
+                  "HasInterpretedUnits" : true,
+                  "Interpreted Units" : "",
+                  "curve" : 0,
+                  "interpretedUnits" : "",
+                  "profileData" : false
+                }
               } ]
             }
           }, {
@@ -389,10 +418,12 @@
                   "availableUnits" : [ ],
                   "compType" : 1,
                   "DSS File Path" : "shared\\American_profiles_Site Dam.dss",
-                  "DSS Path" : "//Folsom/DEPTH-TEMP//2021-01-11//",
+                  "DSS Path" : "//Folsom/DEPTH-TEMP//2002-01-15//",
+                  "HasInterpretedUnits" : true,
                   "Interpreted Units" : "",
                   "curve" : 0,
                   "interpretedUnits" : "",
+                  "profileData" : false,
                   "selectionType" : "UseSelectedRecord"
                 }
               } ]
@@ -402,6 +433,6 @@
       } ]
     }
   },
-  "lastModifiedTime" : 1708463872935,
+  "lastModifiedTime" : 1738202460940,
   "version" : 2
 }

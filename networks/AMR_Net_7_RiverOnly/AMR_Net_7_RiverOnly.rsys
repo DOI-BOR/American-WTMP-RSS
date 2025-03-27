@@ -12,9 +12,11 @@ AsciiSerializer=5
   FLD=_path
   STR=
   FLD=_nextTSRecordProxyIndex
-  I=5729266
+  I=5731620
   FLD=_lastModifiedTime
   J=1707350814015
+  FLD=_ressimVersion
+  STR=4.0.1.124-Beta
   FLD=_version
   I=2029
   FLD=_nextElementIndex
@@ -281,7 +283,7 @@ AsciiSerializer=5
             {=hec.clientapp.model.TSRecordProxy
               ID=25
               FLD=_index
-              I=5729197
+              I=5731554
               FLD=_name
               STR=~N9
               FLD=_description
@@ -355,7 +357,7 @@ AsciiSerializer=5
             {=hec.clientapp.model.TSRecordProxy
               ID=31
               FLD=_index
-              I=5729199
+              I=5731557
               FLD=_name
               STR=~N55
               FLD=_description
@@ -429,7 +431,7 @@ AsciiSerializer=5
             {=hec.clientapp.model.TSRecordProxy
               ID=37
               FLD=_index
-              I=5729211
+              I=5731569
               FLD=_name
               STR=~N56
               FLD=_description
@@ -503,7 +505,7 @@ AsciiSerializer=5
             {=hec.clientapp.model.TSRecordProxy
               ID=43
               FLD=_index
-              I=5729201
+              I=5731559
               FLD=_name
               STR=~N57
               FLD=_description
@@ -577,7 +579,7 @@ AsciiSerializer=5
             {=hec.clientapp.model.TSRecordProxy
               ID=49
               FLD=_index
-              I=5729202
+              I=5731560
               FLD=_name
               STR=~N58
               FLD=_description
@@ -651,7 +653,7 @@ AsciiSerializer=5
             {=hec.clientapp.model.TSRecordProxy
               ID=55
               FLD=_index
-              I=5729251
+              I=5731609
               FLD=_name
               STR=~N59
               FLD=_description
@@ -725,7 +727,7 @@ AsciiSerializer=5
             {=hec.clientapp.model.TSRecordProxy
               ID=61
               FLD=_index
-              I=5729206
+              I=5731564
               FLD=_name
               STR=~N60
               FLD=_description
@@ -799,7 +801,7 @@ AsciiSerializer=5
             {=hec.clientapp.model.TSRecordProxy
               ID=67
               FLD=_index
-              I=5729208
+              I=5731566
               FLD=_name
               STR=~N61
               FLD=_description
@@ -873,7 +875,7 @@ AsciiSerializer=5
             {=hec.clientapp.model.TSRecordProxy
               ID=73
               FLD=_index
-              I=5729209
+              I=5731567
               FLD=_name
               STR=~N62
               FLD=_description
@@ -947,7 +949,7 @@ AsciiSerializer=5
             {=hec.clientapp.model.TSRecordProxy
               ID=79
               FLD=_index
-              I=5729213
+              I=5731571
               FLD=_name
               STR=~N63
               FLD=_description
@@ -1021,7 +1023,7 @@ AsciiSerializer=5
             {=hec.clientapp.model.TSRecordProxy
               ID=85
               FLD=_index
-              I=5729212
+              I=5731570
               FLD=_name
               STR=~N64
               FLD=_description
@@ -1095,7 +1097,7 @@ AsciiSerializer=5
             {=hec.clientapp.model.TSRecordProxy
               ID=91
               FLD=_index
-              I=5729205
+              I=5731563
               FLD=_name
               STR=~N65
               FLD=_description
@@ -1169,7 +1171,7 @@ AsciiSerializer=5
             {=hec.clientapp.model.TSRecordProxy
               ID=97
               FLD=_index
-              I=5729229
+              I=5731587
               FLD=_name
               STR=~N66
               FLD=_description
@@ -1243,7 +1245,7 @@ AsciiSerializer=5
             {=hec.clientapp.model.TSRecordProxy
               ID=103
               FLD=_index
-              I=5729233
+              I=5731591
               FLD=_name
               STR=~N67
               FLD=_description
@@ -1317,7 +1319,7 @@ AsciiSerializer=5
             {=hec.clientapp.model.TSRecordProxy
               ID=109
               FLD=_index
-              I=5729232
+              I=5731590
               FLD=_name
               STR=~N68
               FLD=_description
@@ -1391,7 +1393,7 @@ AsciiSerializer=5
             {=hec.clientapp.model.TSRecordProxy
               ID=115
               FLD=_index
-              I=5729231
+              I=5731589
               FLD=_name
               STR=~N69
               FLD=_description
@@ -1465,7 +1467,7 @@ AsciiSerializer=5
             {=hec.clientapp.model.TSRecordProxy
               ID=121
               FLD=_index
-              I=5729249
+              I=5731607
               FLD=_name
               STR=~N70
               FLD=_description
@@ -1573,6 +1575,8 @@ AsciiSerializer=5
               I=0
               FLD=_paramName
               STR=Flow
+              FLD=_dssPathname
+              STR=//AFO AFO Balance/Flow//1HOUR/RSAmerRVO/
               FLD=_inputDataPos
               I=0
               FLD=_compressData
@@ -1672,56 +1676,8 @@ AsciiSerializer=5
               I=0
               FLD=_paramName
               STR=Flow
-              FLD=_inputDataPos
-              I=0
-              FLD=_compressData
-              Z=false
-              FLD=_parent
-              REF=132
-              FLD=_isInput
-              Z=false
-              FLD=_factor
-              D=1.0
-              FLD=_dataFeedAlive
-              Z=false
-            }
-            {=hec.clientapp.model.TSRecordProxy
-              ID=136
-              FLD=_index
-              I=5729264
-              FLD=_name
-              STR=~N73
-              FLD=_description
-              STR=
-              FLD=_varId
-              I=4
-              FLD=_paramName
-              STR=Flow
-              FLD=_inputDataPos
-              I=0
-              FLD=_compressData
-              Z=false
-              FLD=_parent
-              REF=132
-              FLD=_isInput
-              Z=true
-              FLD=_factor
-              D=1.0
-              FLD=_dataFeedAlive
-              Z=false
-            }
-            {=hec.clientapp.model.TSRecordProxy
-              ID=137
-              FLD=_index
-              I=5729265
-              FLD=_name
-              STR=~N73
-              FLD=_description
-              STR=
-              FLD=_varId
-              I=0
-              FLD=_paramName
-              STR=Flow
+              FLD=_dssPathname
+              STR=//Nimbus Dam Nimbus Dam Outflow/Flow//1HOUR/RSAmerRVO/
               FLD=_inputDataPos
               I=0
               FLD=_compressData
@@ -1739,7 +1695,7 @@ AsciiSerializer=5
         }
         FLD=_location
         {=hec.map.WorldPt
-          ID=138
+          ID=136
           FLD=e
           D=6784726.571545325
           FLD=n
@@ -1757,13 +1713,13 @@ AsciiSerializer=5
         REF=0
         FLD=_upstreamElement
         {=hec.lang.ObjectReference
-          ID=139
+          ID=137
           FLD=id
           I=-2147483648
         }
         FLD=_downstreamElement
         {=hec.lang.ObjectReference
-          ID=140
+          ID=138
           FLD=id
           I=11
         }
@@ -1774,10 +1730,10 @@ AsciiSerializer=5
   }
   FLD=_elementVector
   {=java.util.Vector
-    ID=141
+    ID=139
     {COLLECT
       {=hec.rss.model.JunctionElement
-        ID=142
+        ID=140
         FLD=_index
         I=11
         FLD=_name
@@ -1788,7 +1744,7 @@ AsciiSerializer=5
         REF=0
         FLD=_nodeVector
         {=java.util.Vector
-          ID=143
+          ID=141
           {COLLECT
             REF=23
             REF=132
@@ -1796,7 +1752,7 @@ AsciiSerializer=5
         }
         FLD=_nodeDirVector
         {=java.util.Vector
-          ID=144
+          ID=142
           {COLLECT
             I=0
             I=1
@@ -1804,15 +1760,15 @@ AsciiSerializer=5
         }
         FLD=_elemVector
         {=java.util.Vector
-          ID=145
+          ID=143
         }
         FLD=_obsDataVector
         {=java.util.Vector
-          ID=146
+          ID=144
         }
         FLD=_function
         {=hec.rss.model.Junction
-          ID=147
+          ID=145
           FLD=_index
           I=-2147483648
           FLD=_name
@@ -1820,10 +1776,10 @@ AsciiSerializer=5
           FLD=_description
           STR=
           FLD=element
-          REF=142
+          REF=140
           FLD=_verticalDatumSettings
           {=hec.rss.model.VerticalDatumSettings
-            ID=148
+            ID=146
             FLD=mType
             {ENUM
               L=hec.rss.model.VerticalDatumType
@@ -1840,7 +1796,7 @@ AsciiSerializer=5
           }
           FLD=_ratingCurve
           {=hec.model.PairedValues
-            ID=149
+            ID=147
             {[=0
             D=
             }]
@@ -1857,12 +1813,12 @@ AsciiSerializer=5
             I=-65523
             FLD=_dssId
             {=hec.io.DSSIdentifier
-              ID=150
+              ID=148
             }
           }
           FLD=_ratingObject
           {=hec.rss.model.RssRatingObject
-            ID=151
+            ID=149
             FLD=_index
             I=-2147483648
             FLD=_name
@@ -1870,14 +1826,14 @@ AsciiSerializer=5
             FLD=_description
             STR=
             FLD=_element
-            REF=142
+            REF=140
             FLD=_ratingName
             STR=Rating Curve
             FLD=_usesRatingCurveElev
             Z=false
             FLD=_ratingCurve
             {=hec.model.PairedValues
-              ID=152
+              ID=150
               {[=0
               D=
               }]
@@ -1897,7 +1853,7 @@ AsciiSerializer=5
             D=0.0
             FLD=_independentVariable
             {=hec.rss.model.IndependentVariable
-              ID=153
+              ID=151
               FLD=_type
               I=2
               FLD=_modelVariableId
@@ -1927,7 +1883,7 @@ AsciiSerializer=5
             Z=false
             FLD=_ivPairedValues
             {=hec.model.PairedValues
-              ID=154
+              ID=152
               {[=0
               D=
               }]
@@ -1945,10 +1901,10 @@ AsciiSerializer=5
             }
             FLD=_ivPairedValuesExt
             {=hec.model.PairedValuesExt
-              ID=155
+              ID=153
               FLD=_dataVector
               {=java.util.Vector
-                ID=156
+                ID=154
               }
               FLD=_interpolationType
               I=0
@@ -1980,7 +1936,7 @@ AsciiSerializer=5
         I=0
         FLD=_localFlowVec
         {=java.util.Vector
-          ID=157
+          ID=155
         }
         FLD=_labelPosition
         I=0
@@ -1990,7 +1946,7 @@ AsciiSerializer=5
         I=-1
       }
       {=hec.rss.model.JunctionElement
-        ID=158
+        ID=156
         FLD=_index
         I=46
         FLD=_name
@@ -2001,7 +1957,7 @@ AsciiSerializer=5
         REF=0
         FLD=_nodeVector
         {=java.util.Vector
-          ID=159
+          ID=157
           {COLLECT
             REF=29
             REF=35
@@ -2009,7 +1965,7 @@ AsciiSerializer=5
         }
         FLD=_nodeDirVector
         {=java.util.Vector
-          ID=160
+          ID=158
           {COLLECT
             I=0
             I=1
@@ -2017,11 +1973,11 @@ AsciiSerializer=5
         }
         FLD=_elemVector
         {=java.util.Vector
-          ID=161
+          ID=159
         }
         FLD=_function
         {=hec.rss.model.Junction
-          ID=162
+          ID=160
           FLD=_index
           I=-2147483648
           FLD=_name
@@ -2029,10 +1985,10 @@ AsciiSerializer=5
           FLD=_description
           STR=
           FLD=element
-          REF=158
+          REF=156
           FLD=_verticalDatumSettings
           {=hec.rss.model.VerticalDatumSettings
-            ID=163
+            ID=161
             FLD=mType
             {ENUM
               L=hec.rss.model.VerticalDatumType
@@ -2049,7 +2005,7 @@ AsciiSerializer=5
           }
           FLD=_ratingCurve
           {=hec.model.PairedValues
-            ID=164
+            ID=162
             {[=0
             D=
             }]
@@ -2066,12 +2022,12 @@ AsciiSerializer=5
             I=-65523
             FLD=_dssId
             {=hec.io.DSSIdentifier
-              ID=165
+              ID=163
             }
           }
           FLD=_ratingObject
           {=hec.rss.model.RssRatingObject
-            ID=166
+            ID=164
             FLD=_index
             I=-2147483648
             FLD=_name
@@ -2079,14 +2035,14 @@ AsciiSerializer=5
             FLD=_description
             STR=
             FLD=_element
-            REF=158
+            REF=156
             FLD=_ratingName
             STR=Rating Curve
             FLD=_usesRatingCurveElev
             Z=false
             FLD=_ratingCurve
             {=hec.model.PairedValues
-              ID=167
+              ID=165
               {[=0
               D=
               }]
@@ -2106,7 +2062,7 @@ AsciiSerializer=5
             D=0.0
             FLD=_independentVariable
             {=hec.rss.model.IndependentVariable
-              ID=168
+              ID=166
               FLD=_type
               I=2
               FLD=_modelVariableId
@@ -2136,7 +2092,7 @@ AsciiSerializer=5
             Z=false
             FLD=_ivPairedValues
             {=hec.model.PairedValues
-              ID=169
+              ID=167
               {[=0
               D=
               }]
@@ -2154,10 +2110,10 @@ AsciiSerializer=5
             }
             FLD=_ivPairedValuesExt
             {=hec.model.PairedValuesExt
-              ID=170
+              ID=168
               FLD=_dataVector
               {=java.util.Vector
-                ID=171
+                ID=169
               }
               FLD=_interpolationType
               I=0
@@ -2189,7 +2145,7 @@ AsciiSerializer=5
         I=0
         FLD=_localFlowVec
         {=java.util.Vector
-          ID=172
+          ID=170
         }
         FLD=_labelPosition
         I=0
@@ -2199,7 +2155,7 @@ AsciiSerializer=5
         I=-1
       }
       {=hec.rss.model.ReachElement
-        ID=173
+        ID=171
         FLD=_index
         I=47
         FLD=_name
@@ -2210,7 +2166,7 @@ AsciiSerializer=5
         REF=0
         FLD=_nodeVector
         {=java.util.Vector
-          ID=174
+          ID=172
           {COLLECT
             REF=23
             REF=41
@@ -2218,7 +2174,7 @@ AsciiSerializer=5
         }
         FLD=_nodeDirVector
         {=java.util.Vector
-          ID=175
+          ID=173
           {COLLECT
             I=1
             I=0
@@ -2226,11 +2182,11 @@ AsciiSerializer=5
         }
         FLD=_elemVector
         {=java.util.Vector
-          ID=176
+          ID=174
         }
         FLD=_function
         {=hec.rss.model.NullRouting
-          ID=177
+          ID=175
           FLD=_index
           I=-2147483648
           FLD=_name
@@ -2238,15 +2194,15 @@ AsciiSerializer=5
           FLD=_description
           STR=
           FLD=element
-          REF=173
+          REF=171
         }
         FLD=_timeStepRoutingFunctionMap
         {=java.util.HashMap
-          ID=178
+          ID=176
           {MAP
             java.time.Duration=PT0S
             {=hec.rss.model.NullRouting
-              ID=179
+              ID=177
               FLD=_index
               I=-2147483648
               FLD=_name
@@ -2254,7 +2210,7 @@ AsciiSerializer=5
               FLD=_description
               STR=
               FLD=element
-              REF=173
+              REF=171
             }
           }MAP
         }
@@ -2268,7 +2224,7 @@ AsciiSerializer=5
         D=1.0
         FLD=_seepageValues
         {=hec.model.PairedValues
-          ID=180
+          ID=178
           {[=0
           D=
           }]
@@ -2285,12 +2241,12 @@ AsciiSerializer=5
           I=-65523
           FLD=_dssId
           {=hec.io.DSSIdentifier
-            ID=181
+            ID=179
           }
         }
       }
       {=hec.rss.model.JunctionElement
-        ID=182
+        ID=180
         FLD=_index
         I=48
         FLD=_name
@@ -2301,7 +2257,7 @@ AsciiSerializer=5
         REF=0
         FLD=_nodeVector
         {=java.util.Vector
-          ID=183
+          ID=181
           {COLLECT
             REF=41
             REF=47
@@ -2310,7 +2266,7 @@ AsciiSerializer=5
         }
         FLD=_nodeDirVector
         {=java.util.Vector
-          ID=184
+          ID=182
           {COLLECT
             I=1
             I=0
@@ -2319,15 +2275,15 @@ AsciiSerializer=5
         }
         FLD=_elemVector
         {=java.util.Vector
-          ID=185
+          ID=183
         }
         FLD=_obsDataVector
         {=java.util.Vector
-          ID=186
+          ID=184
         }
         FLD=_function
         {=hec.rss.model.Junction
-          ID=187
+          ID=185
           FLD=_index
           I=-2147483648
           FLD=_name
@@ -2335,10 +2291,10 @@ AsciiSerializer=5
           FLD=_description
           STR=
           FLD=element
-          REF=182
+          REF=180
           FLD=_verticalDatumSettings
           {=hec.rss.model.VerticalDatumSettings
-            ID=188
+            ID=186
             FLD=mType
             {ENUM
               L=hec.rss.model.VerticalDatumType
@@ -2355,7 +2311,7 @@ AsciiSerializer=5
           }
           FLD=_ratingCurve
           {=hec.model.PairedValues
-            ID=189
+            ID=187
             {[=0
             D=
             }]
@@ -2372,12 +2328,12 @@ AsciiSerializer=5
             I=-65523
             FLD=_dssId
             {=hec.io.DSSIdentifier
-              ID=190
+              ID=188
             }
           }
           FLD=_ratingObject
           {=hec.rss.model.RssRatingObject
-            ID=191
+            ID=189
             FLD=_index
             I=-2147483648
             FLD=_name
@@ -2385,14 +2341,14 @@ AsciiSerializer=5
             FLD=_description
             STR=
             FLD=_element
-            REF=182
+            REF=180
             FLD=_ratingName
             STR=Rating Curve
             FLD=_usesRatingCurveElev
             Z=false
             FLD=_ratingCurve
             {=hec.model.PairedValues
-              ID=192
+              ID=190
               {[=0
               D=
               }]
@@ -2412,7 +2368,7 @@ AsciiSerializer=5
             D=0.0
             FLD=_independentVariable
             {=hec.rss.model.IndependentVariable
-              ID=193
+              ID=191
               FLD=_type
               I=2
               FLD=_modelVariableId
@@ -2442,7 +2398,7 @@ AsciiSerializer=5
             Z=false
             FLD=_ivPairedValues
             {=hec.model.PairedValues
-              ID=194
+              ID=192
               {[=0
               D=
               }]
@@ -2460,10 +2416,10 @@ AsciiSerializer=5
             }
             FLD=_ivPairedValuesExt
             {=hec.model.PairedValuesExt
-              ID=195
+              ID=193
               FLD=_dataVector
               {=java.util.Vector
-                ID=196
+                ID=194
               }
               FLD=_interpolationType
               I=0
@@ -2495,7 +2451,7 @@ AsciiSerializer=5
         I=0
         FLD=_localFlowVec
         {=java.util.Vector
-          ID=197
+          ID=195
         }
         FLD=_labelPosition
         I=0
@@ -2505,7 +2461,7 @@ AsciiSerializer=5
         I=-1
       }
       {=hec.rss.model.ReachElement
-        ID=198
+        ID=196
         FLD=_index
         I=49
         FLD=_name
@@ -2516,7 +2472,7 @@ AsciiSerializer=5
         REF=0
         FLD=_nodeVector
         {=java.util.Vector
-          ID=199
+          ID=197
           {COLLECT
             REF=47
             REF=89
@@ -2524,7 +2480,7 @@ AsciiSerializer=5
         }
         FLD=_nodeDirVector
         {=java.util.Vector
-          ID=200
+          ID=198
           {COLLECT
             I=1
             I=0
@@ -2532,11 +2488,11 @@ AsciiSerializer=5
         }
         FLD=_elemVector
         {=java.util.Vector
-          ID=201
+          ID=199
         }
         FLD=_function
         {=hec.rss.model.NullRouting
-          ID=202
+          ID=200
           FLD=_index
           I=-2147483648
           FLD=_name
@@ -2544,15 +2500,15 @@ AsciiSerializer=5
           FLD=_description
           STR=
           FLD=element
-          REF=198
+          REF=196
         }
         FLD=_timeStepRoutingFunctionMap
         {=java.util.HashMap
-          ID=203
+          ID=201
           {MAP
             java.time.Duration=PT0S
             {=hec.rss.model.NullRouting
-              ID=204
+              ID=202
               FLD=_index
               I=-2147483648
               FLD=_name
@@ -2560,7 +2516,7 @@ AsciiSerializer=5
               FLD=_description
               STR=
               FLD=element
-              REF=198
+              REF=196
             }
           }MAP
         }
@@ -2574,7 +2530,7 @@ AsciiSerializer=5
         D=1.0
         FLD=_seepageValues
         {=hec.model.PairedValues
-          ID=205
+          ID=203
           {[=0
           D=
           }]
@@ -2591,12 +2547,12 @@ AsciiSerializer=5
           I=-65523
           FLD=_dssId
           {=hec.io.DSSIdentifier
-            ID=206
+            ID=204
           }
         }
       }
       {=hec.rss.model.JunctionElement
-        ID=207
+        ID=205
         FLD=_index
         I=50
         FLD=_name
@@ -2607,7 +2563,7 @@ AsciiSerializer=5
         REF=0
         FLD=_nodeVector
         {=java.util.Vector
-          ID=208
+          ID=206
           {COLLECT
             REF=53
             REF=59
@@ -2615,7 +2571,7 @@ AsciiSerializer=5
         }
         FLD=_nodeDirVector
         {=java.util.Vector
-          ID=209
+          ID=207
           {COLLECT
             I=1
             I=0
@@ -2623,15 +2579,15 @@ AsciiSerializer=5
         }
         FLD=_elemVector
         {=java.util.Vector
-          ID=210
+          ID=208
         }
         FLD=_obsDataVector
         {=java.util.Vector
-          ID=211
+          ID=209
         }
         FLD=_function
         {=hec.rss.model.Junction
-          ID=212
+          ID=210
           FLD=_index
           I=-2147483648
           FLD=_name
@@ -2639,10 +2595,10 @@ AsciiSerializer=5
           FLD=_description
           STR=
           FLD=element
-          REF=207
+          REF=205
           FLD=_verticalDatumSettings
           {=hec.rss.model.VerticalDatumSettings
-            ID=213
+            ID=211
             FLD=mType
             {ENUM
               L=hec.rss.model.VerticalDatumType
@@ -2659,7 +2615,7 @@ AsciiSerializer=5
           }
           FLD=_ratingCurve
           {=hec.model.PairedValues
-            ID=214
+            ID=212
             {[=0
             D=
             }]
@@ -2676,12 +2632,12 @@ AsciiSerializer=5
             I=-65523
             FLD=_dssId
             {=hec.io.DSSIdentifier
-              ID=215
+              ID=213
             }
           }
           FLD=_ratingObject
           {=hec.rss.model.RssRatingObject
-            ID=216
+            ID=214
             FLD=_index
             I=-2147483648
             FLD=_name
@@ -2689,14 +2645,14 @@ AsciiSerializer=5
             FLD=_description
             STR=
             FLD=_element
-            REF=207
+            REF=205
             FLD=_ratingName
             STR=Rating Curve
             FLD=_usesRatingCurveElev
             Z=false
             FLD=_ratingCurve
             {=hec.model.PairedValues
-              ID=217
+              ID=215
               {[=0
               D=
               }]
@@ -2716,7 +2672,7 @@ AsciiSerializer=5
             D=0.0
             FLD=_independentVariable
             {=hec.rss.model.IndependentVariable
-              ID=218
+              ID=216
               FLD=_type
               I=2
               FLD=_modelVariableId
@@ -2746,7 +2702,7 @@ AsciiSerializer=5
             Z=false
             FLD=_ivPairedValues
             {=hec.model.PairedValues
-              ID=219
+              ID=217
               {[=0
               D=
               }]
@@ -2764,10 +2720,10 @@ AsciiSerializer=5
             }
             FLD=_ivPairedValuesExt
             {=hec.model.PairedValuesExt
-              ID=220
+              ID=218
               FLD=_dataVector
               {=java.util.Vector
-                ID=221
+                ID=219
               }
               FLD=_interpolationType
               I=0
@@ -2799,7 +2755,7 @@ AsciiSerializer=5
         I=0
         FLD=_localFlowVec
         {=java.util.Vector
-          ID=222
+          ID=220
         }
         FLD=_labelPosition
         I=0
@@ -2809,7 +2765,7 @@ AsciiSerializer=5
         I=-1
       }
       {=hec.rss.model.ReachElement
-        ID=223
+        ID=221
         FLD=_index
         I=51
         FLD=_name
@@ -2820,7 +2776,7 @@ AsciiSerializer=5
         REF=0
         FLD=_nodeVector
         {=java.util.Vector
-          ID=224
+          ID=222
           {COLLECT
             REF=59
             REF=65
@@ -2828,7 +2784,7 @@ AsciiSerializer=5
         }
         FLD=_nodeDirVector
         {=java.util.Vector
-          ID=225
+          ID=223
           {COLLECT
             I=1
             I=0
@@ -2836,11 +2792,11 @@ AsciiSerializer=5
         }
         FLD=_elemVector
         {=java.util.Vector
-          ID=226
+          ID=224
         }
         FLD=_function
         {=hec.rss.model.NullRouting
-          ID=227
+          ID=225
           FLD=_index
           I=-2147483648
           FLD=_name
@@ -2848,15 +2804,15 @@ AsciiSerializer=5
           FLD=_description
           STR=
           FLD=element
-          REF=223
+          REF=221
         }
         FLD=_timeStepRoutingFunctionMap
         {=java.util.HashMap
-          ID=228
+          ID=226
           {MAP
             java.time.Duration=PT0S
             {=hec.rss.model.NullRouting
-              ID=229
+              ID=227
               FLD=_index
               I=-2147483648
               FLD=_name
@@ -2864,7 +2820,7 @@ AsciiSerializer=5
               FLD=_description
               STR=
               FLD=element
-              REF=223
+              REF=221
             }
           }MAP
         }
@@ -2878,7 +2834,7 @@ AsciiSerializer=5
         D=1.0
         FLD=_seepageValues
         {=hec.model.PairedValues
-          ID=230
+          ID=228
           {[=0
           D=
           }]
@@ -2895,12 +2851,12 @@ AsciiSerializer=5
           I=-65523
           FLD=_dssId
           {=hec.io.DSSIdentifier
-            ID=231
+            ID=229
           }
         }
       }
       {=hec.rss.model.JunctionElement
-        ID=232
+        ID=230
         FLD=_index
         I=52
         FLD=_name
@@ -2911,7 +2867,7 @@ AsciiSerializer=5
         REF=0
         FLD=_nodeVector
         {=java.util.Vector
-          ID=233
+          ID=231
           {COLLECT
             REF=65
             REF=71
@@ -2920,7 +2876,7 @@ AsciiSerializer=5
         }
         FLD=_nodeDirVector
         {=java.util.Vector
-          ID=234
+          ID=232
           {COLLECT
             I=1
             I=0
@@ -2929,15 +2885,15 @@ AsciiSerializer=5
         }
         FLD=_elemVector
         {=java.util.Vector
-          ID=235
+          ID=233
         }
         FLD=_obsDataVector
         {=java.util.Vector
-          ID=236
+          ID=234
         }
         FLD=_function
         {=hec.rss.model.Junction
-          ID=237
+          ID=235
           FLD=_index
           I=-2147483648
           FLD=_name
@@ -2945,10 +2901,10 @@ AsciiSerializer=5
           FLD=_description
           STR=
           FLD=element
-          REF=232
+          REF=230
           FLD=_verticalDatumSettings
           {=hec.rss.model.VerticalDatumSettings
-            ID=238
+            ID=236
             FLD=mType
             {ENUM
               L=hec.rss.model.VerticalDatumType
@@ -2965,7 +2921,7 @@ AsciiSerializer=5
           }
           FLD=_ratingCurve
           {=hec.model.PairedValues
-            ID=239
+            ID=237
             {[=0
             D=
             }]
@@ -2982,12 +2938,12 @@ AsciiSerializer=5
             I=-65523
             FLD=_dssId
             {=hec.io.DSSIdentifier
-              ID=240
+              ID=238
             }
           }
           FLD=_ratingObject
           {=hec.rss.model.RssRatingObject
-            ID=241
+            ID=239
             FLD=_index
             I=-2147483648
             FLD=_name
@@ -2995,14 +2951,14 @@ AsciiSerializer=5
             FLD=_description
             STR=
             FLD=_element
-            REF=232
+            REF=230
             FLD=_ratingName
             STR=Rating Curve
             FLD=_usesRatingCurveElev
             Z=false
             FLD=_ratingCurve
             {=hec.model.PairedValues
-              ID=242
+              ID=240
               {[=0
               D=
               }]
@@ -3022,7 +2978,7 @@ AsciiSerializer=5
             D=0.0
             FLD=_independentVariable
             {=hec.rss.model.IndependentVariable
-              ID=243
+              ID=241
               FLD=_type
               I=2
               FLD=_modelVariableId
@@ -3052,7 +3008,7 @@ AsciiSerializer=5
             Z=false
             FLD=_ivPairedValues
             {=hec.model.PairedValues
-              ID=244
+              ID=242
               {[=0
               D=
               }]
@@ -3070,10 +3026,10 @@ AsciiSerializer=5
             }
             FLD=_ivPairedValuesExt
             {=hec.model.PairedValuesExt
-              ID=245
+              ID=243
               FLD=_dataVector
               {=java.util.Vector
-                ID=246
+                ID=244
               }
               FLD=_interpolationType
               I=0
@@ -3105,7 +3061,7 @@ AsciiSerializer=5
         I=0
         FLD=_localFlowVec
         {=java.util.Vector
-          ID=247
+          ID=245
         }
         FLD=_labelPosition
         I=0
@@ -3115,7 +3071,7 @@ AsciiSerializer=5
         I=-1
       }
       {=hec.rss.model.ReachElement
-        ID=248
+        ID=246
         FLD=_index
         I=53
         FLD=_name
@@ -3126,7 +3082,7 @@ AsciiSerializer=5
         REF=0
         FLD=_nodeVector
         {=java.util.Vector
-          ID=249
+          ID=247
           {COLLECT
             REF=71
             REF=35
@@ -3134,7 +3090,7 @@ AsciiSerializer=5
         }
         FLD=_nodeDirVector
         {=java.util.Vector
-          ID=250
+          ID=248
           {COLLECT
             I=1
             I=0
@@ -3142,11 +3098,11 @@ AsciiSerializer=5
         }
         FLD=_elemVector
         {=java.util.Vector
-          ID=251
+          ID=249
         }
         FLD=_function
         {=hec.rss.model.NullRouting
-          ID=252
+          ID=250
           FLD=_index
           I=-2147483648
           FLD=_name
@@ -3154,15 +3110,15 @@ AsciiSerializer=5
           FLD=_description
           STR=
           FLD=element
-          REF=248
+          REF=246
         }
         FLD=_timeStepRoutingFunctionMap
         {=java.util.HashMap
-          ID=253
+          ID=251
           {MAP
             java.time.Duration=PT0S
             {=hec.rss.model.NullRouting
-              ID=254
+              ID=252
               FLD=_index
               I=-2147483648
               FLD=_name
@@ -3170,7 +3126,7 @@ AsciiSerializer=5
               FLD=_description
               STR=
               FLD=element
-              REF=248
+              REF=246
             }
           }MAP
         }
@@ -3184,7 +3140,7 @@ AsciiSerializer=5
         D=1.0
         FLD=_seepageValues
         {=hec.model.PairedValues
-          ID=255
+          ID=253
           {[=0
           D=
           }]
@@ -3201,12 +3157,12 @@ AsciiSerializer=5
           I=-65523
           FLD=_dssId
           {=hec.io.DSSIdentifier
-            ID=256
+            ID=254
           }
         }
       }
       {=hec.rss.model.DiversionElement
-        ID=257
+        ID=255
         FLD=_index
         I=54
         FLD=_name
@@ -3217,24 +3173,24 @@ AsciiSerializer=5
         REF=0
         FLD=_nodeVector
         {=java.util.Vector
-          ID=258
+          ID=256
           {COLLECT
             REF=77
           }COLLECT
         }
         FLD=_nodeDirVector
         {=java.util.Vector
-          ID=259
+          ID=257
           {COLLECT
             I=0
           }COLLECT
         }
         FLD=_elemVector
         {=java.util.Vector
-          ID=260
+          ID=258
           {COLLECT
             {=hec.rss.model.Element
-              ID=261
+              ID=259
               FLD=_index
               I=55
               FLD=_name
@@ -3245,7 +3201,7 @@ AsciiSerializer=5
               REF=0
               FLD=_nodeVector
               {=java.util.Vector
-                ID=262
+                ID=260
                 {COLLECT
                   REF=83
                   REF=77
@@ -3253,7 +3209,7 @@ AsciiSerializer=5
               }
               FLD=_nodeDirVector
               {=java.util.Vector
-                ID=263
+                ID=261
                 {COLLECT
                   I=0
                   I=0
@@ -3261,11 +3217,11 @@ AsciiSerializer=5
               }
               FLD=_elemVector
               {=java.util.Vector
-                ID=264
+                ID=262
               }
               FLD=_function
               {=hec.rss.model.AdjustableDiversion
-                ID=265
+                ID=263
                 FLD=_index
                 I=-2147483648
                 FLD=_name
@@ -3273,10 +3229,10 @@ AsciiSerializer=5
                 FLD=_description
                 STR=
                 FLD=element
-                REF=261
+                REF=259
                 FLD=_intakeGeometry
                 {=hec.rss.model.IntakeGeometry
-                  ID=266
+                  ID=264
                   FLD=_rectangularLength
                   D=0.0
                   FLD=_rectangularWidth
@@ -3298,7 +3254,7 @@ AsciiSerializer=5
                 }
                 FLD=_flowParam
                 {=hec.rss.model.AdjustableParameter
-                  ID=267
+                  ID=265
                   FLD=_index
                   I=-2147483648
                   FLD=_name
@@ -3306,7 +3262,7 @@ AsciiSerializer=5
                   FLD=_description
                   STR=
                   FLD=_function
-                  REF=265
+                  REF=263
                   FLD=_value
                   D=0.0
                   FLD=_minValue
@@ -3321,12 +3277,12 @@ AsciiSerializer=5
                   D=0.0
                 }
                 FLD=_hindcastCondition
-                I=1
+                I=0
                 FLD=_initialRelease
-                D=50.0
+                D=0.0
                 FLD=_capacityValues
                 {=hec.model.PairedValues
-                  ID=268
+                  ID=266
                   {[=0
                   D=
                   }]
@@ -3343,12 +3299,12 @@ AsciiSerializer=5
                   I=-65523
                   FLD=_dssId
                   {=hec.io.DSSIdentifier
-                    ID=269
+                    ID=267
                   }
                 }
                 FLD=_controller
                 {=hec.rss.model.Controller
-                  ID=270
+                  ID=268
                   FLD=_index
                   I=-2147483648
                   FLD=_name
@@ -3356,7 +3312,7 @@ AsciiSerializer=5
                   FLD=_description
                   STR=
                   FLD=_diversion
-                  REF=265
+                  REF=263
                   FLD=_adjparamElement
                   STR=
                   FLD=_adjparamFunction
@@ -3365,12 +3321,12 @@ AsciiSerializer=5
                   STR=
                   FLD=ruleVector
                   {=java.util.Vector
-                    ID=271
+                    ID=269
                   }
                 }
               }
               FLD=_parentElement
-              REF=257
+              REF=255
             }
           }COLLECT
         }
@@ -3382,7 +3338,7 @@ AsciiSerializer=5
         D=1.0
         FLD=_seepageValues
         {=hec.model.PairedValues
-          ID=272
+          ID=270
           {[=0
           D=
           }]
@@ -3399,12 +3355,12 @@ AsciiSerializer=5
           I=-65523
           FLD=_dssId
           {=hec.io.DSSIdentifier
-            ID=273
+            ID=271
           }
         }
         FLD=_referencePt
         {=hec.map.WorldPt
-          ID=274
+          ID=272
           FLD=e
           D=6726684.553157304
           FLD=n
@@ -3412,14 +3368,14 @@ AsciiSerializer=5
         }
         FLD=_line
         {=hec.map.WorldLine
-          ID=275
+          ID=273
           FLD=pts
           {=java.util.Vector
-            ID=276
+            ID=274
             {COLLECT
-              REF=274
+              REF=272
               {=hec.map.WorldPt
-                ID=277
+                ID=275
                 FLD=e
                 D=6730850.994707972
                 FLD=n
@@ -3438,7 +3394,7 @@ AsciiSerializer=5
         J=-9223372036854775808
         FLD=_verticalDatumSettings
         {=hec.rss.model.VerticalDatumSettings
-          ID=278
+          ID=276
           FLD=mType
           {ENUM
             L=hec.rss.model.VerticalDatumType
@@ -3455,7 +3411,7 @@ AsciiSerializer=5
         }
         FLD=_divOps
         {=hec.rss.model.DiversionOp
-          ID=279
+          ID=277
           FLD=_index
           I=-2147483648
           FLD=_name
@@ -3463,10 +3419,10 @@ AsciiSerializer=5
           FLD=_description
           STR=Operations for Carmichael withdrawal
           FLD=_diversion
-          REF=257
+          REF=255
           FLD=_controller
           {=hec.rss.model.OpController
-            ID=280
+            ID=278
             FLD=_index
             I=0
             FLD=_name
@@ -3477,10 +3433,10 @@ AsciiSerializer=5
             I=55
             FLD=_controllableVec
             {=java.util.Vector
-              ID=281
+              ID=279
               {COLLECT
                 {=hec.rss.model.OpController
-                  ID=282
+                  ID=280
                   FLD=_index
                   I=1
                   FLD=_name
@@ -3491,10 +3447,10 @@ AsciiSerializer=5
                   I=55
                   FLD=_controllableVec
                   {=java.util.Vector
-                    ID=283
+                    ID=281
                     {COLLECT
                       {=hec.rss.model.OpControllableElement
-                        ID=284
+                        ID=282
                         FLD=_index
                         I=0
                         FLD=_name
@@ -3502,7 +3458,7 @@ AsciiSerializer=5
                         FLD=_description
                         STR=
                         FLD=_controller
-                        REF=282
+                        REF=280
                         FLD=_elemIndex
                         I=55
                       }
@@ -3510,10 +3466,10 @@ AsciiSerializer=5
                   }
                   FLD=_ruleTable
                   {=java.util.Hashtable
-                    ID=285
+                    ID=283
                   }
                   FLD=_parentOpController
-                  REF=280
+                  REF=278
                   FLD=_distributionMethod
                   I=0
                   FLD=_nextRuleIndex
@@ -3525,15 +3481,15 @@ AsciiSerializer=5
             }
             FLD=_ruleTable
             {=java.util.Hashtable
-              ID=286
+              ID=284
               {MAP
                 {=hec.heclib.util.intContainer
-                  ID=287
+                  ID=285
                   FLD=value
                   I=1
                 }
                 {=hec.rss.model.DiversionDemandOpRule
-                  ID=288
+                  ID=286
                   FLD=_index
                   I=1
                   FLD=_name
@@ -3541,7 +3497,7 @@ AsciiSerializer=5
                   FLD=_description
                   STR=
                   FLD=_controller
-                  REF=280
+                  REF=278
                   FLD=_useDayOfWeekMultiplier
                   Z=false
                   FLD=_useTimeOfDayMultiplier
@@ -3560,7 +3516,7 @@ AsciiSerializer=5
                   I=0
                   FLD=_rule
                   {=hec.rss.model.TimeSeries
-                    ID=289
+                    ID=287
                     FLD=_index
                     I=-2147483648
                     FLD=_name
@@ -3580,13 +3536,13 @@ AsciiSerializer=5
                     FLD=_usePeriodAverageLimit
                     Z=false
                     FLD=_opController
-                    REF=280
+                    REF=278
                     FLD=_tsrecordVector
                     {=java.util.Vector
-                      ID=290
+                      ID=288
                       {COLLECT
                         {=hec.clientapp.model.TSRecordProxy
-                          ID=291
+                          ID=289
                           FLD=_index
                           I=227791
                           FLD=_name
@@ -3600,7 +3556,7 @@ AsciiSerializer=5
                           FLD=_compressData
                           Z=false
                           FLD=_parent
-                          REF=289
+                          REF=287
                           FLD=_isInput
                           Z=true
                           FLD=_factor
@@ -3617,12 +3573,12 @@ AsciiSerializer=5
                   I=1
                 }
                 {=hec.heclib.util.intContainer
-                  ID=292
+                  ID=290
                   FLD=value
                   I=0
                 }
                 {=hec.rss.model.DiversionDemandOpRule
-                  ID=293
+                  ID=291
                   FLD=_index
                   I=0
                   FLD=_name
@@ -3630,7 +3586,7 @@ AsciiSerializer=5
                   FLD=_description
                   STR=
                   FLD=_controller
-                  REF=280
+                  REF=278
                   FLD=_useDayOfWeekMultiplier
                   Z=false
                   FLD=_useTimeOfDayMultiplier
@@ -3649,7 +3605,7 @@ AsciiSerializer=5
                   I=0
                   FLD=_rule
                   {=hec.rss.model.ConstantRelease
-                    ID=294
+                    ID=292
                     FLD=_index
                     I=-2147483648
                     FLD=_name
@@ -3657,7 +3613,7 @@ AsciiSerializer=5
                     FLD=_description
                     STR=
                     FLD=controller
-                    REF=270
+                    REF=268
                     FLD=tsLocationType
                     STR=
                     FLD=tsLocationName
@@ -3671,7 +3627,7 @@ AsciiSerializer=5
                     FLD=_usePeriodAverageLimit
                     Z=false
                     FLD=_opController
-                    REF=280
+                    REF=278
                     FLD=_defaultRelease
                     D=50.0
                   }
@@ -3689,15 +3645,15 @@ AsciiSerializer=5
           }
           FLD=_opSetTable
           {=java.util.Hashtable
-            ID=295
+            ID=293
             {MAP
               {=hec.heclib.util.intContainer
-                ID=296
+                ID=294
                 FLD=value
                 I=1
               }
               {=hec.rss.model.OpSet
-                ID=297
+                ID=295
                 FLD=_index
                 I=1
                 FLD=_name
@@ -3705,13 +3661,13 @@ AsciiSerializer=5
                 FLD=_description
                 STR=
                 FLD=_resOp
-                REF=279
+                REF=277
                 FLD=_zoneVec
                 {=java.util.Vector
-                  ID=298
+                  ID=296
                   {COLLECT
                     {=hec.rss.model.StorageZone
-                      ID=299
+                      ID=297
                       FLD=_index
                       I=3
                       FLD=_name
@@ -3719,12 +3675,12 @@ AsciiSerializer=5
                       FLD=_description
                       STR=Only Zone for Diversion
                       FLD=_opSet
-                      REF=297
+                      REF=295
                       FLD=_zoneTypeID
                       I=0
                       FLD=_zoneElevation
                       {=hec.model.SeasonalRecord
-                        ID=300
+                        ID=298
                         FLD=_nyears
                         I=-1
                         FLD=_curveValue
@@ -3740,10 +3696,10 @@ AsciiSerializer=5
                       }
                       FLD=_seasonalPairedValues
                       {=hec.model.SeasonalPairedValues
-                        ID=301
+                        ID=299
                         FLD=_dataVector
                         {=java.util.Vector
-                          ID=302
+                          ID=300
                         }
                         FLD=_interpolationType
                         I=0
@@ -3780,7 +3736,7 @@ AsciiSerializer=5
                       Z=false
                       FLD=_independentVariable
                       {=hec.rss.model.IndependentVariable
-                        ID=303
+                        ID=301
                         FLD=_type
                         I=0
                         FLD=_modelVariableId
@@ -3804,10 +3760,10 @@ AsciiSerializer=5
                       }
                       FLD=_zoneObjectList
                       {=java.util.ArrayList
-                        ID=304
+                        ID=302
                         {COLLECT
                           {=hec.rss.model.OpRuleRef
-                            ID=305
+                            ID=303
                             FLD=_index
                             I=-2147483648
                             FLD=_name
@@ -3815,7 +3771,7 @@ AsciiSerializer=5
                             FLD=_description
                             STR=
                             FLD=_parent
-                            REF=299
+                            REF=297
                             FLD=_opControllerIndex
                             I=0
                             FLD=_ruleIndex
@@ -3837,7 +3793,7 @@ AsciiSerializer=5
                       Z=false
                       FLD=_tvRowIndependentVariable
                       {=hec.rss.model.IndependentVariable
-                        ID=306
+                        ID=304
                         FLD=_type
                         I=0
                         FLD=_modelVariableId
@@ -3861,7 +3817,7 @@ AsciiSerializer=5
                       }
                       FLD=_tvColIndependentVariable
                       {=hec.rss.model.IndependentVariable
-                        ID=307
+                        ID=305
                         FLD=_type
                         I=0
                         FLD=_modelVariableId
@@ -3885,10 +3841,10 @@ AsciiSerializer=5
                       }
                       FLD=_userDefinedPairedValuesExt
                       {=hec.model.PairedValuesExt
-                        ID=308
+                        ID=306
                         FLD=_dataVector
                         {=java.util.Vector
-                          ID=309
+                          ID=307
                         }
                         FLD=_interpolationType
                         I=0
@@ -3907,10 +3863,10 @@ AsciiSerializer=5
                       }
                       FLD=_userDefinedSeasonalRecordsExt
                       {=hec.model.SeasonalRecordExt
-                        ID=310
+                        ID=308
                         FLD=_seasonalRecords
                         {=java.util.ArrayList
-                          ID=311
+                          ID=309
                         }
                         FLD=_nyears
                         I=-1
@@ -3928,7 +3884,7 @@ AsciiSerializer=5
                 }
                 FLD=_decisionSch
                 {=hec.rss.model.DecisionSch
-                  ID=312
+                  ID=310
                   FLD=_intervalType
                   I=0
                   FLD=_regularType
@@ -3956,7 +3912,7 @@ AsciiSerializer=5
                 Z=false
                 FLD=_capacitySchedule
                 {=hec.rss.model.CapacitySchedule
-                  ID=313
+                  ID=311
                   FLD=_index
                   I=-2147483648
                   FLD=_name
@@ -3965,18 +3921,18 @@ AsciiSerializer=5
                   STR=
                   FLD=_outages
                   {=java.util.HashMap
-                    ID=314
+                    ID=312
                   }
                 }
                 FLD=_nextZoneIndex
                 I=4
                 FLD=_releaseAllocationTable
                 {=java.util.Hashtable
-                  ID=315
+                  ID=313
                 }
                 FLD=DEFAULT_ALLOCATION_SET
                 {=hec.rss.model.ReleaseAllocationSet
-                  ID=316
+                  ID=314
                   FLD=_index
                   I=-2147483648
                   FLD=_name
@@ -3985,22 +3941,26 @@ AsciiSerializer=5
                   STR=
                   FLD=_releaseAllocationMap
                   {=java.util.HashMap
-                    ID=317
+                    ID=315
                   }
                 }
                 FLD=DEFAULT_RELESSE_ALLOCATION_OBJECT
                 {=hec.rss.model.ReleaseAllocationSetRef
-                  ID=318
+                  ID=316
                   FLD=_ras
-                  REF=316
+                  REF=314
                 }
                 FLD=_releaseAllocationSets
                 {=java.util.ArrayList
-                  ID=319
+                  ID=317
+                }
+                FLD=_releaseAllocationConditionals
+                {=java.util.ArrayList
+                  ID=318
                 }
                 FLD=_conditionalBlockList
                 {=java.util.ArrayList
-                  ID=320
+                  ID=319
                 }
                 FLD=_computingProjectedElevation
                 Z=false
@@ -4010,12 +3970,12 @@ AsciiSerializer=5
                 Z=false
               }
               {=hec.heclib.util.intContainer
-                ID=321
+                ID=320
                 FLD=value
                 I=0
               }
               {=hec.rss.model.OpSet
-                ID=322
+                ID=321
                 FLD=_index
                 I=0
                 FLD=_name
@@ -4023,13 +3983,13 @@ AsciiSerializer=5
                 FLD=_description
                 STR=
                 FLD=_resOp
-                REF=279
+                REF=277
                 FLD=_zoneVec
                 {=java.util.Vector
-                  ID=323
+                  ID=322
                   {COLLECT
                     {=hec.rss.model.StorageZone
-                      ID=324
+                      ID=323
                       FLD=_index
                       I=3
                       FLD=_name
@@ -4037,12 +3997,12 @@ AsciiSerializer=5
                       FLD=_description
                       STR=Only Zone for Diversion
                       FLD=_opSet
-                      REF=322
+                      REF=321
                       FLD=_zoneTypeID
                       I=0
                       FLD=_zoneElevation
                       {=hec.model.SeasonalRecord
-                        ID=325
+                        ID=324
                         FLD=_nyears
                         I=-1
                         FLD=_curveValue
@@ -4058,10 +4018,10 @@ AsciiSerializer=5
                       }
                       FLD=_seasonalPairedValues
                       {=hec.model.SeasonalPairedValues
-                        ID=326
+                        ID=325
                         FLD=_dataVector
                         {=java.util.Vector
-                          ID=327
+                          ID=326
                         }
                         FLD=_interpolationType
                         I=0
@@ -4098,7 +4058,7 @@ AsciiSerializer=5
                       Z=false
                       FLD=_independentVariable
                       {=hec.rss.model.IndependentVariable
-                        ID=328
+                        ID=327
                         FLD=_type
                         I=0
                         FLD=_modelVariableId
@@ -4122,10 +4082,10 @@ AsciiSerializer=5
                       }
                       FLD=_zoneObjectList
                       {=java.util.ArrayList
-                        ID=329
+                        ID=328
                         {COLLECT
                           {=hec.rss.model.OpRuleRef
-                            ID=330
+                            ID=329
                             FLD=_index
                             I=-2147483648
                             FLD=_name
@@ -4133,7 +4093,7 @@ AsciiSerializer=5
                             FLD=_description
                             STR=
                             FLD=_parent
-                            REF=324
+                            REF=323
                             FLD=_opControllerIndex
                             I=0
                             FLD=_ruleIndex
@@ -4154,6 +4114,30 @@ AsciiSerializer=5
                       FLD=_useTVIndependentVariable
                       Z=false
                       FLD=_tvRowIndependentVariable
+                      {=hec.rss.model.IndependentVariable
+                        ID=330
+                        FLD=_type
+                        I=0
+                        FLD=_modelVariableId
+                        I=0
+                        FLD=_elementIndex
+                        I=-2147483648
+                        FLD=_tsName
+                        STR=
+                        FLD=_tsOptFunctionType
+                        I=1
+                        FLD=_tsOptLag
+                        D=0.0
+                        FLD=_tsOptPeriod
+                        D=0.0
+                        FLD=_tsOptChecked
+                        Z=false
+                        FLD=_stateVariableIndex
+                        I=0
+                        FLD=_globalVariableIndex
+                        I=0
+                      }
+                      FLD=_tvColIndependentVariable
                       {=hec.rss.model.IndependentVariable
                         ID=331
                         FLD=_type
@@ -4177,36 +4161,12 @@ AsciiSerializer=5
                         FLD=_globalVariableIndex
                         I=0
                       }
-                      FLD=_tvColIndependentVariable
-                      {=hec.rss.model.IndependentVariable
-                        ID=332
-                        FLD=_type
-                        I=0
-                        FLD=_modelVariableId
-                        I=0
-                        FLD=_elementIndex
-                        I=-2147483648
-                        FLD=_tsName
-                        STR=
-                        FLD=_tsOptFunctionType
-                        I=1
-                        FLD=_tsOptLag
-                        D=0.0
-                        FLD=_tsOptPeriod
-                        D=0.0
-                        FLD=_tsOptChecked
-                        Z=false
-                        FLD=_stateVariableIndex
-                        I=0
-                        FLD=_globalVariableIndex
-                        I=0
-                      }
                       FLD=_userDefinedPairedValuesExt
                       {=hec.model.PairedValuesExt
-                        ID=333
+                        ID=332
                         FLD=_dataVector
                         {=java.util.Vector
-                          ID=334
+                          ID=333
                         }
                         FLD=_interpolationType
                         I=0
@@ -4225,10 +4185,10 @@ AsciiSerializer=5
                       }
                       FLD=_userDefinedSeasonalRecordsExt
                       {=hec.model.SeasonalRecordExt
-                        ID=335
+                        ID=334
                         FLD=_seasonalRecords
                         {=java.util.ArrayList
-                          ID=336
+                          ID=335
                         }
                         FLD=_nyears
                         I=-1
@@ -4246,7 +4206,7 @@ AsciiSerializer=5
                 }
                 FLD=_decisionSch
                 {=hec.rss.model.DecisionSch
-                  ID=337
+                  ID=336
                   FLD=_intervalType
                   I=0
                   FLD=_regularType
@@ -4274,7 +4234,7 @@ AsciiSerializer=5
                 Z=false
                 FLD=_capacitySchedule
                 {=hec.rss.model.CapacitySchedule
-                  ID=338
+                  ID=337
                   FLD=_index
                   I=-2147483648
                   FLD=_name
@@ -4283,18 +4243,18 @@ AsciiSerializer=5
                   STR=
                   FLD=_outages
                   {=java.util.HashMap
-                    ID=339
+                    ID=338
                   }
                 }
                 FLD=_nextZoneIndex
                 I=4
                 FLD=_releaseAllocationTable
                 {=java.util.Hashtable
-                  ID=340
+                  ID=339
                 }
                 FLD=DEFAULT_ALLOCATION_SET
                 {=hec.rss.model.ReleaseAllocationSet
-                  ID=341
+                  ID=340
                   FLD=_index
                   I=-2147483648
                   FLD=_name
@@ -4303,16 +4263,20 @@ AsciiSerializer=5
                   STR=
                   FLD=_releaseAllocationMap
                   {=java.util.HashMap
-                    ID=342
+                    ID=341
                   }
                 }
                 FLD=DEFAULT_RELESSE_ALLOCATION_OBJECT
                 {=hec.rss.model.ReleaseAllocationSetRef
-                  ID=343
+                  ID=342
                   FLD=_ras
-                  REF=341
+                  REF=340
                 }
                 FLD=_releaseAllocationSets
+                {=java.util.ArrayList
+                  ID=343
+                }
+                FLD=_releaseAllocationConditionals
                 {=java.util.ArrayList
                   ID=344
                 }
@@ -4761,9 +4725,9 @@ AsciiSerializer=5
                   D=0.0
                 }
                 FLD=_hindcastCondition
-                I=1
+                I=0
                 FLD=_initialRelease
-                D=50.0
+                D=0.0
                 FLD=_capacityValues
                 {=hec.model.PairedValues
                   ID=382
@@ -5438,9 +5402,13 @@ AsciiSerializer=5
                 {=java.util.ArrayList
                   ID=433
                 }
-                FLD=_conditionalBlockList
+                FLD=_releaseAllocationConditionals
                 {=java.util.ArrayList
                   ID=434
+                }
+                FLD=_conditionalBlockList
+                {=java.util.ArrayList
+                  ID=435
                 }
                 FLD=_computingProjectedElevation
                 Z=false
@@ -5450,12 +5418,12 @@ AsciiSerializer=5
                 Z=false
               }
               {=hec.heclib.util.intContainer
-                ID=435
+                ID=436
                 FLD=value
                 I=0
               }
               {=hec.rss.model.OpSet
-                ID=436
+                ID=437
                 FLD=_index
                 I=0
                 FLD=_name
@@ -5466,10 +5434,10 @@ AsciiSerializer=5
                 REF=393
                 FLD=_zoneVec
                 {=java.util.Vector
-                  ID=437
+                  ID=438
                   {COLLECT
                     {=hec.rss.model.StorageZone
-                      ID=438
+                      ID=439
                       FLD=_index
                       I=3
                       FLD=_name
@@ -5477,12 +5445,12 @@ AsciiSerializer=5
                       FLD=_description
                       STR=Only Zone for Diversion
                       FLD=_opSet
-                      REF=436
+                      REF=437
                       FLD=_zoneTypeID
                       I=0
                       FLD=_zoneElevation
                       {=hec.model.SeasonalRecord
-                        ID=439
+                        ID=440
                         FLD=_nyears
                         I=-1
                         FLD=_curveValue
@@ -5498,10 +5466,10 @@ AsciiSerializer=5
                       }
                       FLD=_seasonalPairedValues
                       {=hec.model.SeasonalPairedValues
-                        ID=440
+                        ID=441
                         FLD=_dataVector
                         {=java.util.Vector
-                          ID=441
+                          ID=442
                         }
                         FLD=_interpolationType
                         I=0
@@ -5538,7 +5506,7 @@ AsciiSerializer=5
                       Z=false
                       FLD=_independentVariable
                       {=hec.rss.model.IndependentVariable
-                        ID=442
+                        ID=443
                         FLD=_type
                         I=0
                         FLD=_modelVariableId
@@ -5562,10 +5530,10 @@ AsciiSerializer=5
                       }
                       FLD=_zoneObjectList
                       {=java.util.ArrayList
-                        ID=443
+                        ID=444
                         {COLLECT
                           {=hec.rss.model.OpRuleRef
-                            ID=444
+                            ID=445
                             FLD=_index
                             I=-2147483648
                             FLD=_name
@@ -5573,7 +5541,7 @@ AsciiSerializer=5
                             FLD=_description
                             STR=
                             FLD=_parent
-                            REF=438
+                            REF=439
                             FLD=_opControllerIndex
                             I=0
                             FLD=_ruleIndex
@@ -5594,30 +5562,6 @@ AsciiSerializer=5
                       FLD=_useTVIndependentVariable
                       Z=false
                       FLD=_tvRowIndependentVariable
-                      {=hec.rss.model.IndependentVariable
-                        ID=445
-                        FLD=_type
-                        I=0
-                        FLD=_modelVariableId
-                        I=0
-                        FLD=_elementIndex
-                        I=-2147483648
-                        FLD=_tsName
-                        STR=
-                        FLD=_tsOptFunctionType
-                        I=1
-                        FLD=_tsOptLag
-                        D=0.0
-                        FLD=_tsOptPeriod
-                        D=0.0
-                        FLD=_tsOptChecked
-                        Z=false
-                        FLD=_stateVariableIndex
-                        I=0
-                        FLD=_globalVariableIndex
-                        I=0
-                      }
-                      FLD=_tvColIndependentVariable
                       {=hec.rss.model.IndependentVariable
                         ID=446
                         FLD=_type
@@ -5641,12 +5585,36 @@ AsciiSerializer=5
                         FLD=_globalVariableIndex
                         I=0
                       }
+                      FLD=_tvColIndependentVariable
+                      {=hec.rss.model.IndependentVariable
+                        ID=447
+                        FLD=_type
+                        I=0
+                        FLD=_modelVariableId
+                        I=0
+                        FLD=_elementIndex
+                        I=-2147483648
+                        FLD=_tsName
+                        STR=
+                        FLD=_tsOptFunctionType
+                        I=1
+                        FLD=_tsOptLag
+                        D=0.0
+                        FLD=_tsOptPeriod
+                        D=0.0
+                        FLD=_tsOptChecked
+                        Z=false
+                        FLD=_stateVariableIndex
+                        I=0
+                        FLD=_globalVariableIndex
+                        I=0
+                      }
                       FLD=_userDefinedPairedValuesExt
                       {=hec.model.PairedValuesExt
-                        ID=447
+                        ID=448
                         FLD=_dataVector
                         {=java.util.Vector
-                          ID=448
+                          ID=449
                         }
                         FLD=_interpolationType
                         I=0
@@ -5665,10 +5633,10 @@ AsciiSerializer=5
                       }
                       FLD=_userDefinedSeasonalRecordsExt
                       {=hec.model.SeasonalRecordExt
-                        ID=449
+                        ID=450
                         FLD=_seasonalRecords
                         {=java.util.ArrayList
-                          ID=450
+                          ID=451
                         }
                         FLD=_nyears
                         I=-1
@@ -5686,7 +5654,7 @@ AsciiSerializer=5
                 }
                 FLD=_decisionSch
                 {=hec.rss.model.DecisionSch
-                  ID=451
+                  ID=452
                   FLD=_intervalType
                   I=0
                   FLD=_regularType
@@ -5714,7 +5682,7 @@ AsciiSerializer=5
                 Z=false
                 FLD=_capacitySchedule
                 {=hec.rss.model.CapacitySchedule
-                  ID=452
+                  ID=453
                   FLD=_index
                   I=-2147483648
                   FLD=_name
@@ -5723,18 +5691,18 @@ AsciiSerializer=5
                   STR=
                   FLD=_outages
                   {=java.util.HashMap
-                    ID=453
+                    ID=454
                   }
                 }
                 FLD=_nextZoneIndex
                 I=4
                 FLD=_releaseAllocationTable
                 {=java.util.Hashtable
-                  ID=454
+                  ID=455
                 }
                 FLD=DEFAULT_ALLOCATION_SET
                 {=hec.rss.model.ReleaseAllocationSet
-                  ID=455
+                  ID=456
                   FLD=_index
                   I=-2147483648
                   FLD=_name
@@ -5743,22 +5711,26 @@ AsciiSerializer=5
                   STR=
                   FLD=_releaseAllocationMap
                   {=java.util.HashMap
-                    ID=456
+                    ID=457
                   }
                 }
                 FLD=DEFAULT_RELESSE_ALLOCATION_OBJECT
                 {=hec.rss.model.ReleaseAllocationSetRef
-                  ID=457
+                  ID=458
                   FLD=_ras
-                  REF=455
+                  REF=456
                 }
                 FLD=_releaseAllocationSets
                 {=java.util.ArrayList
-                  ID=458
+                  ID=459
+                }
+                FLD=_releaseAllocationConditionals
+                {=java.util.ArrayList
+                  ID=460
                 }
                 FLD=_conditionalBlockList
                 {=java.util.ArrayList
-                  ID=459
+                  ID=461
                 }
                 FLD=_computingProjectedElevation
                 Z=false
@@ -5771,7 +5743,7 @@ AsciiSerializer=5
           }
           FLD=_conditionalBlockList
           {=java.util.Vector
-            ID=460
+            ID=462
           }
           FLD=_nextConditionalBlockIndex
           I=100000
@@ -5784,7 +5756,7 @@ AsciiSerializer=5
         STR=AMR_Net_7_Carmichael Water Intake
       }
       {=hec.rss.model.JunctionElement
-        ID=461
+        ID=463
         FLD=_index
         I=60
         FLD=_name
@@ -5795,7 +5767,7 @@ AsciiSerializer=5
         REF=0
         FLD=_nodeVector
         {=java.util.Vector
-          ID=462
+          ID=464
           {COLLECT
             REF=113
             REF=119
@@ -5803,7 +5775,7 @@ AsciiSerializer=5
         }
         FLD=_nodeDirVector
         {=java.util.Vector
-          ID=463
+          ID=465
           {COLLECT
             I=1
             I=0
@@ -5811,11 +5783,11 @@ AsciiSerializer=5
         }
         FLD=_elemVector
         {=java.util.Vector
-          ID=464
+          ID=466
         }
         FLD=_function
         {=hec.rss.model.Junction
-          ID=465
+          ID=467
           FLD=_index
           I=-2147483648
           FLD=_name
@@ -5823,10 +5795,10 @@ AsciiSerializer=5
           FLD=_description
           STR=
           FLD=element
-          REF=461
+          REF=463
           FLD=_verticalDatumSettings
           {=hec.rss.model.VerticalDatumSettings
-            ID=466
+            ID=468
             FLD=mType
             {ENUM
               L=hec.rss.model.VerticalDatumType
@@ -5843,7 +5815,7 @@ AsciiSerializer=5
           }
           FLD=_ratingCurve
           {=hec.model.PairedValues
-            ID=467
+            ID=469
             {[=0
             D=
             }]
@@ -5860,7 +5832,7 @@ AsciiSerializer=5
             I=-65523
             FLD=_dssId
             {=hec.io.DSSIdentifier
-              ID=468
+              ID=470
             }
           }
           FLD=_ratingType
@@ -5877,7 +5849,7 @@ AsciiSerializer=5
         I=0
         FLD=_localFlowVec
         {=java.util.Vector
-          ID=469
+          ID=471
         }
         FLD=_labelPosition
         I=0
@@ -5887,7 +5859,7 @@ AsciiSerializer=5
         I=-1
       }
       {=hec.rss.model.ReachElement
-        ID=470
+        ID=472
         FLD=_index
         I=61
         FLD=_name
@@ -5898,7 +5870,7 @@ AsciiSerializer=5
         REF=0
         FLD=_nodeVector
         {=java.util.Vector
-          ID=471
+          ID=473
           {COLLECT
             REF=119
             REF=53
@@ -5906,7 +5878,7 @@ AsciiSerializer=5
         }
         FLD=_nodeDirVector
         {=java.util.Vector
-          ID=472
+          ID=474
           {COLLECT
             I=1
             I=0
@@ -5914,11 +5886,11 @@ AsciiSerializer=5
         }
         FLD=_elemVector
         {=java.util.Vector
-          ID=473
+          ID=475
         }
         FLD=_function
         {=hec.rss.model.NullRouting
-          ID=474
+          ID=476
           FLD=_index
           I=-2147483648
           FLD=_name
@@ -5926,15 +5898,15 @@ AsciiSerializer=5
           FLD=_description
           STR=
           FLD=element
-          REF=470
+          REF=472
         }
         FLD=_timeStepRoutingFunctionMap
         {=java.util.HashMap
-          ID=475
+          ID=477
           {MAP
             java.time.Duration=PT0S
             {=hec.rss.model.NullRouting
-              ID=476
+              ID=478
               FLD=_index
               I=-2147483648
               FLD=_name
@@ -5942,7 +5914,7 @@ AsciiSerializer=5
               FLD=_description
               STR=
               FLD=element
-              REF=470
+              REF=472
             }
           }MAP
         }
@@ -5956,7 +5928,7 @@ AsciiSerializer=5
         D=1.0
         FLD=_seepageValues
         {=hec.model.PairedValues
-          ID=477
+          ID=479
           {[=0
           D=
           }]
@@ -5973,7 +5945,7 @@ AsciiSerializer=5
           I=-65523
           FLD=_dssId
           {=hec.io.DSSIdentifier
-            ID=478
+            ID=480
           }
         }
       }
@@ -5981,7 +5953,7 @@ AsciiSerializer=5
   }
   FLD=_inputTSDataNameVector
   {=java.util.Vector
-    ID=479
+    ID=481
   }
   FLD=_configurationID
   J=-9223372036854775808
@@ -5995,7 +5967,7 @@ AsciiSerializer=5
   I=0
   FLD=_defaultDownstreamOptions
   {=hec.rss.model.DownstreamOptions
-    ID=480
+    ID=482
     FLD=_spaceAdjType
     I=-1
     FLD=_useLaggedSpaceAdj
@@ -6033,10 +6005,10 @@ AsciiSerializer=5
   I=0
   FLD=_globalVariableList
   {=java.util.ArrayList
-    ID=481
+    ID=483
     {COLLECT
       {=hec.rss.model.globalvariable.TimeSeriesGlobalVariable
-        ID=482
+        ID=484
         FLD=_index
         I=1
         FLD=_name
@@ -6072,7 +6044,7 @@ AsciiSerializer=5
         Z=false
       }
       {=hec.rss.model.globalvariable.TimeSeriesGlobalVariable
-        ID=483
+        ID=485
         FLD=_index
         I=2
         FLD=_name
@@ -6108,7 +6080,7 @@ AsciiSerializer=5
         Z=false
       }
       {=hec.rss.model.globalvariable.TimeSeriesGlobalVariable
-        ID=484
+        ID=486
         FLD=_index
         I=3
         FLD=_name
@@ -6144,7 +6116,7 @@ AsciiSerializer=5
         Z=false
       }
       {=hec.rss.model.globalvariable.TimeSeriesGlobalVariable
-        ID=485
+        ID=487
         FLD=_index
         I=4
         FLD=_name
@@ -6180,7 +6152,7 @@ AsciiSerializer=5
         Z=false
       }
       {=hec.rss.model.globalvariable.TimeSeriesGlobalVariable
-        ID=486
+        ID=488
         FLD=_index
         I=5
         FLD=_name
@@ -6216,7 +6188,7 @@ AsciiSerializer=5
         Z=false
       }
       {=hec.rss.model.globalvariable.TimeSeriesGlobalVariable
-        ID=487
+        ID=489
         FLD=_index
         I=6
         FLD=_name
@@ -6252,7 +6224,7 @@ AsciiSerializer=5
         Z=true
       }
       {=hec.rss.model.globalvariable.TimeSeriesGlobalVariable
-        ID=488
+        ID=490
         FLD=_index
         I=7
         FLD=_name
@@ -6288,7 +6260,7 @@ AsciiSerializer=5
         Z=true
       }
       {=hec.rss.model.globalvariable.TimeSeriesGlobalVariable
-        ID=489
+        ID=491
         FLD=_index
         I=8
         FLD=_name
@@ -6324,7 +6296,7 @@ AsciiSerializer=5
         Z=true
       }
       {=hec.rss.model.globalvariable.TimeSeriesGlobalVariable
-        ID=490
+        ID=492
         FLD=_index
         I=9
         FLD=_name
@@ -6360,7 +6332,7 @@ AsciiSerializer=5
         Z=true
       }
       {=hec.rss.model.globalvariable.TimeSeriesGlobalVariable
-        ID=491
+        ID=493
         FLD=_index
         I=10
         FLD=_name
@@ -6396,7 +6368,7 @@ AsciiSerializer=5
         Z=true
       }
       {=hec.rss.model.globalvariable.TimeSeriesGlobalVariable
-        ID=492
+        ID=494
         FLD=_index
         I=11
         FLD=_name
@@ -6432,7 +6404,7 @@ AsciiSerializer=5
         Z=true
       }
       {=hec.rss.model.globalvariable.TimeSeriesGlobalVariable
-        ID=493
+        ID=495
         FLD=_index
         I=12
         FLD=_name
@@ -6468,7 +6440,7 @@ AsciiSerializer=5
         Z=true
       }
       {=hec.rss.model.globalvariable.TimeSeriesGlobalVariable
-        ID=494
+        ID=496
         FLD=_index
         I=13
         FLD=_name
@@ -6504,7 +6476,7 @@ AsciiSerializer=5
         Z=true
       }
       {=hec.rss.model.globalvariable.TimeSeriesGlobalVariable
-        ID=495
+        ID=497
         FLD=_index
         I=14
         FLD=_name
@@ -6540,7 +6512,7 @@ AsciiSerializer=5
         Z=true
       }
       {=hec.rss.model.globalvariable.TimeSeriesGlobalVariable
-        ID=496
+        ID=498
         FLD=_index
         I=15
         FLD=_name
@@ -6576,7 +6548,7 @@ AsciiSerializer=5
         Z=true
       }
       {=hec.rss.model.globalvariable.TimeSeriesGlobalVariable
-        ID=497
+        ID=499
         FLD=_index
         I=16
         FLD=_name
@@ -6612,7 +6584,7 @@ AsciiSerializer=5
         Z=true
       }
       {=hec.rss.model.globalvariable.TimeSeriesGlobalVariable
-        ID=498
+        ID=500
         FLD=_index
         I=17
         FLD=_name
@@ -6648,7 +6620,7 @@ AsciiSerializer=5
         Z=true
       }
       {=hec.rss.model.globalvariable.TimeSeriesGlobalVariable
-        ID=499
+        ID=501
         FLD=_index
         I=18
         FLD=_name
@@ -6684,7 +6656,7 @@ AsciiSerializer=5
         Z=true
       }
       {=hec.rss.model.globalvariable.TimeSeriesGlobalVariable
-        ID=500
+        ID=502
         FLD=_index
         I=25
         FLD=_name
@@ -6720,7 +6692,7 @@ AsciiSerializer=5
         Z=true
       }
       {=hec.rss.model.globalvariable.TimeSeriesGlobalVariable
-        ID=501
+        ID=503
         FLD=_index
         I=26
         FLD=_name
@@ -6756,7 +6728,7 @@ AsciiSerializer=5
         Z=true
       }
       {=hec.rss.model.globalvariable.TimeSeriesGlobalVariable
-        ID=502
+        ID=504
         FLD=_index
         I=27
         FLD=_name
@@ -6792,7 +6764,7 @@ AsciiSerializer=5
         Z=true
       }
       {=hec.rss.model.globalvariable.TimeSeriesGlobalVariable
-        ID=503
+        ID=505
         FLD=_index
         I=28
         FLD=_name
@@ -6828,7 +6800,7 @@ AsciiSerializer=5
         Z=true
       }
       {=hec.rss.model.globalvariable.TimeSeriesGlobalVariable
-        ID=504
+        ID=506
         FLD=_index
         I=29
         FLD=_name
@@ -6864,7 +6836,7 @@ AsciiSerializer=5
         Z=true
       }
       {=hec.rss.model.globalvariable.TimeSeriesGlobalVariable
-        ID=505
+        ID=507
         FLD=_index
         I=30
         FLD=_name
@@ -6900,7 +6872,7 @@ AsciiSerializer=5
         Z=true
       }
       {=hec.rss.model.globalvariable.TimeSeriesGlobalVariable
-        ID=506
+        ID=508
         FLD=_index
         I=31
         FLD=_name
@@ -6936,7 +6908,7 @@ AsciiSerializer=5
         Z=true
       }
       {=hec.rss.model.globalvariable.TimeSeriesGlobalVariable
-        ID=507
+        ID=509
         FLD=_index
         I=32
         FLD=_name
@@ -6972,7 +6944,7 @@ AsciiSerializer=5
         Z=true
       }
       {=hec.rss.model.globalvariable.TimeSeriesGlobalVariable
-        ID=508
+        ID=510
         FLD=_index
         I=33
         FLD=_name
@@ -7008,7 +6980,7 @@ AsciiSerializer=5
         Z=true
       }
       {=hec.rss.model.globalvariable.TimeSeriesGlobalVariable
-        ID=509
+        ID=511
         FLD=_index
         I=36
         FLD=_name
@@ -7044,7 +7016,7 @@ AsciiSerializer=5
         Z=true
       }
       {=hec.rss.model.globalvariable.ScalarGlobalVariable
-        ID=510
+        ID=512
         FLD=_index
         I=37
         FLD=_name
@@ -7064,7 +7036,7 @@ AsciiSerializer=5
         }ENUM
         FLD=_selectionList
         {=java.util.ArrayList
-          ID=511
+          ID=513
         }
         FLD=_isSelectionList
         Z=false
@@ -7076,7 +7048,7 @@ AsciiSerializer=5
         STR=Code
       }
       {=hec.rss.model.globalvariable.TimeSeriesGlobalVariable
-        ID=512
+        ID=514
         FLD=_index
         I=38
         FLD=_name
@@ -7112,7 +7084,7 @@ AsciiSerializer=5
         Z=false
       }
       {=hec.rss.model.globalvariable.TimeSeriesGlobalVariable
-        ID=513
+        ID=515
         FLD=_index
         I=39
         FLD=_name
@@ -7148,7 +7120,7 @@ AsciiSerializer=5
         Z=true
       }
       {=hec.rss.model.globalvariable.TimeSeriesGlobalVariable
-        ID=514
+        ID=516
         FLD=_index
         I=40
         FLD=_name
@@ -7184,7 +7156,7 @@ AsciiSerializer=5
         Z=true
       }
       {=hec.rss.model.globalvariable.TimeSeriesGlobalVariable
-        ID=515
+        ID=517
         FLD=_index
         I=41
         FLD=_name

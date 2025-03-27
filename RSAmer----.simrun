@@ -28,7 +28,7 @@ AsciiSerializer=5
         FLD=_inputPos
         I=0
         FLD=_modelPos
-        I=-1
+        I=1
         FLD=_altIndex
         I=3357
       }

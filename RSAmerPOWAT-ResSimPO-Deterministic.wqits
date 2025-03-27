@@ -8,8 +8,8 @@ TSRecord=1
 TSRecord Name=Fair Oaks CIMIS-Air Temperature
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Air Temperature
-TSRecord DssFilename=shared/DMS_AmericanMet.dss
-TSRecord DssPathname=/MR Am.-Natoma Lake/Fair Oaks-Air Temp/Temp-Air//1Hour/251.40.53.1.1/
+TSRecord DssFilename=shared/American_met_6.dss
+TSRecord DssPathname=/AMERICAN/FAIR OAKS/TEMP-AIR//1HOUR/CIMIS-CARDNO/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -17,8 +17,8 @@ TSRecord=2
 TSRecord Name=Fair Oaks CIMIS-Humidity
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Humidity
-TSRecord DssFilename=shared/DMS_AmericanMet.dss
-TSRecord DssPathname=/MR Am.-Natoma Lake/Fair Oaks-Dew Point Temp/Temp-DewPoint//1Hour/251.40.51.1.1/
+TSRecord DssFilename=shared/American_met_6.dss
+TSRecord DssPathname=/AMERICAN/FAIR OAKS/TEMP-DEWPT//1Hour/CIMIS-CARDNO/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -26,8 +26,8 @@ TSRecord=3
 TSRecord Name=Fair Oaks CIMIS-Shortwave Radiation
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Shortwave Radiation
-TSRecord DssFilename=shared/DMS_AmericanMet.dss
-TSRecord DssPathname=/MR Am.-Folsom Lake/Theoretical Folsom Solar-Solar Radiation/Irrad-Solar//1Hour/250.15.135.1.1/
+TSRecord DssFilename=shared/American_met_6.dss
+TSRecord DssPathname=/AMERICAN/MATHER AFB CC THEORETICAL/SOLRAD//1HOUR/NWS-CARDNO/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -44,8 +44,8 @@ TSRecord=5
 TSRecord Name=Fair Oaks CIMIS-Wind Speed
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Wind Speed
-TSRecord DssFilename=shared/DMS_AmericanMet.dss
-TSRecord DssPathname=/MR Am.-Natoma Lake/Fair Oaks-Wind Speed/Speed-Wind//1Hour/251.40.133.1.1/
+TSRecord DssFilename=shared/American_met_6.dss
+TSRecord DssPathname=/AMERICAN/FAIR OAKS/SPEED-WIND//1Hour/CIMIS-CARDNO/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -53,8 +53,8 @@ TSRecord=6
 TSRecord Name=Folsom Point (Dyke 8)-Air Temperature
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Air Temperature
-TSRecord DssFilename=shared/DMS_AmericanMet.dss
-TSRecord DssPathname=/MR Am.-Natoma Lake/Fair Oaks-Air Temp/Temp-Air//1Hour/251.40.53.1.1/
+TSRecord DssFilename=shared/American_met_6.dss
+TSRecord DssPathname=/AMERICAN/FAIR OAKS/TEMP-AIR//1HOUR/CIMIS-CARDNO/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -62,8 +62,8 @@ TSRecord=7
 TSRecord Name=Folsom Point (Dyke 8)-Humidity
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Humidity
-TSRecord DssFilename=shared/DMS_AmericanMet.dss
-TSRecord DssPathname=/MR Am.-Natoma Lake/Fair Oaks-Dew Point Temp/Temp-DewPoint//1Hour/251.40.51.1.1/
+TSRecord DssFilename=shared/American_met_6.dss
+TSRecord DssPathname=/AMERICAN/FAIR OAKS/TEMP-DEWPT//1Hour/CIMIS-CARDNO/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -71,8 +71,8 @@ TSRecord=8
 TSRecord Name=Folsom Point (Dyke 8)-Shortwave Radiation
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Shortwave Radiation
-TSRecord DssFilename=shared/DMS_AmericanMet.dss
-TSRecord DssPathname=/MR Am.-Folsom Lake/Theoretical Folsom Solar-Solar Radiation/Irrad-Solar//1Hour/250.15.135.1.1/
+TSRecord DssFilename=shared/American_met_6.dss
+TSRecord DssPathname=/AMERICAN/MATHER AFB CC THEORETICAL/SOLRAD//1HOUR/NWS-CARDNO/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -89,8 +89,8 @@ TSRecord=10
 TSRecord Name=Folsom Point (Dyke 8)-Wind Speed
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Wind Speed
-TSRecord DssFilename=shared/DMS_AmericanMet.dss
-TSRecord DssPathname=/MR Am.-Folsom Lake/Dyke 8 (FLD)-Wind Speed/Speed-Wind//1Hour/250.14.133.1.1/
+TSRecord DssFilename=shared/American_met_6.dss
+TSRecord DssPathname=/AMERICAN/FOLSOM DYKE 8/SPEED-WIND//1Hour/NWS-CDEC-CARDNO/
 TSRecord InputPosition=0
 TSRecord End=
 

@@ -43,8 +43,10 @@
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
         "compType" : 0,
         "DSS Path" : "",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "",
-        "interpretedUnits" : ""
+        "interpretedUnits" : "",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -91,8 +93,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\American_met_6.dss",
         "DSS Path" : "/AMERICAN/FAIR OAKS/TEMP-AIR//1HOUR/CIMIS-CARDNO/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "",
-        "interpretedUnits" : ""
+        "interpretedUnits" : "",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -132,8 +136,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\American_met_6.dss",
         "DSS Path" : "/AMERICAN/FAIR OAKS/TEMP-DEWPT//1Hour/CIMIS-CARDNO/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "",
-        "interpretedUnits" : ""
+        "interpretedUnits" : "",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -173,8 +179,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\American_met_6.dss",
         "DSS Path" : "/AMERICAN/MATHER AFB CC THEORETICAL/SOLRAD//1HOUR/NWS-CARDNO/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "",
-        "interpretedUnits" : ""
+        "interpretedUnits" : "",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -191,7 +199,7 @@
         "name" : "Lat-Long",
         "description" : "",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
-        "compType" : 2,
+        "compType" : 1,
         "dustCoefficient" : 0.04,
         "interval" : 60.0,
         "latitude" : 38.649964,
@@ -225,8 +233,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\American_met_6.dss",
         "DSS Path" : "/AMERICAN/MATHER AFB/CLOUD//1Hour/NWS-CARDNO/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "",
-        "interpretedUnits" : ""
+        "interpretedUnits" : "",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -243,7 +253,12 @@
         "name" : "Compute from ObsSW and Lat-Long",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "compType" : 2
+        "compType" : 2,
+        "DSS Path" : "",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "",
+        "interpretedUnits" : "",
+        "profileData" : false
       } ],
       "selectedDataSourceName" : "DSS"
     }, {
@@ -272,8 +287,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\American_met_6.dss",
         "DSS Path" : "/AMERICAN/FAIR OAKS/SPEED-WIND//1Hour/CIMIS-CARDNO/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "",
-        "interpretedUnits" : ""
+        "interpretedUnits" : "",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -328,8 +345,10 @@
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
         "compType" : 0,
         "DSS Path" : "",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "",
-        "interpretedUnits" : ""
+        "interpretedUnits" : "",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -376,8 +395,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\American_met_6.dss",
         "DSS Path" : "/AMERICAN/FAIR OAKS/TEMP-AIR//1HOUR/CIMIS-CARDNO/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "",
-        "interpretedUnits" : ""
+        "interpretedUnits" : "",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -417,8 +438,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\American_met_6.dss",
         "DSS Path" : "/AMERICAN/FAIR OAKS/TEMP-DEWPT//1Hour/CIMIS-CARDNO/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "",
-        "interpretedUnits" : ""
+        "interpretedUnits" : "",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -458,8 +481,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\American_met_6.dss",
         "DSS Path" : "/AMERICAN/MATHER AFB CC THEORETICAL/SOLRAD//1HOUR/NWS-CARDNO/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "",
-        "interpretedUnits" : ""
+        "interpretedUnits" : "",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -476,7 +501,7 @@
         "name" : "Lat-Long",
         "description" : "",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
-        "compType" : 2,
+        "compType" : 1,
         "dustCoefficient" : 0.04,
         "interval" : 60.0,
         "latitude" : 0.0,
@@ -510,8 +535,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\American_met_6.dss",
         "DSS Path" : "/AMERICAN/MATHER AFB/CLOUD//1Hour/NWS-CARDNO/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "",
-        "interpretedUnits" : ""
+        "interpretedUnits" : "",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -528,7 +555,12 @@
         "name" : "Compute from ObsSW and Lat-Long",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "compType" : 2
+        "compType" : 2,
+        "DSS Path" : "",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "",
+        "interpretedUnits" : "",
+        "profileData" : false
       } ],
       "selectedDataSourceName" : "DSS"
     }, {
@@ -557,8 +589,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\American_met_6.dss",
         "DSS Path" : "/AMERICAN/FOLSOM DYKE 8/SPEED-WIND//1Hour/NWS-CDEC-CARDNO/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "",
-        "interpretedUnits" : ""
+        "interpretedUnits" : "",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -612,8 +646,10 @@
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
         "compType" : 0,
         "DSS Path" : "",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "",
-        "interpretedUnits" : ""
+        "interpretedUnits" : "",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -658,8 +694,10 @@
         "availableUnits" : [ "deg C", "deg F" ],
         "compType" : 0,
         "DSS Path" : "",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "",
-        "interpretedUnits" : ""
+        "interpretedUnits" : "",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -697,8 +735,10 @@
         "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
         "compType" : 0,
         "DSS Path" : "",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "",
-        "interpretedUnits" : ""
+        "interpretedUnits" : "",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -736,8 +776,10 @@
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
         "compType" : 0,
         "DSS Path" : "",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "",
-        "interpretedUnits" : ""
+        "interpretedUnits" : "",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -754,7 +796,7 @@
         "name" : "Lat-Long",
         "description" : "",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
-        "compType" : 2,
+        "compType" : 1,
         "dustCoefficient" : 0.04,
         "interval" : 60.0,
         "latitude" : 38.5,
@@ -786,8 +828,10 @@
         "availableUnits" : [ "Fraction, 0-1" ],
         "compType" : 0,
         "DSS Path" : "",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "",
-        "interpretedUnits" : ""
+        "interpretedUnits" : "",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -804,7 +848,12 @@
         "name" : "Compute from ObsSW and Lat-Long",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "compType" : 2
+        "compType" : 2,
+        "DSS Path" : "",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "",
+        "interpretedUnits" : "",
+        "profileData" : false
       } ],
       "selectedDataSourceName" : ""
     }, {
@@ -831,8 +880,10 @@
         "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
         "compType" : 0,
         "DSS Path" : "",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "",
-        "interpretedUnits" : ""
+        "interpretedUnits" : "",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",

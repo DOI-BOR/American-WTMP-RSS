@@ -15,8 +15,8 @@ startOpDate = date(3000, 5, 1)  # May 1st
 endOpDate = date(3000, 11, 1)  # Nov 1st
 raiseOpDate = date(3000, 3, 1)  # Mar 1st raise shutters to top
 useRiverOutletDate = date(3000, 9, 1)  # Sep 1st can use Lower River Outlets
-temperatureThreshold = 0.75
-maxViolationDays = 5
+temperatureThreshold = 0.0 #0.75
+maxViolationDays = 1 #5
 checkOpHour = 12  # Hour to do operations check
 debugOutput = False
 # Variable names
@@ -795,9 +795,11 @@ def backRouteWQTarget(network, currentRuntimestep, totalFolsomRelease):
     # Constants for heat exchange during routing
     Kcoef = 1.1  # velocity as a function of flow
     alpha = 0.47  # velocity as a function of flow
-    natConPoolVol = 21000. * 43560.  # cubic feet, assumed this is top of conservation
+    natConPoolVol = 8000. * 43560.  # cubic feet, assumed this is top of conservation
     multiplier = 24.  # Inflow more important than CSTR assumption because of where inflow enters vertically
-    exchCoef = 0.0135  # exchange rate between atmosphere and river temp
+    exchCoef = 0.0135  # exchange rate between atmosphere and river temp - original, may-Oct
+    #exchCoef = 0.0128  # exchange rate between atmosphere and river temp - original, jul-sep
+
 
     # Power law approximation for velocity in the Sacramento River
     natomaFlow = getNatomaOutflow(network, currentRuntimestep)
@@ -817,7 +819,7 @@ def backRouteWQTarget(network, currentRuntimestep, totalFolsomRelease):
     # Get Natoma pool information
     flowVol = totalFolsomRelease * deltaT
     natFraction = flowVol / natConPoolVol
-    natFraction = min(natFraction * multiplier, 1.)
+    natFraction = min(natFraction * multiplier, 0.5) # max replacement fraction is 1/2 of natoma per day ... is always heats/cools some 
     natomaResAvgTemp = getNatomaAvgTemp(network)
     #tSearchMin = 5.  # min temp (deg C) to search for outflow temp from Shasta to meet DS target
     #tSearchMax = 25.

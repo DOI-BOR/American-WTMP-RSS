@@ -2,24 +2,13 @@ PDCDataSet Name=RSAmer-WAT-ResSimForecast-Deterministic
 Description=WTMP American ResSim Alternative including Folsom Lake, Lake Natoma, and the lower American River - Predictive/Forecast Folsom operations (PDC Data Set for WAT-ResSimForecast-Deterministic)
 
 PDCRecord=3
-PDCRecordImpl Name=Folsom Lake-Sediment_Temperature
-PDCRecordImpl Description=Constituent:Sediment_Temperature, Reservoir:Folsom Lake
-PDCRecordImpl Units=°C
-PDCRecordImpl Input=true
-PDCRecordImpl VariableId=2002
-PDCRecordImpl ParamName=Sediment Temperature
-PDCRecordImpl DssFilename=J:/Work_2024/USBR_maintenace/WTMP_American/shared/WTMP_American_Forecast.dss
-PDCRecordImpl DssPathname=/Folsom/IC/depth-temp///icPathsMap/
-PDCRecordImpl End=
-
-PDCRecord=3
 PDCRecordImpl Name=Folsom Lake-Water_Temperature
 PDCRecordImpl Description=Constituent:Water_Temperature, Reservoir:Folsom Lake
 PDCRecordImpl Units=°C
 PDCRecordImpl Input=true
 PDCRecordImpl VariableId=2001
 PDCRecordImpl ParamName=Water Temperature
-PDCRecordImpl DssFilename=J:/Work_2024/USBR_maintenace/WTMP_American/shared/WTMP_American_Forecast.dss
+PDCRecordImpl DssFilename=shared/WTMP_American_Forecast.dss
 PDCRecordImpl DssPathname=/Folsom/IC/depth-temp///icPathsMap/
 PDCRecordImpl End=
 

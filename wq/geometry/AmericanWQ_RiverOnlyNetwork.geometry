@@ -2,11 +2,8 @@
   "index" : 14583,
   "name" : "AmericanWQ_RiverOnlyNetwork",
   "description" : "",
-  "Description" : "",
-  "Index" : 14583,
-  "Name" : "AmericanWQ_RiverOnlyNetwork",
   "crossSectionManagerId" : 3152,
-  "lastModifiedTime" : 1707351022789,
+  "lastModifiedTime" : 1738126872969,
   "networkId" : 14577,
   "rssWqGeometry" : {
     "@type" : "RssWQGeometry",

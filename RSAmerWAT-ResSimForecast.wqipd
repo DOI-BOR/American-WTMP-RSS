@@ -1,0 +1,15 @@
+PDCDataSet Name=RSAmer-WAT-ResSimForecast
+Description=WTMP American ResSim Alternative including Folsom Lake, Lake Natoma, and the lower American River - Predictive/Forecast Folsom operations (PDC Data Set for WAT-ResSimForecast)
+
+PDCRecord=3
+PDCRecordImpl Name=Folsom Lake-Water_Temperature
+PDCRecordImpl Description=Constituent:Water_Temperature, Reservoir:Folsom Lake
+PDCRecordImpl Units=°C
+PDCRecordImpl Input=true
+PDCRecordImpl VariableId=2001
+PDCRecordImpl ParamName=Water Temperature
+PDCRecordImpl DssFilename=shared/WTMP_American_Forecast.dss
+PDCRecordImpl DssPathname=/Folsom/IC/depth-temp///icPathsMap/
+PDCRecordImpl End=
+
+

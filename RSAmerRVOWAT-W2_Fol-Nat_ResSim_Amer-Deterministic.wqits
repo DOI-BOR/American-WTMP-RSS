@@ -99,7 +99,7 @@ TSRecord Name=Nimbus Dam - Nimbus Dam Outflow
 TSRecord VariableId=2001
 TSRecord ParamName=Water Temperature
 TSRecord DssFilename=shared/DMS_American_Pre-Process.dss
-TSRecord DssPathname=/W2:two_34.csv/Seg 34 Withdrawal/Temp-TWO//1HOUR/W2 Fol-Nat:F2018-03:CeQualW2-W2 Natoma Prescribed/
+TSRecord DssPathname=/W2:two_34.csv/Seg 34 Withdrawal/Temp-TWO//1HOUR/W2 Fol-Nat:2009:CeQualW2-W2 Natoma Prescribed/
 TSRecord InputPosition=0
 TSRecord End=
 

@@ -2,11 +2,7 @@
   "index" : 42,
   "name" : "AMR_Water_Temperature",
   "description" : "",
-  "Description" : "",
-  "Index" : 42,
-  "Name" : "AMR_Water_Temperature",
   "lastModifiedTime" : 1656537403716,
-  "ressimVersion" : "6.0.0.171R",
   "set" : {
     "name" : "AMR_Water_Temperature",
     "description" : "",

@@ -2,9 +2,6 @@
   "index" : 3163,
   "name" : "American_BC1",
   "description" : "",
-  "Description" : "",
-  "Index" : 3163,
-  "Name" : "American_BC1",
   "constituentSetId" : 160,
   "geometryId" : 3161,
   "lastModifiedTime" : 1706837410487,
@@ -36,8 +33,10 @@
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
         "DSS Path" : "///////",
+        "HasInterpretedUnits" : false,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -101,8 +100,10 @@
         "compType" : 2,
         "DSS File Path" : "shared\\DMS_American_Pre-Process.dss",
         "DSS Path" : "/MR AM.-FOLSOM LAKE/11446030 PILOT HILL-WATER TEMP/TEMP-WATER-C//15Minute/250.200.50.1.1/",
+        "HasInterpretedUnits" : false,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -138,8 +139,10 @@
         "compType" : 2,
         "DSS File Path" : "shared\\DMS_American_Pre-Process.dss",
         "DSS Path" : "/MR AM.-FOLSOM LAKE/11446030 PILOT HILL-WATER TEMP/TEMP-WATER-C//15Minute/250.200.50.1.1/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -170,8 +173,10 @@
         "compType" : 2,
         "DSS File Path" : "shared\\DMS_American_Pre-Process.dss",
         "DSS Path" : "/MR AM.-FOLSOM LAKE/11433790 AUBURN DAM-WATER TEMP/TEMP-WATER-C//15Minute/250.111.50.1.1/",
+        "HasInterpretedUnits" : false,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -207,8 +212,10 @@
         "compType" : 2,
         "DSS File Path" : "shared\\DMS_American_Pre-Process.dss",
         "DSS Path" : "/MR AM.-FOLSOM LAKE/11433790 AUBURN DAM-WATER TEMP/TEMP-WATER-C//15Minute/250.111.50.1.1/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -239,8 +246,10 @@
         "compType" : 2,
         "DSS File Path" : "shared\\DMS_American_Pre-Process.dss",
         "DSS Path" : "/MR AM.-FOLSOM LAKE/11433790 AUBURN DAM-WATER TEMP/TEMP-WATER-C//15Minute/250.111.50.1.1/",
+        "HasInterpretedUnits" : false,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -276,8 +285,10 @@
         "compType" : 2,
         "DSS File Path" : "shared\\DMS_American_Pre-Process.dss",
         "DSS Path" : "/MR AM.-FOLSOM LAKE/11433790 AUBURN DAM-WATER TEMP/TEMP-WATER-C//15Minute/250.111.50.1.1/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -306,8 +317,10 @@
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 0,
         "DSS Path" : "",
+        "HasInterpretedUnits" : false,
         "Interpreted Units" : "",
-        "interpretedUnits" : ""
+        "interpretedUnits" : "",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -371,8 +384,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\American_inflow_temps_6.dss",
         "DSS Path" : "/11433790/NF AMERICAN TEMP/TEMP-WATER//1HOUR/USGS-CARDNO/",
+        "HasInterpretedUnits" : false,
         "Interpreted Units" : "",
-        "interpretedUnits" : ""
+        "interpretedUnits" : "",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -408,8 +423,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\American_inflow_temps_6.dss",
         "DSS Path" : "/11433790/NF AMERICAN TEMP/TEMP-WATER//1HOUR/USGS-CARDNO/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "",
-        "interpretedUnits" : ""
+        "interpretedUnits" : "",
+        "profileData" : false
       },
       "units" : [ "\u00B0C" ]
     } ],

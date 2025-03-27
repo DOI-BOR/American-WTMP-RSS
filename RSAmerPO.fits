@@ -1,4 +1,4 @@
-TSDataSet Name=RSAmerPO
+TSDataSet Name=Input TS DataSet for RSAmerPO
 Description=WTMP Amerian ResSim Alternative including Folsom Lake, Lake Natoma, and the lower American River - Prescribed Folsom Dam operations (TS Data Set)
 
 _type=0

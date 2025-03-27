@@ -1,4 +1,4 @@
-ModifiedTime=1698173709860
+ModifiedTime=1738268787466
 GVDataSet Name=WQFol7
 Description=Copy of Flow-only alt on AMR_Net_7 (Global Variable Data Set)
 
@@ -185,8 +185,8 @@ GVRecord End
 GVRecord=SCALAR
 GVRecord Name=Downstream_Control_Loc
 GVRecord ID=37
-GVRecord DssFilename=
-GVRecord DssPathname=
+GVRecord DssFilename=rss/WQFol7_igv.dss
+GVRecord DssPathname=//Downstream_Control_Loc///Integer/WQFol7-ResSim-Default/
 GVRecord DataLocation=false
 GVRecord LinkedLocation=
 GVRecord LinkedModel=
@@ -215,6 +215,26 @@ GVRecord End
 GVRecord=TIME_SERIES
 GVRecord Name=FairOaks_Equilibrium_Temp
 GVRecord ID=36
+GVRecord DssFilename=
+GVRecord DssPathname=///////
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Lower_Riv_out_flow
+GVRecord ID=39
+GVRecord DssFilename=
+GVRecord DssPathname=///////
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Folsom_Lower_River_Use
+GVRecord ID=41
 GVRecord DssFilename=
 GVRecord DssPathname=///////
 GVRecord DataLocation=false

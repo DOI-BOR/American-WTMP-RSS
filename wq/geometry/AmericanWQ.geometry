@@ -2,11 +2,8 @@
   "index" : 3161,
   "name" : "AmericanWQ",
   "description" : "",
-  "Description" : "",
-  "Index" : 3161,
-  "Name" : "AmericanWQ",
   "crossSectionManagerId" : 3152,
-  "lastModifiedTime" : 1707347378864,
+  "lastModifiedTime" : 1738128699373,
   "networkId" : 144,
   "rssWqGeometry" : {
     "@type" : "RssWQGeometry",

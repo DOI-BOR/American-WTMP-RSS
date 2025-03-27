@@ -1,0 +1,118 @@
+{
+  "id" : 24688,
+  "name" : "American Observed",
+  "description" : "",
+  "stations" : [ {
+    "active" : true,
+    "description" : "",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [ 6737488.22058123, 1968895.7122108815 ]
+    },
+    "id" : 0,
+    "isProfileStation" : false,
+    "latitude" : 0.0,
+    "longitude" : 0.0,
+    "metStation" : false,
+    "name" : "Watt Ave Observed",
+    "nearestMeridian" : 0,
+    "networkElements" : [ {
+      "elementId" : 50,
+      "networkId" : 144
+    } ],
+    "observed" : true,
+    "referenceElevation" : 0.0,
+    "snapToStreamElement" : false,
+    "stationIconLatitude" : 1981719.6431960757,
+    "stationIconLongitude" : 6733861.430328544,
+    "streamName" : "American River",
+    "streamStation" : 47168.82683571731,
+    "variables" : [ {
+      "@type" : "WQObsConstituentVariable",
+      "constituentId" : 1,
+      "dataSources" : [ {
+        "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "F",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "DSS File Path" : "shared\\DMS_AmericanCalVal.dss",
+        "DSS Path" : "/MR Am.-Lower American R./11446980 Watt Ave Brdg-Water Temp/Temp-Water//15Minute/252.500.50.1.1/",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "bottomRow" : 0,
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      }, {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "value" : "-Infinity"
+      } ],
+      "datasource" : [ {
+        "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "F",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "DSS File Path" : "shared\\DMS_AmericanCalVal.dss",
+        "DSS Path" : "/MR Am.-Lower American R./11446980 Watt Ave Brdg-Water Temp/Temp-Water//15Minute/252.500.50.1.1/",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "bottomRow" : 0,
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      }, {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "value" : "-Infinity"
+      } ],
+      "displayName" : "Water Temperature",
+      "selectedDataSourceName" : "DSS"
+    } ]
+  } ],
+  "userDefinedVariables" : [ ]
+}
