@@ -16,7 +16,7 @@ endOpDate = date(3000, 11, 1)  # Nov 1st
 raiseOpDate = date(3000, 3, 1)  # Mar 1st raise shutters to top
 useRiverOutletDate = date(3000, 9, 1)  # Sep 1st can use Lower River Outlets
 temperatureThreshold = 0.0 #0.75
-maxViolationDays = 1 #5
+maxViolationDays = 3 #5
 checkOpHour = 12  # Hour to do operations check
 debugOutput = False
 # Variable names
