@@ -1,7 +1,7 @@
 RssAlt Name=RSAmerRVO
 RssAlt Description=ResSim Alternative including the AmericanRiverOnly network, from Nimbus Dam to the Sac confluence
 Version=1001
-ModifiedTime=1741033207985
+ModifiedTime=1744139474474
 NetworkID=14577
 System Path=rss/networks/AMR_Net_7_RiverOnly/AMR_Net_7_RiverOnly.rsys
 Operations Path=

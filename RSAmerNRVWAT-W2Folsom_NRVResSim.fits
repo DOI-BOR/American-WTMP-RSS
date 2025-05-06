@@ -1,0 +1,79 @@
+TSDataSet Name=RSAmerNRV-WAT-W2Folsom_NRVResSim
+Description=Alternative for ResSim network AMR_Net_7_NatRiver, with Natoma and American River (excluding Folsom). (TS Data Set for WAT-W2Folsom_NRVResSim)
+
+_type=0
+ParentPath=null
+ParentClass=null
+TSRecord=0
+TSRecord Name=Natoma balance flows
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_American_Forecast.dss
+TSRecord DssPathname=//FOLSOM/FLOW-RELEASE-TO-NATOMA//1Day/AMER_BC_SCRIPT/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=1
+TSRecord Name=~E10:F
+TSRecord VariableId=14
+TSRecord ParamName=Elev
+TSRecord DssFilename=shared/WTMP_American_Forecast.dss
+TSRecord DssPathname=//Natoma/ELEV//1Day/AMER_BC_SCRIPT/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=2
+TSRecord Name=~E15:F
+TSRecord VariableId=41
+TSRecord ParamName=Flow-RELEASE
+TSRecord DssFilename=shared/WTMP_American_Forecast.dss
+TSRecord DssPathname=/AMERICAN RIVER/LAKE NATOMA/FLOW-NIMBUS ACTUAL//1Day/AMER_BC_SCRIPT/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=3
+TSRecord Name=~E33:F
+TSRecord VariableId=41
+TSRecord ParamName=Flow-RELEASE
+TSRecord DssFilename=shared/WTMP_American_Forecast.dss
+TSRecord DssPathname=//FOLSOM/FS CANAL (FSC)//1Day/AMER_BC_SCRIPT/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=4
+TSRecord Name=~E55:F
+TSRecord VariableId=43
+TSRecord ParamName=Flow-DIVERSION
+TSRecord DssFilename=shared/WTMP_American_Forecast.dss
+TSRecord DssPathname=/AMERICAN RIVER/SACRAMENTO/FLOW-MUNICIPAL//1Day/AMER_BC_SCRIPT/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=5
+TSRecord Name=Sacramento Water Intake
+TSRecord VariableId=85
+TSRecord ParamName=
+TSRecord DssFilename=shared/WTMP_American_Forecast.dss
+TSRecord DssPathname=/AMERICAN RIVER/SACRAMENTO/FLOW-MUNICIPAL//1Day/AMER_BC_SCRIPT/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=6
+TSRecord Name=~E59:F
+TSRecord VariableId=43
+TSRecord ParamName=Flow-DIVERSION
+TSRecord DssFilename=shared/WTMP_American_Forecast.dss
+TSRecord DssPathname=/AMERICAN RIVER/CARMICHAEL/FLOW-MUNICIPAL//1Day/AMER_BC_SCRIPT/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=7
+TSRecord Name=Carmichael Water Intake
+TSRecord VariableId=85
+TSRecord ParamName=
+TSRecord DssFilename=shared/WTMP_American_Forecast.dss
+TSRecord DssPathname=/AMERICAN RIVER/CARMICHAEL/FLOW-MUNICIPAL//1Day/AMER_BC_SCRIPT/
+TSRecord InputPosition=0
+TSRecord End=
+
+

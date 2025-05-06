@@ -1,0 +1,224 @@
+RssAlt Name=RSAmerNRV
+RssAlt Description=Alternative for ResSim network AMR_Net_7_NatRiver, with Natoma and American River (excluding Folsom).
+Version=1001
+ModifiedTime=1744238719002
+NetworkID=34851
+System Path=rss/networks/AMR_Net_7_NatRiver/AMR_Net_7_NatRiver.rsys
+Operations Path=
+InputTSData Path=rss/RSAmerNRV.fits
+OutputTSData Path=
+InputGVData Path=rss/RSAmerNRV.igv
+InputWQTSDataPath Path=
+OutputVerticalDatum=AS_DEFINED
+FlowComputeType=1
+ComputeHoldouts=false
+ComputeUnreg=true
+ComputeCumLoc=true
+CopyOverrides=false
+UseObsTSData=false
+LogLevel=3
+UseYieldAnalysis=false
+SelectedYieldAnalysis=Reservoir Yield
+ReservoirYieldAnalysisBegin
+YieldAnalysisBegin
+UseHydropowerRules=false
+MaxIteration=25
+UseBisectionOnly=true
+MaxHeuristicIterations=8
+YieldAnalysisEnd
+ReservoirYieldAnalysisEnd
+ReverseReservoirYieldAnalysisBegin
+YieldAnalysisBegin
+UseHydropowerRules=false
+MaxIteration=25
+UseBisectionOnly=true
+MaxHeuristicIterations=8
+YieldAnalysisRuleRefBegin
+Reservoir=9:Lake Natoma
+Rule=0:Hatchery_spec_flow:8
+StorageZone=9:Lake Natoma,0:Specified Releases,2:Flood Control,1000.0
+Tolerance=10.0
+YieldAnalysisRuleRefEnd
+YieldAnalysisEnd
+ReservoirDataBegin
+Reservoir=9:Lake Natoma
+Zone=2:Flood Control
+Tolerance=1000.0
+ReservoirDataEnd
+SatisfyMapBegin
+0:true
+SatisfyMapEnd
+AdjustmentOptionsBegin
+AdjustTopOfCon=true
+AdjustmentStrategy=Slide Pattern
+HasExcludePeriod=false
+Start=null
+End=null
+MaxLimitType=Zone
+MinLimitType=Zone
+MinElevValue=0.0
+MaxElevValue=0.0
+MinStorageValue=0.0
+MaxStorageValue=0.0
+MinZoneValue=0
+MaxZoneValue=2
+ZoneAdjustmentType=Collapse Zones
+AdjustmentOptionsEnd
+ReverseReservoirYieldAnalysisEnd
+WaterAccountYieldAnalysisBegin
+Tolerence=0.0
+WaterAccountIndex=-2147483648
+YieldAnalysisBegin
+UseHydropowerRules=false
+MaxIteration=25
+UseBisectionOnly=true
+MaxHeuristicIterations=8
+YieldAnalysisEnd
+WaterAccountYieldAnalysisEnd
+ReverseWaterAccountYieldAnalysisBegin
+Tolerance=100.0
+WaterAccountIndex=-2147483648
+YieldAnalysisBegin
+UseHydropowerRules=false
+MaxIteration=25
+UseBisectionOnly=true
+MaxHeuristicIterations=8
+YieldAnalysisEnd
+SatisfyMapBegin
+SatisfyMapEnd
+AdjustmentOptionsBegin
+MaxLimitType=Constant
+MaxConstantValue=0.0
+MaxPercentValue=0.0
+ZoneAdjustmentType=Collapse Zones
+AdjustmentOptionsEnd
+ReverseWaterAccountYieldAnalysisEnd
+ReservoirStorageVsYieldAnalysisBegin
+YieldAnalysisBegin
+UseHydropowerRules=false
+MaxIteration=25
+UseBisectionOnly=true
+MaxHeuristicIterations=8
+YieldAnalysisRuleRefBegin
+Reservoir=9:Lake Natoma
+Rule=0:Hatchery_spec_flow:8
+StorageZone=9:Lake Natoma,0:Specified Releases,2:Flood Control,1000.0
+Tolerance=10.0
+YieldAnalysisRuleRefEnd
+YieldAnalysisEnd
+ReservoirDataBegin
+Reservoir=9:Lake Natoma
+Zone=2:Flood Control
+Tolerance=1000.0
+Min=0.0
+Max=0.0
+ReservoirDataEnd
+SatisfyMapBegin
+0:true
+SatisfyMapEnd
+AdjustmentOptionsBegin
+AdjustmentStrategy=Slide Pattern
+HasExcludePeriod=false
+Start=null
+End=null
+ZoneAdjustmentType=Collapse Zones
+AdjustmentOptionsEnd
+Intervals=10
+YieldAnalysesToOutput=1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 
+ReservoirStorageVsYieldAnalysisEnd
+TimeStep=1
+TimeIncrement=2
+ObservedTSData Path=rss/RSAmerNRVObs.fits
+resOpSelection=9,0
+divOpSelection=54,1
+divOpSelection=58,1
+ReplaceAllReleaseOverrides=false
+UseDiffAltResultsTableBegin
+UseDiffAltResultsTableEnd
+DssOutputDataBegin
+WriteAllDssOutput;true
+WriteAllInputDss;true
+DssOutputDataEnd
+Hindcast=~E10:F;14;0;-Infinity
+Hindcast=~E10:F;15;2;-Infinity
+Hindcast=~E15:F;41;0;-Infinity
+Hindcast=~E18:F;41;1;0.0
+Hindcast=~E19:F;41;1;0.0
+Hindcast=~E33:F;41;0;-Infinity
+Hindcast=~E55:F;43;0;-Infinity
+Hindcast=~E59:F;43;0;-Infinity
+Hindcast=~S21;98;1;0.0
+Hindcast=~S24;98;1;0.0
+Hindcast=~S35;98;1;0.0
+InputTsVariant=WAT-W2Folsom_NRVResSim-Deterministic,true
+InputTsVariant=W2Folsom_NRVResSim-Deterministic,true
+InputTsVariant=WAT-W2Folsom_NRVResSim,true
+InputTsVariant=W2Folsom_NRVResSim,true
+UsingInflowFactors=false
+InflowFactorType=0
+GlobalInflowFactor=1.0
+Hotstart Options
+Enabled:false
+CreateHotStart:false
+SaveAtEnd:false
+SaveAtLookback:false
+SaveAtInterval:false
+IntervalDateTime:
+TimeStep:1
+TimeIncrement:2
+SaveAtDateTime:false
+TimeStepsToSave:0.0
+LoadHotstart:false
+Hotstart End
+WaterQualityBegin
+RunWq=true
+TimeStep=1
+TimeStepIncrement=2
+Constituent=Water_and_Sed_Temp
+ConstituentId=160
+InitialConditions=American_IC-NatRiver
+InitialConditionsId=37500
+BoundaryConditions=American_BC1_NatRiver
+BoundaryConditionsId=37499
+MetData=MDS1_Net7
+MetDataId=159
+DispersionCoef=American-DZ-NatRiver
+DispersionCoefId=37501
+Parameters=American-NatRiver
+ParametersId=37498
+WqGeometry=AmericanWQ_NatRiver
+WqGeometryId=34852
+NumberThreads=1
+OutputSteps=1
+PreserveConcentration=true
+FirstOrderSolution=true
+OutputVariablesBegin
+CellVolume=false
+CellFlow=true
+CellVelocity=true
+CellMass=false
+HeatBudget=true
+NsmPathways=false
+NsmVariables=false
+GeneralPathways=false
+OutputVariablesEnd
+CoupledFlowWQCompute=true
+WaterQualityEnd
+PlugInDataBegin
+PlugIn:Monte Carlo
+MinIterations:-2147483648
+MaxIterations:-2147483648
+LastIteration:0
+CumulativeTime:0
+SimulationOption:0
+ScriptFilePath:rss/RSAmerNRV.mcscript
+IterationString:
+Compute:false
+StandAloneRandomSeed:0.0
+PlugInEnd
+PlugIn:Ensemble
+EnsembleMembersString:
+Compute:false
+UseMultithreadedCompute:false
+PlugInEnd
+PlugInDataEnd

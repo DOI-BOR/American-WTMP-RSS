@@ -1,7 +1,7 @@
 RssAlt Name=RsAmerRiv
 RssAlt Description=Simillar to RSAmer (forecast) alternative with full network, but with only the river represented in water quality (no reservoirs)
 Version=1001
-ModifiedTime=1740516086104
+ModifiedTime=1743645633904
 NetworkID=144
 System Path=rss/networks/AMR_Net_7/AMR_Net_7.rsys
 Operations Path=

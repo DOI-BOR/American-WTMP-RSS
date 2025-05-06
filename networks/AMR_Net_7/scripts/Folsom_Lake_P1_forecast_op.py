@@ -41,7 +41,7 @@ temperatureDiffThreshold = 0.1    # avoid dividing by zero when reservoir close 
 withdrawalPtOffset = 8.9  # in feet - distance to move withdrawal pt above shutter invert
 resElevBufr = 27.  # head needed above shutter invert (ft)
 maxPenstockFlow = 2889.  # cfs
-
+nMultiShutterDrop = 3
 
 #######################################################################################################
 # Gets the allowable shutter elevations - overrides the data in the Reservoir Physical tab
@@ -1196,7 +1196,19 @@ def setForecastTCDoperation(currentRule, network, currentRuntimestep, wqTarget, 
                             [p1Elev, p2Elev, p3Elev] = getLowerShutterSet(p1Elev, p2Elev, p3Elev, opElevs)
                             if debugOutput: network.printMessage("Moving to next lower shutter elevation set")
                             if debugOutput: network.printMessage("New shutter elevations: " + str(p1Elev) + ", " + str(p2Elev) + ", " + str(p3Elev))
-                            # Check temperatures
+
+                            # Added 2025-04, B. Saenz - check and drop up to 3 shutters
+                            # TODO: if we retain this block, code can be optimized a bit
+                            #for nmsd in range(nMultiShutterDrop-1):
+	                        #    [p1Flow, p2Flow, p3Flow] = operateForFixedShutters(qPowerhouse, p1Elev, p2Elev, p3Elev, wqTarget, opElevs, shutterLevelTemps)														
+	                        #    outletTemp = calcOutletTemp(p1Flow, p2Flow, p3Flow, p1Elev, p2Elev, p3Elev, opElevs, shutterLevelTemps)
+	                        #    if outletTemp > wqTarget + temperatureThreshold:
+	                        #    	if debugOutput: network.printMessage("Temperature exceeds target, dropping another shutter: " + str(outletTemp))
+	                        #    	[p1Elev, p2Elev, p3Elev] = getLowerShutterSet(p1Elev, p2Elev, p3Elev, opElevs)
+	                        #    	if debugOutput: network.printMessage("Moving to next lower shutter elevation set")
+	                        #    	if debugOutput: network.printMessage("New shutter elevations: " + str(p1Elev) + ", " + str(p2Elev) + ", " + str(p3Elev))
+
+							# Check temperatures
                             [p1Flow, p2Flow, p3Flow] = operateForFixedShutters(qPowerhouse, p1Elev, p2Elev, p3Elev, wqTarget, opElevs, shutterLevelTemps)
                             outletTemp = calcOutletTemp(p1Flow, p2Flow, p3Flow, p1Elev, p2Elev, p3Elev, opElevs, shutterLevelTemps)
                             if debugOutput: network.printMessage("Avg penstock temp after operations change: " + str(outletTemp))

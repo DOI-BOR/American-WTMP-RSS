@@ -1,0 +1,15 @@
+PDCDataSet Name=RSAmerNRV-WAT-W2Folsom_NRVResSim
+Description=Alternative for ResSim network AMR_Net_7_NatRiver, with Natoma and American River (excluding Folsom). (PDC Data Set for WAT-W2Folsom_NRVResSim)
+
+PDCRecord=1
+PDCRecordImpl Name=Lake Natoma-Water_Temperature
+PDCRecordImpl Description=Constituent:Water_Temperature, Reservoir:Lake Natoma
+PDCRecordImpl Units=°C
+PDCRecordImpl Input=true
+PDCRecordImpl VariableId=2001
+PDCRecordImpl ParamName=Water Temperature
+PDCRecordImpl DssFilename=shared/WTMP_American_Forecast.dss
+PDCRecordImpl DssPathname=/Natoma/IC/depth-temp///icPathsMap/
+PDCRecordImpl End=
+
+

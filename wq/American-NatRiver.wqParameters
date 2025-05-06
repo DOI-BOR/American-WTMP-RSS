@@ -1,0 +1,424 @@
+{
+  "index" : 37498,
+  "name" : "American-NatRiver",
+  "description" : "",
+  "geometryId" : 34852,
+  "lastModifiedTime" : 1744138613882,
+  "setMap" : {
+    "42" : {
+      "@type" : "WQParameterSet",
+      "name" : "ParameterSet for AMR_Water_Temperature",
+      "description" : "",
+      "parameterIds" : [ 1, 2, 3, 4, 9, 10, 11, 12, 13, 14, 1003 ],
+      "parameterOptionIds" : [ 51 ],
+      "parameterOptionSettings" : [ {
+        "@type" : "WQParameterOptionSetting",
+        "parameterOptionId" : 51,
+        "option" : 3
+      } ],
+      "parameterSettings" : [ {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 1,
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 1.0
+        }
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 2,
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 1.0
+        }
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 3,
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 1.0
+        }
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 4,
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 1.0
+        }
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 9,
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 0.1
+        }
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 10,
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 0.25
+        }
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 11,
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 0.052
+        }
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 12,
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 0.0
+        }
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 13,
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 0.0
+        }
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 14,
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 0.0
+        }
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 1003,
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 0.0
+        }
+      } ],
+      "regionParameterOptionSettings" : [ {
+        "parameterOptionSettings" : [ {
+          "@type" : "WQParameterOptionSetting",
+          "parameterOptionId" : 51,
+          "option" : 3
+        } ],
+        "regionRef" : {
+          "@type" : "WQRegionRef",
+          "geometryId" : 34852,
+          "id" : 0,
+          "name" : "Default Region"
+        }
+      }, {
+        "parameterOptionSettings" : [ {
+          "@type" : "WQParameterOptionSetting",
+          "parameterOptionId" : 51,
+          "option" : 3
+        } ],
+        "regionRef" : {
+          "@type" : "WQRegionRef",
+          "geometryId" : 34852,
+          "id" : 1,
+          "name" : "Natoma"
+        }
+      }, {
+        "parameterOptionSettings" : [ {
+          "@type" : "WQParameterOptionSetting",
+          "parameterOptionId" : 51,
+          "option" : 3
+        } ],
+        "regionRef" : {
+          "@type" : "WQRegionRef",
+          "geometryId" : 34852,
+          "id" : 2,
+          "name" : "American River"
+        }
+      } ],
+      "regionParameterSettings" : [ {
+        "parameterSettings" : [ ],
+        "regionRef" : {
+          "@type" : "WQRegionRef",
+          "geometryId" : 34852,
+          "id" : 0,
+          "name" : "Default Region"
+        }
+      }, {
+        "parameterSettings" : [ ],
+        "regionRef" : {
+          "@type" : "WQRegionRef",
+          "geometryId" : 34852,
+          "id" : 1,
+          "name" : "Natoma"
+        }
+      }, {
+        "parameterSettings" : [ ],
+        "regionRef" : {
+          "@type" : "WQRegionRef",
+          "geometryId" : 34852,
+          "id" : 2,
+          "name" : "American River"
+        }
+      } ]
+    },
+    "160" : {
+      "@type" : "WQParameterSet",
+      "name" : "ParameterSet for Water_and_Sed_Temp",
+      "description" : "",
+      "parameterIds" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 1002, 1003 ],
+      "parameterOptionIds" : [ 51 ],
+      "parameterOptionSettings" : [ {
+        "@type" : "WQParameterOptionSetting",
+        "parameterOptionId" : 51,
+        "option" : 3
+      } ],
+      "parameterSettings" : [ {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 1,
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 1.0
+        }
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 2,
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 2.5
+        }
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 3,
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 1.0
+        }
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 4,
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 1.0
+        }
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 5,
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 0.1
+        }
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 6,
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 1600.0
+        }
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 7,
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 1674.72
+        }
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 8,
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 0.0432
+        }
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 9,
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 0.1
+        }
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 10,
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 0.45
+        }
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 11,
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 0.052
+        }
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 12,
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 0.0
+        }
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 13,
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 0.0
+        }
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 14,
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 0.0
+        }
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 1002,
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : -1.0
+        }
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 1003,
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 0.0
+        }
+      } ],
+      "regionParameterOptionSettings" : [ {
+        "parameterOptionSettings" : [ {
+          "@type" : "WQParameterOptionSetting",
+          "parameterOptionId" : 51,
+          "option" : 3
+        } ],
+        "regionRef" : {
+          "@type" : "WQRegionRef",
+          "geometryId" : 34852,
+          "id" : 0,
+          "name" : "Default Region"
+        }
+      }, {
+        "parameterOptionSettings" : [ {
+          "@type" : "WQParameterOptionSetting",
+          "parameterOptionId" : 51,
+          "option" : 3
+        } ],
+        "regionRef" : {
+          "@type" : "WQRegionRef",
+          "geometryId" : 34852,
+          "id" : 1,
+          "name" : "Natoma"
+        }
+      }, {
+        "parameterOptionSettings" : [ {
+          "@type" : "WQParameterOptionSetting",
+          "parameterOptionId" : 51,
+          "option" : 3
+        } ],
+        "regionRef" : {
+          "@type" : "WQRegionRef",
+          "geometryId" : 34852,
+          "id" : 2,
+          "name" : "American River"
+        }
+      } ],
+      "regionParameterSettings" : [ {
+        "parameterSettings" : [ ],
+        "regionRef" : {
+          "@type" : "WQRegionRef",
+          "geometryId" : 34852,
+          "id" : 0,
+          "name" : "Default Region"
+        }
+      }, {
+        "parameterSettings" : [ {
+          "@type" : "WQParameterSetting",
+          "parameterId" : 1,
+          "value" : {
+            "lookupPath" : "wq/parameter/doubleValue",
+            "type" : "Value",
+            "value" : 0.5
+          }
+        }, {
+          "@type" : "WQParameterSetting",
+          "parameterId" : 2,
+          "value" : {
+            "lookupPath" : "wq/parameter/doubleValue",
+            "type" : "Value",
+            "value" : 4.0
+          }
+        }, {
+          "@type" : "WQParameterSetting",
+          "parameterId" : 3,
+          "value" : {
+            "lookupPath" : "wq/parameter/doubleValue",
+            "type" : "Value",
+            "value" : 1.5
+          }
+        }, {
+          "@type" : "WQParameterSetting",
+          "parameterId" : 10,
+          "value" : {
+            "lookupPath" : "wq/parameter/doubleValue",
+            "type" : "Value",
+            "value" : 0.45
+          }
+        } ],
+        "regionRef" : {
+          "@type" : "WQRegionRef",
+          "geometryId" : 34852,
+          "id" : 1,
+          "name" : "Natoma"
+        }
+      }, {
+        "parameterSettings" : [ {
+          "@type" : "WQParameterSetting",
+          "parameterId" : 2,
+          "value" : {
+            "lookupPath" : "wq/parameter/doubleValue",
+            "type" : "Value",
+            "value" : 3.5
+          }
+        }, {
+          "@type" : "WQParameterSetting",
+          "parameterId" : 9,
+          "value" : {
+            "lookupPath" : "wq/parameter/doubleValue",
+            "type" : "Value",
+            "value" : 0.2
+          }
+        } ],
+        "regionRef" : {
+          "@type" : "WQRegionRef",
+          "geometryId" : 34852,
+          "id" : 2,
+          "name" : "American River"
+        }
+      } ]
+    }
+  },
+  "version" : 1
+}

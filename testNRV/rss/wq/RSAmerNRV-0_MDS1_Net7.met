@@ -1,0 +1,917 @@
+{
+  "id" : 33,
+  "name" : "RSAmerNRV-0:MDS1_Net7",
+  "description" : "",
+  "metdatablending" : false,
+  "stations" : [ {
+    "active" : true,
+    "description" : "",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [ 6784250.121519861, 1999942.2811065593 ]
+    },
+    "id" : 3,
+    "latitude" : 38.649964,
+    "longitude" : -121.21887,
+    "metStation" : true,
+    "name" : "Fair Oaks CIMIS",
+    "nearestMeridian" : -120,
+    "observed" : false,
+    "referenceElevation" : 270.0,
+    "variables" : [ {
+      "@type" : "AtmosphericPressure",
+      "dataSources" : [ {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "units" : "atm",
+        "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
+        "compType" : 2,
+        "value" : 1.0
+      }, {
+        "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
+        "units" : "mb",
+        "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
+        "compType" : 0,
+        "DSS Path" : "",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "",
+        "interpretedUnits" : "",
+        "profileData" : false
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
+        "compType" : 2,
+        "bottomRow" : 0,
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      }, {
+        "@type" : "ElevationData",
+        "name" : "Elevation",
+        "description" : "",
+        "units" : "ft",
+        "availableUnits" : [ "ft", "m" ],
+        "compType" : 2,
+        "elevation" : 270.0
+      } ],
+      "selectedDataSourceName" : "Constant Value"
+    }, {
+      "@type" : "AirTemperature",
+      "dataSources" : [ {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "availableUnits" : [ "deg C", "deg F" ],
+        "compType" : 2,
+        "value" : "-Infinity"
+      }, {
+        "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
+        "units" : "deg C",
+        "availableUnits" : [ "deg C", "deg F" ],
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
+        "availableUnits" : [ "deg C", "deg F" ],
+        "compType" : 2,
+        "DSS File Path" : "shared\\WTMP_American_Forecast.dss",
+        "DSS Path" : "/MR Am.-Natoma Lake/Fair Oaks/Temp-Air//1Hour/251.40.53.1.1/",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "deg C",
+        "interpretedUnits" : "deg C",
+        "profileData" : false
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ "deg C", "deg F" ],
+        "compType" : 2,
+        "bottomRow" : 0,
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      } ],
+      "selectedDataSourceName" : "DSS"
+    }, {
+      "@type" : "Humidity",
+      "dataSources" : [ {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
+        "compType" : 2,
+        "value" : "-Infinity"
+      }, {
+        "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
+        "units" : "Relative Humidity, %",
+        "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
+        "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
+        "compType" : 2,
+        "DSS File Path" : "shared\\WTMP_American_Forecast.dss",
+        "DSS Path" : "/MR Am.-Natoma Lake/Fair Oaks/Temp-DewPoint//1Hour/251.40.51.1.1/",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "Dewpt T, deg C",
+        "interpretedUnits" : "Dewpt T, deg C",
+        "profileData" : false
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
+        "compType" : 2,
+        "bottomRow" : 0,
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      } ],
+      "selectedDataSourceName" : "DSS"
+    }, {
+      "@type" : "ShortWaveRadiation",
+      "dataSources" : [ {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
+        "compType" : 2,
+        "value" : "-Infinity"
+      }, {
+        "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
+        "units" : "W/m2",
+        "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "W/m2",
+        "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
+        "compType" : 1,
+        "DSS File Path" : "shared\\WTMP_American_Forecast.dss",
+        "DSS Path" : "/MR Am.-Folsom Lake/Theoretical Folsom Solar/Irrad-Solar//1Hour/250.15.135.1.1/",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "W/m2",
+        "interpretedUnits" : "W/m2",
+        "profileData" : false
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
+        "compType" : 2,
+        "bottomRow" : 0,
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      }, {
+        "@type" : "LatLongData",
+        "name" : "Lat-Long",
+        "description" : "",
+        "units" : "W/m2",
+        "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
+        "compType" : 1,
+        "dustCoefficient" : 0.04,
+        "interval" : 60.0,
+        "latitude" : 38.649964,
+        "longitude" : -121.21887,
+        "nearestMeridian" : -120
+      } ],
+      "selectedDataSourceName" : "DSS"
+    }, {
+      "@type" : "Cloudiness",
+      "dataSources" : [ {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "availableUnits" : [ "Fraction, 0-1" ],
+        "compType" : 2,
+        "value" : "-Infinity"
+      }, {
+        "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
+        "units" : "Fraction, 0-1",
+        "availableUnits" : [ "Fraction, 0-1" ],
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "FRAC",
+        "availableUnits" : [ "Fraction, 0-1" ],
+        "compType" : 1,
+        "DSS File Path" : "shared\\WTMP_American_Forecast.dss",
+        "DSS Path" : "/MR AM.-LOWER AMERICAN R./MATHER AFB/%-CLOUD COVER-FRAC//1Hour/252.50.129.1.1/",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "Fraction, 0-1",
+        "interpretedUnits" : "Fraction, 0-1",
+        "profileData" : false
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ "Fraction, 0-1" ],
+        "compType" : 2,
+        "bottomRow" : 0,
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      }, {
+        "@type" : "ObservedData",
+        "name" : "Compute from ObsSW and Lat-Long",
+        "description" : "",
+        "availableUnits" : [ "Fraction, 0-1" ],
+        "compType" : 2,
+        "DSS Path" : "",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "",
+        "interpretedUnits" : "",
+        "profileData" : false
+      } ],
+      "selectedDataSourceName" : "DSS"
+    }, {
+      "@type" : "WindSpeed",
+      "dataSources" : [ {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
+        "compType" : 2,
+        "value" : "-Infinity"
+      }, {
+        "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
+        "units" : "m/s",
+        "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "m/s",
+        "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
+        "compType" : 2,
+        "DSS File Path" : "shared\\WTMP_American_Forecast.dss",
+        "DSS Path" : "/MR Am.-Natoma Lake/Fair Oaks/Speed-Wind//1Hour/251.40.133.1.1/",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "m/s",
+        "interpretedUnits" : "m/s",
+        "profileData" : false
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
+        "compType" : 2,
+        "bottomRow" : 0,
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      } ],
+      "selectedDataSourceName" : "DSS"
+    } ]
+  }, {
+    "active" : true,
+    "description" : "",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [ 6810156.053437341, 2015607.0502349692 ]
+    },
+    "id" : 4,
+    "latitude" : 0.0,
+    "longitude" : 0.0,
+    "metStation" : true,
+    "name" : "Folsom Point (Dyke 8)",
+    "nearestMeridian" : 0,
+    "observed" : false,
+    "referenceElevation" : 0.0,
+    "variables" : [ {
+      "@type" : "AtmosphericPressure",
+      "dataSources" : [ {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "units" : "atm",
+        "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
+        "compType" : 2,
+        "value" : 1.0
+      }, {
+        "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
+        "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
+        "compType" : 0,
+        "DSS Path" : "",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "",
+        "interpretedUnits" : "",
+        "profileData" : false
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
+        "compType" : 2,
+        "bottomRow" : 0,
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      }, {
+        "@type" : "ElevationData",
+        "name" : "Elevation",
+        "description" : "",
+        "availableUnits" : [ "ft", "m" ],
+        "compType" : 2,
+        "elevation" : 0.0
+      } ],
+      "selectedDataSourceName" : "Constant Value"
+    }, {
+      "@type" : "AirTemperature",
+      "dataSources" : [ {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "availableUnits" : [ "deg C", "deg F" ],
+        "compType" : 2,
+        "value" : "-Infinity"
+      }, {
+        "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
+        "units" : "deg C",
+        "availableUnits" : [ "deg C", "deg F" ],
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
+        "availableUnits" : [ "deg C", "deg F" ],
+        "compType" : 2,
+        "DSS File Path" : "shared\\WTMP_American_Forecast.dss",
+        "DSS Path" : "/MR Am.-Natoma Lake/Fair Oaks/Temp-Air//1Hour/251.40.53.1.1/",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "deg C",
+        "interpretedUnits" : "deg C",
+        "profileData" : false
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ "deg C", "deg F" ],
+        "compType" : 2,
+        "bottomRow" : 0,
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      } ],
+      "selectedDataSourceName" : "DSS"
+    }, {
+      "@type" : "Humidity",
+      "dataSources" : [ {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
+        "compType" : 2,
+        "value" : "-Infinity"
+      }, {
+        "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
+        "units" : "Relative Humidity, %",
+        "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
+        "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
+        "compType" : 2,
+        "DSS File Path" : "shared\\WTMP_American_Forecast.dss",
+        "DSS Path" : "/MR Am.-Natoma Lake/Fair Oaks/Temp-DewPoint//1Hour/251.40.51.1.1/",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "Dewpt T, deg C",
+        "interpretedUnits" : "Dewpt T, deg C",
+        "profileData" : false
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
+        "compType" : 2,
+        "bottomRow" : 0,
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      } ],
+      "selectedDataSourceName" : "DSS"
+    }, {
+      "@type" : "ShortWaveRadiation",
+      "dataSources" : [ {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
+        "compType" : 2,
+        "value" : "-Infinity"
+      }, {
+        "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
+        "units" : "W/m2",
+        "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "W/m2",
+        "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
+        "compType" : 1,
+        "DSS File Path" : "shared\\WTMP_American_Forecast.dss",
+        "DSS Path" : "/MR Am.-Folsom Lake/Theoretical Folsom Solar/Irrad-Solar//1Hour/250.15.135.1.1/",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "W/m2",
+        "interpretedUnits" : "W/m2",
+        "profileData" : false
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
+        "compType" : 2,
+        "bottomRow" : 0,
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      }, {
+        "@type" : "LatLongData",
+        "name" : "Lat-Long",
+        "description" : "",
+        "units" : "W/m2",
+        "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
+        "compType" : 1,
+        "dustCoefficient" : 0.04,
+        "interval" : 60.0,
+        "latitude" : 0.0,
+        "longitude" : 0.0,
+        "nearestMeridian" : 0
+      } ],
+      "selectedDataSourceName" : "DSS"
+    }, {
+      "@type" : "Cloudiness",
+      "dataSources" : [ {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "availableUnits" : [ "Fraction, 0-1" ],
+        "compType" : 2,
+        "value" : "-Infinity"
+      }, {
+        "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
+        "units" : "Fraction, 0-1",
+        "availableUnits" : [ "Fraction, 0-1" ],
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "FRAC",
+        "availableUnits" : [ "Fraction, 0-1" ],
+        "compType" : 1,
+        "DSS File Path" : "shared\\WTMP_American_Forecast.dss",
+        "DSS Path" : "/MR AM.-LOWER AMERICAN R./MATHER AFB/%-CLOUD COVER-FRAC//1Hour/252.50.129.1.1/",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "Fraction, 0-1",
+        "interpretedUnits" : "Fraction, 0-1",
+        "profileData" : false
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ "Fraction, 0-1" ],
+        "compType" : 2,
+        "bottomRow" : 0,
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      }, {
+        "@type" : "ObservedData",
+        "name" : "Compute from ObsSW and Lat-Long",
+        "description" : "",
+        "availableUnits" : [ "Fraction, 0-1" ],
+        "compType" : 2,
+        "DSS Path" : "",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "",
+        "interpretedUnits" : "",
+        "profileData" : false
+      } ],
+      "selectedDataSourceName" : "DSS"
+    }, {
+      "@type" : "WindSpeed",
+      "dataSources" : [ {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
+        "compType" : 2,
+        "value" : "-Infinity"
+      }, {
+        "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
+        "units" : "m/s",
+        "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "m/s",
+        "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
+        "compType" : 2,
+        "DSS File Path" : "shared\\WTMP_American_Forecast.dss",
+        "DSS Path" : "/MR Am.-Folsom Lake/Dyke 8 (FLD)/Speed-Wind//1Hour/250.14.133.1.1/",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "m/s",
+        "interpretedUnits" : "m/s",
+        "profileData" : false
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
+        "compType" : 2,
+        "bottomRow" : 0,
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      } ],
+      "selectedDataSourceName" : "DSS"
+    } ]
+  }, {
+    "active" : false,
+    "description" : "Not the real Mather Field met station",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [ 6774708.455378069, 1980234.0060254696 ]
+    },
+    "id" : 5,
+    "latitude" : 38.5,
+    "longitude" : -121.33,
+    "metStation" : true,
+    "name" : "Mather",
+    "nearestMeridian" : -120,
+    "observed" : false,
+    "referenceElevation" : 0.0,
+    "variables" : [ {
+      "@type" : "AtmosphericPressure",
+      "dataSources" : [ {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
+        "compType" : 2,
+        "value" : "-Infinity"
+      }, {
+        "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
+        "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
+        "compType" : 0,
+        "DSS Path" : "",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "",
+        "interpretedUnits" : "",
+        "profileData" : false
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
+        "compType" : 2,
+        "bottomRow" : 0,
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      }, {
+        "@type" : "ElevationData",
+        "name" : "Elevation",
+        "description" : "",
+        "availableUnits" : [ "ft", "m" ],
+        "compType" : 2,
+        "elevation" : 0.0
+      } ],
+      "selectedDataSourceName" : ""
+    }, {
+      "@type" : "AirTemperature",
+      "dataSources" : [ {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "availableUnits" : [ "deg C", "deg F" ],
+        "compType" : 2,
+        "value" : "-Infinity"
+      }, {
+        "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
+        "availableUnits" : [ "deg C", "deg F" ],
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "availableUnits" : [ "deg C", "deg F" ],
+        "compType" : 0,
+        "DSS Path" : "",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "",
+        "interpretedUnits" : "",
+        "profileData" : false
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ "deg C", "deg F" ],
+        "compType" : 2,
+        "bottomRow" : 0,
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      } ],
+      "selectedDataSourceName" : ""
+    }, {
+      "@type" : "Humidity",
+      "dataSources" : [ {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
+        "compType" : 2,
+        "value" : "-Infinity"
+      }, {
+        "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
+        "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
+        "compType" : 0,
+        "DSS Path" : "",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "",
+        "interpretedUnits" : "",
+        "profileData" : false
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
+        "compType" : 2,
+        "bottomRow" : 0,
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      } ],
+      "selectedDataSourceName" : ""
+    }, {
+      "@type" : "ShortWaveRadiation",
+      "dataSources" : [ {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
+        "compType" : 2,
+        "value" : "-Infinity"
+      }, {
+        "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
+        "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
+        "compType" : 0,
+        "DSS Path" : "",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "",
+        "interpretedUnits" : "",
+        "profileData" : false
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
+        "compType" : 2,
+        "bottomRow" : 0,
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      }, {
+        "@type" : "LatLongData",
+        "name" : "Lat-Long",
+        "description" : "",
+        "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
+        "compType" : 1,
+        "dustCoefficient" : 0.04,
+        "interval" : 60.0,
+        "latitude" : 38.5,
+        "longitude" : -121.33,
+        "nearestMeridian" : -120
+      } ],
+      "selectedDataSourceName" : ""
+    }, {
+      "@type" : "Cloudiness",
+      "dataSources" : [ {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "availableUnits" : [ "Fraction, 0-1" ],
+        "compType" : 2,
+        "value" : "-Infinity"
+      }, {
+        "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
+        "availableUnits" : [ "Fraction, 0-1" ],
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "availableUnits" : [ "Fraction, 0-1" ],
+        "compType" : 0,
+        "DSS Path" : "",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "",
+        "interpretedUnits" : "",
+        "profileData" : false
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ "Fraction, 0-1" ],
+        "compType" : 2,
+        "bottomRow" : 0,
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      }, {
+        "@type" : "ObservedData",
+        "name" : "Compute from ObsSW and Lat-Long",
+        "description" : "",
+        "availableUnits" : [ "Fraction, 0-1" ],
+        "compType" : 2,
+        "DSS Path" : "",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "",
+        "interpretedUnits" : "",
+        "profileData" : false
+      } ],
+      "selectedDataSourceName" : ""
+    }, {
+      "@type" : "WindSpeed",
+      "dataSources" : [ {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
+        "compType" : 2,
+        "value" : "-Infinity"
+      }, {
+        "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
+        "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
+        "compType" : 0,
+        "DSS Path" : "",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "",
+        "interpretedUnits" : "",
+        "profileData" : false
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
+        "compType" : 2,
+        "bottomRow" : 0,
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      } ],
+      "selectedDataSourceName" : ""
+    } ]
+  } ],
+  "dataBlending" : false
+}

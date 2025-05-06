@@ -8,5 +8,6 @@
   <TimeStepInfo ModelAlternative="RsAmerRiv" TimeStep="1 Hour" Lookback="24" />
   <TimeStepInfo ModelAlternative="Temp8" TimeStep="1 Hour" Lookback="24" />
   <TimeStepInfo ModelAlternative="WQForecast" TimeStep="1 Hour" Lookback="24" />
+  <TimeStepInfo ModelAlternative="RSAmerNRV" TimeStep="1 Hour" Lookback="24" />
 </ResSimTimeStepMap>
 

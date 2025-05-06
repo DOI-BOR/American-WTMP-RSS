@@ -1,10 +1,80 @@
-ModifiedTime=1741843483345
+ModifiedTime=1744308384371
 GVDataSet Name=RSAmerRVO-WAT-W2 Fol-Nat ResSim Amer-Deterministic
 Description=ResSim Alternative including the AmericanRiverOnly network, from Nimbus Dam to the Sac confluence (GV Data Set for WAT-W2 Fol-Nat ResSim Amer-Deterministic)
 
 GVRecord=TIME_SERIES
-GVRecord Name=Natoma_penstock_spec_flow
-GVRecord ID=16
+GVRecord Name=EID_specified_flow
+GVRecord ID=7
+GVRecord DssFilename=shared/WTMP_American_Forecast.dss
+GVRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=ZEROS
+GVRecord LinkedModel=DSS File
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Temperature_Target
+GVRecord ID=29
+GVRecord DssFilename=shared/WTMP_American_Forecast.dss
+GVRecord DssPathname=//TENS/temp-water//1Day/TENS/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=TENS
+GVRecord LinkedModel=DSS File
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=P3_specified_flow
+GVRecord ID=3
+GVRecord DssFilename=shared/DMS_American_Pre-Process.dss
+GVRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Upper_Riv_out_specified_flow
+GVRecord ID=4
+GVRecord DssFilename=shared/DMS_American_Pre-Process.dss
+GVRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Muni_intake_elev
+GVRecord ID=13
+GVRecord DssFilename=shared/WTMP_American_Forecast.dss
+GVRecord DssPathname=//ELEV-INITIAL-GATE/elev//1Day/FULL-HEIGHT/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=ELEV-INITIAL-GATE
+GVRecord LinkedModel=DSS File
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Folsom_S_Canal_spec_flow
+GVRecord ID=18
+GVRecord DssFilename=shared/WTMP_American_Forecast.dss
+GVRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=ZEROS
+GVRecord LinkedModel=DSS File
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=P1_specified_flow
+GVRecord ID=1
+GVRecord DssFilename=shared/DMS_American_Pre-Process.dss
+GVRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Muni_specified_flow
+GVRecord ID=6
 GVRecord DssFilename=shared/WTMP_American_Forecast.dss
 GVRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
 GVRecord DataLocation=true
@@ -23,23 +93,53 @@ GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
-GVRecord Name=Lower_Riv_out_specified_flow
-GVRecord ID=5
-GVRecord DssFilename=shared/DMS_American_Pre-Process.dss
-GVRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
-GVRecord DataLocation=false
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord Name=Folsom_Lower_River_Use
+GVRecord ID=41
+GVRecord DssFilename=shared/WTMP_American_Forecast.dss
+GVRecord DssPathname=//ELEV-INITIAL-GATE/elev//1Day/FULL-HEIGHT/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=ELEV-INITIAL-GATE
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
-GVRecord Name=P3_specified_flow
-GVRecord ID=3
-GVRecord DssFilename=shared/DMS_American_Pre-Process.dss
+GVRecord Name=Natoma_penstock_spec_flow
+GVRecord ID=16
+GVRecord DssFilename=shared/WTMP_American_Forecast.dss
 GVRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
-GVRecord DataLocation=false
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord DataLocation=true
+GVRecord LinkedLocation=ZEROS
+GVRecord LinkedModel=DSS File
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Natoma_spill_spec_flow
+GVRecord ID=15
+GVRecord DssFilename=shared/WTMP_American_Forecast.dss
+GVRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=ZEROS
+GVRecord LinkedModel=DSS File
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Emergency_spill_specified_flow
+GVRecord ID=14
+GVRecord DssFilename=shared/WTMP_American_Forecast.dss
+GVRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=ZEROS
+GVRecord LinkedModel=DSS File
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Service_spill_specified_flow
+GVRecord ID=9
+GVRecord DssFilename=shared/WTMP_American_Forecast.dss
+GVRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=ZEROS
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
@@ -53,12 +153,12 @@ GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
-GVRecord Name=Folsom_Lower_River_Use
-GVRecord ID=41
+GVRecord Name=Lower_Riv_out_flow
+GVRecord ID=39
 GVRecord DssFilename=shared/WTMP_American_Forecast.dss
-GVRecord DssPathname=//ELEV-INITIAL-GATE/elev//1Day/FULL-HEIGHT/
+GVRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
 GVRecord DataLocation=true
-GVRecord LinkedLocation=ELEV-INITIAL-GATE
+GVRecord LinkedLocation=ZEROS
 GVRecord LinkedModel=DSS File
 GVRecord End
 
@@ -73,23 +173,13 @@ GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
-GVRecord Name=Muni_intake_elev
-GVRecord ID=13
-GVRecord DssFilename=shared/WTMP_American_Forecast.dss
-GVRecord DssPathname=//ELEV-INITIAL-GATE/elev//1Day/FULL-HEIGHT/
-GVRecord DataLocation=true
-GVRecord LinkedLocation=ELEV-INITIAL-GATE
-GVRecord LinkedModel=DSS File
-GVRecord End
-
-GVRecord=TIME_SERIES
-GVRecord Name=Muni_specified_flow
-GVRecord ID=6
-GVRecord DssFilename=shared/WTMP_American_Forecast.dss
+GVRecord Name=P2_specified_flow
+GVRecord ID=2
+GVRecord DssFilename=shared/DMS_American_Pre-Process.dss
 GVRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
-GVRecord DataLocation=true
-GVRecord LinkedLocation=ZEROS
-GVRecord LinkedModel=DSS File
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
 GVRecord End
 
 GVRecord=SCALAR
@@ -103,18 +193,8 @@ GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
-GVRecord Name=P2_specified_flow
-GVRecord ID=2
-GVRecord DssFilename=shared/DMS_American_Pre-Process.dss
-GVRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
-GVRecord DataLocation=false
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
-GVRecord End
-
-GVRecord=TIME_SERIES
-GVRecord Name=Temperature_Target
-GVRecord ID=29
+GVRecord Name=FairOaks_Equilibrium_Temp
+GVRecord ID=36
 GVRecord DssFilename=shared/WTMP_American_Forecast.dss
 GVRecord DssPathname=//TENS/temp-water//1Day/TENS/
 GVRecord DataLocation=true
@@ -143,76 +223,6 @@ GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
-GVRecord Name=Folsom_S_Canal_spec_flow
-GVRecord ID=18
-GVRecord DssFilename=shared/WTMP_American_Forecast.dss
-GVRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
-GVRecord DataLocation=true
-GVRecord LinkedLocation=ZEROS
-GVRecord LinkedModel=DSS File
-GVRecord End
-
-GVRecord=TIME_SERIES
-GVRecord Name=Emergency_spill_specified_flow
-GVRecord ID=14
-GVRecord DssFilename=shared/WTMP_American_Forecast.dss
-GVRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
-GVRecord DataLocation=true
-GVRecord LinkedLocation=ZEROS
-GVRecord LinkedModel=DSS File
-GVRecord End
-
-GVRecord=TIME_SERIES
-GVRecord Name=P1_specified_flow
-GVRecord ID=1
-GVRecord DssFilename=shared/DMS_American_Pre-Process.dss
-GVRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
-GVRecord DataLocation=false
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
-GVRecord End
-
-GVRecord=TIME_SERIES
-GVRecord Name=Service_spill_specified_flow
-GVRecord ID=9
-GVRecord DssFilename=shared/WTMP_American_Forecast.dss
-GVRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
-GVRecord DataLocation=true
-GVRecord LinkedLocation=ZEROS
-GVRecord LinkedModel=DSS File
-GVRecord End
-
-GVRecord=TIME_SERIES
-GVRecord Name=FairOaks_Equilibrium_Temp
-GVRecord ID=36
-GVRecord DssFilename=shared/WTMP_American_Forecast.dss
-GVRecord DssPathname=//TENS/temp-water//1Day/TENS/
-GVRecord DataLocation=true
-GVRecord LinkedLocation=TENS
-GVRecord LinkedModel=DSS File
-GVRecord End
-
-GVRecord=TIME_SERIES
-GVRecord Name=EID_specified_flow
-GVRecord ID=7
-GVRecord DssFilename=shared/WTMP_American_Forecast.dss
-GVRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
-GVRecord DataLocation=true
-GVRecord LinkedLocation=ZEROS
-GVRecord LinkedModel=DSS File
-GVRecord End
-
-GVRecord=TIME_SERIES
-GVRecord Name=Upper_Riv_out_specified_flow
-GVRecord ID=4
-GVRecord DssFilename=shared/DMS_American_Pre-Process.dss
-GVRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
-GVRecord DataLocation=false
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
-GVRecord End
-
-GVRecord=TIME_SERIES
 GVRecord Name=P1_shutter_elev
 GVRecord ID=10
 GVRecord DssFilename=shared/WTMP_American_Forecast.dss
@@ -223,23 +233,13 @@ GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
-GVRecord Name=Natoma_spill_spec_flow
-GVRecord ID=15
-GVRecord DssFilename=shared/WTMP_American_Forecast.dss
+GVRecord Name=Lower_Riv_out_specified_flow
+GVRecord ID=5
+GVRecord DssFilename=shared/DMS_American_Pre-Process.dss
 GVRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
-GVRecord DataLocation=true
-GVRecord LinkedLocation=ZEROS
-GVRecord LinkedModel=DSS File
-GVRecord End
-
-GVRecord=TIME_SERIES
-GVRecord Name=Lower_Riv_out_flow
-GVRecord ID=39
-GVRecord DssFilename=shared/WTMP_American_Forecast.dss
-GVRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
-GVRecord DataLocation=true
-GVRecord LinkedLocation=ZEROS
-GVRecord LinkedModel=DSS File
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
 GVRecord End
 
 

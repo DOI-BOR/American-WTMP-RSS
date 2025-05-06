@@ -2,9 +2,6 @@
   "index" : 3328,
   "name" : "AmericanWQ_saTest",
   "description" : "",
-  "Description" : "",
-  "Index" : 3328,
-  "Name" : "AmericanWQ_saTest",
   "crossSectionManagerId" : 3152,
   "lastModifiedTime" : 1691493118730,
   "networkId" : 144,
@@ -472,7 +469,11 @@
           "name" : "Folsom Lake",
           "type" : "RESERVOIR_1DV"
         },
-        "value" : 3.0
+        "value" : {
+          "@type" : "ReservoirLayerConfiguration",
+          "constantLayerHeight" : 3.0,
+          "spacingType" : "CONSTANT"
+        }
       }, {
         "key" : {
           "@type" : "WQSubDomainRef",
@@ -481,7 +482,11 @@
           "name" : "Lake Natoma",
           "type" : "RESERVOIR_1DV"
         },
-        "value" : 3.0
+        "value" : {
+          "@type" : "ReservoirLayerConfiguration",
+          "constantLayerHeight" : 3.0,
+          "spacingType" : "CONSTANT"
+        }
       } ],
       "globalHeight" : 3.0,
       "type" : "SubDomain"

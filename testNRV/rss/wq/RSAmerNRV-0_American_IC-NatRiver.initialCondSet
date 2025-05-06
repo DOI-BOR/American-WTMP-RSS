@@ -1,0 +1,352 @@
+{
+  "index" : 36,
+  "name" : "RSAmerNRV-0:American_IC-NatRiver",
+  "description" : "",
+  "constituentId" : 34,
+  "geometryId" : 31,
+  "initialConditionSet" : {
+    "@type" : "WQInitialConditionSet2",
+    "description" : "",
+    "junctionConditionMap" : {
+      "@type" : "WQMap",
+      "entries" : [ {
+        "key" : 2,
+        "value" : {
+          "@type" : "WQMap",
+          "entries" : [ {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 34852,
+              "id" : 2,
+              "jnctId" : 48,
+              "name" : "AFO",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 34852,
+              "id" : 6,
+              "jnctId" : 52,
+              "name" : "H St Bridge",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 34852,
+              "id" : 3,
+              "jnctId" : 56,
+              "name" : "Rossmoor Bar",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 34852,
+              "id" : 7,
+              "jnctId" : 46,
+              "name" : "Sacramento Confluence",
+              "type" : "RIVER_OUTFLOW"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 34852,
+              "id" : 5,
+              "jnctId" : 50,
+              "name" : "Watt Ave Bridge",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 34852,
+              "id" : 4,
+              "jnctId" : 60,
+              "name" : "William Pond Park",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 34852,
+              "id" : 1,
+              "jnctId" : 11,
+              "name" : "Nimbus Dam",
+              "type" : "RESERVOIR_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          } ]
+        }
+      }, {
+        "key" : 1,
+        "value" : {
+          "@type" : "WQMap",
+          "entries" : [ {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 34852,
+              "id" : 2,
+              "jnctId" : 48,
+              "name" : "AFO",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 34852,
+              "id" : 6,
+              "jnctId" : 52,
+              "name" : "H St Bridge",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 34852,
+              "id" : 3,
+              "jnctId" : 56,
+              "name" : "Rossmoor Bar",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 34852,
+              "id" : 7,
+              "jnctId" : 46,
+              "name" : "Sacramento Confluence",
+              "type" : "RIVER_OUTFLOW"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 34852,
+              "id" : 5,
+              "jnctId" : 50,
+              "name" : "Watt Ave Bridge",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 34852,
+              "id" : 4,
+              "jnctId" : 60,
+              "name" : "William Pond Park",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 34852,
+              "id" : 1,
+              "jnctId" : 11,
+              "name" : "Nimbus Dam",
+              "type" : "RESERVOIR_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          } ]
+        }
+      } ]
+    },
+    "name" : "RSAmerNRV-0:American_IC-NatRiver",
+    "reachInterpolationType" : "ONEWAYFORWARD",
+    "reservoirInterpolationType" : "LINEAR",
+    "reservoirSourcesMap" : {
+      "@type" : "WQMap",
+      "entries" : [ {
+        "key" : 2,
+        "value" : {
+          "@type" : "WQMap",
+          "entries" : [ {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 34852,
+              "id" : 1,
+              "name" : "Lake Natoma",
+              "type" : "RESERVOIR_1DV"
+            },
+            "value" : {
+              "@type" : "InitialConditionsSourceSelection",
+              "selectedKey" : "Paired Data",
+              "entries" : [ {
+                "key" : "Paired Data",
+                "value" : {
+                  "@type" : "PairedData",
+                  "name" : "Paired Data",
+                  "description" : "",
+                  "availableUnits" : [ ],
+                  "compType" : 0,
+                  "curve" : 0,
+                  "pairedDataContainer" : {
+                    "fullName" : "///Depth-Sediment Temperature////",
+                    "labels" : [ "Depth", "Sediment Temperature" ],
+                    "labelsUsed" : true,
+                    "name" : "///Depth-Sediment Temperature////",
+                    "numberCurves" : 1,
+                    "numberOrdinates" : 2,
+                    "transformType" : -2147483648,
+                    "xOrdinates" : [ 0.0, 1000.0 ],
+                    "xparameter" : "Depth",
+                    "xprecision" : -1,
+                    "yOrdinates" : [ [ 10.0, 10.0 ] ],
+                    "yparameter" : "Sediment Temperature",
+                    "yprecision" : -1
+                  }
+                }
+              }, {
+                "key" : "DSS",
+                "value" : {
+                  "@type" : "PairedCurveData",
+                  "name" : "DSS",
+                  "description" : "",
+                  "availableUnits" : [ ],
+                  "compType" : 0,
+                  "DSS Path" : "",
+                  "HasInterpretedUnits" : true,
+                  "Interpreted Units" : "",
+                  "curve" : -1,
+                  "interpretedUnits" : "",
+                  "profileData" : false,
+                  "selectionType" : "UseSelectedRecord"
+                }
+              } ]
+            }
+          } ]
+        }
+      }, {
+        "key" : 1,
+        "value" : {
+          "@type" : "WQMap",
+          "entries" : [ {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 34852,
+              "id" : 1,
+              "name" : "Lake Natoma",
+              "type" : "RESERVOIR_1DV"
+            },
+            "value" : {
+              "@type" : "InitialConditionsSourceSelection",
+              "selectedKey" : "Paired Data",
+              "entries" : [ {
+                "key" : "Paired Data",
+                "value" : {
+                  "@type" : "PairedData",
+                  "name" : "Paired Data",
+                  "description" : "",
+                  "availableUnits" : [ ],
+                  "compType" : 0,
+                  "curve" : 0,
+                  "pairedDataContainer" : {
+                    "fullName" : "///Depth-Water Temperature////",
+                    "labels" : [ "Depth", "Water Temperature" ],
+                    "labelsUsed" : true,
+                    "name" : "///Depth-Water Temperature////",
+                    "numberCurves" : 1,
+                    "numberOrdinates" : 2,
+                    "transformType" : -2147483648,
+                    "xOrdinates" : [ 0.0, 1000.0 ],
+                    "xparameter" : "Depth",
+                    "xprecision" : -1,
+                    "yOrdinates" : [ [ 10.0, 10.0 ] ],
+                    "yparameter" : "Water Temperature",
+                    "yprecision" : -1
+                  }
+                }
+              }, {
+                "key" : "DSS",
+                "value" : {
+                  "@type" : "PairedCurveData",
+                  "name" : "DSS",
+                  "description" : "",
+                  "availableUnits" : [ ],
+                  "compType" : 0,
+                  "DSS Path" : "",
+                  "HasInterpretedUnits" : true,
+                  "Interpreted Units" : "",
+                  "curve" : -1,
+                  "interpretedUnits" : "",
+                  "profileData" : false,
+                  "selectionType" : "UseSelectedRecord"
+                }
+              } ]
+            }
+          } ]
+        }
+      } ]
+    }
+  },
+  "lastModifiedTime" : 1744156390511,
+  "version" : 2
+}

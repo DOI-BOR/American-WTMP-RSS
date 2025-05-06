@@ -1,0 +1,49 @@
+RssAlt Name=WQFol7
+RssAlt Description=
+Version=1001
+ModifiedTime=1744156284071
+NetworkID=-1
+System Path=
+Operations Path=
+InputTSData Path=
+OutputTSData Path=
+InputGVData Path=
+InputWQTSDataPath Path=
+OutputVerticalDatum=AS_DEFINED
+FlowComputeType=0
+ComputeHoldouts=false
+ComputeUnreg=true
+ComputeCumLoc=true
+CopyOverrides=false
+UseObsTSData=false
+LogLevel=3
+UseYieldAnalysis=false
+SelectedYieldAnalysis=Reservoir Yield
+TimeStep=1
+TimeIncrement=2
+ObservedTSData Path=
+ReplaceAllReleaseOverrides=false
+UseDiffAltResultsTableBegin
+UseDiffAltResultsTableEnd
+DssOutputDataBegin
+WriteAllDssOutput;true
+WriteAllInputDss;true
+DssOutputDataEnd
+UsingInflowFactors=false
+InflowFactorType=0
+GlobalInflowFactor=1.0
+Hotstart Options
+Enabled:false
+CreateHotStart:false
+SaveAtEnd:false
+SaveAtLookback:false
+SaveAtInterval:false
+IntervalDateTime:
+TimeStep:1
+TimeIncrement:2
+SaveAtDateTime:false
+TimeStepsToSave:1.0
+LoadHotstart:false
+Hotstart End
+PlugInDataBegin
+PlugInDataEnd

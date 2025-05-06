@@ -296,12 +296,18 @@
                   "compType" : 0,
                   "curve" : 0,
                   "pairedDataContainer" : {
+                    "fullName" : "///Depth-Sediment Temperature////",
+                    "labels" : [ "Depth", "Sediment Temperature" ],
+                    "labelsUsed" : true,
+                    "name" : "///Depth-Sediment Temperature////",
                     "numberCurves" : 1,
                     "numberOrdinates" : 2,
                     "transformType" : -2147483648,
                     "xOrdinates" : [ 0.0, 1000.0 ],
+                    "xparameter" : "Depth",
                     "xprecision" : -1,
                     "yOrdinates" : [ [ 10.0, 10.0 ] ],
+                    "yparameter" : "Sediment Temperature",
                     "yprecision" : -1
                   }
                 }

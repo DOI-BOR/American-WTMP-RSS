@@ -1,0 +1,75 @@
+ModifiedTime=1744151619335
+GVDataSet Name=RSAmerNRV-W2Folsom_NRVResSim-Deterministic
+Description=Alternative for ResSim network AMR_Net_7_NatRiver, with Natoma and American River (excluding Folsom). (GV Data Set for W2Folsom_NRVResSim-Deterministic)
+
+GVRecord=SCALAR
+GVRecord Name=Downstream_Control_Loc
+GVRecord ID=37
+GVRecord DssFilename=rss/RSAmerNRV_igv.dss
+GVRecord DssPathname=//Downstream_Control_Loc///Integer/RSAmerNRV-W2Folsom_NRVResSim-Deterministic/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Natoma_spill_spec_flow
+GVRecord ID=15
+GVRecord DssFilename=shared/WTMP_American_Forecast.dss
+GVRecord DssPathname=/AMERICAN RIVER/LAKE NATOMA/FLOW-NIMBUS ACTUAL//1Day/AMER_BC_SCRIPT/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Natoma_penstock_spec_flow
+GVRecord ID=16
+GVRecord DssFilename=shared/WTMP_American_Forecast.dss
+GVRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Natoma_hatchery_spec_flow
+GVRecord ID=17
+GVRecord DssFilename=shared/WTMP_American_Forecast.dss
+GVRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Folsom_S_Canal_spec_flow
+GVRecord ID=18
+GVRecord DssFilename=shared/WTMP_American_Forecast.dss
+GVRecord DssPathname=//FOLSOM/FS CANAL (FSC)//1Day/AMER_BC_SCRIPT/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Temperature_Target
+GVRecord ID=29
+GVRecord DssFilename=shared/WTMP_American_Forecast.dss
+GVRecord DssPathname=/WTMP_American/Folsom Downstream/TEMP-WATER-TARGET//1Hour/AMER_BC_SCRIPT/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=FairOaks_Equilibrium_Temp
+GVRecord ID=36
+GVRecord DssFilename=shared/WTMP_American_Forecast.dss
+GVRecord DssPathname=/MR AM.-NATOMA LAKE/FAIR OAKS/Temp-Equil//1Day/amer_bc_script/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+
