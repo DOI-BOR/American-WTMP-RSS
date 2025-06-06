@@ -1,4 +1,4 @@
-ModifiedTime=1744322153175
+ModifiedTime=1749103180598
 GVDataSet Name=RSAmerNRV-WAT-W2Folsom_NRVResSim
 Description=Alternative for ResSim network AMR_Net_7_NatRiver, with Natoma and American River (excluding Folsom). (GV Data Set for WAT-W2Folsom_NRVResSim)
 
@@ -15,11 +15,11 @@ GVRecord End
 GVRecord=SCALAR
 GVRecord Name=Downstream_Control_Loc
 GVRecord ID=37
-GVRecord DssFilename=rss/RSAmerNRV_igv.dss
-GVRecord DssPathname=//Downstream_Control_Loc///Integer/RSAmerNRV-ResSim-Default/
-GVRecord DataLocation=false
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord DssFilename=shared/WTMP_American_Forecast.dss
+GVRecord DssPathname=//DOWNSTREAM_CONTROL_LOC///INTEGER/AMER_TARGET_TEMP/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=DOWNSTREAM_CONTROL_LOC
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
