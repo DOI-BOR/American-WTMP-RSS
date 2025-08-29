@@ -206,9 +206,14 @@ def getReleaseInfo(currentRule, network, currentRuntimestep, resElev, usePrevSte
                 rts.setStep(currentRuntimestep.getStep() - 1)
                 flow = roCntrlr.getDecisionValue(rts)
             if not isValidValue(flow):
-            	flow = 10.  # This is intended to get *some* value if data is missing on the first iteration pass
-            	            # It's updated to valid flows during subsequent iteration passes
                 #raise ValueError("Invalid value: " + str(flow) + " for " + outletName + " flow for time step: " + str(currentRuntimestep.step))
+                # This is intended to get *some* value if data is missing on the first iteration pass
+                # It's updated to valid flows during subsequent iteration passes
+                if not isValidValue(flow):
+                    if resElev <= outletElev:
+                        flow = 0.
+                    else:
+                        flow = 10.
             qNonPH += flow
             
         if flow > lowFlowThreshold:
